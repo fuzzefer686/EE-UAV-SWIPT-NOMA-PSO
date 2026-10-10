@@ -1,87 +1,62 @@
-# Commit baseline và tạo nhánh EE
+# Phát triển trên nhánh EE và merge vào main
 
-Repo local đã được khởi tạo tại:
+Repo GitHub: `fuzzefer686/EE-UAV-SWIPT-NOMA-PSO`.
+Sau khi dọn repo, main và feature/ee-optimization cùng trỏ đến commit
+baseline rút gọn. Tag baseline-v8-clean giữ cố định mốc đó.
 
-```text
-/Users/fuzzefer/Documents/MATLAB/UAV/EE-UAV-SWIPT-NOMA-PSO
-```
-
-Nhánh khởi đầu là `main`. Chưa có commit và chưa đặt remote GitHub.
-Các lệnh dưới đây chạy trong Terminal. Repo mới độc lập nên việc commit ở
-đây không đưa các thay đổi chưa commit của `raw2` vào cùng commit.
-
-## 1. Kiểm tra và commit baseline
+## Phát triển EE
 
 ```bash
 cd /Users/fuzzefer/Documents/MATLAB/UAV/EE-UAV-SWIPT-NOMA-PSO
+git switch feature/ee-optimization
 git status --short --branch
-shasum -a 256 -c legacy_flight_to_efficiency_v8/provenance/SHA256SUMS.txt
-git add README.md GIT_GUIDE.md .gitignore docs legacy_flight_to_efficiency_v8
+```
+
+Sau khi viết và kiểm tra mã EE, chọn file rồi commit/push:
+
+```bash
+git add scripts src docs README.md
 git diff --cached --stat
-git commit -m "chore: preserve Flight to Efficiency and legacy code through V8"
-git tag baseline-flight-to-efficiency-v8
+git commit -m "feat: implement energy efficiency objective"
+git push origin feature/ee-optimization
 ```
 
-Lệnh `git add` đưa file vào danh sách chuẩn bị commit; `git commit` ghi lại
-một mốc local. Tag là tên cố định cho mốc baseline, giúp quay lại đối chiếu
-sau khi đã phát triển EE.
+Chỉ chạy commit trên khi đã triển khai nội dung tương ứng.
 
-Nếu Git báo chưa có danh tính tác giả, đặt tên và email cho riêng repo rồi
-chạy lại lệnh commit:
+## Merge vào main
+
+Sau khi nghiệm thu thay đổi và working tree sạch:
 
 ```bash
-git config user.name "TEN_CUA_BAN"
-git config user.email "EMAIL_GITHUB_CUA_BAN"
+git switch main
+git pull --ff-only origin main
+git merge --no-ff feature/ee-optimization
+git push origin main
+git switch feature/ee-optimization
+git merge --ff-only main
 ```
 
-Thay hai giá trị trên bằng thông tin của bạn; có thể dùng email noreply
-GitHub nếu tài khoản đang cấu hình email đó.
+Hoặc tạo Pull Request từ feature/ee-optimization vào main trên GitHub.
+Sau khi merge bằng GitHub, pull main rồi cập nhật nhánh EE từ main.
+Main sẽ nhận mã EE sau merge; baseline ban đầu vẫn được giữ bởi tag
+baseline-v8-clean.
 
-## 2. Tạo repo trên GitHub và push baseline
-
-Trên [trang tạo repository của GitHub](https://github.com/new):
-
-1. Chọn tài khoản sở hữu và nhập tên `EE-UAV-SWIPT-NOMA-PSO`.
-2. Chọn **Private** để giữ repo nghiên cứu ở chế độ riêng tư.
-3. Để repo trống: không chọn tạo README, .gitignore hoặc license, vì local
-   đã có các file tương ứng.
-4. Bấm **Create repository** và sao chép URL HTTPS GitHub cung cấp.
-
-Nếu dùng tài khoản `fuzzefer686` như các repo hiện tại, chạy:
+## Kiểm tra hai nhánh
 
 ```bash
-git remote add origin https://github.com/fuzzefer686/EE-UAV-SWIPT-NOMA-PSO.git
-git remote -v
-git push -u origin main
-git push origin baseline-flight-to-efficiency-v8
+git rev-parse main feature/ee-optimization
+git diff main feature/ee-optimization --stat
 ```
 
-Nếu chọn tài khoản khác, thay URL bằng URL thực tế của repo vừa tạo.
-`git push` tải các commit lên GitHub. Hoàn tất bước này thì baseline đã
-được lưu cả ở máy và trên GitHub.
+Ngay sau lần dọn này, hai commit giống nhau và diff trống. Sau khi bắt đầu
+viết EE, hai nhánh khác nhau là trạng thái bình thường.
 
-## 3. Tạo nhánh để phát triển EE
+## Lấy lại file lịch sử
 
 ```bash
-git switch -c feature/ee-optimization
-git push -u origin feature/ee-optimization
+git ls-tree -r --name-only baseline-flight-to-efficiency-v8
 ```
 
-`main` giữ mốc baseline ban đầu; các thay đổi EE tiếp theo được làm trên
-`feature/ee-optimization`, ngoài thư mục legacy. Lần đầu push nhánh này nó
-trỏ cùng commit với `main`; đây là trạng thái đúng khi chưa viết mã EE.
-
-## 4. Kiểm tra kết quả
-
-```bash
-git status --short --branch
-git log -1 --oneline
-git branch -vv
-git tag --list
-```
-
-Sau các bước trên, branch hiện tại phải là `feature/ee-optimization`, có
-tracking remote tương ứng và có tag `baseline-flight-to-efficiency-v8`.
-
-Không chạy `git init` bên trong thư mục legacy hoặc các thư mục con;
-một repo `.git` ở gốc `EE-UAV-SWIPT-NOMA-PSO` là đủ.
+Tag này giữ nguyên bộ lưu trữ trước khi rút gọn. Nếu cần thuật toán đã
+loại khỏi baseline, tạo nhánh thí nghiệm từ main và chỉ phục hồi file cần
+thiết; không đưa toàn bộ cây lưu trữ cũ trở lại main.

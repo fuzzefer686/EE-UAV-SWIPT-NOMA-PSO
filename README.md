@@ -1,27 +1,52 @@
 # EE-UAV-SWIPT-NOMA-PSO
 
-Hướng nghiên cứu được chốt ngày 10/10/2026: tối ưu hiệu quả năng lượng
-(Energy Efficiency, EE) cho mạng UAV hỗ trợ SWIPT-NOMA, trên nền mô hình
-Flight to Efficiency và các thuật toán PSO đã phát triển đến V8.
+Baseline V8 của UAV-SWIPT-NOMA, dùng làm nền để phát triển tối ưu Energy
+Efficiency (EE). Baseline vẫn dùng fitness dựa trên rate; chưa có evaluator EE.
 
-Repo này độc lập với `uav-swipt-noma-trajectory-optimization` (GitHub `raw2`).
-Đợt khởi tạo chỉ đóng băng nền tảng cũ; chưa triển khai hàm mục tiêu EE.
+## Cấu trúc
 
-## Nội dung hiện có
+```text
+scripts/             Entry point V8
+src/models/          NOMA, SWIPT và phân bổ công suất
+src/evaluators/      Fitness quỹ đạo, Joint và Joint+BS
+src/optimizers/      Joint PSO, Full PSO, Full IPSO và alpha polishing
+reference/           Bài báo Flight to Efficiency và mã gốc Raw0
+results/baseline_v8/  20 log V8 đã có
+docs/               Định hướng EE, mốc seed 2026, nguồn và checksum
+setup_project.m      Cấu hình MATLAB path
+```
 
-- [`legacy_flight_to_efficiency_v8/`](legacy_flight_to_efficiency_v8/README.md):
-  bài báo gốc, mã nền, V4–V8, các thuật toán cũ, log và kết quả V8.
-- [`docs/RESEARCH_DIRECTION_EE.md`](docs/RESEARCH_DIRECTION_EE.md): quyết định
-  chuyển hướng và phạm vi bước phát triển tiếp theo.
-- [`GIT_GUIDE.md`](GIT_GUIDE.md): commit baseline, tạo repo GitHub và nhánh EE.
+Mã gốc được giữ nguyên ở `reference/original_code`; V8 có các tham số khác
+bài báo. `docs/BASELINE_PROVENANCE.json` ghi nguồn và SHA-256 từng file.
+Log là kết quả đã có, chưa được chạy lại sau khi dọn repo.
 
-Trong bộ lưu trữ, `matlab_v8/` là pipeline V8 trước khi các hook đánh giá
-mission của V10 được thêm vào. Các mốc lịch sử và nguồn từng file được giữ
-riêng để đối chiếu. Không thêm toàn bộ thư mục legacy vào MATLAB path vì
-các phiên bản có nhiều hàm trùng tên.
+## Chạy baseline
 
-## Bước tiếp theo
+Mở MATLAB tại gốc repo, rồi chạy:
 
-Commit baseline trước. Sau đó tạo nhánh `feature/ee-optimization` và xây dựng
-mã EE bên ngoài thư mục legacy. Dùng Joint PSO, Full PSO và Full IPSO làm
-các thuật toán so sánh chính với cùng mô hình, seed và ngân sách đánh giá.
+```matlab
+setup_project;
+run('scripts/maincodev8nUser.m');
+```
+
+Script chạy đường bay thẳng, Joint PSO, Full PSO, Full IPSO và alpha
+polishing. Cấu hình đầy đủ có thể chạy lâu. Mã gốc được chạy riêng trong
+phiên MATLAB khác, với Current Folder là `reference/original_code`.
+Không thêm toàn bộ repo bằng `addpath(genpath(pwd))`, vì mã tham khảo có
+hàm trùng tên với pipeline V8.
+
+## Nhánh Git
+
+- `main`: baseline đã rút gọn.
+- `feature/ee-optimization`: bắt đầu từ đúng commit của main; dùng viết EE
+  và merge lại main khi hoàn tất.
+- Tag `baseline-v8-clean`: mốc baseline rút gọn cố định để đối chiếu sau
+  khi main đã nhận các thay đổi EE.
+- Tag `baseline-flight-to-efficiency-v8`: bộ lưu trữ đầy đủ ban đầu, có
+  V4–V7 và các thí nghiệm cũ. Không giữ các bản sao này trong cây thư mục.
+
+Không có CCPSO trong pipeline baseline. Nếu cần thử lại, thực hiện trên
+nhánh thí nghiệm riêng. Báo cáo phụ, snapshot trùng lặp, checkpoint,
+autosave, mã GA/FA/DE và Python thử nghiệm đã bỏ khỏi cây thư mục baseline.
+
+Xem [hướng dẫn Git](GIT_GUIDE.md) và [định hướng EE](docs/RESEARCH_DIRECTION_EE.md).

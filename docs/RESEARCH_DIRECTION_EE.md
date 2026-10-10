@@ -11,8 +11,8 @@ không còn là mục tiêu chính của repo mới này.
 
 Bài báo gốc tối ưu min-rate qua vị trí/quỹ đạo UAV với PSO, có SWIPT để
 cấp năng lượng cho truyền downlink. V8 mở rộng các biến tối ưu và fitness
-dựa trên rate. Hai nền tảng này được đóng băng trong thư mục legacy để
-đối chiếu khi xây dựng mục tiêu EE.
+dựa trên rate. Mã V8 nằm ở scripts/src; bài báo và mã gốc ở reference.
+Tag baseline-v8-clean giữ mốc đối chiếu khi xây dựng mục tiêu EE.
 
 ## Nền tảng giữ lại
 
@@ -20,8 +20,8 @@ dựa trên rate. Hai nền tảng này được đóng băng trong thư mục l
 - Uplink/downlink NOMA, SIC, phân bổ công suất và thu năng lượng SWIPT.
 - Điểm đầu/cuối UAV, giới hạn vùng bay và chuyển động theo bước.
 - Các phương án phân bổ công suất và baseline đường thẳng của bài gốc.
-- PSO, Joint PSO, Full PSO, Full IPSO; các biến thể GA/FA/DE và CCPSO
-  được lưu để tham khảo, không mặc định là thuật toán của bài báo gốc.
+- Joint PSO, Full PSO, Full IPSO và alpha polishing. Pipeline main chỉ giữ
+  ba thuật toán này cùng đường bay thẳng làm đối chứng.
 
 ## Những nội dung cần xác định khi triển khai EE
 
@@ -46,7 +46,7 @@ hình EE. Không lấy fitness V8 chia trực tiếp cho EH để gọi là EE.
 1. Commit bộ baseline được lưu nguyên vẹn.
 2. Tạo nhánh `feature/ee-optimization`.
 3. Chốt công thức EE, tham số năng lượng và đơn vị đo.
-4. Tạo evaluator EE và scenario dùng chung bên ngoài thư mục legacy.
+4. Tạo evaluator EE và scenario dùng chung trong scripts/src trên nhánh EE.
 5. So sánh Joint PSO, Full PSO và Full IPSO với cùng seed, ràng buộc và
    ngân sách đánh giá; báo EE, rate, fairness, năng lượng và tính khả thi.
 
