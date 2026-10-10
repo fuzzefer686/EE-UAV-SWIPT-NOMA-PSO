@@ -1,0 +1,401 @@
+V8_LOG_RATE_DEFINITION: SLOT_AVERAGE
+Converted from the original V8 console log on 2026-09-29; NOT a new MATLAB run.
+Original byte-for-byte log: archive/V8_LEGACY_LOGS_2026-09-29.zip
+Rates and rate-based fitness below use the full equal-UL/DL cycle: scale = 1/2.
+Assumption: lambdaSmooth=0 and no constraint penalties for the reported best solutions.
+Final Joint/Full/IPSO penalties and fitness components were checked against the log.
+Baseline fitness is also rescaled, but retains its original formula WITHOUT fairness;
+  it is not the common-evaluator baseline fitness in the updated V9 main script.
+Power, geometry, seeds, iteration counts, weights, Jain and relative gaps are unchanged.
+Numbers are exact halves of printed values, not recovered full-precision simulation data.
+This conversion adds no demand, uplink data-flow, cache or EE model.
+
+----- ORIGINAL RUN CONTENT WITH CONVERTED RATE/FITNESS VALUES -----
+
+================ SCENARIO INFO ================
+mainSeed = 127737724 | noUsers = 5 | noBS = 3
+xUser =    155   156   147   121   124
+
+yUser =    192    88   102    88    97
+
+
+GLOBAL JOINT PSO-SWIPT
+Joint PSO iter   1/1000 | best fitness = 1.37840e+4 bps
+Joint PSO iter  10/1000 | best fitness = 2.16300e+4 bps
+Joint PSO iter  20/1000 | best fitness = 2.16395e+4 bps
+Joint PSO iter  30/1000 | best fitness = 2.69810e+4 bps
+Joint PSO iter  40/1000 | best fitness = 2.95930e+4 bps
+Joint PSO iter  50/1000 | best fitness = 3.12635e+4 bps
+Joint PSO iter  60/1000 | best fitness = 3.31545e+4 bps
+Joint PSO iter  70/1000 | best fitness = 3.41070e+4 bps
+Joint PSO iter  80/1000 | best fitness = 3.58115e+4 bps
+Joint PSO iter  90/1000 | best fitness = 3.59695e+4 bps
+Joint PSO iter 100/1000 | best fitness = 3.86880e+4 bps
+Joint PSO iter 110/1000 | best fitness = 4.08490e+4 bps
+Joint PSO iter 120/1000 | best fitness = 4.17090e+4 bps
+Joint PSO iter 130/1000 | best fitness = 4.21190e+4 bps
+Joint PSO iter 140/1000 | best fitness = 4.22860e+4 bps
+Joint PSO iter 150/1000 | best fitness = 4.25415e+4 bps
+Joint PSO iter 160/1000 | best fitness = 4.26815e+4 bps
+Joint PSO iter 170/1000 | best fitness = 4.30425e+4 bps
+Joint PSO iter 180/1000 | best fitness = 4.31095e+4 bps
+Joint PSO iter 190/1000 | best fitness = 4.32210e+4 bps
+Joint PSO iter 200/1000 | best fitness = 4.32935e+4 bps
+Joint PSO iter 210/1000 | best fitness = 4.33885e+4 bps
+Joint PSO iter 220/1000 | best fitness = 4.34595e+4 bps
+Joint PSO iter 230/1000 | best fitness = 4.35455e+4 bps
+Joint PSO iter 240/1000 | best fitness = 4.36040e+4 bps
+Joint PSO iter 250/1000 | best fitness = 4.36380e+4 bps
+Joint PSO iter 260/1000 | best fitness = 4.52510e+4 bps
+Joint PSO iter 270/1000 | best fitness = 4.61630e+4 bps
+Joint PSO iter 280/1000 | best fitness = 4.67545e+4 bps
+Joint PSO iter 290/1000 | best fitness = 4.74165e+4 bps
+Joint PSO iter 300/1000 | best fitness = 4.77745e+4 bps
+Joint PSO iter 310/1000 | best fitness = 4.79755e+4 bps
+Joint PSO iter 320/1000 | best fitness = 4.82470e+4 bps
+Joint PSO iter 330/1000 | best fitness = 4.84085e+4 bps
+Joint PSO iter 340/1000 | best fitness = 4.86080e+4 bps
+Joint PSO iter 350/1000 | best fitness = 4.86665e+4 bps
+Joint PSO iter 360/1000 | best fitness = 4.87260e+4 bps
+Joint PSO iter 370/1000 | best fitness = 4.88415e+4 bps
+Joint PSO iter 380/1000 | best fitness = 4.89440e+4 bps
+Joint PSO iter 390/1000 | best fitness = 4.90710e+4 bps
+Joint PSO iter 400/1000 | best fitness = 4.91270e+4 bps
+Joint PSO iter 410/1000 | best fitness = 4.91925e+4 bps
+Joint PSO iter 420/1000 | best fitness = 4.92810e+4 bps
+Joint PSO iter 430/1000 | best fitness = 4.93380e+4 bps
+Joint PSO iter 440/1000 | best fitness = 4.93970e+4 bps
+Joint PSO iter 450/1000 | best fitness = 4.94595e+4 bps
+Joint PSO iter 460/1000 | best fitness = 4.94905e+4 bps
+Joint PSO iter 470/1000 | best fitness = 4.95305e+4 bps
+Joint PSO iter 480/1000 | best fitness = 4.95560e+4 bps
+Joint PSO iter 490/1000 | best fitness = 4.95920e+4 bps
+Joint PSO iter 500/1000 | best fitness = 4.96005e+4 bps
+Joint PSO iter 510/1000 | best fitness = 4.96160e+4 bps
+Joint PSO iter 520/1000 | best fitness = 4.96285e+4 bps
+Joint PSO iter 530/1000 | best fitness = 4.96400e+4 bps
+Joint PSO iter 540/1000 | best fitness = 4.96520e+4 bps
+Joint PSO iter 550/1000 | best fitness = 4.96715e+4 bps
+Joint PSO iter 560/1000 | best fitness = 4.96845e+4 bps
+Joint PSO iter 570/1000 | best fitness = 4.96925e+4 bps
+Joint PSO iter 580/1000 | best fitness = 4.96965e+4 bps
+Joint PSO iter 590/1000 | best fitness = 4.97030e+4 bps
+Joint PSO iter 600/1000 | best fitness = 4.97090e+4 bps
+Joint PSO iter 610/1000 | best fitness = 4.97150e+4 bps
+Joint PSO iter 620/1000 | best fitness = 4.97190e+4 bps
+Joint PSO iter 630/1000 | best fitness = 4.97230e+4 bps
+Joint PSO iter 640/1000 | best fitness = 4.97270e+4 bps
+Joint PSO iter 650/1000 | best fitness = 4.97300e+4 bps
+Joint PSO iter 660/1000 | best fitness = 4.97315e+4 bps
+Joint PSO iter 670/1000 | best fitness = 4.97345e+4 bps
+Joint PSO iter 680/1000 | best fitness = 4.97365e+4 bps
+Joint PSO iter 690/1000 | best fitness = 4.97380e+4 bps
+Joint PSO iter 700/1000 | best fitness = 4.97395e+4 bps
+Joint PSO iter 710/1000 | best fitness = 4.97410e+4 bps
+Joint PSO iter 720/1000 | best fitness = 4.97425e+4 bps
+Joint PSO iter 730/1000 | best fitness = 4.97435e+4 bps
+Joint PSO iter 740/1000 | best fitness = 4.97450e+4 bps
+Joint PSO iter 750/1000 | best fitness = 4.97455e+4 bps
+Joint PSO iter 760/1000 | best fitness = 4.97465e+4 bps
+Joint PSO iter 770/1000 | best fitness = 4.97635e+4 bps
+Joint PSO iter 780/1000 | best fitness = 4.97685e+4 bps
+Joint PSO iter 790/1000 | best fitness = 4.97705e+4 bps
+Joint PSO iter 800/1000 | best fitness = 4.97715e+4 bps
+Joint PSO iter 810/1000 | best fitness = 4.97725e+4 bps
+Joint PSO iter 820/1000 | best fitness = 4.97730e+4 bps
+Joint PSO iter 830/1000 | best fitness = 4.97740e+4 bps
+Joint PSO iter 840/1000 | best fitness = 4.97745e+4 bps
+Joint PSO iter 850/1000 | best fitness = 4.97750e+4 bps
+Joint PSO iter 860/1000 | best fitness = 4.97755e+4 bps
+Joint PSO iter 870/1000 | best fitness = 4.97760e+4 bps
+Joint PSO iter 880/1000 | best fitness = 4.97770e+4 bps
+Joint PSO iter 890/1000 | best fitness = 4.97775e+4 bps
+Joint PSO iter 900/1000 | best fitness = 4.97785e+4 bps
+Joint PSO iter 910/1000 | best fitness = 4.97785e+4 bps
+Joint PSO iter 920/1000 | best fitness = 4.97795e+4 bps
+Joint PSO iter 930/1000 | best fitness = 4.97800e+4 bps
+Joint PSO iter 940/1000 | best fitness = 4.97800e+4 bps
+Joint PSO iter 950/1000 | best fitness = 4.97845e+4 bps
+Joint PSO iter 960/1000 | best fitness = 4.97845e+4 bps
+Joint PSO iter 970/1000 | best fitness = 4.97855e+4 bps
+Joint PSO iter 980/1000 | best fitness = 4.97865e+4 bps
+Joint PSO iter 990/1000 | best fitness = 4.97870e+4 bps
+Joint PSO iter 1000/1000 | best fitness = 4.97875e+4 bps
+
+FULL JOINT+BS PSO
+Full Joint+BS PSO iter   1/1000 | best fitness = 4.17525e+4 bps
+Full Joint+BS PSO iter  10/1000 | best fitness = 5.20250e+4 bps
+Full Joint+BS PSO iter  20/1000 | best fitness = 6.47700e+4 bps
+Full Joint+BS PSO iter  30/1000 | best fitness = 7.73250e+4 bps
+Full Joint+BS PSO iter  40/1000 | best fitness = 8.28350e+4 bps
+Full Joint+BS PSO iter  50/1000 | best fitness = 9.43600e+4 bps
+Full Joint+BS PSO iter  60/1000 | best fitness = 9.79250e+4 bps
+Full Joint+BS PSO iter  70/1000 | best fitness = 1.05820e+5 bps
+Full Joint+BS PSO iter  80/1000 | best fitness = 1.22640e+5 bps
+Full Joint+BS PSO iter  90/1000 | best fitness = 1.30375e+5 bps
+Full Joint+BS PSO iter 100/1000 | best fitness = 1.33475e+5 bps
+Full Joint+BS PSO iter 110/1000 | best fitness = 1.40660e+5 bps
+Full Joint+BS PSO iter 120/1000 | best fitness = 1.44305e+5 bps
+Full Joint+BS PSO iter 130/1000 | best fitness = 1.46870e+5 bps
+Full Joint+BS PSO iter 140/1000 | best fitness = 1.48660e+5 bps
+Full Joint+BS PSO iter 150/1000 | best fitness = 1.50345e+5 bps
+Full Joint+BS PSO iter 160/1000 | best fitness = 1.51255e+5 bps
+Full Joint+BS PSO iter 170/1000 | best fitness = 1.52855e+5 bps
+Full Joint+BS PSO iter 180/1000 | best fitness = 1.53825e+5 bps
+Full Joint+BS PSO iter 190/1000 | best fitness = 1.54725e+5 bps
+Full Joint+BS PSO iter 200/1000 | best fitness = 1.55785e+5 bps
+Full Joint+BS PSO iter 210/1000 | best fitness = 1.56110e+5 bps
+Full Joint+BS PSO iter 220/1000 | best fitness = 1.57970e+5 bps
+Full Joint+BS PSO iter 230/1000 | best fitness = 1.58415e+5 bps
+Full Joint+BS PSO iter 240/1000 | best fitness = 1.59135e+5 bps
+Full Joint+BS PSO iter 250/1000 | best fitness = 1.59840e+5 bps
+Full Joint+BS PSO iter 260/1000 | best fitness = 1.61320e+5 bps
+Full Joint+BS PSO iter 270/1000 | best fitness = 1.61820e+5 bps
+Full Joint+BS PSO iter 280/1000 | best fitness = 1.61925e+5 bps
+Full Joint+BS PSO iter 290/1000 | best fitness = 1.63380e+5 bps
+Full Joint+BS PSO iter 300/1000 | best fitness = 1.63745e+5 bps
+Full Joint+BS PSO iter 310/1000 | best fitness = 1.64210e+5 bps
+Full Joint+BS PSO iter 320/1000 | best fitness = 1.64530e+5 bps
+Full Joint+BS PSO iter 330/1000 | best fitness = 1.64870e+5 bps
+Full Joint+BS PSO iter 340/1000 | best fitness = 1.65085e+5 bps
+Full Joint+BS PSO iter 350/1000 | best fitness = 1.65305e+5 bps
+Full Joint+BS PSO iter 360/1000 | best fitness = 1.72730e+5 bps
+Full Joint+BS PSO iter 370/1000 | best fitness = 1.74000e+5 bps
+Full Joint+BS PSO iter 380/1000 | best fitness = 1.74715e+5 bps
+Full Joint+BS PSO iter 390/1000 | best fitness = 1.75110e+5 bps
+Full Joint+BS PSO iter 400/1000 | best fitness = 1.75475e+5 bps
+Full Joint+BS PSO iter 410/1000 | best fitness = 1.75800e+5 bps
+Full Joint+BS PSO iter 420/1000 | best fitness = 1.76035e+5 bps
+Full Joint+BS PSO iter 430/1000 | best fitness = 1.76305e+5 bps
+Full Joint+BS PSO iter 440/1000 | best fitness = 1.76635e+5 bps
+Full Joint+BS PSO iter 450/1000 | best fitness = 1.76970e+5 bps
+Full Joint+BS PSO iter 460/1000 | best fitness = 1.77125e+5 bps
+Full Joint+BS PSO iter 470/1000 | best fitness = 1.77405e+5 bps
+Full Joint+BS PSO iter 480/1000 | best fitness = 1.77500e+5 bps
+Full Joint+BS PSO iter 490/1000 | best fitness = 1.77625e+5 bps
+Full Joint+BS PSO iter 500/1000 | best fitness = 1.77695e+5 bps
+Full Joint+BS PSO iter 510/1000 | best fitness = 1.77790e+5 bps
+Full Joint+BS PSO iter 520/1000 | best fitness = 1.77845e+5 bps
+Full Joint+BS PSO iter 530/1000 | best fitness = 1.77900e+5 bps
+Full Joint+BS PSO iter 540/1000 | best fitness = 1.77950e+5 bps
+Full Joint+BS PSO iter 550/1000 | best fitness = 1.77985e+5 bps
+Full Joint+BS PSO iter 560/1000 | best fitness = 1.78005e+5 bps
+Full Joint+BS PSO iter 570/1000 | best fitness = 1.78030e+5 bps
+Full Joint+BS PSO iter 580/1000 | best fitness = 1.78050e+5 bps
+Full Joint+BS PSO iter 590/1000 | best fitness = 1.78085e+5 bps
+Full Joint+BS PSO iter 600/1000 | best fitness = 1.78105e+5 bps
+Full Joint+BS PSO iter 610/1000 | best fitness = 1.78130e+5 bps
+Full Joint+BS PSO iter 620/1000 | best fitness = 1.78140e+5 bps
+Full Joint+BS PSO iter 630/1000 | best fitness = 1.78155e+5 bps
+Full Joint+BS PSO iter 640/1000 | best fitness = 1.78180e+5 bps
+Full Joint+BS PSO iter 650/1000 | best fitness = 1.78195e+5 bps
+Full Joint+BS PSO iter 660/1000 | best fitness = 1.78200e+5 bps
+Full Joint+BS PSO iter 670/1000 | best fitness = 1.78210e+5 bps
+Full Joint+BS PSO iter 680/1000 | best fitness = 1.78210e+5 bps
+Full Joint+BS PSO iter 690/1000 | best fitness = 1.78215e+5 bps
+Full Joint+BS PSO iter 700/1000 | best fitness = 1.78370e+5 bps
+Full Joint+BS PSO iter 710/1000 | best fitness = 1.78390e+5 bps
+Full Joint+BS PSO iter 720/1000 | best fitness = 1.78405e+5 bps
+Full Joint+BS PSO iter 730/1000 | best fitness = 1.78415e+5 bps
+Full Joint+BS PSO iter 740/1000 | best fitness = 1.78435e+5 bps
+Full Joint+BS PSO iter 750/1000 | best fitness = 1.78445e+5 bps
+Full Joint+BS PSO iter 760/1000 | best fitness = 1.78450e+5 bps
+Full Joint+BS PSO iter 770/1000 | best fitness = 1.78465e+5 bps
+Full Joint+BS PSO iter 780/1000 | best fitness = 1.78495e+5 bps
+Full Joint+BS PSO iter 790/1000 | best fitness = 1.78510e+5 bps
+Full Joint+BS PSO iter 800/1000 | best fitness = 1.78520e+5 bps
+Full Joint+BS PSO iter 810/1000 | best fitness = 1.78535e+5 bps
+Full Joint+BS PSO iter 820/1000 | best fitness = 1.78550e+5 bps
+Full Joint+BS PSO iter 830/1000 | best fitness = 1.78555e+5 bps
+Full Joint+BS PSO iter 840/1000 | best fitness = 1.78560e+5 bps
+Full Joint+BS PSO iter 850/1000 | best fitness = 1.78575e+5 bps
+Full Joint+BS PSO iter 860/1000 | best fitness = 1.78590e+5 bps
+Full Joint+BS PSO iter 870/1000 | best fitness = 1.78615e+5 bps
+Full Joint+BS PSO iter 880/1000 | best fitness = 1.78830e+5 bps
+Full Joint+BS PSO iter 890/1000 | best fitness = 1.78865e+5 bps
+Full Joint+BS PSO iter 900/1000 | best fitness = 1.78910e+5 bps
+Full Joint+BS PSO iter 910/1000 | best fitness = 1.78935e+5 bps
+Full Joint+BS PSO iter 920/1000 | best fitness = 1.78955e+5 bps
+Full Joint+BS PSO iter 930/1000 | best fitness = 1.78965e+5 bps
+Full Joint+BS PSO iter 940/1000 | best fitness = 1.78975e+5 bps
+Full Joint+BS PSO iter 950/1000 | best fitness = 1.78980e+5 bps
+Full Joint+BS PSO iter 960/1000 | best fitness = 1.78990e+5 bps
+Full Joint+BS PSO iter 970/1000 | best fitness = 1.78995e+5 bps
+Full Joint+BS PSO iter 980/1000 | best fitness = 1.79000e+5 bps
+Full Joint+BS PSO iter 990/1000 | best fitness = 1.79005e+5 bps
+Full Joint+BS PSO iter 1000/1000 | best fitness = 1.79005e+5 bps
+
+Alpha polishing started | initial fitness = 1.7900710e+5
+Alpha polishing finished | final fitness = 1.7900710e+5 | gain = 0.0000000e+1
+
+FULL JOINT+BS IPSO (Improved PSO)
+Full Joint+BS IPSO iter   1/1000 | best fitness = 4.17525e+4 bps
+Full Joint+BS IPSO iter  10/1000 | best fitness = 5.19500e+4 bps
+Full Joint+BS IPSO iter  20/1000 | best fitness = 6.20250e+4 bps
+Full Joint+BS IPSO iter  30/1000 | best fitness = 7.02550e+4 bps
+Full Joint+BS IPSO iter  40/1000 | best fitness = 7.02550e+4 bps
+Full Joint+BS IPSO iter  50/1000 | best fitness = 8.00500e+4 bps
+Full Joint+BS IPSO iter  60/1000 | best fitness = 8.55200e+4 bps
+Full Joint+BS IPSO iter  70/1000 | best fitness = 8.93000e+4 bps
+Full Joint+BS IPSO iter  80/1000 | best fitness = 9.36700e+4 bps
+Full Joint+BS IPSO iter  90/1000 | best fitness = 1.04750e+5 bps
+Full Joint+BS IPSO iter 100/1000 | best fitness = 1.07340e+5 bps
+Full Joint+BS IPSO iter 110/1000 | best fitness = 1.10525e+5 bps
+Full Joint+BS IPSO iter 120/1000 | best fitness = 1.11315e+5 bps
+Full Joint+BS IPSO iter 130/1000 | best fitness = 1.13865e+5 bps
+Full Joint+BS IPSO iter 140/1000 | best fitness = 1.23260e+5 bps
+Full Joint+BS IPSO iter 150/1000 | best fitness = 1.24975e+5 bps
+Full Joint+BS IPSO iter 160/1000 | best fitness = 1.28645e+5 bps
+Full Joint+BS IPSO iter 170/1000 | best fitness = 1.34825e+5 bps
+Full Joint+BS IPSO iter 180/1000 | best fitness = 1.40660e+5 bps
+Full Joint+BS IPSO iter 190/1000 | best fitness = 1.43975e+5 bps
+Full Joint+BS IPSO iter 200/1000 | best fitness = 1.49700e+5 bps
+Full Joint+BS IPSO iter 210/1000 | best fitness = 1.53485e+5 bps
+Full Joint+BS IPSO iter 220/1000 | best fitness = 1.56020e+5 bps
+Full Joint+BS IPSO iter 230/1000 | best fitness = 1.57050e+5 bps
+Full Joint+BS IPSO iter 240/1000 | best fitness = 1.57765e+5 bps
+Full Joint+BS IPSO iter 250/1000 | best fitness = 1.58425e+5 bps
+Full Joint+BS IPSO iter 260/1000 | best fitness = 1.59030e+5 bps
+Full Joint+BS IPSO iter 270/1000 | best fitness = 1.59870e+5 bps
+Full Joint+BS IPSO iter 280/1000 | best fitness = 1.60605e+5 bps
+Full Joint+BS IPSO iter 290/1000 | best fitness = 1.61155e+5 bps
+Full Joint+BS IPSO iter 300/1000 | best fitness = 1.61620e+5 bps
+Full Joint+BS IPSO iter 310/1000 | best fitness = 1.62650e+5 bps
+Full Joint+BS IPSO iter 320/1000 | best fitness = 1.63705e+5 bps
+Full Joint+BS IPSO iter 330/1000 | best fitness = 1.64145e+5 bps
+Full Joint+BS IPSO iter 340/1000 | best fitness = 1.64485e+5 bps
+Full Joint+BS IPSO iter 350/1000 | best fitness = 1.64785e+5 bps
+Full Joint+BS IPSO iter 360/1000 | best fitness = 1.64955e+5 bps
+Full Joint+BS IPSO iter 370/1000 | best fitness = 1.73665e+5 bps
+Full Joint+BS IPSO iter 380/1000 | best fitness = 1.75280e+5 bps
+Full Joint+BS IPSO iter 390/1000 | best fitness = 1.75900e+5 bps
+Full Joint+BS IPSO iter 400/1000 | best fitness = 1.76115e+5 bps
+Full Joint+BS IPSO iter 410/1000 | best fitness = 1.76290e+5 bps
+Full Joint+BS IPSO iter 420/1000 | best fitness = 1.76390e+5 bps
+Full Joint+BS IPSO iter 430/1000 | best fitness = 1.76645e+5 bps
+Full Joint+BS IPSO iter 440/1000 | best fitness = 1.76805e+5 bps
+Full Joint+BS IPSO iter 450/1000 | best fitness = 1.76920e+5 bps
+Full Joint+BS IPSO iter 460/1000 | best fitness = 1.77055e+5 bps
+Full Joint+BS IPSO iter 470/1000 | best fitness = 1.77160e+5 bps
+Full Joint+BS IPSO iter 480/1000 | best fitness = 1.77275e+5 bps
+Full Joint+BS IPSO iter 490/1000 | best fitness = 1.77315e+5 bps
+Full Joint+BS IPSO iter 500/1000 | best fitness = 1.77370e+5 bps
+Full Joint+BS IPSO iter 510/1000 | best fitness = 1.77445e+5 bps
+Full Joint+BS IPSO iter 520/1000 | best fitness = 1.77530e+5 bps
+Full Joint+BS IPSO iter 530/1000 | best fitness = 1.77580e+5 bps
+Full Joint+BS IPSO iter 540/1000 | best fitness = 1.77605e+5 bps
+Full Joint+BS IPSO iter 550/1000 | best fitness = 1.77645e+5 bps
+Full Joint+BS IPSO iter 560/1000 | best fitness = 1.77670e+5 bps
+Full Joint+BS IPSO iter 570/1000 | best fitness = 1.77680e+5 bps
+Full Joint+BS IPSO iter 580/1000 | best fitness = 1.77705e+5 bps
+Full Joint+BS IPSO iter 590/1000 | best fitness = 1.77725e+5 bps
+Full Joint+BS IPSO iter 600/1000 | best fitness = 1.77740e+5 bps
+Full Joint+BS IPSO iter 610/1000 | best fitness = 1.77780e+5 bps
+Full Joint+BS IPSO iter 620/1000 | best fitness = 1.77815e+5 bps
+Full Joint+BS IPSO iter 630/1000 | best fitness = 1.77845e+5 bps
+Full Joint+BS IPSO iter 640/1000 | best fitness = 1.77880e+5 bps
+Full Joint+BS IPSO iter 650/1000 | best fitness = 1.77935e+5 bps
+Full Joint+BS IPSO iter 660/1000 | best fitness = 1.77975e+5 bps
+Full Joint+BS IPSO iter 670/1000 | best fitness = 1.78005e+5 bps
+Full Joint+BS IPSO iter 680/1000 | best fitness = 1.78015e+5 bps
+Full Joint+BS IPSO iter 690/1000 | best fitness = 1.78030e+5 bps
+Full Joint+BS IPSO iter 700/1000 | best fitness = 1.78045e+5 bps
+Full Joint+BS IPSO iter 710/1000 | best fitness = 1.78050e+5 bps
+Full Joint+BS IPSO iter 720/1000 | best fitness = 1.78055e+5 bps
+Full Joint+BS IPSO iter 730/1000 | best fitness = 1.78080e+5 bps
+Full Joint+BS IPSO iter 740/1000 | best fitness = 1.78080e+5 bps
+Full Joint+BS IPSO iter 750/1000 | best fitness = 1.78080e+5 bps
+Full Joint+BS IPSO iter 760/1000 | best fitness = 1.78085e+5 bps
+Full Joint+BS IPSO iter 770/1000 | best fitness = 1.78085e+5 bps
+Full Joint+BS IPSO iter 780/1000 | best fitness = 1.78100e+5 bps
+Full Joint+BS IPSO iter 790/1000 | best fitness = 1.78100e+5 bps
+Full Joint+BS IPSO iter 800/1000 | best fitness = 1.78100e+5 bps
+Full Joint+BS IPSO iter 810/1000 | best fitness = 1.78110e+5 bps
+Full Joint+BS IPSO iter 820/1000 | best fitness = 1.78110e+5 bps
+Full Joint+BS IPSO iter 830/1000 | best fitness = 1.78110e+5 bps
+Full Joint+BS IPSO iter 840/1000 | best fitness = 1.78130e+5 bps
+Full Joint+BS IPSO iter 850/1000 | best fitness = 1.78160e+5 bps
+Full Joint+BS IPSO iter 860/1000 | best fitness = 1.78160e+5 bps
+Full Joint+BS IPSO iter 870/1000 | best fitness = 1.78160e+5 bps
+Full Joint+BS IPSO iter 880/1000 | best fitness = 1.78160e+5 bps
+Full Joint+BS IPSO iter 890/1000 | best fitness = 1.78160e+5 bps
+Full Joint+BS IPSO iter 900/1000 | best fitness = 1.78160e+5 bps
+Full Joint+BS IPSO iter 910/1000 | best fitness = 1.78160e+5 bps
+Full Joint+BS IPSO iter 920/1000 | best fitness = 1.78160e+5 bps
+Full Joint+BS IPSO iter 930/1000 | best fitness = 1.78160e+5 bps
+Full Joint+BS IPSO iter 940/1000 | best fitness = 1.78160e+5 bps
+Full Joint+BS IPSO iter 950/1000 | best fitness = 1.78160e+5 bps
+Full Joint+BS IPSO iter 960/1000 | best fitness = 1.78160e+5 bps
+Full Joint+BS IPSO iter 970/1000 | best fitness = 1.78160e+5 bps
+Full Joint+BS IPSO iter 980/1000 | best fitness = 1.78160e+5 bps
+Full Joint+BS IPSO iter 990/1000 | best fitness = 1.78160e+5 bps
+Full Joint+BS IPSO iter 1000/1000 | best fitness = 1.78165e+5 bps
+
+Alpha polishing started | initial fitness = 1.7816255e+5
+Alpha polishing finished | final fitness = 1.7816255e+5 | gain = 0.0000000e+1
+
+FINAL RESULT
+V8 settings: noUsers = 5, noBS = 3, lambdaMean = 0.0500, lambdaFair = 0.1000, useFixedSeed = 1
+
+Baseline straight trajectory
+Baseline fitness          = 8.0236228375750e+3
+Baseline global minRate   = 5.1005280491450e+3
+Baseline mean minRate     = 3.5199731859125e+4
+Baseline mean pt          = 2.5085e-07 W, -36.0058 dBm
+
+Joint PSO-SWIPT without BS optimization
+Joint fitness             = 4.9787418971545e+4
+Joint minInternal         = 4.5315728157505e+4
+Joint meanInternal        = 8.9461706940750e+4
+Joint global minRate      = 6.1994124142600e+1
+Joint mean pt             = 5.7914e-07 W, -32.3722 dBm
+Joint penalty             = 0.0000e+00
+Joint feasible            = 1
+
+Full Joint PSO-SWIPT with BS optimization
+Full fitness              = 1.7900709066685e+5
+Full minFit               = 1.6356919308515e+5
+Full meanFit              = 3.0878488169125e+5
+Full global minRate       = 2.0671753889610e+2
+Full mean pt              = 5.4680e-06 W, -22.6217 dBm
+Full penalty              = 0.0000e+00
+Full feasible             = 1
+Full roughNorm            = 6.3286
+
+Full Joint IPSO-SWIPT with BS optimization
+IPSO fitness              = 1.7816257084880e+5
+IPSO minFit               = 1.6229072807555e+5
+IPSO meanFit              = 3.1743724336765e+5
+IPSO global minRate       = 2.5809055965495e+2
+IPSO mean pt              = 6.2418e-06 W, -22.0469 dBm
+IPSO penalty              = 0.0000e+00
+
+Improvement
+Full - Baseline global minRate gain = -4.8938105102470e+3
+Full - Joint fitness gain           = 1.2921967169530e+5
+Full - Joint minInternal gain       = 1.1825346492765e+5
+Full - Joint meanInternal gain      = 2.1932317475050e+5
+
+Initial BS positions [x; y; z]:
+   300     0   300
+   300   150     0
+    20    30    25
+
+Optimized BS positions [x; y; z]:
+  250.0000   50.0000  250.0000
+  252.7712  200.0000   50.0000
+   20.0000   30.0000   25.0000
+
+BS movement distance from initial:
+   68.7790   70.7107   70.7107
+
+
+=== INTERNAL OBJECTIVE CHECK ===
+Joint no-BS | min 4.53155e+4 | mean 8.94600e+4 | rawObj 4.97890e+4 | fitness 4.97875e+4 | meanPt 5.7914e-07
+Full PSO    | min 1.63570e+5 | mean 3.08785e+5 | rawObj 1.79010e+5 | fitness 1.79005e+5 | meanPt 5.4680e-06
+Full IPSO   | min 1.62290e+5 | mean 3.17435e+5 | rawObj 1.78165e+5 | fitness 1.78165e+5 | meanPt 6.2418e-06
+
+=== FAIRNESS CHECK ON INTERNAL STEPS ===
+Joint no-BS  | Jain mean 0.999844 | rel gap mean 0.013159 | rel gap max 0.117503
+Full PSO     | Jain mean 0.999956 | rel gap mean 0.010493 | rel gap max 0.048465
+Full IPSO    | Jain mean 0.999999 | rel gap mean 0.000851 | rel gap max 0.006939

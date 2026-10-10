@@ -1,0 +1,10 @@
+=== RUN 3 RESULT (mainSeed = 2026) ===
+Standard JointPSO Fitness: 7.491186e+04 bps (Time: 12.68 s)
+CC-JointPSO Fitness:       7.801600e+04 bps (Time: 8.59 s)
+Delta Fitness:             +4.14%
+Standard Global minRate:   3.477976e+02 bps
+CC-JointPSO Global minRate:8.760150e+02 bps
+Delta Global minRate:      +151.87%
+Standard Jain Mean:        0.984397
+CC-JointPSO Jain Mean:     0.996066
+Speedup Factor:            1.48x

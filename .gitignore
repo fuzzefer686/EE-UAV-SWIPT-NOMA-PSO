@@ -1,0 +1,9 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Các kết quả mới được tạo sau khi phát triển EE.
+# Chỉ bỏ qua ở thư mục outputs của repo mới; giữ MAT/FIG trong legacy.
+/outputs/
