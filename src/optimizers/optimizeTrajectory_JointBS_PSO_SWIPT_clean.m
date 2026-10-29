@@ -7,6 +7,11 @@ function best = optimizeTrajectory_JointBS_PSO_SWIPT_clean(sim, opts)
         opts = struct();
     end
 
+    fitnessUnit = 'bit/s';
+    if isfield(sim, 'objectiveMode') && strcmpi(sim.objectiveMode, 'ee-rf')
+        fitnessUnit = 'bit/J';
+    end
+
     numParticles = getOptField(opts, 'numParticles', 100);
     maxIter      = getOptField(opts, 'maxIter', 250);
     w            = getOptField(opts, 'w', 0.7);
@@ -48,6 +53,15 @@ function best = optimizeTrajectory_JointBS_PSO_SWIPT_clean(sim, opts)
     gbestRes = struct();
 
     bestHistory = zeros(maxIter + 1, 1);
+    trackEE = isfield(sim, 'objectiveMode') && strcmpi(sim.objectiveMode, 'ee-rf');
+    if trackEE
+        totalBitsHistory = NaN(maxIter + 1, 1);
+        totalEnergyHistory = NaN(maxIter + 1, 1);
+        % Rows: iteration (starting at 0); slots exclude the arrival waypoint.
+        totalBitsPerUserHistory = NaN(maxIter + 1, sim.noUsers);
+        transmitPowerHistory = NaN(maxIter + 1, sim.numSteps - 1);
+        alphaUserHistory = NaN(maxIter + 1, sim.numSteps - 1, sim.noUsers);
+    end
 
     %% Khoi tao baseline
     xBase = linspace(sim.xStart, sim.xEnd, T);
@@ -98,6 +112,15 @@ function best = optimizeTrajectory_JointBS_PSO_SWIPT_clean(sim, opts)
     end
 
     bestHistory(1) = gbestVal;
+    if trackEE
+        totalBitsHistory(1) = gbestRes.totalBits;
+        totalEnergyHistory(1) = gbestRes.totalEnergy;
+        totalBitsPerUserHistory(1, :) = gbestRes.totalBitsPerUser;
+        transmitPowerHistory(1, :) = reshape(gbestRes.pt(gbestRes.slotIdx), 1, []);
+        % alphaTrace follows physical User ID, not weak-to-strong rank.
+        alphaUserHistory(1, :, :) = reshape(gbestRes.alphaTrace(gbestRes.slotIdx, :), ...
+            1, sim.numSteps - 1, sim.noUsers);
+    end
 
     %% PSO loop
     for iter = 1:maxIter
@@ -128,10 +151,20 @@ function best = optimizeTrajectory_JointBS_PSO_SWIPT_clean(sim, opts)
         end
 
         bestHistory(iter + 1) = gbestVal;
+        if trackEE
+            % Both metrics belong to the same best-EE particle this iteration.
+            totalBitsHistory(iter + 1) = gbestRes.totalBits;
+            totalEnergyHistory(iter + 1) = gbestRes.totalEnergy;
+            totalBitsPerUserHistory(iter + 1, :) = gbestRes.totalBitsPerUser;
+            transmitPowerHistory(iter + 1, :) = reshape(gbestRes.pt(gbestRes.slotIdx), 1, []);
+            % alphaTrace follows physical User ID, not weak-to-strong rank.
+            alphaUserHistory(iter + 1, :, :) = reshape(gbestRes.alphaTrace(gbestRes.slotIdx, :), ...
+                1, sim.numSteps - 1, sim.noUsers);
+        end
 
         if mod(iter, 10) == 0 || iter == 1 || iter == maxIter
-            fprintf('Full Joint+BS PSO iter %3d/%3d | best fitness = %.4e bps\n', ...
-                iter, maxIter, gbestVal);
+            fprintf('Full Joint+BS PSO iter %3d/%3d | best fitness = %.4e %s\n', ...
+                iter, maxIter, gbestVal, fitnessUnit);
         end
     end
 
@@ -141,6 +174,13 @@ function best = optimizeTrajectory_JointBS_PSO_SWIPT_clean(sim, opts)
     best.bestParticle = gbestPos;
     best.bestFitness = gbestVal;
     best.bestHistory = bestHistory;
+    if trackEE
+        best.totalBitsHistory = totalBitsHistory;
+        best.totalEnergyHistory = totalEnergyHistory;
+        best.totalBitsPerUserHistory = totalBitsPerUserHistory;
+        best.transmitPowerHistory = transmitPowerHistory;
+        best.alphaUserHistory = alphaUserHistory;
+    end
 
     best.mode = 'full-joint-bs-pso-swipt-clean';
 

@@ -1,0 +1,143 @@
+
+=== V10A total UAV EE (propulsion + hover + RF) ===
+Version                   = V10-Drones-1
+Scenario seed             = 2026
+Algorithm seed            = 151459287
+Polishing seed            = 152459287
+L (bit/user):
+  User 1                  = 3.000000000000e+06 bit
+  User 2                  = 3.000000000000e+06 bit
+  User 3                  = 3.000000000000e+06 bit
+  User 4                  = 3.000000000000e+06 bit
+  User 5                  = 3.000000000000e+06 bit
+
+Timing and flight settings
+Hover per serving point   = 1 s
+EH / uplink time          = 0.5 s
+RF / downlink time        = 0.5 s
+Cruise speed              = 15.521 m/s
+UAV altitude              = 30 m
+Energy budget (gross)     = 17000 J
+Cruise power              = 108.940787181 W
+Hover power               = 172.38763328 W
+
+Radio settings
+BS transmit power         = 46 dBm
+Power splitting phi       = 0.9
+EH efficiency eta         = 0.9
+Bandwidth                 = 1000000 Hz
+Reference gain beta0      = -30 dB
+
+Baseline straight trajectory
+Feasible                  = 0
+EE                        = NaN bit/J
+Fitness                   = -2.189476729755e+00
+Fitness meaning           = constraint violation score, not EE
+Total bits                = 8.847318591132e+06 bit
+Total UAV energy          = 5.553431177946e+03 J
+Cruise energy             = 2.105678510032e+03 J
+Hover energy              = 3.447752665593e+03 J
+RF transmit energy        = 2.321021036477e-06 J
+Harvested energy          = 2.321021036477e-06 J
+Total flight distance     = 300.000000000 m
+Flight time               = 19.328651504 s
+Total hover time          = 20.000000000 s
+Mission time              = 39.328651504 s
+Excess energy             = 0.000000000000e+00 J
+Bits per user:
+  User 1                  = 1.303682713728e+06 bit
+  User 2                  = 7.761374321959e+05 bit
+  User 3                  = 2.388602171332e+06 bit
+  User 4                  = 3.415748780398e+06 bit
+  User 5                  = 9.631474934788e+05 bit
+Bit shortfall per user:
+  User 1                  = 1.696317286272e+06 bit
+  User 2                  = 2.223862567804e+06 bit
+  User 3                  = 6.113978286684e+05 bit
+  User 4                  = 0.000000000000e+00 bit
+  User 5                  = 2.036852506521e+06 bit
+
+Joint PSO without BS optimization
+Feasible                  = 0
+EE                        = NaN bit/J
+Fitness                   = -5.271858957610e-01
+Fitness meaning           = constraint violation score, not EE
+Total bits                = 1.342352624118e+07 bit
+Total UAV energy          = 1.241280350811e+04 J
+Cruise energy             = 8.965050838355e+03 J
+Hover energy              = 3.447752665593e+03 J
+RF transmit energy        = 4.157945339806e-06 J
+Harvested energy          = 4.157945339806e-06 J
+Total flight distance     = 1277.267749418 m
+Flight time               = 82.292877354 s
+Total hover time          = 20.000000000 s
+Mission time              = 102.292877354 s
+Excess energy             = 0.000000000000e+00 J
+Bits per user:
+  User 1                  = 3.000592003946e+06 bit
+  User 2                  = 3.001182724169e+06 bit
+  User 3                  = 2.999969180882e+06 bit
+  User 4                  = 3.003309200343e+06 bit
+  User 5                  = 1.418473131835e+06 bit
+Bit shortfall per user:
+  User 1                  = 0.000000000000e+00 bit
+  User 2                  = 0.000000000000e+00 bit
+  User 3                  = 3.081911797682e+01 bit
+  User 4                  = 0.000000000000e+00 bit
+  User 5                  = 1.581526868165e+06 bit
+
+Full PSO with BS optimization
+Feasible                  = 1
+EE                        = 5.299122836879e+03 bit/J
+Fitness                   = 5.299122836879e+03
+Total bits                = 4.299661472868e+07 bit
+Total UAV energy          = 8.113911689204e+03 J
+Cruise energy             = 4.666158969119e+03 J
+Hover energy              = 3.447752665593e+03 J
+RF transmit energy        = 5.449211101655e-05 J
+Harvested energy          = 5.449211101655e-05 J
+Total flight distance     = 664.796493893 m
+Flight time               = 42.832065839 s
+Total hover time          = 20.000000000 s
+Mission time              = 62.832065839 s
+Excess energy             = 0.000000000000e+00 J
+Bits per user:
+  User 1                  = 5.938356607934e+06 bit
+  User 2                  = 1.443641282421e+07 bit
+  User 3                  = 4.961997317335e+06 bit
+  User 4                  = 1.465848166904e+07 bit
+  User 5                  = 3.001366310170e+06 bit
+Bit shortfall per user:
+  User 1                  = 0.000000000000e+00 bit
+  User 2                  = 0.000000000000e+00 bit
+  User 3                  = 0.000000000000e+00 bit
+  User 4                  = 0.000000000000e+00 bit
+  User 5                  = 0.000000000000e+00 bit
+
+Full IPSO with BS optimization
+Feasible                  = 1
+EE                        = 5.590655007959e+03 bit/J
+Fitness                   = 5.590655007959e+03
+Total bits                = 4.400287100316e+07 bit
+Total UAV energy          = 7.870789905748e+03 J
+Cruise energy             = 4.423037187747e+03 J
+Hover energy              = 3.447752665593e+03 J
+RF transmit energy        = 5.240820263733e-05 J
+Harvested energy          = 5.240820263733e-05 J
+Total flight distance     = 630.158473861 m
+Flight time               = 40.600378446 s
+Total hover time          = 20.000000000 s
+Mission time              = 60.600378446 s
+Excess energy             = 0.000000000000e+00 J
+Bits per user:
+  User 1                  = 6.557822705768e+06 bit
+  User 2                  = 1.309667191394e+07 bit
+  User 3                  = 3.679992672190e+06 bit
+  User 4                  = 1.766838303938e+07 bit
+  User 5                  = 3.000000671886e+06 bit
+Bit shortfall per user:
+  User 1                  = 0.000000000000e+00 bit
+  User 2                  = 0.000000000000e+00 bit
+  User 3                  = 0.000000000000e+00 bit
+  User 4                  = 0.000000000000e+00 bit
+  User 5                  = 0.000000000000e+00 bit

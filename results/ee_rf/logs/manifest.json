@@ -1,0 +1,58 @@
+{
+  "runs": [
+    {
+      "file": "seed3486784401_L1Mbit.log",
+      "main_seed": 3486784401,
+      "min_bits_per_user": 1000000,
+      "L_source": "User-provided run labels in the conversation; raw logs do not print L.",
+      "source_attachment": "/Users/fuzzefer/.codex/attachments/9d95c4ea-ec10-4ef3-b8f1-2883c52fce86/Văn bản đã dán.txt",
+      "bytes": 26296,
+      "sha256": "5d7f806b434fab7ac51fa7a6c875c5d6da91fa39f55ba6138e6a1ce90e11565c"
+    },
+    {
+      "file": "seed3486784401_L1p5Mbit.log",
+      "main_seed": 3486784401,
+      "min_bits_per_user": 1500000,
+      "L_source": "User-provided run labels in the conversation; raw logs do not print L.",
+      "source_attachment": "/Users/fuzzefer/.codex/attachments/46181a94-a3c5-43d7-9b30-a43186257ea9/Văn bản đã dán.txt",
+      "bytes": 26159,
+      "sha256": "3cec59dea818881d1d0f5a0daf990b624aebeef6a6e922290f575c05a82d62ad"
+    },
+    {
+      "file": "seed3486784401_L2Mbit.log",
+      "main_seed": 3486784401,
+      "min_bits_per_user": 2000000,
+      "L_source": "User-provided run labels in the conversation; raw logs do not print L.",
+      "source_attachment": "/Users/fuzzefer/.codex/attachments/4b37121e-e5a9-4b91-a7dc-5a513b6f9826/Văn bản đã dán.txt",
+      "bytes": 25220,
+      "sha256": "fef50566b58eac729b35d675a1a157836e0be8463a1d1ab86f60f63f7a805bfc"
+    },
+    {
+      "file": "seed3486784401_L3Mbit.log",
+      "main_seed": 3486784401,
+      "min_bits_per_user": 3000000,
+      "L_source": "User-provided run labels in the conversation; raw logs do not print L.",
+      "source_attachment": "/Users/fuzzefer/.codex/attachments/93e99d9e-d949-4d16-81c2-6525ca69cb2a/Văn bản đã dán.txt",
+      "bytes": 25624,
+      "sha256": "8b78ca1b15aa8b7c9882dfd743a5de9f526c40082884f49cad925212ded99aca"
+    },
+    {
+      "file": "seed3486784401_L4Mbit.log",
+      "main_seed": 3486784401,
+      "min_bits_per_user": 4000000,
+      "L_source": "User-provided run labels in the conversation; raw logs do not print L.",
+      "source_attachment": "/Users/fuzzefer/.codex/attachments/5a655594-aea9-48a9-92ab-8fb449a5f6a3/Văn bản đã dán.txt",
+      "bytes": 25573,
+      "sha256": "ce78ce2f7d9e24e84bd1125d1733571a859b18dacc1467b620c2bea6792d31cb"
+    },
+    {
+      "file": "seed3486784401_L4p2Mbit.log",
+      "main_seed": 3486784401,
+      "min_bits_per_user": 4200000,
+      "L_source": "User-provided run labels in the conversation; raw logs do not print L.",
+      "source_attachment": "/Users/fuzzefer/.codex/attachments/16ad5d23-df93-4e99-80b6-c0a1034bda2b/Văn bản đã dán.txt",
+      "bytes": 25467,
+      "sha256": "6266224d41acea800d94cbd6f5d6e282d836ec6b4beb2def1a513d7377657da6"
+    }
+  ]
+}

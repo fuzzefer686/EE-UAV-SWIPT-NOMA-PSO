@@ -164,4 +164,9 @@ function [fitness, result] = evaluateTrajectory_SWIPT_clean(vars, sim)
     result.roughNorm = roughNorm;
     result.lambdaMean = lambdaMean;
     result.lambdaSmooth = lambdaSmooth;
+
+    if isfield(sim, 'objectiveMode') && strcmpi(sim.objectiveMode, 'ee-rf')
+        result = addRFSlotMetrics(result, sim);
+        fitness = result.fitness;
+    end
 end

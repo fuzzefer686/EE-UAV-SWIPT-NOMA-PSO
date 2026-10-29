@@ -230,4 +230,9 @@ function [fitness, result] = evaluateTrajectory_JointSWIPT_clean(vars, sim)
     result.lambdaFair = lambdaFair;
     result.fairPenalty = fairPenalty;
     result.jointAlphaRepair = jointAlphaRepair;
+
+    if isfield(sim, 'objectiveMode') && strcmpi(sim.objectiveMode, 'ee-rf')
+        result = addRFSlotMetrics(result, sim);
+        fitness = result.fitness;
+    end
 end

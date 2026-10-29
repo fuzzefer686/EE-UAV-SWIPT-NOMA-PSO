@@ -1,0 +1,6007 @@
+{
+  "date": "2026-10-22",
+  "purpose": "Correct figure folder labels using visual PNG inspection and numeric FIG verification.",
+  "limitations": "Saved figures do not directly store sim.minBitsPerUser. Binding values support inferred labels; the 1.5 Mbit label is retained from the original name and is not independently provable from final totals. No plots, FIG contents or simulation code were changed.",
+  "renames": [
+    {
+      "old_folder": "run_L1e6",
+      "new_folder": "seed2026_L1Mbit",
+      "main_seed": 2026,
+      "min_bits_per_user": 1000000,
+      "label_basis": "Inferred from binding per-user mission-bit curves and numeric FIG data.",
+      "evidence": "Figure 11: IPSO User 5 raw endpoint 1.000000001 Mbit.",
+      "seed_basis": "User confirmed current seed 2026; figure user coordinates match seed-2026 baseline.",
+      "user_coordinates": [
+        {
+          "xUser": [
+            108,
+            222,
+            147,
+            104,
+            159
+          ],
+          "yUser": [
+            137,
+            88,
+            224,
+            212,
+            193
+          ]
+        }
+      ],
+      "observed_figure_data": [
+        {
+          "number": 1,
+          "axes": {
+            "title": "Trajectory: Baseline vs Full PSO vs Full IPSO",
+            "lines": [
+              {
+                "name": "Full Joint (IPSO)",
+                "color": [
+                  0.635,
+                  0.078,
+                  0.184
+                ],
+                "marker": "diamond",
+                "style": "-",
+                "count": 21,
+                "last": 0,
+                "sumFirst20Half": 1575,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "Full Joint (PSO)",
+                "color": [
+                  0.466,
+                  0.674,
+                  0.188
+                ],
+                "marker": "^",
+                "style": "-",
+                "count": 21,
+                "last": 0,
+                "sumFirst20Half": 1575,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "Baseline",
+                "color": [
+                  0,
+                  0.447,
+                  0.741
+                ],
+                "marker": "o",
+                "style": "--",
+                "count": 21,
+                "last": 0,
+                "sumFirst20Half": 1575,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "UAV End",
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "marker": "square",
+                "style": "none",
+                "count": 1,
+                "last": 0,
+                "sumFirst20Half": 0,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "UAV Start",
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "marker": "o",
+                "style": "none",
+                "count": 1,
+                "last": 300,
+                "sumFirst20Half": 150,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "",
+                "color": [
+                  0.635,
+                  0.078,
+                  0.184
+                ],
+                "marker": "none",
+                "style": "-",
+                "count": 2,
+                "last": 0,
+                "sumFirst20Half": 0,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "",
+                "color": [
+                  0.635,
+                  0.078,
+                  0.184
+                ],
+                "marker": "none",
+                "style": "-",
+                "count": 2,
+                "last": 200,
+                "sumFirst20Half": 200,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "",
+                "color": [
+                  0.635,
+                  0.078,
+                  0.184
+                ],
+                "marker": "none",
+                "style": "-",
+                "count": 2,
+                "last": 300,
+                "sumFirst20Half": 300,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "",
+                "color": [
+                  0.466,
+                  0.674,
+                  0.188
+                ],
+                "marker": "none",
+                "style": "-",
+                "count": 2,
+                "last": 0,
+                "sumFirst20Half": 0,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "",
+                "color": [
+                  0.466,
+                  0.674,
+                  0.188
+                ],
+                "marker": "none",
+                "style": "-",
+                "count": 2,
+                "last": 200,
+                "sumFirst20Half": 200,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "",
+                "color": [
+                  0.466,
+                  0.674,
+                  0.188
+                ],
+                "marker": "none",
+                "style": "-",
+                "count": 2,
+                "last": 300,
+                "sumFirst20Half": 300,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "",
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "marker": "none",
+                "style": "-",
+                "count": 2,
+                "last": 0,
+                "sumFirst20Half": 0,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "",
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "marker": "none",
+                "style": "-",
+                "count": 2,
+                "last": 150,
+                "sumFirst20Half": 150,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "",
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "marker": "none",
+                "style": "-",
+                "count": 2,
+                "last": 300,
+                "sumFirst20Half": 300,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "Opt BS (IPSO)",
+                "color": [
+                  0.635,
+                  0.078,
+                  0.184
+                ],
+                "marker": "hexagram",
+                "style": "none",
+                "count": 3,
+                "last": 0,
+                "sumFirst20Half": 250,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "Opt BS (PSO)",
+                "color": [
+                  0.466,
+                  0.674,
+                  0.188
+                ],
+                "marker": "pentagram",
+                "style": "none",
+                "count": 3,
+                "last": 0,
+                "sumFirst20Half": 250,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "Initial BS",
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "marker": "^",
+                "style": "none",
+                "count": 3,
+                "last": 0,
+                "sumFirst20Half": 225,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "Ground Users",
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "marker": "*",
+                "style": "none",
+                "count": 5,
+                "last": 193,
+                "sumFirst20Half": 427,
+                "x": [
+                  108,
+                  222,
+                  147,
+                  104,
+                  159
+                ],
+                "y": [
+                  137,
+                  88,
+                  224,
+                  212,
+                  193
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "number": 4,
+          "axes": {
+            "title": "Per-user achievable rate: Full PSO Joint SWIPT vs Full IPSO Joint SWIPT, N = 5",
+            "lines": [
+              {
+                "name": "User 5 - Full IPSO",
+                "color": [
+                  0.231,
+                  0.666,
+                  0.196
+                ],
+                "marker": "square",
+                "style": "-",
+                "count": 21,
+                "last": 5998.919317786764,
+                "sumFirst20Half": 1000096.8782918226,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "User 4 - Full IPSO",
+                "color": [
+                  0.521,
+                  0.086,
+                  0.819
+                ],
+                "marker": "square",
+                "style": "-",
+                "count": 21,
+                "last": 510.3856602811486,
+                "sumFirst20Half": 9567755.034190176,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "User 3 - Full IPSO",
+                "color": [
+                  0.929,
+                  0.694,
+                  0.125
+                ],
+                "marker": "square",
+                "style": "-",
+                "count": 21,
+                "last": 15245.33816111714,
+                "sumFirst20Half": 3299286.7663236815,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "User 2 - Full IPSO",
+                "color": [
+                  0.866,
+                  0.329,
+                  0
+                ],
+                "marker": "square",
+                "style": "-",
+                "count": 21,
+                "last": 313.514105680464,
+                "sumFirst20Half": 3129240.2209763224,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "User 1 - Full IPSO",
+                "color": [
+                  0.066,
+                  0.443,
+                  0.745
+                ],
+                "marker": "square",
+                "style": "-",
+                "count": 21,
+                "last": 7585.037319602958,
+                "sumFirst20Half": 3844778.6057368275,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "User 5 - Full PSO",
+                "color": [
+                  0.231,
+                  0.666,
+                  0.196
+                ],
+                "marker": "o",
+                "style": "--",
+                "count": 21,
+                "last": 5029.712629674518,
+                "sumFirst20Half": 1557783.63152623,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "User 4 - Full PSO",
+                "color": [
+                  0.521,
+                  0.086,
+                  0.819
+                ],
+                "marker": "o",
+                "style": "--",
+                "count": 21,
+                "last": 278.99847181486257,
+                "sumFirst20Half": 8156015.952018246,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "User 3 - Full PSO",
+                "color": [
+                  0.929,
+                  0.694,
+                  0.125
+                ],
+                "marker": "o",
+                "style": "--",
+                "count": 21,
+                "last": 19017.207102894878,
+                "sumFirst20Half": 4005284.214655359,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "User 2 - Full PSO",
+                "color": [
+                  0.866,
+                  0.329,
+                  0
+                ],
+                "marker": "o",
+                "style": "--",
+                "count": 21,
+                "last": 313.49894027871574,
+                "sumFirst20Half": 3607626.1842073337,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "User 1 - Full PSO",
+                "color": [
+                  0.066,
+                  0.443,
+                  0.745
+                ],
+                "marker": "o",
+                "style": "--",
+                "count": 21,
+                "last": 8974.489385485367,
+                "sumFirst20Half": 4336454.631942119,
+                "x": [],
+                "y": []
+              }
+            ]
+          }
+        },
+        {
+          "number": 6,
+          "axes": {
+            "title": [
+              "EE convergence of all three algorithms",
+              "Gaps: infeasible; lines: optimization; circles: after alpha polishing"
+            ],
+            "lines": [
+              {
+                "name": "",
+                "color": [
+                  0.635,
+                  0.078,
+                  0.184
+                ],
+                "marker": "o",
+                "style": "none",
+                "count": 1,
+                "last": 8233614556832.185,
+                "sumFirst20Half": 4116807278416.0923,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "Full IPSO",
+                "color": [
+                  0.635,
+                  0.078,
+                  0.184
+                ],
+                "marker": "none",
+                "style": ":",
+                "count": 1001,
+                "last": 8223339511013.862,
+                "sumFirst20Half": 39861605491875.195,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "",
+                "color": [
+                  0.466,
+                  0.674,
+                  0.188
+                ],
+                "marker": "o",
+                "style": "none",
+                "count": 1,
+                "last": 8479872525390.533,
+                "sumFirst20Half": 4239936262695.2666,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "Full PSO",
+                "color": [
+                  0.466,
+                  0.674,
+                  0.188
+                ],
+                "marker": "none",
+                "style": "--",
+                "count": 1001,
+                "last": 8471034912764.663,
+                "sumFirst20Half": 47061460628587.41,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "Joint PSO",
+                "color": [
+                  0.85,
+                  0.325,
+                  0.098
+                ],
+                "marker": "none",
+                "style": "-",
+                "count": 1001,
+                "last": 7687714509590.976,
+                "sumFirst20Half": null,
+                "x": [],
+                "y": []
+              }
+            ]
+          }
+        },
+        {
+          "number": 11,
+          "axes": [
+            {
+              "title": [
+                "Full IPSO",
+                "Total over mission slots; circles: after alpha polishing"
+              ],
+              "lines": [
+                {
+                  "name": "",
+                  "color": [
+                    0.231,
+                    0.666,
+                    0.196
+                  ],
+                  "marker": "o",
+                  "style": "none",
+                  "count": 1,
+                  "last": 1.0000968782918227,
+                  "sumFirst20Half": 0.5000484391459113,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "User 5",
+                  "color": [
+                    0.231,
+                    0.666,
+                    0.196
+                  ],
+                  "marker": "none",
+                  "style": "-",
+                  "count": 1001,
+                  "last": 1.0000000008562553,
+                  "sumFirst20Half": 11.089154372475019,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "",
+                  "color": [
+                    0.521,
+                    0.086,
+                    0.819
+                  ],
+                  "marker": "o",
+                  "style": "none",
+                  "count": 1,
+                  "last": 9.567755034190176,
+                  "sumFirst20Half": 4.783877517095088,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "User 4",
+                  "color": [
+                    0.521,
+                    0.086,
+                    0.819
+                  ],
+                  "marker": "none",
+                  "style": "-",
+                  "count": 1001,
+                  "last": 9.55256133310075,
+                  "sumFirst20Half": 57.82074718354503,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "",
+                  "color": [
+                    0.929,
+                    0.694,
+                    0.125
+                  ],
+                  "marker": "o",
+                  "style": "none",
+                  "count": 1,
+                  "last": 3.2992867663236813,
+                  "sumFirst20Half": 1.6496433831618407,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "User 3",
+                  "color": [
+                    0.929,
+                    0.694,
+                    0.125
+                  ],
+                  "marker": "none",
+                  "style": "-",
+                  "count": 1001,
+                  "last": 3.306363509129457,
+                  "sumFirst20Half": 23.69506242830292,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "",
+                  "color": [
+                    0.866,
+                    0.329,
+                    0
+                  ],
+                  "marker": "o",
+                  "style": "none",
+                  "count": 1,
+                  "last": 3.1292402209763224,
+                  "sumFirst20Half": 1.5646201104881612,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "User 2",
+                  "color": [
+                    0.866,
+                    0.329,
+                    0
+                  ],
+                  "marker": "none",
+                  "style": "-",
+                  "count": 1001,
+                  "last": 3.1226680756661422,
+                  "sumFirst20Half": 30.593105635102376,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "",
+                  "color": [
+                    0.066,
+                    0.443,
+                    0.745
+                  ],
+                  "marker": "o",
+                  "style": "none",
+                  "count": 1,
+                  "last": 3.8447786057368276,
+                  "sumFirst20Half": 1.9223893028684138,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "User 1",
+                  "color": [
+                    0.066,
+                    0.443,
+                    0.745
+                  ],
+                  "marker": "none",
+                  "style": "-",
+                  "count": 1001,
+                  "last": 3.8335561008457377,
+                  "sumFirst20Half": 25.437051101714818,
+                  "x": [],
+                  "y": []
+                }
+              ]
+            },
+            {
+              "title": [
+                "Full PSO",
+                "Total over mission slots; circles: after alpha polishing"
+              ],
+              "lines": [
+                {
+                  "name": "",
+                  "color": [
+                    0.231,
+                    0.666,
+                    0.196
+                  ],
+                  "marker": "o",
+                  "style": "none",
+                  "count": 1,
+                  "last": 1.55778363152623,
+                  "sumFirst20Half": 0.778891815763115,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "User 5",
+                  "color": [
+                    0.231,
+                    0.666,
+                    0.196
+                  ],
+                  "marker": "none",
+                  "style": "-",
+                  "count": 1001,
+                  "last": 1.5582061153372302,
+                  "sumFirst20Half": 13.610038842932102,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "",
+                  "color": [
+                    0.521,
+                    0.086,
+                    0.819
+                  ],
+                  "marker": "o",
+                  "style": "none",
+                  "count": 1,
+                  "last": 8.156015952018246,
+                  "sumFirst20Half": 4.078007976009123,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "User 4",
+                  "color": [
+                    0.521,
+                    0.086,
+                    0.819
+                  ],
+                  "marker": "none",
+                  "style": "-",
+                  "count": 1001,
+                  "last": 8.136559280448198,
+                  "sumFirst20Half": 55.54634386575507,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "",
+                  "color": [
+                    0.929,
+                    0.694,
+                    0.125
+                  ],
+                  "marker": "o",
+                  "style": "none",
+                  "count": 1,
+                  "last": 4.005284214655359,
+                  "sumFirst20Half": 2.0026421073276794,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "User 3",
+                  "color": [
+                    0.929,
+                    0.694,
+                    0.125
+                  ],
+                  "marker": "none",
+                  "style": "-",
+                  "count": 1001,
+                  "last": 4.007167886252835,
+                  "sumFirst20Half": 29.39930584690446,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "",
+                  "color": [
+                    0.866,
+                    0.329,
+                    0
+                  ],
+                  "marker": "o",
+                  "style": "none",
+                  "count": 1,
+                  "last": 3.6076261842073336,
+                  "sumFirst20Half": 1.8038130921036668,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "User 2",
+                  "color": [
+                    0.866,
+                    0.329,
+                    0
+                  ],
+                  "marker": "none",
+                  "style": "-",
+                  "count": 1001,
+                  "last": 3.6126815289225553,
+                  "sumFirst20Half": 24.55648803281973,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "",
+                  "color": [
+                    0.066,
+                    0.443,
+                    0.745
+                  ],
+                  "marker": "o",
+                  "style": "none",
+                  "count": 1,
+                  "last": 4.33645463194212,
+                  "sumFirst20Half": 2.16822731597106,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "User 1",
+                  "color": [
+                    0.066,
+                    0.443,
+                    0.745
+                  ],
+                  "marker": "none",
+                  "style": "-",
+                  "count": 1001,
+                  "last": 4.325972735568315,
+                  "sumFirst20Half": 33.33089281465399,
+                  "x": [],
+                  "y": []
+                }
+              ]
+            },
+            {
+              "title": [
+                "Joint PSO",
+                "Total over mission slots; circles: after alpha polishing"
+              ],
+              "lines": [
+                {
+                  "name": "User 5",
+                  "color": [
+                    0.231,
+                    0.666,
+                    0.196
+                  ],
+                  "marker": "none",
+                  "style": "-",
+                  "count": 1001,
+                  "last": 1.553830940129771,
+                  "sumFirst20Half": 12.462799159962257,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "User 4",
+                  "color": [
+                    0.521,
+                    0.086,
+                    0.819
+                  ],
+                  "marker": "none",
+                  "style": "-",
+                  "count": 1001,
+                  "last": 6.529828971426067,
+                  "sumFirst20Half": 39.848775031395434,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "User 3",
+                  "color": [
+                    0.929,
+                    0.694,
+                    0.125
+                  ],
+                  "marker": "none",
+                  "style": "-",
+                  "count": 1001,
+                  "last": 2.9904606906134608,
+                  "sumFirst20Half": 22.79646993743714,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "User 2",
+                  "color": [
+                    0.866,
+                    0.329,
+                    0
+                  ],
+                  "marker": "none",
+                  "style": "-",
+                  "count": 1001,
+                  "last": 5.432812045597464,
+                  "sumFirst20Half": 21.240589691636092,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "User 1",
+                  "color": [
+                    0.066,
+                    0.443,
+                    0.745
+                  ],
+                  "marker": "none",
+                  "style": "-",
+                  "count": 1001,
+                  "last": 4.206762052502001,
+                  "sumFirst20Half": 15.125373482993213,
+                  "x": [],
+                  "y": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "file": "figure_01.fig",
+          "bytes": 15985,
+          "sha256": "98fe12c7f8c284a7b097b9013a018f5d600871bd2e1bf8e978eb088a71f6b9dc"
+        },
+        {
+          "file": "figure_01.png",
+          "bytes": 257574,
+          "sha256": "a73aca97cc8e9ce5ffe8ddee7e1e510b100a778ffcbd86e0aeb838e4dc11dc3c"
+        },
+        {
+          "file": "figure_02.fig",
+          "bytes": 11717,
+          "sha256": "e6f8799e6be1f0dce61a01af62c335d8e7869c2b6aa0a02ec215197b79a700e7"
+        },
+        {
+          "file": "figure_02.png",
+          "bytes": 167486,
+          "sha256": "8db0bf4052bdf815d64f8ae6793c73e139897df425d430600f090d0020d9a833"
+        },
+        {
+          "file": "figure_04.fig",
+          "bytes": 15034,
+          "sha256": "e2517d269f0522bc5a257010f95940ee272141ebd50b58a9470d115453b81d2c"
+        },
+        {
+          "file": "figure_04.png",
+          "bytes": 240786,
+          "sha256": "fc80eefcc8e38bebe4d6421dbb689d50c7365e5d5431c6da9b0acfad1a5e583f"
+        },
+        {
+          "file": "figure_05.fig",
+          "bytes": 10694,
+          "sha256": "ea9b025410f860b6a3bae540b9d78a96611ce905d3eb1fe1547dbe6d4a0c7af8"
+        },
+        {
+          "file": "figure_05.png",
+          "bytes": 154292,
+          "sha256": "3e969944061097e07a938d35be521b53c949d23eadb9abf759320d2b0dd8d1f8"
+        },
+        {
+          "file": "figure_06.fig",
+          "bytes": 35487,
+          "sha256": "70d759d1f5245df5ea1f1804aa4f858bbc7eaa555868e057f47419dd6ff81678"
+        },
+        {
+          "file": "figure_06.png",
+          "bytes": 119453,
+          "sha256": "0e56051c0335a397f0da58d7677878e4335bae3631979a1135f229a75a25d787"
+        },
+        {
+          "file": "figure_07.fig",
+          "bytes": 35678,
+          "sha256": "3c1d0dda816a70b50d366c37bdc785ac38fa8db12179cfbcb41e0d0be7fa631c"
+        },
+        {
+          "file": "figure_07.png",
+          "bytes": 130016,
+          "sha256": "dfdb92c17e6c2e177071d9753b051c5bd3d152943623a097a477ac9f8ee52135"
+        },
+        {
+          "file": "figure_08.fig",
+          "bytes": 35674,
+          "sha256": "2241c51c1397c0104906c55a3639b21fe77fe64e3b3a36cfef6b8c8fb6e1704e"
+        },
+        {
+          "file": "figure_08.png",
+          "bytes": 125872,
+          "sha256": "b5783a59b52be1b963e5aa15f5961c5828362121fcb37ddca0d5762a7709aeed"
+        },
+        {
+          "file": "figure_09.fig",
+          "bytes": 32633,
+          "sha256": "576a61f284e52cec39e60042e8a202b2280e09202459fc149d493fd6d5e2d6c5"
+        },
+        {
+          "file": "figure_09.png",
+          "bytes": 281003,
+          "sha256": "1a5223b2dc2c278fbbedbfb1e887f7cfabd77a032a76b245cc53c727fda30ed8"
+        },
+        {
+          "file": "figure_10.fig",
+          "bytes": 12709,
+          "sha256": "82bc9347900b0ff377970f63070f6c0b5328a53562c88c877c2d9f6bf52164d1"
+        },
+        {
+          "file": "figure_10.png",
+          "bytes": 125335,
+          "sha256": "c36a1ab1c9219a7e05f7858fc2b8f694ae8f59a6eabdfaa2bdf0eda4abef72a9"
+        },
+        {
+          "file": "figure_11.fig",
+          "bytes": 153890,
+          "sha256": "df4891523b5d32dbe5a6c959e5bf0d3448688b1833721b4e693becb651b37cd5"
+        },
+        {
+          "file": "figure_11.png",
+          "bytes": 257262,
+          "sha256": "53196c7b533e0fbce655bc7eefc0a68fa55c19058efde41b41656f8187f26a50"
+        },
+        {
+          "file": "figure_12.fig",
+          "bytes": 372163,
+          "sha256": "7c41cf45518ec9199cb2fd7e0c88deafa4ca2ff554749d81cfa4118acac35ae2"
+        },
+        {
+          "file": "figure_12.png",
+          "bytes": 285019,
+          "sha256": "766b895d0ad9da52ac8bd1f4a31b9a03850c1494aa714abf03cc3193b8c709f2"
+        },
+        {
+          "file": "figure_13.fig",
+          "bytes": 153792,
+          "sha256": "6ce43f91047f247b0a60df3063064de58098f5c0acb4056882f446d4abc19141"
+        },
+        {
+          "file": "figure_13.png",
+          "bytes": 298441,
+          "sha256": "524a4f9385740f2e2594f0858adbd7d10134acc56d17bbe8d4230972e72fe13e"
+        },
+        {
+          "file": "figure_14.fig",
+          "bytes": 569231,
+          "sha256": "e874ddd0ec9c3b8a7923708affdd79eab4e3f8a14de1d454e2cd4da6723e58af"
+        },
+        {
+          "file": "figure_14.png",
+          "bytes": 181016,
+          "sha256": "673c997305046703db65021b432e39ece91244600dbafcf0f864f1d7219b4e04"
+        },
+        {
+          "file": "figure_15.fig",
+          "bytes": 561356,
+          "sha256": "95f8fa289f68177949d46286dbae9059bb5e61e49b2372ab519380e88f686bde"
+        },
+        {
+          "file": "figure_15.png",
+          "bytes": 175214,
+          "sha256": "33740c69744bfc38a66f91554157f93476ff27ceedf01336d16ac364fdfe8aeb"
+        },
+        {
+          "file": "figure_16.fig",
+          "bytes": 613252,
+          "sha256": "b3e6636d5154ec9956ffc362e52267d3cd7693d0a7cf7d415ee9562419013e3b"
+        },
+        {
+          "file": "figure_16.png",
+          "bytes": 182362,
+          "sha256": "ac5c810e442cb39794eac854df65297363ae3694809af792ca22718eea7a4388"
+        }
+      ]
+    },
+    {
+      "old_folder": "run_L1p5e6",
+      "new_folder": "seed2026_L1p5Mbit",
+      "main_seed": 2026,
+      "min_bits_per_user": 1500000,
+      "label_basis": "Retained existing label; consistent but not uniquely determined from saved plots.",
+      "evidence": "Existing L=1.5 label retained; Figure 4 gives final minima 1.511062405 (Full PSO) and 1.512864850 (IPSO) Mbit. Compatible with 1.5, but the exact target is not uniquely recoverable from these figures.",
+      "seed_basis": "User confirmed current seed 2026; figure user coordinates match seed-2026 baseline.",
+      "user_coordinates": [
+        {
+          "xUser": [
+            108,
+            222,
+            147,
+            104,
+            159
+          ],
+          "yUser": [
+            137,
+            88,
+            224,
+            212,
+            193
+          ]
+        }
+      ],
+      "observed_figure_data": [
+        {
+          "number": 1,
+          "axes": {
+            "title": "Trajectory: Baseline vs Full PSO vs Full IPSO",
+            "lines": [
+              {
+                "name": "Full Joint (IPSO)",
+                "color": [
+                  0.635,
+                  0.078,
+                  0.184
+                ],
+                "marker": "diamond",
+                "style": "-",
+                "count": 21,
+                "last": 0,
+                "sumFirst20Half": 1575,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "Full Joint (PSO)",
+                "color": [
+                  0.466,
+                  0.674,
+                  0.188
+                ],
+                "marker": "^",
+                "style": "-",
+                "count": 21,
+                "last": 0,
+                "sumFirst20Half": 1575,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "Baseline",
+                "color": [
+                  0,
+                  0.447,
+                  0.741
+                ],
+                "marker": "o",
+                "style": "--",
+                "count": 21,
+                "last": 0,
+                "sumFirst20Half": 1575,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "UAV End",
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "marker": "square",
+                "style": "none",
+                "count": 1,
+                "last": 0,
+                "sumFirst20Half": 0,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "UAV Start",
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "marker": "o",
+                "style": "none",
+                "count": 1,
+                "last": 300,
+                "sumFirst20Half": 150,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "",
+                "color": [
+                  0.635,
+                  0.078,
+                  0.184
+                ],
+                "marker": "none",
+                "style": "-",
+                "count": 2,
+                "last": 0,
+                "sumFirst20Half": 0,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "",
+                "color": [
+                  0.635,
+                  0.078,
+                  0.184
+                ],
+                "marker": "none",
+                "style": "-",
+                "count": 2,
+                "last": 200,
+                "sumFirst20Half": 200,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "",
+                "color": [
+                  0.635,
+                  0.078,
+                  0.184
+                ],
+                "marker": "none",
+                "style": "-",
+                "count": 2,
+                "last": 300,
+                "sumFirst20Half": 300,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "",
+                "color": [
+                  0.466,
+                  0.674,
+                  0.188
+                ],
+                "marker": "none",
+                "style": "-",
+                "count": 2,
+                "last": 0,
+                "sumFirst20Half": 0,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "",
+                "color": [
+                  0.466,
+                  0.674,
+                  0.188
+                ],
+                "marker": "none",
+                "style": "-",
+                "count": 2,
+                "last": 200,
+                "sumFirst20Half": 200,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "",
+                "color": [
+                  0.466,
+                  0.674,
+                  0.188
+                ],
+                "marker": "none",
+                "style": "-",
+                "count": 2,
+                "last": 300,
+                "sumFirst20Half": 300,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "",
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "marker": "none",
+                "style": "-",
+                "count": 2,
+                "last": 0,
+                "sumFirst20Half": 0,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "",
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "marker": "none",
+                "style": "-",
+                "count": 2,
+                "last": 150,
+                "sumFirst20Half": 150,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "",
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "marker": "none",
+                "style": "-",
+                "count": 2,
+                "last": 300,
+                "sumFirst20Half": 300,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "Opt BS (IPSO)",
+                "color": [
+                  0.635,
+                  0.078,
+                  0.184
+                ],
+                "marker": "hexagram",
+                "style": "none",
+                "count": 3,
+                "last": 0,
+                "sumFirst20Half": 250,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "Opt BS (PSO)",
+                "color": [
+                  0.466,
+                  0.674,
+                  0.188
+                ],
+                "marker": "pentagram",
+                "style": "none",
+                "count": 3,
+                "last": 0,
+                "sumFirst20Half": 250,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "Initial BS",
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "marker": "^",
+                "style": "none",
+                "count": 3,
+                "last": 0,
+                "sumFirst20Half": 225,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "Ground Users",
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "marker": "*",
+                "style": "none",
+                "count": 5,
+                "last": 193,
+                "sumFirst20Half": 427,
+                "x": [
+                  108,
+                  222,
+                  147,
+                  104,
+                  159
+                ],
+                "y": [
+                  137,
+                  88,
+                  224,
+                  212,
+                  193
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "number": 4,
+          "axes": {
+            "title": "Per-user achievable rate: Full PSO Joint SWIPT vs Full IPSO Joint SWIPT, N = 5",
+            "lines": [
+              {
+                "name": "User 5 - Full IPSO",
+                "color": [
+                  0.231,
+                  0.666,
+                  0.196
+                ],
+                "marker": "square",
+                "style": "-",
+                "count": 21,
+                "last": 10069.22347213216,
+                "sumFirst20Half": 1512864.8499424981,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "User 4 - Full IPSO",
+                "color": [
+                  0.521,
+                  0.086,
+                  0.819
+                ],
+                "marker": "square",
+                "style": "-",
+                "count": 21,
+                "last": 279.0383864113905,
+                "sumFirst20Half": 9759556.406241626,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "User 3 - Full IPSO",
+                "color": [
+                  0.929,
+                  0.694,
+                  0.125
+                ],
+                "marker": "square",
+                "style": "-",
+                "count": 21,
+                "last": 44.67262008910816,
+                "sumFirst20Half": 2586127.852719093,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "User 2 - Full IPSO",
+                "color": [
+                  0.866,
+                  0.329,
+                  0
+                ],
+                "marker": "square",
+                "style": "-",
+                "count": 21,
+                "last": 313.49909092170566,
+                "sumFirst20Half": 5677720.037032517,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "User 1 - Full IPSO",
+                "color": [
+                  0.066,
+                  0.443,
+                  0.745
+                ],
+                "marker": "square",
+                "style": "-",
+                "count": 21,
+                "last": 130.32545069097512,
+                "sumFirst20Half": 4072244.078795443,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "User 5 - Full PSO",
+                "color": [
+                  0.231,
+                  0.666,
+                  0.196
+                ],
+                "marker": "o",
+                "style": "--",
+                "count": 21,
+                "last": 8022.434548875424,
+                "sumFirst20Half": 1511062.4050176302,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "User 4 - Full PSO",
+                "color": [
+                  0.521,
+                  0.086,
+                  0.819
+                ],
+                "marker": "o",
+                "style": "--",
+                "count": 21,
+                "last": 278.997465935511,
+                "sumFirst20Half": 9952010.64375789,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "User 3 - Full PSO",
+                "color": [
+                  0.929,
+                  0.694,
+                  0.125
+                ],
+                "marker": "o",
+                "style": "--",
+                "count": 21,
+                "last": 9013.26683628349,
+                "sumFirst20Half": 2479444.1711254087,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "User 2 - Full PSO",
+                "color": [
+                  0.866,
+                  0.329,
+                  0
+                ],
+                "marker": "o",
+                "style": "--",
+                "count": 21,
+                "last": 313.49894040682494,
+                "sumFirst20Half": 5309923.4676219635,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "User 1 - Full PSO",
+                "color": [
+                  0.066,
+                  0.443,
+                  0.745
+                ],
+                "marker": "o",
+                "style": "--",
+                "count": 21,
+                "last": 130.22824958255165,
+                "sumFirst20Half": 4194734.78710834,
+                "x": [],
+                "y": []
+              }
+            ]
+          }
+        },
+        {
+          "number": 6,
+          "axes": {
+            "title": [
+              "EE convergence of all three algorithms",
+              "Gaps: infeasible; lines: optimization; circles: after alpha polishing"
+            ],
+            "lines": [
+              {
+                "name": "",
+                "color": [
+                  0.635,
+                  0.078,
+                  0.184
+                ],
+                "marker": "o",
+                "style": "none",
+                "count": 1,
+                "last": 8840020585495.455,
+                "sumFirst20Half": 4420010292747.728,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "Full IPSO",
+                "color": [
+                  0.635,
+                  0.078,
+                  0.184
+                ],
+                "marker": "none",
+                "style": ":",
+                "count": 1001,
+                "last": 8839985918787.68,
+                "sumFirst20Half": 39857023023232.75,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "",
+                "color": [
+                  0.466,
+                  0.674,
+                  0.188
+                ],
+                "marker": "o",
+                "style": "none",
+                "count": 1,
+                "last": 8401813121965.861,
+                "sumFirst20Half": 4200906560982.9307,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "Full PSO",
+                "color": [
+                  0.466,
+                  0.674,
+                  0.188
+                ],
+                "marker": "none",
+                "style": "--",
+                "count": 1001,
+                "last": 8193858339851.118,
+                "sumFirst20Half": 46447875277468.03,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "Joint PSO",
+                "color": [
+                  0.85,
+                  0.325,
+                  0.098
+                ],
+                "marker": "none",
+                "style": "-",
+                "count": 1001,
+                "last": 7485220373202.161,
+                "sumFirst20Half": null,
+                "x": [],
+                "y": []
+              }
+            ]
+          }
+        }
+      ],
+      "files": [
+        {
+          "file": "figure_01.fig",
+          "bytes": 15981,
+          "sha256": "f18d134d136178e5215ae7e577bbb5c91ceef08d8292f76e576171c09d77383b"
+        },
+        {
+          "file": "figure_01.png",
+          "bytes": 251308,
+          "sha256": "db4706942265985adabc43f63a6b7be52780ca3e790e48ac261172935fef792e"
+        },
+        {
+          "file": "figure_02.fig",
+          "bytes": 11707,
+          "sha256": "a0486122ab1fcddf2c72853679a78295050c36e02c8a980011638cc0e6d19eff"
+        },
+        {
+          "file": "figure_02.png",
+          "bytes": 160348,
+          "sha256": "4911832343d55275119b89c4800f588377615f9adfa9f3c17286aef45e6bbe1e"
+        },
+        {
+          "file": "figure_04.fig",
+          "bytes": 15034,
+          "sha256": "c8c3e19f0f620de48dfe22e12d670901e1bc95352c9389016200a9f2aad81a58"
+        },
+        {
+          "file": "figure_04.png",
+          "bytes": 213777,
+          "sha256": "488adcced4535f92f50d7ba647f21031152efde23ce6bbec00ca1354f1e0c2e6"
+        },
+        {
+          "file": "figure_05.fig",
+          "bytes": 10701,
+          "sha256": "eaf42f01e963106288cbdc188bb5fbd82e45b64099529162a542ca6a7910233c"
+        },
+        {
+          "file": "figure_05.png",
+          "bytes": 151302,
+          "sha256": "43dd13fd46f65466af19778149af6860a38bcfc9266be830389fdf202b543103"
+        },
+        {
+          "file": "figure_06.fig",
+          "bytes": 35285,
+          "sha256": "341cdcdd1bab1dcbb00bb0a6bb43719b8044a61b27315f8aadea8f95b0ce3d09"
+        },
+        {
+          "file": "figure_06.png",
+          "bytes": 120537,
+          "sha256": "e7d19a8a694548dd7d675b7419206ad8ff51144edefdd946ed9165b2e6e9ecc6"
+        },
+        {
+          "file": "figure_07.fig",
+          "bytes": 35683,
+          "sha256": "fa880509b3dd2bf3435bfc57794f626f32e39078093bd6c5a4d7950b26247c11"
+        },
+        {
+          "file": "figure_07.png",
+          "bytes": 133672,
+          "sha256": "e1a52a663de28cb37176190f0fd24876035bde3474850ede8b5bb396bef3365a"
+        }
+      ]
+    },
+    {
+      "old_folder": "run_L2e6",
+      "new_folder": "seed2026_L2Mbit",
+      "main_seed": 2026,
+      "min_bits_per_user": 2000000,
+      "label_basis": "Inferred from binding per-user mission-bit curves and numeric FIG data.",
+      "evidence": "Figure 4: IPSO User 5 mission bits = 2.000014145 Mbit.",
+      "seed_basis": "User confirmed current seed 2026; figure user coordinates match seed-2026 baseline.",
+      "user_coordinates": [
+        {
+          "xUser": [
+            108,
+            222,
+            147,
+            104,
+            159
+          ],
+          "yUser": [
+            137,
+            88,
+            224,
+            212,
+            193
+          ]
+        }
+      ],
+      "observed_figure_data": [
+        {
+          "number": 1,
+          "axes": {
+            "title": "Trajectory: Baseline vs Full PSO vs Full IPSO",
+            "lines": [
+              {
+                "name": "Full Joint (IPSO)",
+                "color": [
+                  0.635,
+                  0.078,
+                  0.184
+                ],
+                "marker": "diamond",
+                "style": "-",
+                "count": 21,
+                "last": 0,
+                "sumFirst20Half": 1575,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "Full Joint (PSO)",
+                "color": [
+                  0.466,
+                  0.674,
+                  0.188
+                ],
+                "marker": "^",
+                "style": "-",
+                "count": 21,
+                "last": 0,
+                "sumFirst20Half": 1575,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "Baseline",
+                "color": [
+                  0,
+                  0.447,
+                  0.741
+                ],
+                "marker": "o",
+                "style": "--",
+                "count": 21,
+                "last": 0,
+                "sumFirst20Half": 1575,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "UAV End",
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "marker": "square",
+                "style": "none",
+                "count": 1,
+                "last": 0,
+                "sumFirst20Half": 0,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "UAV Start",
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "marker": "o",
+                "style": "none",
+                "count": 1,
+                "last": 300,
+                "sumFirst20Half": 150,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "",
+                "color": [
+                  0.635,
+                  0.078,
+                  0.184
+                ],
+                "marker": "none",
+                "style": "-",
+                "count": 2,
+                "last": 0,
+                "sumFirst20Half": 0,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "",
+                "color": [
+                  0.635,
+                  0.078,
+                  0.184
+                ],
+                "marker": "none",
+                "style": "-",
+                "count": 2,
+                "last": 200,
+                "sumFirst20Half": 200,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "",
+                "color": [
+                  0.635,
+                  0.078,
+                  0.184
+                ],
+                "marker": "none",
+                "style": "-",
+                "count": 2,
+                "last": 300,
+                "sumFirst20Half": 300,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "",
+                "color": [
+                  0.466,
+                  0.674,
+                  0.188
+                ],
+                "marker": "none",
+                "style": "-",
+                "count": 2,
+                "last": 0,
+                "sumFirst20Half": 0,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "",
+                "color": [
+                  0.466,
+                  0.674,
+                  0.188
+                ],
+                "marker": "none",
+                "style": "-",
+                "count": 2,
+                "last": 200,
+                "sumFirst20Half": 200,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "",
+                "color": [
+                  0.466,
+                  0.674,
+                  0.188
+                ],
+                "marker": "none",
+                "style": "-",
+                "count": 2,
+                "last": 300,
+                "sumFirst20Half": 300,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "",
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "marker": "none",
+                "style": "-",
+                "count": 2,
+                "last": 0,
+                "sumFirst20Half": 0,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "",
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "marker": "none",
+                "style": "-",
+                "count": 2,
+                "last": 150,
+                "sumFirst20Half": 150,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "",
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "marker": "none",
+                "style": "-",
+                "count": 2,
+                "last": 300,
+                "sumFirst20Half": 300,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "Opt BS (IPSO)",
+                "color": [
+                  0.635,
+                  0.078,
+                  0.184
+                ],
+                "marker": "hexagram",
+                "style": "none",
+                "count": 3,
+                "last": 0,
+                "sumFirst20Half": 250,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "Opt BS (PSO)",
+                "color": [
+                  0.466,
+                  0.674,
+                  0.188
+                ],
+                "marker": "pentagram",
+                "style": "none",
+                "count": 3,
+                "last": 0,
+                "sumFirst20Half": 250,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "Initial BS",
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "marker": "^",
+                "style": "none",
+                "count": 3,
+                "last": 0,
+                "sumFirst20Half": 225,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "Ground Users",
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "marker": "*",
+                "style": "none",
+                "count": 5,
+                "last": 193,
+                "sumFirst20Half": 427,
+                "x": [
+                  108,
+                  222,
+                  147,
+                  104,
+                  159
+                ],
+                "y": [
+                  137,
+                  88,
+                  224,
+                  212,
+                  193
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "number": 4,
+          "axes": {
+            "title": "Per-user achievable rate: Full PSO Joint SWIPT vs Full IPSO Joint SWIPT, N = 5",
+            "lines": [
+              {
+                "name": "User 5 - Full IPSO",
+                "color": [
+                  0.231,
+                  0.666,
+                  0.196
+                ],
+                "marker": "square",
+                "style": "-",
+                "count": 21,
+                "last": 10069.121570996305,
+                "sumFirst20Half": 2000014.1446691647,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "User 4 - Full IPSO",
+                "color": [
+                  0.521,
+                  0.086,
+                  0.819
+                ],
+                "marker": "square",
+                "style": "-",
+                "count": 21,
+                "last": 278.9984318085995,
+                "sumFirst20Half": 7048466.82392042,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "User 3 - Full IPSO",
+                "color": [
+                  0.929,
+                  0.694,
+                  0.125
+                ],
+                "marker": "square",
+                "style": "-",
+                "count": 21,
+                "last": 45.159070816562,
+                "sumFirst20Half": 4107508.739738861,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "User 2 - Full IPSO",
+                "color": [
+                  0.866,
+                  0.329,
+                  0
+                ],
+                "marker": "square",
+                "style": "-",
+                "count": 21,
+                "last": 313.49894731543486,
+                "sumFirst20Half": 4006401.4989544307,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "User 1 - Full IPSO",
+                "color": [
+                  0.066,
+                  0.443,
+                  0.745
+                ],
+                "marker": "square",
+                "style": "-",
+                "count": 21,
+                "last": 130.2305711011896,
+                "sumFirst20Half": 5246098.562023804,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "User 5 - Full PSO",
+                "color": [
+                  0.231,
+                  0.666,
+                  0.196
+                ],
+                "marker": "o",
+                "style": "--",
+                "count": 21,
+                "last": 4259.275620955998,
+                "sumFirst20Half": 2158335.9822577266,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "User 4 - Full PSO",
+                "color": [
+                  0.521,
+                  0.086,
+                  0.819
+                ],
+                "marker": "o",
+                "style": "--",
+                "count": 21,
+                "last": 278.9974698253202,
+                "sumFirst20Half": 6877591.663125943,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "User 3 - Full PSO",
+                "color": [
+                  0.929,
+                  0.694,
+                  0.125
+                ],
+                "marker": "o",
+                "style": "--",
+                "count": 21,
+                "last": 13525.203327140036,
+                "sumFirst20Half": 2538616.892332215,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "User 2 - Full PSO",
+                "color": [
+                  0.866,
+                  0.329,
+                  0
+                ],
+                "marker": "o",
+                "style": "--",
+                "count": 21,
+                "last": 313.49894094007954,
+                "sumFirst20Half": 3596533.247466708,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "User 1 - Full PSO",
+                "color": [
+                  0.066,
+                  0.443,
+                  0.745
+                ],
+                "marker": "o",
+                "style": "--",
+                "count": 21,
+                "last": 34535.8448356181,
+                "sumFirst20Half": 4687378.450177594,
+                "x": [],
+                "y": []
+              }
+            ]
+          }
+        },
+        {
+          "number": 6,
+          "axes": {
+            "title": [
+              "EE convergence of all three algorithms",
+              "Gaps: infeasible; lines: optimization; circles: after alpha polishing"
+            ],
+            "lines": [
+              {
+                "name": "",
+                "color": [
+                  0.635,
+                  0.078,
+                  0.184
+                ],
+                "marker": "o",
+                "style": "none",
+                "count": 1,
+                "last": 8907627492112.088,
+                "sumFirst20Half": 4453813746056.044,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "Full IPSO",
+                "color": [
+                  0.635,
+                  0.078,
+                  0.184
+                ],
+                "marker": "none",
+                "style": ":",
+                "count": 1001,
+                "last": 8907269735177.824,
+                "sumFirst20Half": null,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "",
+                "color": [
+                  0.466,
+                  0.674,
+                  0.188
+                ],
+                "marker": "o",
+                "style": "none",
+                "count": 1,
+                "last": 8133895714102.013,
+                "sumFirst20Half": 4066947857051.0063,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "Full PSO",
+                "color": [
+                  0.466,
+                  0.674,
+                  0.188
+                ],
+                "marker": "none",
+                "style": "--",
+                "count": 1001,
+                "last": 7815356814827.903,
+                "sumFirst20Half": null,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "Joint PSO",
+                "color": [
+                  0.85,
+                  0.325,
+                  0.098
+                ],
+                "marker": "none",
+                "style": "-",
+                "count": 1001,
+                "last": 5296830387096.103,
+                "sumFirst20Half": null,
+                "x": [],
+                "y": []
+              }
+            ]
+          }
+        }
+      ],
+      "files": [
+        {
+          "file": "figure_01.fig",
+          "bytes": 15985,
+          "sha256": "8cd3f33a48e55bf1df99ccc842c4e00eb981b90e6691c68f147860fad33666d6"
+        },
+        {
+          "file": "figure_01.png",
+          "bytes": 247614,
+          "sha256": "b5577c310164ad9b71cb5178f4ef4a1f9699ba6c388b03f0c70fa34a1da23a93"
+        },
+        {
+          "file": "figure_02.fig",
+          "bytes": 11712,
+          "sha256": "9a853e0ac69dba88581dc89834b5f2bef9251281b99f451a21f1a056f6905f4f"
+        },
+        {
+          "file": "figure_02.png",
+          "bytes": 166082,
+          "sha256": "1677a9c06918f0bea21f68a7556ecfa57253528d8ac9b32ee1404e4e19c0dc3a"
+        },
+        {
+          "file": "figure_04.fig",
+          "bytes": 15034,
+          "sha256": "cbed57e3ca4970db7d4f986a2cc77e9e4c4eb7c5bae998f09d3b6cc8b423ede1"
+        },
+        {
+          "file": "figure_04.png",
+          "bytes": 225953,
+          "sha256": "32da0bb7e60ac0c96d2126a0479df8e7d4d80b1cc0c4368dc3e21ed8ac407641"
+        },
+        {
+          "file": "figure_05.fig",
+          "bytes": 10703,
+          "sha256": "eb68b7db9f39e7afd2534fb23e098338f6bd694536ad7501bdf5734bfaec3496"
+        },
+        {
+          "file": "figure_05.png",
+          "bytes": 146620,
+          "sha256": "7f73f184fe69290fedbc5e68787250294d42d0d7928be43c98e41aad28dbd1c4"
+        },
+        {
+          "file": "figure_06.fig",
+          "bytes": 34819,
+          "sha256": "54bb79d57970a916c929e2ffb86dd6e38603c596b3ce5c7778ab4ed61a7515a9"
+        },
+        {
+          "file": "figure_06.png",
+          "bytes": 127534,
+          "sha256": "c010df51ec6a944fb11534f8044f38b3e5ec10119159fb617c9d8ba19d34c2ae"
+        }
+      ]
+    },
+    {
+      "old_folder": "run_L3e6",
+      "new_folder": "seed2026_L3Mbit",
+      "main_seed": 2026,
+      "min_bits_per_user": 3000000,
+      "label_basis": "Inferred from binding per-user mission-bit curves and numeric FIG data.",
+      "evidence": "Figure 4: User 5 mission bits = 3.000042652 (Full PSO), 3.000031114 (IPSO) Mbit.",
+      "seed_basis": "User confirmed current seed 2026; figure user coordinates match seed-2026 baseline.",
+      "user_coordinates": [
+        {
+          "xUser": [
+            108,
+            222,
+            147,
+            104,
+            159
+          ],
+          "yUser": [
+            137,
+            88,
+            224,
+            212,
+            193
+          ]
+        }
+      ],
+      "observed_figure_data": [
+        {
+          "number": 1,
+          "axes": {
+            "title": "Trajectory: Baseline vs Full PSO vs Full IPSO",
+            "lines": [
+              {
+                "name": "Full Joint (IPSO)",
+                "color": [
+                  0.635,
+                  0.078,
+                  0.184
+                ],
+                "marker": "diamond",
+                "style": "-",
+                "count": 21,
+                "last": 0,
+                "sumFirst20Half": 1575,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "Full Joint (PSO)",
+                "color": [
+                  0.466,
+                  0.674,
+                  0.188
+                ],
+                "marker": "^",
+                "style": "-",
+                "count": 21,
+                "last": 0,
+                "sumFirst20Half": 1575,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "Baseline",
+                "color": [
+                  0,
+                  0.447,
+                  0.741
+                ],
+                "marker": "o",
+                "style": "--",
+                "count": 21,
+                "last": 0,
+                "sumFirst20Half": 1575,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "UAV End",
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "marker": "square",
+                "style": "none",
+                "count": 1,
+                "last": 0,
+                "sumFirst20Half": 0,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "UAV Start",
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "marker": "o",
+                "style": "none",
+                "count": 1,
+                "last": 300,
+                "sumFirst20Half": 150,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "",
+                "color": [
+                  0.635,
+                  0.078,
+                  0.184
+                ],
+                "marker": "none",
+                "style": "-",
+                "count": 2,
+                "last": 0,
+                "sumFirst20Half": 0,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "",
+                "color": [
+                  0.635,
+                  0.078,
+                  0.184
+                ],
+                "marker": "none",
+                "style": "-",
+                "count": 2,
+                "last": 200,
+                "sumFirst20Half": 200,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "",
+                "color": [
+                  0.635,
+                  0.078,
+                  0.184
+                ],
+                "marker": "none",
+                "style": "-",
+                "count": 2,
+                "last": 300,
+                "sumFirst20Half": 300,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "",
+                "color": [
+                  0.466,
+                  0.674,
+                  0.188
+                ],
+                "marker": "none",
+                "style": "-",
+                "count": 2,
+                "last": 0,
+                "sumFirst20Half": 0,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "",
+                "color": [
+                  0.466,
+                  0.674,
+                  0.188
+                ],
+                "marker": "none",
+                "style": "-",
+                "count": 2,
+                "last": 200,
+                "sumFirst20Half": 200,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "",
+                "color": [
+                  0.466,
+                  0.674,
+                  0.188
+                ],
+                "marker": "none",
+                "style": "-",
+                "count": 2,
+                "last": 300,
+                "sumFirst20Half": 300,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "",
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "marker": "none",
+                "style": "-",
+                "count": 2,
+                "last": 0,
+                "sumFirst20Half": 0,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "",
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "marker": "none",
+                "style": "-",
+                "count": 2,
+                "last": 150,
+                "sumFirst20Half": 150,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "",
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "marker": "none",
+                "style": "-",
+                "count": 2,
+                "last": 300,
+                "sumFirst20Half": 300,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "Opt BS (IPSO)",
+                "color": [
+                  0.635,
+                  0.078,
+                  0.184
+                ],
+                "marker": "hexagram",
+                "style": "none",
+                "count": 3,
+                "last": 0,
+                "sumFirst20Half": 250,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "Opt BS (PSO)",
+                "color": [
+                  0.466,
+                  0.674,
+                  0.188
+                ],
+                "marker": "pentagram",
+                "style": "none",
+                "count": 3,
+                "last": 0,
+                "sumFirst20Half": 250,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "Initial BS",
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "marker": "^",
+                "style": "none",
+                "count": 3,
+                "last": 0,
+                "sumFirst20Half": 225,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "Ground Users",
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "marker": "*",
+                "style": "none",
+                "count": 5,
+                "last": 193,
+                "sumFirst20Half": 427,
+                "x": [
+                  108,
+                  222,
+                  147,
+                  104,
+                  159
+                ],
+                "y": [
+                  137,
+                  88,
+                  224,
+                  212,
+                  193
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "number": 4,
+          "axes": {
+            "title": "Per-user achievable rate: Full PSO Joint SWIPT vs Full IPSO Joint SWIPT, N = 5",
+            "lines": [
+              {
+                "name": "User 5 - Full IPSO",
+                "color": [
+                  0.231,
+                  0.666,
+                  0.196
+                ],
+                "marker": "square",
+                "style": "-",
+                "count": 21,
+                "last": 10151.933117093142,
+                "sumFirst20Half": 3000031.1140712197,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "User 4 - Full IPSO",
+                "color": [
+                  0.521,
+                  0.086,
+                  0.819
+                ],
+                "marker": "square",
+                "style": "-",
+                "count": 21,
+                "last": 281.3571820812728,
+                "sumFirst20Half": 3180235.960613746,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "User 3 - Full IPSO",
+                "color": [
+                  0.929,
+                  0.694,
+                  0.125
+                ],
+                "marker": "square",
+                "style": "-",
+                "count": 21,
+                "last": 48.59078538692814,
+                "sumFirst20Half": 3898096.8282674896,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "User 2 - Full IPSO",
+                "color": [
+                  0.866,
+                  0.329,
+                  0
+                ],
+                "marker": "square",
+                "style": "-",
+                "count": 21,
+                "last": 316.14088601192987,
+                "sumFirst20Half": 3714429.3084385865,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "User 1 - Full IPSO",
+                "color": [
+                  0.066,
+                  0.443,
+                  0.745
+                ],
+                "marker": "square",
+                "style": "-",
+                "count": 21,
+                "last": 131.851579998909,
+                "sumFirst20Half": 3818948.132710746,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "User 5 - Full PSO",
+                "color": [
+                  0.231,
+                  0.666,
+                  0.196
+                ],
+                "marker": "o",
+                "style": "--",
+                "count": 21,
+                "last": 21348.236903675963,
+                "sumFirst20Half": 3000042.6522372793,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "User 4 - Full PSO",
+                "color": [
+                  0.521,
+                  0.086,
+                  0.819
+                ],
+                "marker": "o",
+                "style": "--",
+                "count": 21,
+                "last": 683.6603311892204,
+                "sumFirst20Half": 11997592.809743954,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "User 3 - Full PSO",
+                "color": [
+                  0.929,
+                  0.694,
+                  0.125
+                ],
+                "marker": "o",
+                "style": "--",
+                "count": 21,
+                "last": 13050.557540109023,
+                "sumFirst20Half": 3000367.8471616227,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "User 2 - Full PSO",
+                "color": [
+                  0.866,
+                  0.329,
+                  0
+                ],
+                "marker": "o",
+                "style": "--",
+                "count": 21,
+                "last": 766.4109387973189,
+                "sumFirst20Half": 5153493.560094809,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "User 1 - Full PSO",
+                "color": [
+                  0.066,
+                  0.443,
+                  0.745
+                ],
+                "marker": "o",
+                "style": "--",
+                "count": 21,
+                "last": 620.3223885351196,
+                "sumFirst20Half": 4346768.28633305,
+                "x": [],
+                "y": []
+              }
+            ]
+          }
+        },
+        {
+          "number": 6,
+          "axes": {
+            "title": [
+              "EE convergence of all three algorithms",
+              "Gaps: infeasible; lines: optimization; circles: after alpha polishing"
+            ],
+            "lines": [
+              {
+                "name": "",
+                "color": [
+                  0.635,
+                  0.078,
+                  0.184
+                ],
+                "marker": "o",
+                "style": "none",
+                "count": 1,
+                "last": 7174299101998.912,
+                "sumFirst20Half": 3587149550999.456,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "Full IPSO",
+                "color": [
+                  0.635,
+                  0.078,
+                  0.184
+                ],
+                "marker": "none",
+                "style": ":",
+                "count": 1001,
+                "last": 7119740677513.884,
+                "sumFirst20Half": null,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "",
+                "color": [
+                  0.466,
+                  0.674,
+                  0.188
+                ],
+                "marker": "o",
+                "style": "none",
+                "count": 1,
+                "last": 3001282795045.9385,
+                "sumFirst20Half": 1500641397522.9692,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "Full PSO",
+                "color": [
+                  0.466,
+                  0.674,
+                  0.188
+                ],
+                "marker": "none",
+                "style": "--",
+                "count": 1001,
+                "last": 2995327863584.386,
+                "sumFirst20Half": null,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "Joint PSO",
+                "color": [
+                  0.85,
+                  0.325,
+                  0.098
+                ],
+                "marker": "none",
+                "style": "-",
+                "count": 1001,
+                "last": null,
+                "sumFirst20Half": null,
+                "x": [],
+                "y": []
+              }
+            ]
+          }
+        }
+      ],
+      "files": [
+        {
+          "file": "figure_01.fig",
+          "bytes": 16041,
+          "sha256": "991630095d89990af0d993bd1cc8b0b6c104cbc316685107734bd8f2105319f1"
+        },
+        {
+          "file": "figure_01.png",
+          "bytes": 276108,
+          "sha256": "fac6c3dc0b7672c4eed9f06be42500510f55945768e01d233d74938fea89f98b"
+        },
+        {
+          "file": "figure_02.fig",
+          "bytes": 11648,
+          "sha256": "3ad3e1221d6a3bc6950454589931dcac896cf26dfa12010541155ba39afea792"
+        },
+        {
+          "file": "figure_02.png",
+          "bytes": 188195,
+          "sha256": "f775b5a67899b2133f48532d0701d8d6e1485516220d229c09c2689cf3629823"
+        },
+        {
+          "file": "figure_04.fig",
+          "bytes": 15017,
+          "sha256": "e057d79e7a4173059c56379f5fea8243562fc404cff3825395bfddc8fc1b43ad"
+        },
+        {
+          "file": "figure_04.png",
+          "bytes": 264188,
+          "sha256": "dae757e238b9dbdf16e746901aeb5f1fe900fa790f0c8996bd6fffc66f9cecba"
+        },
+        {
+          "file": "figure_05.fig",
+          "bytes": 10880,
+          "sha256": "c69aa24a99fc263d1c4b0127976bb8ceec2f1f1f33a66b57e18c048449f40076"
+        },
+        {
+          "file": "figure_05.png",
+          "bytes": 156043,
+          "sha256": "28546ac2a6aed9c03e5e9caebc2c0d6ee0c7b756994871b385c75010b505df68"
+        },
+        {
+          "file": "figure_06.fig",
+          "bytes": 30563,
+          "sha256": "3313be70fc05b48c90689491d4341bd861f457dfdf7fdecf89511d9dcba36458"
+        },
+        {
+          "file": "figure_06.png",
+          "bytes": 119345,
+          "sha256": "4dfd980110679a8cb55d50edaa551b8a3b96206eb37cb069f505585d877e0488"
+        },
+        {
+          "file": "figure_07.fig",
+          "bytes": 33641,
+          "sha256": "5306611983e5fc66a96d3542ddd89ea6cbdbab5325f507d300b8382061e66f5e"
+        },
+        {
+          "file": "figure_07.png",
+          "bytes": 144607,
+          "sha256": "e06455794948c7640f41f68dbc6cfb018db9bd900fc09aad4ecad0c4f469006f"
+        }
+      ]
+    },
+    {
+      "old_folder": "run_L4e6",
+      "new_folder": "seed2026_L3Mbit",
+      "main_seed": 2026,
+      "min_bits_per_user": 3000000,
+      "label_basis": "Inferred from binding per-user mission-bit curves and numeric FIG data.",
+      "evidence": "Figure 11 has the same final per-user bit values and Figure 6 has the same final EE values as run_L3e6. This is an additional diagnostics set for L=3, not L=4.",
+      "seed_basis": "User confirmed current seed 2026; exact final per-user bits match the L=3 folder with verified seed-2026 coordinates.",
+      "user_coordinates": [],
+      "observed_figure_data": [
+        {
+          "number": 6,
+          "axes": {
+            "title": [
+              "EE convergence of all three algorithms",
+              "Gaps: infeasible; lines: optimization; circles: after alpha polishing"
+            ],
+            "lines": [
+              {
+                "name": "",
+                "color": [
+                  0.635,
+                  0.078,
+                  0.184
+                ],
+                "marker": "o",
+                "style": "none",
+                "count": 1,
+                "last": 7174299101998.912,
+                "sumFirst20Half": 3587149550999.456,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "Full IPSO",
+                "color": [
+                  0.635,
+                  0.078,
+                  0.184
+                ],
+                "marker": "none",
+                "style": ":",
+                "count": 1001,
+                "last": 7119740677513.884,
+                "sumFirst20Half": null,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "",
+                "color": [
+                  0.466,
+                  0.674,
+                  0.188
+                ],
+                "marker": "o",
+                "style": "none",
+                "count": 1,
+                "last": 3001282795045.9385,
+                "sumFirst20Half": 1500641397522.9692,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "Full PSO",
+                "color": [
+                  0.466,
+                  0.674,
+                  0.188
+                ],
+                "marker": "none",
+                "style": "--",
+                "count": 1001,
+                "last": 2995327863584.386,
+                "sumFirst20Half": null,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "Joint PSO",
+                "color": [
+                  0.85,
+                  0.325,
+                  0.098
+                ],
+                "marker": "none",
+                "style": "-",
+                "count": 1001,
+                "last": null,
+                "sumFirst20Half": null,
+                "x": [],
+                "y": []
+              }
+            ]
+          }
+        },
+        {
+          "number": 11,
+          "axes": [
+            {
+              "title": [
+                "Full IPSO",
+                "Total over mission slots; circles: after alpha polishing"
+              ],
+              "lines": [
+                {
+                  "name": "",
+                  "color": [
+                    0.231,
+                    0.666,
+                    0.196
+                  ],
+                  "marker": "o",
+                  "style": "none",
+                  "count": 1,
+                  "last": 3.0000311140712195,
+                  "sumFirst20Half": 1.5000155570356097,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "User 5",
+                  "color": [
+                    0.231,
+                    0.666,
+                    0.196
+                  ],
+                  "marker": "none",
+                  "style": "-",
+                  "count": 1001,
+                  "last": 3.000024656488888,
+                  "sumFirst20Half": 28.623948229946084,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "",
+                  "color": [
+                    0.521,
+                    0.086,
+                    0.819
+                  ],
+                  "marker": "o",
+                  "style": "none",
+                  "count": 1,
+                  "last": 3.180235960613746,
+                  "sumFirst20Half": 1.590117980306873,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "User 4",
+                  "color": [
+                    0.521,
+                    0.086,
+                    0.819
+                  ],
+                  "marker": "none",
+                  "style": "-",
+                  "count": 1001,
+                  "last": 3.1096398528491624,
+                  "sumFirst20Half": 39.57537684333348,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "",
+                  "color": [
+                    0.929,
+                    0.694,
+                    0.125
+                  ],
+                  "marker": "o",
+                  "style": "none",
+                  "count": 1,
+                  "last": 3.8980968282674895,
+                  "sumFirst20Half": 1.9490484141337447,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "User 3",
+                  "color": [
+                    0.929,
+                    0.694,
+                    0.125
+                  ],
+                  "marker": "none",
+                  "style": "-",
+                  "count": 1001,
+                  "last": 3.9392719807836074,
+                  "sumFirst20Half": 31.605935580897643,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "",
+                  "color": [
+                    0.866,
+                    0.329,
+                    0
+                  ],
+                  "marker": "o",
+                  "style": "none",
+                  "count": 1,
+                  "last": 3.7144293084385867,
+                  "sumFirst20Half": 1.8572146542192933,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "User 2",
+                  "color": [
+                    0.866,
+                    0.329,
+                    0
+                  ],
+                  "marker": "none",
+                  "style": "-",
+                  "count": 1001,
+                  "last": 3.6711391981682544,
+                  "sumFirst20Half": 36.90081986632599,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "",
+                  "color": [
+                    0.066,
+                    0.443,
+                    0.745
+                  ],
+                  "marker": "o",
+                  "style": "none",
+                  "count": 1,
+                  "last": 3.818948132710746,
+                  "sumFirst20Half": 1.909474066355373,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "User 1",
+                  "color": [
+                    0.066,
+                    0.443,
+                    0.745
+                  ],
+                  "marker": "none",
+                  "style": "-",
+                  "count": 1001,
+                  "last": 3.757733567602124,
+                  "sumFirst20Half": 33.7906363160873,
+                  "x": [],
+                  "y": []
+                }
+              ]
+            },
+            {
+              "title": [
+                "Full PSO",
+                "Total over mission slots; circles: after alpha polishing"
+              ],
+              "lines": [
+                {
+                  "name": "",
+                  "color": [
+                    0.231,
+                    0.666,
+                    0.196
+                  ],
+                  "marker": "o",
+                  "style": "none",
+                  "count": 1,
+                  "last": 3.0000426522372794,
+                  "sumFirst20Half": 1.5000213261186397,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "User 5",
+                  "color": [
+                    0.231,
+                    0.666,
+                    0.196
+                  ],
+                  "marker": "none",
+                  "style": "-",
+                  "count": 1001,
+                  "last": 3.0000455928342546,
+                  "sumFirst20Half": 29.181515245550138,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "",
+                  "color": [
+                    0.521,
+                    0.086,
+                    0.819
+                  ],
+                  "marker": "o",
+                  "style": "none",
+                  "count": 1,
+                  "last": 11.997592809743955,
+                  "sumFirst20Half": 5.998796404871977,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "User 4",
+                  "color": [
+                    0.521,
+                    0.086,
+                    0.819
+                  ],
+                  "marker": "none",
+                  "style": "-",
+                  "count": 1001,
+                  "last": 11.916862879547812,
+                  "sumFirst20Half": 54.654691601953694,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "",
+                  "color": [
+                    0.929,
+                    0.694,
+                    0.125
+                  ],
+                  "marker": "o",
+                  "style": "none",
+                  "count": 1,
+                  "last": 3.000367847161623,
+                  "sumFirst20Half": 1.5001839235808114,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "User 3",
+                  "color": [
+                    0.929,
+                    0.694,
+                    0.125
+                  ],
+                  "marker": "none",
+                  "style": "-",
+                  "count": 1001,
+                  "last": 3.0005997827821664,
+                  "sumFirst20Half": 37.191888782452786,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "",
+                  "color": [
+                    0.866,
+                    0.329,
+                    0
+                  ],
+                  "marker": "o",
+                  "style": "none",
+                  "count": 1,
+                  "last": 5.153493560094809,
+                  "sumFirst20Half": 2.5767467800474044,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "User 2",
+                  "color": [
+                    0.866,
+                    0.329,
+                    0
+                  ],
+                  "marker": "none",
+                  "style": "-",
+                  "count": 1001,
+                  "last": 5.177262685397536,
+                  "sumFirst20Half": 65.83765205533375,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "",
+                  "color": [
+                    0.066,
+                    0.443,
+                    0.745
+                  ],
+                  "marker": "o",
+                  "style": "none",
+                  "count": 1,
+                  "last": 4.34676828633305,
+                  "sumFirst20Half": 2.173384143166525,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "User 1",
+                  "color": [
+                    0.066,
+                    0.443,
+                    0.745
+                  ],
+                  "marker": "none",
+                  "style": "-",
+                  "count": 1001,
+                  "last": 4.348934116712533,
+                  "sumFirst20Half": 40.006745178069224,
+                  "x": [],
+                  "y": []
+                }
+              ]
+            },
+            {
+              "title": [
+                "Joint PSO",
+                "Total over mission slots; circles: after alpha polishing"
+              ],
+              "lines": [
+                {
+                  "name": "User 5",
+                  "color": [
+                    0.231,
+                    0.666,
+                    0.196
+                  ],
+                  "marker": "none",
+                  "style": "-",
+                  "count": 1001,
+                  "last": 2.381582173352602,
+                  "sumFirst20Half": 8.60732758156904,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "User 4",
+                  "color": [
+                    0.521,
+                    0.086,
+                    0.819
+                  ],
+                  "marker": "none",
+                  "style": "-",
+                  "count": 1001,
+                  "last": 3.000095732955278,
+                  "sumFirst20Half": 30.429073286085462,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "User 3",
+                  "color": [
+                    0.929,
+                    0.694,
+                    0.125
+                  ],
+                  "marker": "none",
+                  "style": "-",
+                  "count": 1001,
+                  "last": 3.000195481096426,
+                  "sumFirst20Half": 28.6944492573777,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "User 2",
+                  "color": [
+                    0.866,
+                    0.329,
+                    0
+                  ],
+                  "marker": "none",
+                  "style": "-",
+                  "count": 1001,
+                  "last": 3.000406532420714,
+                  "sumFirst20Half": 29.525767054273413,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "User 1",
+                  "color": [
+                    0.066,
+                    0.443,
+                    0.745
+                  ],
+                  "marker": "none",
+                  "style": "-",
+                  "count": 1001,
+                  "last": 3.000367515519902,
+                  "sumFirst20Half": 30.02248749892147,
+                  "x": [],
+                  "y": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "file": "figure_06_diagnostics.fig",
+          "bytes": 30562,
+          "sha256": "8b6786bdca05783cd6f06fdcf829a13569fa2878385373f65825a81f7695fadd",
+          "original_relative_file": "figure_06.fig"
+        },
+        {
+          "file": "figure_06_diagnostics.png",
+          "bytes": 119345,
+          "sha256": "0ddfd53af22a64bab6db9fee938e25fd5d51c7d6b10ee726ba3ae347693485ae",
+          "original_relative_file": "figure_06.png"
+        },
+        {
+          "file": "figure_07_diagnostics.fig",
+          "bytes": 33643,
+          "sha256": "655ccd8cc056d72ce568e067be90f48300e420954fbc07a5ddc3a6b60f1e2c91",
+          "original_relative_file": "figure_07.fig"
+        },
+        {
+          "file": "figure_07_diagnostics.png",
+          "bytes": 144607,
+          "sha256": "2025c21cc2c2cf1291b120f621889b40aa9bebd232c98f1ea2c3507a4c59fd0d",
+          "original_relative_file": "figure_07.png"
+        },
+        {
+          "file": "figure_08.fig",
+          "bytes": 33521,
+          "sha256": "9b4b3af7245ce5d44f84410d7c8ee960baef1dce806bde41db1dd26d9ca8951a",
+          "original_relative_file": "figure_08.fig"
+        },
+        {
+          "file": "figure_08.png",
+          "bytes": 126495,
+          "sha256": "36d0314af83d4865123752b69581a4ef6c06bcfb811cace9d5165f959197f435",
+          "original_relative_file": "figure_08.png"
+        },
+        {
+          "file": "figure_09.fig",
+          "bytes": 32531,
+          "sha256": "13e4dc936b3fc9c3949b23acb3d3fdd825767afd988a3bf4d0bf798b71cea87e",
+          "original_relative_file": "figure_09.fig"
+        },
+        {
+          "file": "figure_09.png",
+          "bytes": 291979,
+          "sha256": "3059564296f2cdc9b1e4b41e085e65e4a87d8c9bc527e911fd5382c57c78668b",
+          "original_relative_file": "figure_09.png"
+        },
+        {
+          "file": "figure_10.fig",
+          "bytes": 12492,
+          "sha256": "a697ba7ea438cf3a29f14f68491303143f7ebf9688ae127bbae60548e38026ce",
+          "original_relative_file": "figure_10.fig"
+        },
+        {
+          "file": "figure_10.png",
+          "bytes": 123120,
+          "sha256": "df0f7738ebd0537a886c5c6d948b734b722353b7545a38befb1e3fbf325dbd51",
+          "original_relative_file": "figure_10.png"
+        },
+        {
+          "file": "figure_11.fig",
+          "bytes": 142481,
+          "sha256": "26588232dac99474aa1e34151fe8181f555f798ea457a82af1fe86ce9055e8f5",
+          "original_relative_file": "figure_11.fig"
+        },
+        {
+          "file": "figure_11.png",
+          "bytes": 276990,
+          "sha256": "e655ecbc880c06d33d0cee19ea80ea414f4aea6da91fbb28f0ccdce6aad17801",
+          "original_relative_file": "figure_11.png"
+        },
+        {
+          "file": "figure_12.fig",
+          "bytes": 361491,
+          "sha256": "7cf56e07d7bcc99795090812d58b9fe7898a60d401eabc4457aa6872fdac82f8",
+          "original_relative_file": "figure_12.fig"
+        },
+        {
+          "file": "figure_12.png",
+          "bytes": 292217,
+          "sha256": "0105bc3e52c81003909fc0fd162065553291168c073530d99d88dcc233033164",
+          "original_relative_file": "figure_12.png"
+        },
+        {
+          "file": "figure_13.fig",
+          "bytes": 144855,
+          "sha256": "ee1034ada848fb05f7427aa6c95fc78bbbb08227aee4e5644100736c746a7fd4",
+          "original_relative_file": "figure_13.fig"
+        },
+        {
+          "file": "figure_13.png",
+          "bytes": 304196,
+          "sha256": "64e8e350fbe91f2a088b3e766f962ec61222e8c51adf8ce45f172c3eb677da2b",
+          "original_relative_file": "figure_13.png"
+        },
+        {
+          "file": "figure_14.fig",
+          "bytes": 454834,
+          "sha256": "438ad52ed6620a3104b1c2b856c3ca9d91a877bf09accd1790844d429acf39e8",
+          "original_relative_file": "figure_14.fig"
+        },
+        {
+          "file": "figure_14.png",
+          "bytes": 194404,
+          "sha256": "e86f4673ebc74918d4449fad47eebc7250cdeabeef0c3a8e1b8eaa8ca591ee50",
+          "original_relative_file": "figure_14.png"
+        },
+        {
+          "file": "figure_15.fig",
+          "bytes": 547302,
+          "sha256": "8a26cc7f0f3b1ce211e8cb6abe9893e7316f3787bf096170fc9ba57b5657615e",
+          "original_relative_file": "figure_15.fig"
+        },
+        {
+          "file": "figure_15.png",
+          "bytes": 194168,
+          "sha256": "d95f8a83ed5cde120e3a4cedb334f39a7c32e038fbdc5ca98be0370eea151243",
+          "original_relative_file": "figure_15.png"
+        },
+        {
+          "file": "figure_16.fig",
+          "bytes": 622008,
+          "sha256": "961f51fed0ffb6107d162de8991c66cb9aaeca9989dbd1972cef47a7b924aff5",
+          "original_relative_file": "figure_16.fig"
+        },
+        {
+          "file": "figure_16.png",
+          "bytes": 200225,
+          "sha256": "5b9427ec2689ba34676cd0a879945a55ec471ea5fccefbf1570d3e84c3d350c0",
+          "original_relative_file": "figure_16.png"
+        }
+      ],
+      "folder_before_merge": "seed2026_L3Mbit_diagnostics"
+    },
+    {
+      "old_folder": "run_20261022_135226_179",
+      "new_folder": "seed2026_L4Mbit",
+      "main_seed": 2026,
+      "min_bits_per_user": 4000000,
+      "label_basis": "Inferred from binding per-user mission-bit curves and numeric FIG data.",
+      "evidence": "Figure 11: raw Full PSO Users 1/3/5 approach 4 Mbit; Figure 4 IPSO User 5 = 4.000130171 Mbit.",
+      "seed_basis": "User confirmed current seed 2026; figure user coordinates match seed-2026 baseline.",
+      "user_coordinates": [
+        {
+          "xUser": [
+            108,
+            222,
+            147,
+            104,
+            159
+          ],
+          "yUser": [
+            137,
+            88,
+            224,
+            212,
+            193
+          ]
+        }
+      ],
+      "observed_figure_data": [
+        {
+          "number": 1,
+          "axes": {
+            "title": "Trajectory: Baseline vs Full PSO vs Full IPSO",
+            "lines": [
+              {
+                "name": "Full Joint (IPSO)",
+                "color": [
+                  0.635,
+                  0.078,
+                  0.184
+                ],
+                "marker": "diamond",
+                "style": "-",
+                "count": 21,
+                "last": 0,
+                "sumFirst20Half": 1575,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "Full Joint (PSO)",
+                "color": [
+                  0.466,
+                  0.674,
+                  0.188
+                ],
+                "marker": "^",
+                "style": "-",
+                "count": 21,
+                "last": 0,
+                "sumFirst20Half": 1575,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "Baseline",
+                "color": [
+                  0,
+                  0.447,
+                  0.741
+                ],
+                "marker": "o",
+                "style": "--",
+                "count": 21,
+                "last": 0,
+                "sumFirst20Half": 1575,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "UAV End",
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "marker": "square",
+                "style": "none",
+                "count": 1,
+                "last": 0,
+                "sumFirst20Half": 0,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "UAV Start",
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "marker": "o",
+                "style": "none",
+                "count": 1,
+                "last": 300,
+                "sumFirst20Half": 150,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "",
+                "color": [
+                  0.635,
+                  0.078,
+                  0.184
+                ],
+                "marker": "none",
+                "style": "-",
+                "count": 2,
+                "last": 50,
+                "sumFirst20Half": 50,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "",
+                "color": [
+                  0.635,
+                  0.078,
+                  0.184
+                ],
+                "marker": "none",
+                "style": "-",
+                "count": 2,
+                "last": 183.05217317174504,
+                "sumFirst20Half": 183.05217317174504,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "",
+                "color": [
+                  0.635,
+                  0.078,
+                  0.184
+                ],
+                "marker": "none",
+                "style": "-",
+                "count": 2,
+                "last": 262.64113023905196,
+                "sumFirst20Half": 262.64113023905196,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "",
+                "color": [
+                  0.466,
+                  0.674,
+                  0.188
+                ],
+                "marker": "none",
+                "style": "-",
+                "count": 2,
+                "last": 50,
+                "sumFirst20Half": 50,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "",
+                "color": [
+                  0.466,
+                  0.674,
+                  0.188
+                ],
+                "marker": "none",
+                "style": "-",
+                "count": 2,
+                "last": 200,
+                "sumFirst20Half": 200,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "",
+                "color": [
+                  0.466,
+                  0.674,
+                  0.188
+                ],
+                "marker": "none",
+                "style": "-",
+                "count": 2,
+                "last": 250,
+                "sumFirst20Half": 250,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "",
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "marker": "none",
+                "style": "-",
+                "count": 2,
+                "last": 0,
+                "sumFirst20Half": 0,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "",
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "marker": "none",
+                "style": "-",
+                "count": 2,
+                "last": 150,
+                "sumFirst20Half": 150,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "",
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "marker": "none",
+                "style": "-",
+                "count": 2,
+                "last": 300,
+                "sumFirst20Half": 300,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "Opt BS (IPSO)",
+                "color": [
+                  0.635,
+                  0.078,
+                  0.184
+                ],
+                "marker": "hexagram",
+                "style": "none",
+                "count": 3,
+                "last": 50,
+                "sumFirst20Half": 247.8466517053985,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "Opt BS (PSO)",
+                "color": [
+                  0.466,
+                  0.674,
+                  0.188
+                ],
+                "marker": "pentagram",
+                "style": "none",
+                "count": 3,
+                "last": 50,
+                "sumFirst20Half": 250,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "Initial BS",
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "marker": "^",
+                "style": "none",
+                "count": 3,
+                "last": 0,
+                "sumFirst20Half": 225,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "Ground Users",
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "marker": "*",
+                "style": "none",
+                "count": 5,
+                "last": 193,
+                "sumFirst20Half": 427,
+                "x": [
+                  108,
+                  222,
+                  147,
+                  104,
+                  159
+                ],
+                "y": [
+                  137,
+                  88,
+                  224,
+                  212,
+                  193
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "number": 4,
+          "axes": {
+            "title": "Per-user achievable rate: Full PSO Joint SWIPT vs Full IPSO Joint SWIPT, N = 5",
+            "lines": [
+              {
+                "name": "User 5 - Full IPSO",
+                "color": [
+                  0.231,
+                  0.666,
+                  0.196
+                ],
+                "marker": "square",
+                "style": "-",
+                "count": 21,
+                "last": 8950.550610370727,
+                "sumFirst20Half": 4000130.17053727,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "User 4 - Full IPSO",
+                "color": [
+                  0.521,
+                  0.086,
+                  0.819
+                ],
+                "marker": "square",
+                "style": "-",
+                "count": 21,
+                "last": 974.571318078768,
+                "sumFirst20Half": 8458253.031674812,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "User 3 - Full IPSO",
+                "color": [
+                  0.929,
+                  0.694,
+                  0.125
+                ],
+                "marker": "square",
+                "style": "-",
+                "count": 21,
+                "last": 23603.76982873557,
+                "sumFirst20Half": 4014619.2907387414,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "User 2 - Full IPSO",
+                "color": [
+                  0.866,
+                  0.329,
+                  0
+                ],
+                "marker": "square",
+                "style": "-",
+                "count": 21,
+                "last": 639.0494840139243,
+                "sumFirst20Half": 6221530.878940533,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "User 1 - Full IPSO",
+                "color": [
+                  0.066,
+                  0.443,
+                  0.745
+                ],
+                "marker": "square",
+                "style": "-",
+                "count": 21,
+                "last": 67263.61213601893,
+                "sumFirst20Half": 4001230.7077152757,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "User 5 - Full PSO",
+                "color": [
+                  0.231,
+                  0.666,
+                  0.196
+                ],
+                "marker": "o",
+                "style": "--",
+                "count": 21,
+                "last": 10086.568522544181,
+                "sumFirst20Half": 4001824.1206623064,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "User 4 - Full PSO",
+                "color": [
+                  0.521,
+                  0.086,
+                  0.819
+                ],
+                "marker": "o",
+                "style": "--",
+                "count": 21,
+                "last": 21614.57652425039,
+                "sumFirst20Half": 7278651.896601081,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "User 3 - Full PSO",
+                "color": [
+                  0.929,
+                  0.694,
+                  0.125
+                ],
+                "marker": "o",
+                "style": "--",
+                "count": 21,
+                "last": 24566.26468985955,
+                "sumFirst20Half": 4002677.517908496,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "User 2 - Full PSO",
+                "color": [
+                  0.866,
+                  0.329,
+                  0
+                ],
+                "marker": "o",
+                "style": "--",
+                "count": 21,
+                "last": 697.2573116188566,
+                "sumFirst20Half": 6170567.932994437,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "User 1 - Full PSO",
+                "color": [
+                  0.066,
+                  0.443,
+                  0.745
+                ],
+                "marker": "o",
+                "style": "--",
+                "count": 21,
+                "last": 36785.25157031904,
+                "sumFirst20Half": 4015498.8595562633,
+                "x": [],
+                "y": []
+              }
+            ]
+          }
+        },
+        {
+          "number": 6,
+          "axes": {
+            "title": [
+              "EE convergence of all three algorithms",
+              "Gaps: infeasible; lines: optimization; circles: after alpha polishing"
+            ],
+            "lines": [
+              {
+                "name": "",
+                "color": [
+                  0.635,
+                  0.078,
+                  0.184
+                ],
+                "marker": "o",
+                "style": "none",
+                "count": 1,
+                "last": 870809428779.404,
+                "sumFirst20Half": 435404714389.702,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "Full IPSO",
+                "color": [
+                  0.635,
+                  0.078,
+                  0.184
+                ],
+                "marker": "none",
+                "style": ":",
+                "count": 1001,
+                "last": 867788674611.9767,
+                "sumFirst20Half": null,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "",
+                "color": [
+                  0.466,
+                  0.674,
+                  0.188
+                ],
+                "marker": "o",
+                "style": "none",
+                "count": 1,
+                "last": 669804939673.8365,
+                "sumFirst20Half": 334902469836.9183,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "Full PSO",
+                "color": [
+                  0.466,
+                  0.674,
+                  0.188
+                ],
+                "marker": "none",
+                "style": "--",
+                "count": 1001,
+                "last": 651684628552.4348,
+                "sumFirst20Half": null,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "Joint PSO",
+                "color": [
+                  0.85,
+                  0.325,
+                  0.098
+                ],
+                "marker": "none",
+                "style": "-",
+                "count": 1001,
+                "last": null,
+                "sumFirst20Half": null,
+                "x": [],
+                "y": []
+              }
+            ]
+          }
+        },
+        {
+          "number": 11,
+          "axes": [
+            {
+              "title": [
+                "Full IPSO",
+                "Total over mission slots; circles: after alpha polishing"
+              ],
+              "lines": [
+                {
+                  "name": "",
+                  "color": [
+                    0.231,
+                    0.666,
+                    0.196
+                  ],
+                  "marker": "o",
+                  "style": "none",
+                  "count": 1,
+                  "last": 4.00013017053727,
+                  "sumFirst20Half": 2.000065085268635,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "User 5",
+                  "color": [
+                    0.231,
+                    0.666,
+                    0.196
+                  ],
+                  "marker": "none",
+                  "style": "-",
+                  "count": 1001,
+                  "last": 4.000023809814826,
+                  "sumFirst20Half": 24.299729498149652,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "",
+                  "color": [
+                    0.521,
+                    0.086,
+                    0.819
+                  ],
+                  "marker": "o",
+                  "style": "none",
+                  "count": 1,
+                  "last": 8.458253031674811,
+                  "sumFirst20Half": 4.229126515837406,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "User 4",
+                  "color": [
+                    0.521,
+                    0.086,
+                    0.819
+                  ],
+                  "marker": "none",
+                  "style": "-",
+                  "count": 1001,
+                  "last": 8.483425084152433,
+                  "sumFirst20Half": 46.02365084895004,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "",
+                  "color": [
+                    0.929,
+                    0.694,
+                    0.125
+                  ],
+                  "marker": "o",
+                  "style": "none",
+                  "count": 1,
+                  "last": 4.014619290738741,
+                  "sumFirst20Half": 2.0073096453693706,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "User 3",
+                  "color": [
+                    0.929,
+                    0.694,
+                    0.125
+                  ],
+                  "marker": "none",
+                  "style": "-",
+                  "count": 1001,
+                  "last": 4.025017503032304,
+                  "sumFirst20Half": 40.67598355337647,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "",
+                  "color": [
+                    0.866,
+                    0.329,
+                    0
+                  ],
+                  "marker": "o",
+                  "style": "none",
+                  "count": 1,
+                  "last": 6.221530878940533,
+                  "sumFirst20Half": 3.1107654394702666,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "User 2",
+                  "color": [
+                    0.866,
+                    0.329,
+                    0
+                  ],
+                  "marker": "none",
+                  "style": "-",
+                  "count": 1001,
+                  "last": 6.055945079022463,
+                  "sumFirst20Half": 42.891149951300136,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "",
+                  "color": [
+                    0.066,
+                    0.443,
+                    0.745
+                  ],
+                  "marker": "o",
+                  "style": "none",
+                  "count": 1,
+                  "last": 4.001230707715275,
+                  "sumFirst20Half": 2.0006153538576377,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "User 1",
+                  "color": [
+                    0.066,
+                    0.443,
+                    0.745
+                  ],
+                  "marker": "none",
+                  "style": "-",
+                  "count": 1001,
+                  "last": 4.038747565178945,
+                  "sumFirst20Half": 40.39352843856479,
+                  "x": [],
+                  "y": []
+                }
+              ]
+            },
+            {
+              "title": [
+                "Full PSO",
+                "Total over mission slots; circles: after alpha polishing"
+              ],
+              "lines": [
+                {
+                  "name": "",
+                  "color": [
+                    0.231,
+                    0.666,
+                    0.196
+                  ],
+                  "marker": "o",
+                  "style": "none",
+                  "count": 1,
+                  "last": 4.001824120662307,
+                  "sumFirst20Half": 2.0009120603311534,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "User 5",
+                  "color": [
+                    0.231,
+                    0.666,
+                    0.196
+                  ],
+                  "marker": "none",
+                  "style": "-",
+                  "count": 1001,
+                  "last": 4.000199183247235,
+                  "sumFirst20Half": 27.24713721497615,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "",
+                  "color": [
+                    0.521,
+                    0.086,
+                    0.819
+                  ],
+                  "marker": "o",
+                  "style": "none",
+                  "count": 1,
+                  "last": 7.2786518966010805,
+                  "sumFirst20Half": 3.6393259483005402,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "User 4",
+                  "color": [
+                    0.521,
+                    0.086,
+                    0.819
+                  ],
+                  "marker": "none",
+                  "style": "-",
+                  "count": 1001,
+                  "last": 7.042363154241719,
+                  "sumFirst20Half": 47.60016485558805,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "",
+                  "color": [
+                    0.929,
+                    0.694,
+                    0.125
+                  ],
+                  "marker": "o",
+                  "style": "none",
+                  "count": 1,
+                  "last": 4.002677517908496,
+                  "sumFirst20Half": 2.001338758954248,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "User 3",
+                  "color": [
+                    0.929,
+                    0.694,
+                    0.125
+                  ],
+                  "marker": "none",
+                  "style": "-",
+                  "count": 1001,
+                  "last": 4.000228512556161,
+                  "sumFirst20Half": 41.196664090575084,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "",
+                  "color": [
+                    0.866,
+                    0.329,
+                    0
+                  ],
+                  "marker": "o",
+                  "style": "none",
+                  "count": 1,
+                  "last": 6.170567932994437,
+                  "sumFirst20Half": 3.0852839664972187,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "User 2",
+                  "color": [
+                    0.866,
+                    0.329,
+                    0
+                  ],
+                  "marker": "none",
+                  "style": "-",
+                  "count": 1001,
+                  "last": 5.736867920200428,
+                  "sumFirst20Half": 43.943385697490406,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "",
+                  "color": [
+                    0.066,
+                    0.443,
+                    0.745
+                  ],
+                  "marker": "o",
+                  "style": "none",
+                  "count": 1,
+                  "last": 4.0154988595562635,
+                  "sumFirst20Half": 2.0077494297781318,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "User 1",
+                  "color": [
+                    0.066,
+                    0.443,
+                    0.745
+                  ],
+                  "marker": "none",
+                  "style": "-",
+                  "count": 1001,
+                  "last": 4.000539770652657,
+                  "sumFirst20Half": 41.36180808023691,
+                  "x": [],
+                  "y": []
+                }
+              ]
+            },
+            {
+              "title": [
+                "Joint PSO",
+                "Total over mission slots; circles: after alpha polishing"
+              ],
+              "lines": [
+                {
+                  "name": "User 5",
+                  "color": [
+                    0.231,
+                    0.666,
+                    0.196
+                  ],
+                  "marker": "none",
+                  "style": "-",
+                  "count": 1001,
+                  "last": 1.8279801746129807,
+                  "sumFirst20Half": 7.9954311393293604,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "User 4",
+                  "color": [
+                    0.521,
+                    0.086,
+                    0.819
+                  ],
+                  "marker": "none",
+                  "style": "-",
+                  "count": 1001,
+                  "last": 4.001204834820369,
+                  "sumFirst20Half": 37.882282749571644,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "User 3",
+                  "color": [
+                    0.929,
+                    0.694,
+                    0.125
+                  ],
+                  "marker": "none",
+                  "style": "-",
+                  "count": 1001,
+                  "last": 4.00019532667794,
+                  "sumFirst20Half": 22.376535714143696,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "User 2",
+                  "color": [
+                    0.866,
+                    0.329,
+                    0
+                  ],
+                  "marker": "none",
+                  "style": "-",
+                  "count": 1001,
+                  "last": 4.0021480163027965,
+                  "sumFirst20Half": 38.15675243535462,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "User 1",
+                  "color": [
+                    0.066,
+                    0.443,
+                    0.745
+                  ],
+                  "marker": "none",
+                  "style": "-",
+                  "count": 1001,
+                  "last": 4.002788613126196,
+                  "sumFirst20Half": 36.35821809091521,
+                  "x": [],
+                  "y": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "file": "figure_01.fig",
+          "bytes": 16160,
+          "sha256": "ab87e2b755551a02134ebb4fbb96814a80bf7536ccc1d3beb8d6119bcd2d1a40"
+        },
+        {
+          "file": "figure_01.png",
+          "bytes": 281866,
+          "sha256": "0d7955ed3c91dce68225206cb66b84d705e50445f7a13c19a9833a2a819c5b9b"
+        },
+        {
+          "file": "figure_02.fig",
+          "bytes": 11674,
+          "sha256": "b0940d1fba486ba422da909610a3711585cd76dd6cd8bdd429616065c8649788"
+        },
+        {
+          "file": "figure_02.png",
+          "bytes": 196817,
+          "sha256": "8f3fd800ee1962cd8389275791c2d5478eae87d41c4f498e3faccd2c06d9d265"
+        },
+        {
+          "file": "figure_04.fig",
+          "bytes": 15036,
+          "sha256": "8a007e92fc7db629a4926f43a5701b13e6a13dd8d835537d85069e6151346212"
+        },
+        {
+          "file": "figure_04.png",
+          "bytes": 265172,
+          "sha256": "aa760e6287c3728664930723b679e7baa31a366420d370d60e01017230ff3eb3"
+        },
+        {
+          "file": "figure_05.fig",
+          "bytes": 10887,
+          "sha256": "31b8787789a87e53ca5b52606e86702ae2653adadee00c07001273cbfc6e9fcf"
+        },
+        {
+          "file": "figure_05.png",
+          "bytes": 183325,
+          "sha256": "a1e9d58450dc56ae1eff3162a1694ff8e23d6c96f2effd7c05844c9d16945bf7"
+        },
+        {
+          "file": "figure_06.fig",
+          "bytes": 28309,
+          "sha256": "e78471ad24864f62de8368791d877a2767962c1b4118e19daa4c6597430479ee"
+        },
+        {
+          "file": "figure_06.png",
+          "bytes": 127870,
+          "sha256": "5e15a4a20b93d1fd58fa3a23eb0ddeff65097098f1f0dd321d56db837110d15b"
+        },
+        {
+          "file": "figure_07.fig",
+          "bytes": 32274,
+          "sha256": "b10d97aa0a0f172ff7d01fa10c8370d870bf58360561ab6e5529516dfa561b0a"
+        },
+        {
+          "file": "figure_07.png",
+          "bytes": 148349,
+          "sha256": "22e676838463a267280fa6f2c0c0ed3ac3c10e5e60f3a676fe9494995f062f8a"
+        },
+        {
+          "file": "figure_08.fig",
+          "bytes": 32286,
+          "sha256": "f913ccec8d3b995b2af052c464a0ee20f4757a6549c604dcbd91c337f08acf96"
+        },
+        {
+          "file": "figure_08.png",
+          "bytes": 138843,
+          "sha256": "3d15b8fe2672418e5c43033d7e3a03808e251c86fb0547d1c1ae53c12610eedb"
+        },
+        {
+          "file": "figure_09.fig",
+          "bytes": 32757,
+          "sha256": "ed3473ec2fe61331a55a70ba948be95201d55342b32076a338fff55909258c6f"
+        },
+        {
+          "file": "figure_09.png",
+          "bytes": 299568,
+          "sha256": "5781ce0bed8192339d50f203341cab9024ffbaa7c3b908ca457daa46cd69359c"
+        },
+        {
+          "file": "figure_10.fig",
+          "bytes": 12462,
+          "sha256": "c546a845b66d13859a8221fb9fedfb7f5e458c55f9050a198207ee8ef295e1e7"
+        },
+        {
+          "file": "figure_10.png",
+          "bytes": 125070,
+          "sha256": "f90739e829eb36372632b4d3806bd8be742efc90ced18fe488c2cdbb14ac90f0"
+        },
+        {
+          "file": "figure_11.fig",
+          "bytes": 134771,
+          "sha256": "465e05c42126214774e4764ca179e52f5aa6cdd86148088e7a62225b172a441c"
+        },
+        {
+          "file": "figure_11.png",
+          "bytes": 260046,
+          "sha256": "ef965069a211776bcbdc4f8e73add1b44a35b4276c6b1d17c804b7c3f7e42887"
+        },
+        {
+          "file": "figure_12.fig",
+          "bytes": 332186,
+          "sha256": "807bbb57820227e9e4e9ecd72bbae0b010476f021d083f5031511f1f1ca9e041"
+        },
+        {
+          "file": "figure_12.png",
+          "bytes": 285547,
+          "sha256": "62a4ad4c70c16c5da2723164d9b837c9376ef11a6742332d5d319ffda7077db3"
+        },
+        {
+          "file": "figure_13.fig",
+          "bytes": 137305,
+          "sha256": "0e8e93b08203ddd085bdd202e5eca4c6d0e9662cdd423f6546670dbda8086c72"
+        },
+        {
+          "file": "figure_13.png",
+          "bytes": 281045,
+          "sha256": "bf97d2e266dc8866959d879d4f137f15ba0c27a66f67e3a61913da5abf1c32f1"
+        },
+        {
+          "file": "figure_14.fig",
+          "bytes": 510451,
+          "sha256": "d870687dc83ad6db5728a4b075aed998442ee397295a79032411d415af49fd92"
+        },
+        {
+          "file": "figure_14.png",
+          "bytes": 199214,
+          "sha256": "9bd42729bfba79cece9eeaffcb6f9473d3194f0c20669cbd11c9c61ba25095b7"
+        },
+        {
+          "file": "figure_15.fig",
+          "bytes": 397437,
+          "sha256": "1a7dfc9694c53195fc74fb63348e5d3ff0daff3fb3c256e79f11c77dbadbdf00"
+        },
+        {
+          "file": "figure_15.png",
+          "bytes": 184514,
+          "sha256": "e05166c249e80056a313da06aa5bad7fe6959f99e131d02f2cff923bfd600c01"
+        },
+        {
+          "file": "figure_16.fig",
+          "bytes": 575921,
+          "sha256": "dd5c7083c7f3c3d4d3549997aac3d2bf168e6967d399df1589e2bba6437f62b9"
+        },
+        {
+          "file": "figure_16.png",
+          "bytes": 193209,
+          "sha256": "bee0f1a5105b3ba7c85ee4ef3d40b6a817796453ecd0f70a493778f468e198e8"
+        }
+      ]
+    },
+    {
+      "old_folder": "run_20261022_140052_180",
+      "new_folder": "seed2026_L4p2Mbit",
+      "main_seed": 2026,
+      "min_bits_per_user": 4200000,
+      "label_basis": "Inferred from binding per-user mission-bit curves and numeric FIG data.",
+      "evidence": "Figure 11: raw Full PSO Users 1/3/5 approach 4.2 Mbit; Figure 4 IPSO User 5 = 4.200043382 Mbit.",
+      "seed_basis": "User confirmed current seed 2026; figure user coordinates match seed-2026 baseline.",
+      "user_coordinates": [
+        {
+          "xUser": [
+            108,
+            222,
+            147,
+            104,
+            159
+          ],
+          "yUser": [
+            137,
+            88,
+            224,
+            212,
+            193
+          ]
+        }
+      ],
+      "observed_figure_data": [
+        {
+          "number": 1,
+          "axes": {
+            "title": "Trajectory: Baseline vs Full PSO vs Full IPSO",
+            "lines": [
+              {
+                "name": "Full Joint (IPSO)",
+                "color": [
+                  0.635,
+                  0.078,
+                  0.184
+                ],
+                "marker": "diamond",
+                "style": "-",
+                "count": 21,
+                "last": 0,
+                "sumFirst20Half": 1575,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "Full Joint (PSO)",
+                "color": [
+                  0.466,
+                  0.674,
+                  0.188
+                ],
+                "marker": "^",
+                "style": "-",
+                "count": 21,
+                "last": 0,
+                "sumFirst20Half": 1575,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "Baseline",
+                "color": [
+                  0,
+                  0.447,
+                  0.741
+                ],
+                "marker": "o",
+                "style": "--",
+                "count": 21,
+                "last": 0,
+                "sumFirst20Half": 1575,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "UAV End",
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "marker": "square",
+                "style": "none",
+                "count": 1,
+                "last": 0,
+                "sumFirst20Half": 0,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "UAV Start",
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "marker": "o",
+                "style": "none",
+                "count": 1,
+                "last": 300,
+                "sumFirst20Half": 150,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "",
+                "color": [
+                  0.635,
+                  0.078,
+                  0.184
+                ],
+                "marker": "none",
+                "style": "-",
+                "count": 2,
+                "last": 50,
+                "sumFirst20Half": 50,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "",
+                "color": [
+                  0.635,
+                  0.078,
+                  0.184
+                ],
+                "marker": "none",
+                "style": "-",
+                "count": 2,
+                "last": 189.44761168925422,
+                "sumFirst20Half": 189.44761168925422,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "",
+                "color": [
+                  0.635,
+                  0.078,
+                  0.184
+                ],
+                "marker": "none",
+                "style": "-",
+                "count": 2,
+                "last": 250,
+                "sumFirst20Half": 250,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "",
+                "color": [
+                  0.466,
+                  0.674,
+                  0.188
+                ],
+                "marker": "none",
+                "style": "-",
+                "count": 2,
+                "last": 50,
+                "sumFirst20Half": 50,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "",
+                "color": [
+                  0.466,
+                  0.674,
+                  0.188
+                ],
+                "marker": "none",
+                "style": "-",
+                "count": 2,
+                "last": 174.0660384185945,
+                "sumFirst20Half": 174.0660384185945,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "",
+                "color": [
+                  0.466,
+                  0.674,
+                  0.188
+                ],
+                "marker": "none",
+                "style": "-",
+                "count": 2,
+                "last": 250,
+                "sumFirst20Half": 250,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "",
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "marker": "none",
+                "style": "-",
+                "count": 2,
+                "last": 0,
+                "sumFirst20Half": 0,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "",
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "marker": "none",
+                "style": "-",
+                "count": 2,
+                "last": 150,
+                "sumFirst20Half": 150,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "",
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "marker": "none",
+                "style": "-",
+                "count": 2,
+                "last": 300,
+                "sumFirst20Half": 300,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "Opt BS (IPSO)",
+                "color": [
+                  0.635,
+                  0.078,
+                  0.184
+                ],
+                "marker": "hexagram",
+                "style": "none",
+                "count": 3,
+                "last": 50,
+                "sumFirst20Half": 244.72380584462712,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "Opt BS (PSO)",
+                "color": [
+                  0.466,
+                  0.674,
+                  0.188
+                ],
+                "marker": "pentagram",
+                "style": "none",
+                "count": 3,
+                "last": 50,
+                "sumFirst20Half": 237.03301920929727,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "Initial BS",
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "marker": "^",
+                "style": "none",
+                "count": 3,
+                "last": 0,
+                "sumFirst20Half": 225,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "Ground Users",
+                "color": [
+                  0,
+                  0,
+                  0
+                ],
+                "marker": "*",
+                "style": "none",
+                "count": 5,
+                "last": 193,
+                "sumFirst20Half": 427,
+                "x": [
+                  108,
+                  222,
+                  147,
+                  104,
+                  159
+                ],
+                "y": [
+                  137,
+                  88,
+                  224,
+                  212,
+                  193
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "number": 4,
+          "axes": {
+            "title": "Per-user achievable rate: Full PSO Joint SWIPT vs Full IPSO Joint SWIPT, N = 5",
+            "lines": [
+              {
+                "name": "User 5 - Full IPSO",
+                "color": [
+                  0.231,
+                  0.666,
+                  0.196
+                ],
+                "marker": "square",
+                "style": "-",
+                "count": 21,
+                "last": 8453.878128255685,
+                "sumFirst20Half": 4200043.382366541,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "User 4 - Full IPSO",
+                "color": [
+                  0.521,
+                  0.086,
+                  0.819
+                ],
+                "marker": "square",
+                "style": "-",
+                "count": 21,
+                "last": 556.4206410496306,
+                "sumFirst20Half": 7579425.791501953,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "User 3 - Full IPSO",
+                "color": [
+                  0.929,
+                  0.694,
+                  0.125
+                ],
+                "marker": "square",
+                "style": "-",
+                "count": 21,
+                "last": 35273.84237973491,
+                "sumFirst20Half": 4201026.364617208,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "User 2 - Full IPSO",
+                "color": [
+                  0.866,
+                  0.329,
+                  0
+                ],
+                "marker": "square",
+                "style": "-",
+                "count": 21,
+                "last": 620.2926449994997,
+                "sumFirst20Half": 10008379.09143318,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "User 1 - Full IPSO",
+                "color": [
+                  0.066,
+                  0.443,
+                  0.745
+                ],
+                "marker": "square",
+                "style": "-",
+                "count": 21,
+                "last": 39183.26897170653,
+                "sumFirst20Half": 4769903.648092761,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "User 5 - Full PSO",
+                "color": [
+                  0.231,
+                  0.666,
+                  0.196
+                ],
+                "marker": "o",
+                "style": "--",
+                "count": 21,
+                "last": 12451.083702898724,
+                "sumFirst20Half": 4202303.943102671,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "User 4 - Full PSO",
+                "color": [
+                  0.521,
+                  0.086,
+                  0.819
+                ],
+                "marker": "o",
+                "style": "--",
+                "count": 21,
+                "last": 560.9664733317555,
+                "sumFirst20Half": 7239730.856024687,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "User 3 - Full PSO",
+                "color": [
+                  0.929,
+                  0.694,
+                  0.125
+                ],
+                "marker": "o",
+                "style": "--",
+                "count": 21,
+                "last": 33423.94245978779,
+                "sumFirst20Half": 4201639.094444286,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "User 2 - Full PSO",
+                "color": [
+                  0.866,
+                  0.329,
+                  0
+                ],
+                "marker": "o",
+                "style": "--",
+                "count": 21,
+                "last": 628.2262532257737,
+                "sumFirst20Half": 11653077.942562846,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "User 1 - Full PSO",
+                "color": [
+                  0.066,
+                  0.443,
+                  0.745
+                ],
+                "marker": "o",
+                "style": "--",
+                "count": 21,
+                "last": 262.1656821180139,
+                "sumFirst20Half": 4228788.408080867,
+                "x": [],
+                "y": []
+              }
+            ]
+          }
+        },
+        {
+          "number": 6,
+          "axes": {
+            "title": [
+              "EE convergence of all three algorithms",
+              "Gaps: infeasible; lines: optimization; circles: after alpha polishing"
+            ],
+            "lines": [
+              {
+                "name": "",
+                "color": [
+                  0.635,
+                  0.078,
+                  0.184
+                ],
+                "marker": "o",
+                "style": "none",
+                "count": 1,
+                "last": 1121216926912.6165,
+                "sumFirst20Half": 560608463456.3082,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "Full IPSO",
+                "color": [
+                  0.635,
+                  0.078,
+                  0.184
+                ],
+                "marker": "none",
+                "style": ":",
+                "count": 1001,
+                "last": 1120816169544.7207,
+                "sumFirst20Half": null,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "",
+                "color": [
+                  0.466,
+                  0.674,
+                  0.188
+                ],
+                "marker": "o",
+                "style": "none",
+                "count": 1,
+                "last": 751163670843.7296,
+                "sumFirst20Half": 375581835421.8648,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "Full PSO",
+                "color": [
+                  0.466,
+                  0.674,
+                  0.188
+                ],
+                "marker": "none",
+                "style": "--",
+                "count": 1001,
+                "last": 738418425206.9792,
+                "sumFirst20Half": null,
+                "x": [],
+                "y": []
+              },
+              {
+                "name": "Joint PSO",
+                "color": [
+                  0.85,
+                  0.325,
+                  0.098
+                ],
+                "marker": "none",
+                "style": "-",
+                "count": 1001,
+                "last": null,
+                "sumFirst20Half": null,
+                "x": [],
+                "y": []
+              }
+            ]
+          }
+        },
+        {
+          "number": 11,
+          "axes": [
+            {
+              "title": [
+                "Full IPSO",
+                "Total over mission slots; circles: after alpha polishing"
+              ],
+              "lines": [
+                {
+                  "name": "",
+                  "color": [
+                    0.231,
+                    0.666,
+                    0.196
+                  ],
+                  "marker": "o",
+                  "style": "none",
+                  "count": 1,
+                  "last": 4.200043382366541,
+                  "sumFirst20Half": 2.1000216911832705,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "User 5",
+                  "color": [
+                    0.231,
+                    0.666,
+                    0.196
+                  ],
+                  "marker": "none",
+                  "style": "-",
+                  "count": 1001,
+                  "last": 4.200268483404606,
+                  "sumFirst20Half": 25.776418159297084,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "",
+                  "color": [
+                    0.521,
+                    0.086,
+                    0.819
+                  ],
+                  "marker": "o",
+                  "style": "none",
+                  "count": 1,
+                  "last": 7.579425791501953,
+                  "sumFirst20Half": 3.7897128957509767,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "User 4",
+                  "color": [
+                    0.521,
+                    0.086,
+                    0.819
+                  ],
+                  "marker": "none",
+                  "style": "-",
+                  "count": 1001,
+                  "last": 7.576392649059212,
+                  "sumFirst20Half": 47.61132209014717,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "",
+                  "color": [
+                    0.929,
+                    0.694,
+                    0.125
+                  ],
+                  "marker": "o",
+                  "style": "none",
+                  "count": 1,
+                  "last": 4.201026364617208,
+                  "sumFirst20Half": 2.100513182308604,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "User 3",
+                  "color": [
+                    0.929,
+                    0.694,
+                    0.125
+                  ],
+                  "marker": "none",
+                  "style": "-",
+                  "count": 1001,
+                  "last": 4.200085326723161,
+                  "sumFirst20Half": 42.66138793347948,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "",
+                  "color": [
+                    0.866,
+                    0.329,
+                    0
+                  ],
+                  "marker": "o",
+                  "style": "none",
+                  "count": 1,
+                  "last": 10.00837909143318,
+                  "sumFirst20Half": 5.00418954571659,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "User 2",
+                  "color": [
+                    0.866,
+                    0.329,
+                    0
+                  ],
+                  "marker": "none",
+                  "style": "-",
+                  "count": 1001,
+                  "last": 10.003327378733056,
+                  "sumFirst20Half": 44.71045570788049,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "",
+                  "color": [
+                    0.066,
+                    0.443,
+                    0.745
+                  ],
+                  "marker": "o",
+                  "style": "none",
+                  "count": 1,
+                  "last": 4.769903648092761,
+                  "sumFirst20Half": 2.3849518240463805,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "User 1",
+                  "color": [
+                    0.066,
+                    0.443,
+                    0.745
+                  ],
+                  "marker": "none",
+                  "style": "-",
+                  "count": 1001,
+                  "last": 4.767710307978097,
+                  "sumFirst20Half": 44.08385868727416,
+                  "x": [],
+                  "y": []
+                }
+              ]
+            },
+            {
+              "title": [
+                "Full PSO",
+                "Total over mission slots; circles: after alpha polishing"
+              ],
+              "lines": [
+                {
+                  "name": "",
+                  "color": [
+                    0.231,
+                    0.666,
+                    0.196
+                  ],
+                  "marker": "o",
+                  "style": "none",
+                  "count": 1,
+                  "last": 4.202303943102671,
+                  "sumFirst20Half": 2.1011519715513356,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "User 5",
+                  "color": [
+                    0.231,
+                    0.666,
+                    0.196
+                  ],
+                  "marker": "none",
+                  "style": "-",
+                  "count": 1001,
+                  "last": 4.200002399056451,
+                  "sumFirst20Half": 33.10165041696728,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "",
+                  "color": [
+                    0.521,
+                    0.086,
+                    0.819
+                  ],
+                  "marker": "o",
+                  "style": "none",
+                  "count": 1,
+                  "last": 7.239730856024687,
+                  "sumFirst20Half": 3.6198654280123437,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "User 4",
+                  "color": [
+                    0.521,
+                    0.086,
+                    0.819
+                  ],
+                  "marker": "none",
+                  "style": "-",
+                  "count": 1001,
+                  "last": 6.719532293605059,
+                  "sumFirst20Half": 47.465447706908364,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "",
+                  "color": [
+                    0.929,
+                    0.694,
+                    0.125
+                  ],
+                  "marker": "o",
+                  "style": "none",
+                  "count": 1,
+                  "last": 4.201639094444286,
+                  "sumFirst20Half": 2.100819547222143,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "User 3",
+                  "color": [
+                    0.929,
+                    0.694,
+                    0.125
+                  ],
+                  "marker": "none",
+                  "style": "-",
+                  "count": 1001,
+                  "last": 4.200021466142834,
+                  "sumFirst20Half": 43.93387661598608,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "",
+                  "color": [
+                    0.866,
+                    0.329,
+                    0
+                  ],
+                  "marker": "o",
+                  "style": "none",
+                  "count": 1,
+                  "last": 11.653077942562847,
+                  "sumFirst20Half": 5.8265389712814235,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "User 2",
+                  "color": [
+                    0.866,
+                    0.329,
+                    0
+                  ],
+                  "marker": "none",
+                  "style": "-",
+                  "count": 1001,
+                  "last": 11.671031332877131,
+                  "sumFirst20Half": 44.62180770136083,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "",
+                  "color": [
+                    0.066,
+                    0.443,
+                    0.745
+                  ],
+                  "marker": "o",
+                  "style": "none",
+                  "count": 1,
+                  "last": 4.228788408080867,
+                  "sumFirst20Half": 2.1143942040404333,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "User 1",
+                  "color": [
+                    0.066,
+                    0.443,
+                    0.745
+                  ],
+                  "marker": "none",
+                  "style": "-",
+                  "count": 1001,
+                  "last": 4.200048350418066,
+                  "sumFirst20Half": 45.582559896442376,
+                  "x": [],
+                  "y": []
+                }
+              ]
+            },
+            {
+              "title": [
+                "Joint PSO",
+                "Total over mission slots; circles: after alpha polishing"
+              ],
+              "lines": [
+                {
+                  "name": "User 5",
+                  "color": [
+                    0.231,
+                    0.666,
+                    0.196
+                  ],
+                  "marker": "none",
+                  "style": "-",
+                  "count": 1001,
+                  "last": 1.7295393328453033,
+                  "sumFirst20Half": 5.144947135877156,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "User 4",
+                  "color": [
+                    0.521,
+                    0.086,
+                    0.819
+                  ],
+                  "marker": "none",
+                  "style": "-",
+                  "count": 1001,
+                  "last": 4.200202000286651,
+                  "sumFirst20Half": 42.36937877263467,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "User 3",
+                  "color": [
+                    0.929,
+                    0.694,
+                    0.125
+                  ],
+                  "marker": "none",
+                  "style": "-",
+                  "count": 1001,
+                  "last": 4.199998104139393,
+                  "sumFirst20Half": 24.187240198353873,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "User 2",
+                  "color": [
+                    0.866,
+                    0.329,
+                    0
+                  ],
+                  "marker": "none",
+                  "style": "-",
+                  "count": 1001,
+                  "last": 4.2000491824041255,
+                  "sumFirst20Half": 39.080317794365946,
+                  "x": [],
+                  "y": []
+                },
+                {
+                  "name": "User 1",
+                  "color": [
+                    0.066,
+                    0.443,
+                    0.745
+                  ],
+                  "marker": "none",
+                  "style": "-",
+                  "count": 1001,
+                  "last": 4.200052423633421,
+                  "sumFirst20Half": 36.21804986826222,
+                  "x": [],
+                  "y": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "file": "figure_01.fig",
+          "bytes": 16039,
+          "sha256": "ecd8e746a73d0e5f29549bb2e89f0bf2ebe717e2013978eeba1ff4bb18e9b3da"
+        },
+        {
+          "file": "figure_01.png",
+          "bytes": 291477,
+          "sha256": "3079e96358f7e16ace3f30dc3d45e45c50ec763fa3ece380b6e0a1f39fc3f84e"
+        },
+        {
+          "file": "figure_02.fig",
+          "bytes": 11679,
+          "sha256": "0702e24d064eff9e3bcd04db90eb4005388e2106cb51edd735dcf9cd87ccb243"
+        },
+        {
+          "file": "figure_02.png",
+          "bytes": 200219,
+          "sha256": "959973484759dc691fd8c6d739cb5d8ddb0e206ddae2c0b0f0a8a4f97f327860"
+        },
+        {
+          "file": "figure_04.fig",
+          "bytes": 15016,
+          "sha256": "a811c5ef19ffaae0340adef13aa3d4f671dfbdf71cdd26decf70163d2c893c4a"
+        },
+        {
+          "file": "figure_04.png",
+          "bytes": 286182,
+          "sha256": "599e8d56b3ff4ae4656c08c9c346fa7e53e2f9bf6a57ae2b512620fe23847936"
+        },
+        {
+          "file": "figure_05.fig",
+          "bytes": 10923,
+          "sha256": "311a86c8cd0368506bec80df53777ce5722128188a758b6abff1b3ba839f004c"
+        },
+        {
+          "file": "figure_05.png",
+          "bytes": 178589,
+          "sha256": "7ebf407ec2b65ff05e106c742976959b1d01e39e31c39104c7da237916a3eb38"
+        },
+        {
+          "file": "figure_06.fig",
+          "bytes": 29386,
+          "sha256": "46a2e431771d67f7ef03e02786c424b93298c95af76713a7f5b40f8ab32ed0bc"
+        },
+        {
+          "file": "figure_06.png",
+          "bytes": 123215,
+          "sha256": "bdccc0847da8e62bcf367b86e65fcf9a62d8d420e7117055422d84a3e96d6477"
+        },
+        {
+          "file": "figure_07.fig",
+          "bytes": 32597,
+          "sha256": "c55b91ff7907baea29606584834538bccf16b51a13334e3d7b059621ba6c32fe"
+        },
+        {
+          "file": "figure_07.png",
+          "bytes": 141658,
+          "sha256": "7e746cdcf016a93830ab7ade4db5beff5112808af226b0f425409c6e0e8b5032"
+        },
+        {
+          "file": "figure_08.fig",
+          "bytes": 32562,
+          "sha256": "71b7cbd892ce6e12fced7e3a55be857518951c5bbb9148083e97e99509a4be7d"
+        },
+        {
+          "file": "figure_08.png",
+          "bytes": 139286,
+          "sha256": "8f9158f86f1a536b063d58b1e2d454bc67b62b4db7fc276d11865d0f7819a3c0"
+        },
+        {
+          "file": "figure_09.fig",
+          "bytes": 32761,
+          "sha256": "23d366d0e92efdc1c63bb2e468f33ddb1d2b75d25dde4de1dd0caace04393bc0"
+        },
+        {
+          "file": "figure_09.png",
+          "bytes": 292861,
+          "sha256": "6427e53c171242fd092ada00ee79969efe4eeab2cbe746d569f72438fb724d08"
+        },
+        {
+          "file": "figure_10.fig",
+          "bytes": 12580,
+          "sha256": "b089ee9d82f632edc3453634c8ddbf6043b09976bd6bef89b280319a661ad6d5"
+        },
+        {
+          "file": "figure_10.png",
+          "bytes": 128840,
+          "sha256": "1e7cda75b3c18e7898d6b69ae20a89221f7832133e6db3bc56d9bd4107474dc6"
+        },
+        {
+          "file": "figure_11.fig",
+          "bytes": 136618,
+          "sha256": "37e8e848666dfdb575f6529b03c507264b485a9b345f71b79ef6ccca7782384f"
+        },
+        {
+          "file": "figure_11.png",
+          "bytes": 269805,
+          "sha256": "2bf3bd5e2e737e207382b68d731381b9b1877385dcb56fe35becc124ea74e9dc"
+        },
+        {
+          "file": "figure_12.fig",
+          "bytes": 351994,
+          "sha256": "daf1a8f5902679018c21a3ad861024dfd7ddde150968cfc280fdcbf13f7b879e"
+        },
+        {
+          "file": "figure_12.png",
+          "bytes": 285600,
+          "sha256": "5a7592b20ababdf93782f9265847c0e5b4592f2c7f39ea703741570bfaa80367"
+        },
+        {
+          "file": "figure_13.fig",
+          "bytes": 138371,
+          "sha256": "e8ef258787c29c355fa85d7e957d338a4ff25e607a171a06d378f40a969c1271"
+        },
+        {
+          "file": "figure_13.png",
+          "bytes": 287902,
+          "sha256": "db8d052214166619de51e29cbd13ce38bcc42c13b422201b7ba749f8afe0b067"
+        },
+        {
+          "file": "figure_14.fig",
+          "bytes": 445614,
+          "sha256": "5bcc2d199a08628238ed4be5729fe25305048d4f456c4c918160bfa423c71129"
+        },
+        {
+          "file": "figure_14.png",
+          "bytes": 196306,
+          "sha256": "078ec75de2030b7f84fddca1a6efaec4200a85fd0b28b693ae19383c09502723"
+        },
+        {
+          "file": "figure_15.fig",
+          "bytes": 448786,
+          "sha256": "9ed4caef9846ffb2b425b0fb56984e2f278644ffc5b3a7ef26c2a9c303baf7e7"
+        },
+        {
+          "file": "figure_15.png",
+          "bytes": 194226,
+          "sha256": "bb3aa747af25b3065ba0597dba4c3d92b3376667f76ea33e7afb0f7a6aed527c"
+        },
+        {
+          "file": "figure_16.fig",
+          "bytes": 629534,
+          "sha256": "434e48ea2469917cde03a31cb65e2b3b29729374f56df53cf9501518bcdd9d65"
+        },
+        {
+          "file": "figure_16.png",
+          "bytes": 197429,
+          "sha256": "5941c2873908061b01393cf86e24c8268d47f87b6f0631cac54798a801959b31"
+        }
+      ]
+    }
+  ],
+  "merges": [
+    {
+      "date": "2026-10-22",
+      "source_folder": "seed2026_L3Mbit_diagnostics",
+      "destination_folder": "seed2026_L3Mbit",
+      "files": [
+        {
+          "old_file": "figure_06.fig",
+          "new_file": "figure_06_diagnostics.fig",
+          "sha256": "8b6786bdca05783cd6f06fdcf829a13569fa2878385373f65825a81f7695fadd",
+          "action": "renamed-conflict"
+        },
+        {
+          "old_file": "figure_06.png",
+          "new_file": "figure_06_diagnostics.png",
+          "sha256": "0ddfd53af22a64bab6db9fee938e25fd5d51c7d6b10ee726ba3ae347693485ae",
+          "action": "renamed-conflict"
+        },
+        {
+          "old_file": "figure_07.fig",
+          "new_file": "figure_07_diagnostics.fig",
+          "sha256": "655ccd8cc056d72ce568e067be90f48300e420954fbc07a5ddc3a6b60f1e2c91",
+          "action": "renamed-conflict"
+        },
+        {
+          "old_file": "figure_07.png",
+          "new_file": "figure_07_diagnostics.png",
+          "sha256": "2025c21cc2c2cf1291b120f621889b40aa9bebd232c98f1ea2c3507a4c59fd0d",
+          "action": "renamed-conflict"
+        },
+        {
+          "old_file": "figure_08.fig",
+          "new_file": "figure_08.fig",
+          "sha256": "9b4b3af7245ce5d44f84410d7c8ee960baef1dce806bde41db1dd26d9ca8951a",
+          "action": "moved"
+        },
+        {
+          "old_file": "figure_08.png",
+          "new_file": "figure_08.png",
+          "sha256": "36d0314af83d4865123752b69581a4ef6c06bcfb811cace9d5165f959197f435",
+          "action": "moved"
+        },
+        {
+          "old_file": "figure_09.fig",
+          "new_file": "figure_09.fig",
+          "sha256": "13e4dc936b3fc9c3949b23acb3d3fdd825767afd988a3bf4d0bf798b71cea87e",
+          "action": "moved"
+        },
+        {
+          "old_file": "figure_09.png",
+          "new_file": "figure_09.png",
+          "sha256": "3059564296f2cdc9b1e4b41e085e65e4a87d8c9bc527e911fd5382c57c78668b",
+          "action": "moved"
+        },
+        {
+          "old_file": "figure_10.fig",
+          "new_file": "figure_10.fig",
+          "sha256": "a697ba7ea438cf3a29f14f68491303143f7ebf9688ae127bbae60548e38026ce",
+          "action": "moved"
+        },
+        {
+          "old_file": "figure_10.png",
+          "new_file": "figure_10.png",
+          "sha256": "df0f7738ebd0537a886c5c6d948b734b722353b7545a38befb1e3fbf325dbd51",
+          "action": "moved"
+        },
+        {
+          "old_file": "figure_11.fig",
+          "new_file": "figure_11.fig",
+          "sha256": "26588232dac99474aa1e34151fe8181f555f798ea457a82af1fe86ce9055e8f5",
+          "action": "moved"
+        },
+        {
+          "old_file": "figure_11.png",
+          "new_file": "figure_11.png",
+          "sha256": "e655ecbc880c06d33d0cee19ea80ea414f4aea6da91fbb28f0ccdce6aad17801",
+          "action": "moved"
+        },
+        {
+          "old_file": "figure_12.fig",
+          "new_file": "figure_12.fig",
+          "sha256": "7cf56e07d7bcc99795090812d58b9fe7898a60d401eabc4457aa6872fdac82f8",
+          "action": "moved"
+        },
+        {
+          "old_file": "figure_12.png",
+          "new_file": "figure_12.png",
+          "sha256": "0105bc3e52c81003909fc0fd162065553291168c073530d99d88dcc233033164",
+          "action": "moved"
+        },
+        {
+          "old_file": "figure_13.fig",
+          "new_file": "figure_13.fig",
+          "sha256": "ee1034ada848fb05f7427aa6c95fc78bbbb08227aee4e5644100736c746a7fd4",
+          "action": "moved"
+        },
+        {
+          "old_file": "figure_13.png",
+          "new_file": "figure_13.png",
+          "sha256": "64e8e350fbe91f2a088b3e766f962ec61222e8c51adf8ce45f172c3eb677da2b",
+          "action": "moved"
+        },
+        {
+          "old_file": "figure_14.fig",
+          "new_file": "figure_14.fig",
+          "sha256": "438ad52ed6620a3104b1c2b856c3ca9d91a877bf09accd1790844d429acf39e8",
+          "action": "moved"
+        },
+        {
+          "old_file": "figure_14.png",
+          "new_file": "figure_14.png",
+          "sha256": "e86f4673ebc74918d4449fad47eebc7250cdeabeef0c3a8e1b8eaa8ca591ee50",
+          "action": "moved"
+        },
+        {
+          "old_file": "figure_15.fig",
+          "new_file": "figure_15.fig",
+          "sha256": "8a26cc7f0f3b1ce211e8cb6abe9893e7316f3787bf096170fc9ba57b5657615e",
+          "action": "moved"
+        },
+        {
+          "old_file": "figure_15.png",
+          "new_file": "figure_15.png",
+          "sha256": "d95f8a83ed5cde120e3a4cedb334f39a7c32e038fbdc5ca98be0370eea151243",
+          "action": "moved"
+        },
+        {
+          "old_file": "figure_16.fig",
+          "new_file": "figure_16.fig",
+          "sha256": "961f51fed0ffb6107d162de8991c66cb9aaeca9989dbd1972cef47a7b924aff5",
+          "action": "moved"
+        },
+        {
+          "old_file": "figure_16.png",
+          "new_file": "figure_16.png",
+          "sha256": "5b9427ec2689ba34676cd0a879945a55ec471ea5fccefbf1570d3e84c3d350c0",
+          "action": "moved"
+        }
+      ]
+    }
+  ]
+}

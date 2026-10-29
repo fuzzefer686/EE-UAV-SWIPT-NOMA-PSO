@@ -1,0 +1,23 @@
+{
+  "setup_project.m": "c4e0e7fc8c058d443b7ebb96c05ef303cdbad502e38ede35346ffd0dab3c5055",
+  "scripts/diagnoseV9_EE.m": "d39c60ec5d1ad75b06d7f54ec82818687a1aceb467c46abeb743dd1e0040b49e",
+  "scripts/measureV9FlightDistance.m": "fe1f98a447a427e7cda7e970dc7074a85630a15726d2df5fec186999a4c73e0f",
+  "scripts/plotV9EEDiagnostics.m": "9ee5964cb67808e22c03b2300bbc83f61030418b37c870b6832fb51f3e1ce5a4",
+  "scripts/maincodev8nUser.m": "b9eec7728635c97eb71ad4db0b8e9b70dc8584f75c18e91a9d3a951d1a6b082c",
+  "scripts/maincodeV9_EE.m": "163c40f0c0a460a8d49188b6025f9b965023f5e4a770620832b6e07fc1bdc79a",
+  "scripts/saveV9Figures.m": "cf1a9f4a6e19bd937706a8b59023e77e4c243fbd1168761df693348f56c453c6",
+  "scripts/plotV9EEUserHistories.m": "2227489cf1b86e712422e0749f024ce607d7e367285cd6b1a46666ce46c39a95",
+  "src/models/findAchievableRate_SWIPT.m": "aad3264d26c0ddf21708b1914dcd0eeda0ed68bd73b33f917abab0aca3ae456b",
+  "src/models/findAchievableRate_SWIPT_Joint.m": "62e09d000a50eae78803b522d8084030b291022c66755c975dfef0e7fc8877a9",
+  "src/models/findPowCoeff.m": "4cdf93a8d7e5d2e783c383766eed8b312542d46ea4255704a37424397e442fa6",
+  "src/optimizers/polishAlphaAllSteps_JointBS.m": "d4e8265a12447712ed59f260fc9f4ebc67fc72f860575c81baffda3867e2d9ff",
+  "src/optimizers/optimizeTrajectory_JointPSO_SWIPT_clean.m": "d3a8c3a4fabd2dae4a7f8e2da474c4ce92a5004f6d493d096d7bdecaf4c864dc",
+  "src/optimizers/optimizeTrajectory_JointBS_PSO_SWIPT_clean.m": "1e260de5485046a5c6ab8834c443436f699beda8a50244b491e9ba68832177e2",
+  "src/optimizers/optimizeTrajectory_JointBS_IPSO_SWIPT_clean.m": "99dfb3617732d234cabab079bc6d277b8975d7e85ff39ca5da3461ffad3a6dd6",
+  "src/evaluators/evaluateTrajectory_JointSWIPT_clean.m": "fbd6bf67cca5b6959df4f32cae8ad01c923e80729d7344d1e57a37f47d7b82b3",
+  "src/evaluators/addRFSlotMetrics.m": "894fe84ad293786e840be80e617e93a0ff67e5f74f7e65ccbb43ff5ec6e3f382",
+  "src/evaluators/evaluateTrajectory_SWIPT_clean.m": "f8591d493ae29c68b82e4e7838ee50e43d8a5b50b0797e99c7762da97950a3e1",
+  "src/evaluators/evaluateTrajectory_JointBS_SWIPT_clean.m": "30ce68df26b122661f369a656deccbe20992ab0f409654c890dbdbd12ba12cb4",
+  "tests/testRFSlotMetrics.m": "713aaa6f1d5a5c93c04ef971ecd8532f4596cd3ed600737898f77dbe668f3c52",
+  "tests/testSaveV9Figures.m": "78603a21788c28dd9408ae72c3379c39dd20f545832012466aa5470d272b42c8"
+}
