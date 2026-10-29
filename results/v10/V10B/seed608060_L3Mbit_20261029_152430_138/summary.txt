@@ -1,0 +1,163 @@
+
+=== V10B total UAV EE (propulsion + hover + RF) ===
+Version                   = V10-Drones-1
+Scenario seed             = 608060
+Algorithm seed            = 151459287
+Polishing seed            = 152459287
+L (bit/user):
+  User 1                  = 3.000000000000e+06 bit
+  User 2                  = 3.000000000000e+06 bit
+  User 3                  = 3.000000000000e+06 bit
+  User 4                  = 3.000000000000e+06 bit
+  User 5                  = 3.000000000000e+06 bit
+Min bits per slot (total)  = 0 bit
+Min bits per user-slot     = 5000 bit
+
+Timing and flight settings
+Hover per serving point   = 2 s
+EH / uplink time          = 1 s
+RF / downlink time        = 1 s
+Cruise speed              = 15.521 m/s
+UAV altitude              = 30 m
+Energy budget (gross)     = 17000 J
+Cruise power              = 108.940787181 W
+Hover power               = 172.38763328 W
+
+Radio settings
+BS transmit power         = 46 dBm
+Power splitting phi       = 0.9
+EH efficiency eta         = 0.9
+Bandwidth                 = 1000000 Hz
+Reference gain beta0      = -30 dB
+
+Baseline straight trajectory
+Feasible                  = 0
+EE (computed)             = 2.797379270320e+03 bit/J
+L / bit-slot / bit-user-slot QoS = 0 / 1 / 1
+Energy / geometry         = 1 / 1
+Total bits                = 2.517972509442e+07 bit
+Min bits per slot         = 2.756695490411e+05 bit
+Max bits per slot         = 2.466275104175e+06 bit
+Slots below slot QoS      = 0
+User-slots below QoS      = 0
+Total UAV energy          = 9.001183844314e+03 J
+Cruise energy             = 2.105678510032e+03 J
+Hover energy              = 6.895505331186e+03 J
+RF transmit energy        = 3.095214517951e-06 J
+Harvested energy          = 3.095214517951e-06 J
+Total flight distance     = 300.000000000 m
+Flight time               = 19.328651504 s
+Total hover time          = 40.000000000 s
+Mission time              = 59.328651504 s
+Excess energy             = 0.000000000000e+00 J
+Bits per user:
+  User 1                  = 3.074639870044e+06 bit
+  User 2                  = 2.085728353636e+06 bit
+  User 3                  = 9.603480344713e+06 bit
+  User 4                  = 5.941918587364e+06 bit
+  User 5                  = 4.473957938662e+06 bit
+Bit shortfall per user:
+  User 1                  = 0.000000000000e+00 bit
+  User 2                  = 9.142716463640e+05 bit
+  User 3                  = 0.000000000000e+00 bit
+  User 4                  = 0.000000000000e+00 bit
+  User 5                  = 0.000000000000e+00 bit
+
+Joint PSO without BS optimization
+Feasible                  = 1
+EE (computed)             = 5.459492982608e+03 bit/J
+L / bit-slot / bit-user-slot QoS = 1 / 1 / 1
+Energy / geometry         = 1 / 1
+Total bits                = 5.141420697986e+07 bit
+Min bits per slot         = 2.068463606493e+05 bit
+Max bits per slot         = 3.328603885935e+06 bit
+Slots below slot QoS      = 0
+User-slots below QoS      = 0
+Total UAV energy          = 9.417395927359e+03 J
+Cruise energy             = 2.521890592186e+03 J
+Hover energy              = 6.895505331186e+03 J
+RF transmit energy        = 3.986338267226e-06 J
+Harvested energy          = 3.986338267226e-06 J
+Total flight distance     = 359.298522567 m
+Flight time               = 23.149186429 s
+Total hover time          = 40.000000000 s
+Mission time              = 63.149186429 s
+Excess energy             = 0.000000000000e+00 J
+Bits per user:
+  User 1                  = 3.000031481601e+06 bit
+  User 2                  = 1.187128816556e+07 bit
+  User 3                  = 1.439623710577e+07 bit
+  User 4                  = 4.976657038145e+06 bit
+  User 5                  = 1.716999318879e+07 bit
+Bit shortfall per user:
+  User 1                  = 0.000000000000e+00 bit
+  User 2                  = 0.000000000000e+00 bit
+  User 3                  = 0.000000000000e+00 bit
+  User 4                  = 0.000000000000e+00 bit
+  User 5                  = 0.000000000000e+00 bit
+
+Full PSO with BS optimization
+Feasible                  = 1
+EE (computed)             = 1.155295314345e+04 bit/J
+L / bit-slot / bit-user-slot QoS = 1 / 1 / 1
+Energy / geometry         = 1 / 1
+Total bits                = 1.167807654717e+08 bit
+Min bits per slot         = 5.249998440881e+05 bit
+Max bits per slot         = 7.143421113945e+06 bit
+Slots below slot QoS      = 0
+User-slots below QoS      = 0
+Total UAV energy          = 1.010830425967e+04 J
+Cruise energy             = 3.212798824394e+03 J
+Hover energy              = 6.895505331186e+03 J
+RF transmit energy        = 1.040887644082e-04 J
+Harvested energy          = 1.040887644082e-04 J
+Total flight distance     = 457.733525192 m
+Flight time               = 29.491239301 s
+Total hover time          = 40.000000000 s
+Mission time              = 69.491239301 s
+Excess energy             = 0.000000000000e+00 J
+Bits per user:
+  User 1                  = 4.953551933667e+06 bit
+  User 2                  = 5.407811414083e+07 bit
+  User 3                  = 1.815108423333e+07 bit
+  User 4                  = 7.798864424005e+06 bit
+  User 5                  = 3.179915073984e+07 bit
+Bit shortfall per user:
+  User 1                  = 0.000000000000e+00 bit
+  User 2                  = 0.000000000000e+00 bit
+  User 3                  = 0.000000000000e+00 bit
+  User 4                  = 0.000000000000e+00 bit
+  User 5                  = 0.000000000000e+00 bit
+
+Full IPSO with BS optimization
+Feasible                  = 1
+EE (computed)             = 1.214928328427e+04 bit/J
+L / bit-slot / bit-user-slot QoS = 1 / 1 / 1
+Energy / geometry         = 1 / 1
+Total bits                = 1.227815002963e+08 bit
+Min bits per slot         = 5.267355469825e+05 bit
+Max bits per slot         = 7.079384411623e+06 bit
+Slots below slot QoS      = 0
+User-slots below QoS      = 0
+Total UAV energy          = 1.010606942183e+04 J
+Cruise energy             = 3.210563982945e+03 J
+Hover energy              = 6.895505331186e+03 J
+RF transmit energy        = 1.076989874246e-04 J
+Harvested energy          = 1.076989874246e-04 J
+Total flight distance     = 457.415123104 m
+Flight time               = 29.470725024 s
+Total hover time          = 40.000000000 s
+Mission time              = 69.470725024 s
+Excess energy             = 0.000000000000e+00 J
+Bits per user:
+  User 1                  = 5.171800076783e+06 bit
+  User 2                  = 4.678474285939e+07 bit
+  User 3                  = 1.859771905192e+07 bit
+  User 4                  = 7.974902380981e+06 bit
+  User 5                  = 4.425233592725e+07 bit
+Bit shortfall per user:
+  User 1                  = 0.000000000000e+00 bit
+  User 2                  = 0.000000000000e+00 bit
+  User 3                  = 0.000000000000e+00 bit
+  User 4                  = 0.000000000000e+00 bit
+  User 5                  = 0.000000000000e+00 bit
