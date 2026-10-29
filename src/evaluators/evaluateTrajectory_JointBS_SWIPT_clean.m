@@ -286,4 +286,9 @@ function [fitness, result] = evaluateTrajectory_JointBS_SWIPT_clean(vars, sim)
 
 
     result.jointAlphaRepair = jointAlphaRepair;
+
+    if isfield(sim, 'objectiveMode') && strcmpi(sim.objectiveMode, 'ee-rf')
+        result = addRFSlotMetrics(result, sim);
+        fitness = result.fitness;
+    end
 end

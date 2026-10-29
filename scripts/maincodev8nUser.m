@@ -51,6 +51,7 @@ end
 
 fprintf('\n================ SCENARIO INFO ================\n');
 fprintf('mainSeed = %d | noUsers = %d | noBS = %d\n', mainSeed, noUsers, noBS);
+fprintf('Fitness objective: V8 rate score (bit/s).\n');
 fprintf('xUser = '); disp(xUser);
 fprintf('yUser = '); disp(yUser);
 
@@ -235,13 +236,13 @@ fprintf('\nFINAL RESULT\n');
 fprintf('V8 settings: noUsers = %d, noBS = %d, lambdaMean = %.4f, lambdaFair = %.4f, useFixedSeed = %d\n', noUsers, noBS, sim.lambdaMean, sim.lambdaFair, useFixedSeed);
 
 fprintf('\nBaseline straight trajectory\n');
-fprintf('Baseline fitness          = %.12e\n', fitBase);
+fprintf('Baseline fitness          = %.12e bit/s\n', fitBase);
 fprintf('Baseline global minRate   = %.12e\n', min(resBase.stepMin));
 fprintf('Baseline mean minRate     = %.12e\n', mean(resBase.stepMin));
 fprintf('Baseline mean pt          = %.4e W, %.4f dBm\n', mean(resBase.pt), 10*log10(mean(resBase.pt)/1e-3));
 
 fprintf('\nJoint PSO-SWIPT without BS optimization\n');
-fprintf('Joint fitness             = %.12e\n', trajJoint.bestFitness);
+fprintf('Joint fitness             = %.12e bit/s\n', trajJoint.bestFitness);
 fprintf('Joint minInternal         = %.12e\n', trajJoint.minInternal);
 fprintf('Joint meanInternal        = %.12e\n', trajJoint.meanInternal);
 fprintf('Joint global minRate      = %.12e\n', min(trajJoint.stepMin));
@@ -250,7 +251,7 @@ fprintf('Joint penalty             = %.4e\n', trajJoint.penalty);
 fprintf('Joint feasible            = %d\n', trajJoint.isFeasible);
 
 fprintf('\nFull Joint PSO-SWIPT with BS optimization\n');
-fprintf('Full fitness              = %.12e\n', trajFull.bestFitness);
+fprintf('Full fitness              = %.12e bit/s\n', trajFull.bestFitness);
 fprintf('Full minFit               = %.12e\n', trajFull.minFit);
 fprintf('Full meanFit              = %.12e\n', trajFull.meanFit);
 fprintf('Full global minRate       = %.12e\n', min(trajFull.stepMin));
@@ -260,7 +261,7 @@ fprintf('Full feasible             = %d\n', trajFull.isFeasible);
 fprintf('Full roughNorm            = %.4f\n', trajFull.roughNorm);
 
 fprintf('\nFull Joint IPSO-SWIPT with BS optimization\n');
-fprintf('IPSO fitness              = %.12e\n', trajIPSO.bestFitness);
+fprintf('IPSO fitness              = %.12e bit/s\n', trajIPSO.bestFitness);
 fprintf('IPSO minFit               = %.12e\n', trajIPSO.minFit);
 fprintf('IPSO meanFit              = %.12e\n', trajIPSO.meanFit);
 fprintf('IPSO global minRate       = %.12e\n', min(trajIPSO.stepMin));
@@ -269,7 +270,7 @@ fprintf('IPSO penalty              = %.4e\n', trajIPSO.penalty);
 
 fprintf('\nImprovement\n');
 fprintf('Full - Baseline global minRate gain = %.12e\n', min(trajFull.stepMin) - min(resBase.stepMin));
-fprintf('Full - Joint fitness gain           = %.12e\n', trajFull.bestFitness - trajJoint.bestFitness);
+fprintf('Full - Joint fitness gain           = %.12e bit/s\n', trajFull.bestFitness - trajJoint.bestFitness);
 fprintf('Full - Joint minInternal gain       = %.12e\n', trajFull.minFit - trajJoint.minInternal);
 fprintf('Full - Joint meanInternal gain      = %.12e\n', trajFull.meanFit - trajJoint.meanInternal);
 
@@ -299,11 +300,11 @@ ipso_mean = mean(trajIPSO.stepMin(idx));
 ipso_raw = ipso_min + sim.lambdaMean * ipso_mean;
 
 fprintf('\n=== INTERNAL OBJECTIVE CHECK ===\n');
-fprintf('Joint no-BS | min %.4e | mean %.4e | rawObj %.4e | fitness %.4e | meanPt %.4e\n', ...
+fprintf('Joint no-BS | min %.4e bit/s | mean %.4e bit/s | rawObj %.4e bit/s | fitness %.4e bit/s | meanPt %.4e W\n', ...
     joint_min, joint_mean, joint_raw, trajJoint.bestFitness, mean(trajJoint.pt));
-fprintf('Full PSO    | min %.4e | mean %.4e | rawObj %.4e | fitness %.4e | meanPt %.4e\n', ...
+fprintf('Full PSO    | min %.4e bit/s | mean %.4e bit/s | rawObj %.4e bit/s | fitness %.4e bit/s | meanPt %.4e W\n', ...
     pso_min, pso_mean, pso_raw, trajFull.bestFitness, mean(trajFull.pt));
-fprintf('Full IPSO   | min %.4e | mean %.4e | rawObj %.4e | fitness %.4e | meanPt %.4e\n', ...
+fprintf('Full IPSO   | min %.4e bit/s | mean %.4e bit/s | rawObj %.4e bit/s | fitness %.4e bit/s | meanPt %.4e W\n', ...
     ipso_min, ipso_mean, ipso_raw, trajIPSO.bestFitness, mean(trajIPSO.pt));
 
 fprintf('\n=== FAIRNESS CHECK ON INTERNAL STEPS ===\n');
@@ -508,7 +509,7 @@ plot(0:optsFull.maxIter, trajFull.bestHistory, '-^', 'Color', colorFull, 'LineWi
 plot(0:optsIPSO.maxIter, trajIPSO.bestHistory, '-d', 'Color', colorIPSO, 'LineWidth', 1.5, 'MarkerSize', 4);
 
 grid on;
-xlabel('Iteration'); ylabel('Best fitness (bps)');
+xlabel('Iteration'); ylabel('Best fitness (bit/s)');
 title('Convergence: Full PSO vs Full IPSO');
 legend('Full Joint (PSO)', 'Full Joint (IPSO)', 'Location', 'best');
 xlim([0 optsIPSO.maxIter]);
