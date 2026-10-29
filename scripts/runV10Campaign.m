@@ -120,6 +120,7 @@ function campaign = runV10Campaign(opts)
         'alphaMax', NaN, 'alphaMean', NaN, 'jain', NaN, ...
         'minUserBits', NaN, 'maxUserBits', NaN, ...
         'folder', '', 'error', '');
+    template = template(1);
     rows = repmat(template, 0, 1);
 
     runIndex = 0;
@@ -142,18 +143,21 @@ function campaign = runV10Campaign(opts)
                     runIndex, nRuns, variants{v}, seeds(s), configs(c).label, toc(tStart));
                 try
                     data = runV10(variants{v}, cfg);
-                    rows = [rows; summarizeRun(variants{v}, seeds(s), configs(c), ...
-                        data, template)]; %#ok<AGROW>
+                    newRows = summarizeRun(variants{v}, seeds(s), configs(c), ...
+                        data, template);
+                    rows = [rows; newRows(:)]; %#ok<AGROW>
                 catch err
                     warning('runV10Campaign:RunFailed', ...
                         'Run failed: V10%s seed=%.0f %s: %s', ...
                         variants{v}, seeds(s), configs(c).label, err.message);
-                    rows = [rows; errorRows(variants{v}, seeds(s), configs(c), ...
-                        err.message, template)]; %#ok<AGROW>
+                    newRows = errorRows(variants{v}, seeds(s), configs(c), ...
+                        err.message, template);
+                    rows = [rows; newRows(:)]; %#ok<AGROW>
                 end
 
                 % Save the partial table after every run so a long campaign
                 % can be inspected or stopped without losing completed rows.
+                rows = rows(:);
                 T = struct2table(rows);
                 save(fullfile(out, 'campaign.mat'), 'T', 'configs', 'seeds', ...
                     'variants', 'groups', 'profile', 'maxIter', 'numParticles', 'opts', '-v7.3');
@@ -162,6 +166,7 @@ function campaign = runV10Campaign(opts)
         end
     end
 
+    rows = rows(:);
     T = struct2table(rows);
     campaign = struct();
     campaign.results = T;
@@ -225,7 +230,7 @@ end
 function rows = summarizeRun(variant, seed, cfgSpec, data, template)
     names = {'Baseline', 'Joint PSO', 'Full PSO', 'Full IPSO'};
     results = {data.resBase, data.trajJoint, data.trajFull, data.trajIPSO};
-    rows = repmat(template, 0, 1);
+    rows = repmat(template, numel(results), 1);
     for k = 1:numel(results)
         r = results{k};
         row = template;
@@ -260,13 +265,13 @@ function rows = summarizeRun(variant, seed, cfgSpec, data, template)
         row.minUserBits = min(b);
         row.maxUserBits = max(b);
         row.folder = data.outputFolder;
-        rows(end+1) = row; %#ok<AGROW>
+        rows(k) = row;
     end
 end
 
 function rows = errorRows(variant, seed, cfgSpec, message, template)
     names = {'Baseline', 'Joint PSO', 'Full PSO', 'Full IPSO'};
-    rows = repmat(template, 0, 1);
+    rows = repmat(template, numel(names), 1);
     for k = 1:numel(names)
         row = template;
         row.variant = variant;
@@ -275,7 +280,7 @@ function rows = errorRows(variant, seed, cfgSpec, message, template)
         row.config = cfgSpec.label;
         row.algorithm = names{k};
         row.error = message;
-        rows(end+1) = row; %#ok<AGROW>
+        rows(k) = row;
     end
 end
 
