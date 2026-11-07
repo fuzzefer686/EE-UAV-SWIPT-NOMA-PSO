@@ -1,0 +1,56 @@
+
+V10C C0 | V10B-compatible model, fixed hover and phase split
+Stage: search-complete | selected algorithm: PSO
+Reference joint PSO/IPSO; SCA/Dinkelbach hybrid not used.
+Energy model: inherited-steady-horizontal-model
+Geometry dimensions / joint search dimensions: 44 / 144
+Seed / particles / iterations: 2026 / 20 / 100
+L bit/user: 3000000 
+q bit/user/slot: 5000 
+Initial candidate: feasible 0 | EE 1748.59137728 bit/J
+Total bits / energy J / budget J: 9710681.87206 / 5553.43117795 / 17000
+Movement / hover / RF energy J: 2105.67851003 / 3447.75266559 / 2.32102103648e-06
+Distance m / hover s / mission s / service visits: 300 / 20 / 39.3286515 / 20
+Geometry / time / alpha / L / q / slot / energy: 1 1 1 0 0 1 1
+Bits per physical user: 1352343.95381 799130.16751 2716613.12134 3922740.79114 919853.838253 
+
+PSO | evaluations 2020 | score 1767.07346548
+Searched candidate: feasible 1 | EE 1767.07346548 bit/J
+Total bits / energy J / budget J: 23935227.8865 / 13545.1232527 / 17000
+Movement / hover / RF energy J: 10097.3705477 / 3447.75266559 / 3.94633300378e-05
+Distance m / hover s / mission s / service visits: 1438.59148 / 20 / 112.686778 / 20
+Geometry / time / alpha / L / q / slot / energy: 1 1 1 1 1 1 1
+Bits per physical user: 4077076.02642 6335738.25642 5268120.89808 5148304.80582 3105987.8998 
+
+IPSO | evaluations 2020 | score -0.0997374971453
+Searched candidate: feasible 0 | EE 1493.42053376 bit/J
+Total bits / energy J / budget J: 17425757.2325 / 11668.3525093 / 17000
+Movement / hover / RF energy J: 8220.59982082 / 3447.75266559 / 2.28347091309e-05
+Distance m / hover s / mission s / service visits: 1171.2044 / 20 / 95.4593393 / 20
+Geometry / time / alpha / L / q / slot / energy: 1 1 1 0 0 1 1
+Bits per physical user: 3562860.60252 4096445.08567 3127001.36113 3863561.81866 2775888.36449 
+
+Best candidate coordinates and slot times
+slot X_m Y_m UL_s DL_s hover_s
+1 150 300 0.5 0.5 1
+2 75 299 0.5 0.5 1
+3 95.9868822076 298 0.5 0.5 1
+4 225 292.71353882 0.5 0.5 1
+5 92.2405793888 214.943279203 0.5 0.5 1
+6 75 198.302795563 0.5 0.5 1
+7 156.559904701 196.853787476 0.5 0.5 1
+8 75 192.366637242 0.5 0.5 1
+9 138.037535229 189.08756343 0.5 0.5 1
+10 128.430619086 186.789265738 0.5 0.5 1
+11 120.668873249 179.803083448 0.5 0.5 1
+12 215.146496381 173.474469175 0.5 0.5 1
+13 118.866210561 171.044762832 0.5 0.5 1
+14 224.626944598 106.361684508 0.5 0.5 1
+15 225 80.4827342959 0.5 0.5 1
+16 83.7494964112 74.4198303708 0.5 0.5 1
+17 225 49.8312656375 0.5 0.5 1
+18 225 47.2696675897 0.5 0.5 1
+19 192.406673662 2 0.5 0.5 1
+20 223.680377038 1 0.5 0.5 1
+arrival 150 0
+No global optimality guarantee. If infeasible, EE is diagnostic only.

@@ -1,0 +1,217 @@
+folder,algorithm,csv_mat_match,energy_sum_match,bits_sum_match,jain_match
+results/v10/V10A/seed2026_L1Mbit_20261029_125857_157/results.mat,Baseline,True,True,True,True
+results/v10/V10A/seed2026_L1Mbit_20261029_125857_157/results.mat,Joint PSO,True,True,True,True
+results/v10/V10A/seed2026_L1Mbit_20261029_125857_157/results.mat,Full PSO,True,True,True,True
+results/v10/V10A/seed2026_L1Mbit_20261029_125857_157/results.mat,Full IPSO,True,True,True,True
+results/v10/V10A/seed2026_L2Mbit_20261029_130152_493/results.mat,Baseline,True,True,True,True
+results/v10/V10A/seed2026_L2Mbit_20261029_130152_493/results.mat,Joint PSO,True,True,True,True
+results/v10/V10A/seed2026_L2Mbit_20261029_130152_493/results.mat,Full PSO,True,True,True,True
+results/v10/V10A/seed2026_L2Mbit_20261029_130152_493/results.mat,Full IPSO,True,True,True,True
+results/v10/V10A/seed2026_L3Mbit_20261029_130452_336/results.mat,Baseline,True,True,True,True
+results/v10/V10A/seed2026_L3Mbit_20261029_130452_336/results.mat,Joint PSO,True,True,True,True
+results/v10/V10A/seed2026_L3Mbit_20261029_130452_336/results.mat,Full PSO,True,True,True,True
+results/v10/V10A/seed2026_L3Mbit_20261029_130452_336/results.mat,Full IPSO,True,True,True,True
+results/v10/V10A/seed2026_L3Mbit_20261029_130750_515/results.mat,Baseline,True,True,True,True
+results/v10/V10A/seed2026_L3Mbit_20261029_130750_515/results.mat,Joint PSO,True,True,True,True
+results/v10/V10A/seed2026_L3Mbit_20261029_130750_515/results.mat,Full PSO,True,True,True,True
+results/v10/V10A/seed2026_L3Mbit_20261029_130750_515/results.mat,Full IPSO,True,True,True,True
+results/v10/V10A/seed2026_L3Mbit_20261029_131048_509/results.mat,Baseline,True,True,True,True
+results/v10/V10A/seed2026_L3Mbit_20261029_131048_509/results.mat,Joint PSO,True,True,True,True
+results/v10/V10A/seed2026_L3Mbit_20261029_131048_509/results.mat,Full PSO,True,True,True,True
+results/v10/V10A/seed2026_L3Mbit_20261029_131048_509/results.mat,Full IPSO,True,True,True,True
+results/v10/V10A/seed2026_L3Mbit_20261029_131345_563/results.mat,Baseline,True,True,True,True
+results/v10/V10A/seed2026_L3Mbit_20261029_131345_563/results.mat,Joint PSO,True,True,True,True
+results/v10/V10A/seed2026_L3Mbit_20261029_131345_563/results.mat,Full PSO,True,True,True,True
+results/v10/V10A/seed2026_L3Mbit_20261029_131345_563/results.mat,Full IPSO,True,True,True,True
+results/v10/V10A/seed2026_L3Mbit_20261029_131643_639/results.mat,Baseline,True,True,True,True
+results/v10/V10A/seed2026_L3Mbit_20261029_131643_639/results.mat,Joint PSO,True,True,True,True
+results/v10/V10A/seed2026_L3Mbit_20261029_131643_639/results.mat,Full PSO,True,True,True,True
+results/v10/V10A/seed2026_L3Mbit_20261029_131643_639/results.mat,Full IPSO,True,True,True,True
+results/v10/V10A/seed2026_L3Mbit_20261029_131939_930/results.mat,Baseline,True,True,True,True
+results/v10/V10A/seed2026_L3Mbit_20261029_131939_930/results.mat,Joint PSO,True,True,True,True
+results/v10/V10A/seed2026_L3Mbit_20261029_131939_930/results.mat,Full PSO,True,True,True,True
+results/v10/V10A/seed2026_L3Mbit_20261029_131939_930/results.mat,Full IPSO,True,True,True,True
+results/v10/V10A/seed2026_L3Mbit_20261029_132236_784/results.mat,Baseline,True,True,True,True
+results/v10/V10A/seed2026_L3Mbit_20261029_132236_784/results.mat,Joint PSO,True,True,True,True
+results/v10/V10A/seed2026_L3Mbit_20261029_132236_784/results.mat,Full PSO,True,True,True,True
+results/v10/V10A/seed2026_L3Mbit_20261029_132236_784/results.mat,Full IPSO,True,True,True,True
+results/v10/V10A/seed608060_L1Mbit_20261029_132532_382/results.mat,Baseline,True,True,True,True
+results/v10/V10A/seed608060_L1Mbit_20261029_132532_382/results.mat,Joint PSO,True,True,True,True
+results/v10/V10A/seed608060_L1Mbit_20261029_132532_382/results.mat,Full PSO,True,True,True,True
+results/v10/V10A/seed608060_L1Mbit_20261029_132532_382/results.mat,Full IPSO,True,True,True,True
+results/v10/V10A/seed608060_L2Mbit_20261029_132828_919/results.mat,Baseline,True,True,True,True
+results/v10/V10A/seed608060_L2Mbit_20261029_132828_919/results.mat,Joint PSO,True,True,True,True
+results/v10/V10A/seed608060_L2Mbit_20261029_132828_919/results.mat,Full PSO,True,True,True,True
+results/v10/V10A/seed608060_L2Mbit_20261029_132828_919/results.mat,Full IPSO,True,True,True,True
+results/v10/V10A/seed608060_L3Mbit_20261029_133124_848/results.mat,Baseline,True,True,True,True
+results/v10/V10A/seed608060_L3Mbit_20261029_133124_848/results.mat,Joint PSO,True,True,True,True
+results/v10/V10A/seed608060_L3Mbit_20261029_133124_848/results.mat,Full PSO,True,True,True,True
+results/v10/V10A/seed608060_L3Mbit_20261029_133124_848/results.mat,Full IPSO,True,True,True,True
+results/v10/V10A/seed608060_L3Mbit_20261029_133421_041/results.mat,Baseline,True,True,True,True
+results/v10/V10A/seed608060_L3Mbit_20261029_133421_041/results.mat,Joint PSO,True,True,True,True
+results/v10/V10A/seed608060_L3Mbit_20261029_133421_041/results.mat,Full PSO,True,True,True,True
+results/v10/V10A/seed608060_L3Mbit_20261029_133421_041/results.mat,Full IPSO,True,True,True,True
+results/v10/V10A/seed608060_L3Mbit_20261029_133717_253/results.mat,Baseline,True,True,True,True
+results/v10/V10A/seed608060_L3Mbit_20261029_133717_253/results.mat,Joint PSO,True,True,True,True
+results/v10/V10A/seed608060_L3Mbit_20261029_133717_253/results.mat,Full PSO,True,True,True,True
+results/v10/V10A/seed608060_L3Mbit_20261029_133717_253/results.mat,Full IPSO,True,True,True,True
+results/v10/V10A/seed608060_L3Mbit_20261029_134013_378/results.mat,Baseline,True,True,True,True
+results/v10/V10A/seed608060_L3Mbit_20261029_134013_378/results.mat,Joint PSO,True,True,True,True
+results/v10/V10A/seed608060_L3Mbit_20261029_134013_378/results.mat,Full PSO,True,True,True,True
+results/v10/V10A/seed608060_L3Mbit_20261029_134013_378/results.mat,Full IPSO,True,True,True,True
+results/v10/V10A/seed608060_L3Mbit_20261029_134309_384/results.mat,Baseline,True,True,True,True
+results/v10/V10A/seed608060_L3Mbit_20261029_134309_384/results.mat,Joint PSO,True,True,True,True
+results/v10/V10A/seed608060_L3Mbit_20261029_134309_384/results.mat,Full PSO,True,True,True,True
+results/v10/V10A/seed608060_L3Mbit_20261029_134309_384/results.mat,Full IPSO,True,True,True,True
+results/v10/V10A/seed608060_L3Mbit_20261029_134605_211/results.mat,Baseline,True,True,True,True
+results/v10/V10A/seed608060_L3Mbit_20261029_134605_211/results.mat,Joint PSO,True,True,True,True
+results/v10/V10A/seed608060_L3Mbit_20261029_134605_211/results.mat,Full PSO,True,True,True,True
+results/v10/V10A/seed608060_L3Mbit_20261029_134605_211/results.mat,Full IPSO,True,True,True,True
+results/v10/V10A/seed608060_L3Mbit_20261029_134901_713/results.mat,Baseline,True,True,True,True
+results/v10/V10A/seed608060_L3Mbit_20261029_134901_713/results.mat,Joint PSO,True,True,True,True
+results/v10/V10A/seed608060_L3Mbit_20261029_134901_713/results.mat,Full PSO,True,True,True,True
+results/v10/V10A/seed608060_L3Mbit_20261029_134901_713/results.mat,Full IPSO,True,True,True,True
+results/v10/V10A/seed3486784401_L1Mbit_20261029_135157_918/results.mat,Baseline,True,True,True,True
+results/v10/V10A/seed3486784401_L1Mbit_20261029_135157_918/results.mat,Joint PSO,True,True,True,True
+results/v10/V10A/seed3486784401_L1Mbit_20261029_135157_918/results.mat,Full PSO,True,True,True,True
+results/v10/V10A/seed3486784401_L1Mbit_20261029_135157_918/results.mat,Full IPSO,True,True,True,True
+results/v10/V10A/seed3486784401_L2Mbit_20261029_135454_969/results.mat,Baseline,True,True,True,True
+results/v10/V10A/seed3486784401_L2Mbit_20261029_135454_969/results.mat,Joint PSO,True,True,True,True
+results/v10/V10A/seed3486784401_L2Mbit_20261029_135454_969/results.mat,Full PSO,True,True,True,True
+results/v10/V10A/seed3486784401_L2Mbit_20261029_135454_969/results.mat,Full IPSO,True,True,True,True
+results/v10/V10A/seed3486784401_L3Mbit_20261029_135751_436/results.mat,Baseline,True,True,True,True
+results/v10/V10A/seed3486784401_L3Mbit_20261029_135751_436/results.mat,Joint PSO,True,True,True,True
+results/v10/V10A/seed3486784401_L3Mbit_20261029_135751_436/results.mat,Full PSO,True,True,True,True
+results/v10/V10A/seed3486784401_L3Mbit_20261029_135751_436/results.mat,Full IPSO,True,True,True,True
+results/v10/V10A/seed3486784401_L3Mbit_20261029_140047_612/results.mat,Baseline,True,True,True,True
+results/v10/V10A/seed3486784401_L3Mbit_20261029_140047_612/results.mat,Joint PSO,True,True,True,True
+results/v10/V10A/seed3486784401_L3Mbit_20261029_140047_612/results.mat,Full PSO,True,True,True,True
+results/v10/V10A/seed3486784401_L3Mbit_20261029_140047_612/results.mat,Full IPSO,True,True,True,True
+results/v10/V10A/seed3486784401_L3Mbit_20261029_140344_694/results.mat,Baseline,True,True,True,True
+results/v10/V10A/seed3486784401_L3Mbit_20261029_140344_694/results.mat,Joint PSO,True,True,True,True
+results/v10/V10A/seed3486784401_L3Mbit_20261029_140344_694/results.mat,Full PSO,True,True,True,True
+results/v10/V10A/seed3486784401_L3Mbit_20261029_140344_694/results.mat,Full IPSO,True,True,True,True
+results/v10/V10A/seed3486784401_L3Mbit_20261029_140642_339/results.mat,Baseline,True,True,True,True
+results/v10/V10A/seed3486784401_L3Mbit_20261029_140642_339/results.mat,Joint PSO,True,True,True,True
+results/v10/V10A/seed3486784401_L3Mbit_20261029_140642_339/results.mat,Full PSO,True,True,True,True
+results/v10/V10A/seed3486784401_L3Mbit_20261029_140642_339/results.mat,Full IPSO,True,True,True,True
+results/v10/V10A/seed3486784401_L3Mbit_20261029_140939_168/results.mat,Baseline,True,True,True,True
+results/v10/V10A/seed3486784401_L3Mbit_20261029_140939_168/results.mat,Joint PSO,True,True,True,True
+results/v10/V10A/seed3486784401_L3Mbit_20261029_140939_168/results.mat,Full PSO,True,True,True,True
+results/v10/V10A/seed3486784401_L3Mbit_20261029_140939_168/results.mat,Full IPSO,True,True,True,True
+results/v10/V10A/seed3486784401_L3Mbit_20261029_141236_346/results.mat,Baseline,True,True,True,True
+results/v10/V10A/seed3486784401_L3Mbit_20261029_141236_346/results.mat,Joint PSO,True,True,True,True
+results/v10/V10A/seed3486784401_L3Mbit_20261029_141236_346/results.mat,Full PSO,True,True,True,True
+results/v10/V10A/seed3486784401_L3Mbit_20261029_141236_346/results.mat,Full IPSO,True,True,True,True
+results/v10/V10A/seed3486784401_L3Mbit_20261029_141532_510/results.mat,Baseline,True,True,True,True
+results/v10/V10A/seed3486784401_L3Mbit_20261029_141532_510/results.mat,Joint PSO,True,True,True,True
+results/v10/V10A/seed3486784401_L3Mbit_20261029_141532_510/results.mat,Full PSO,True,True,True,True
+results/v10/V10A/seed3486784401_L3Mbit_20261029_141532_510/results.mat,Full IPSO,True,True,True,True
+results/v10/V10B/seed2026_L1Mbit_20261029_141833_418/results.mat,Baseline,True,True,True,True
+results/v10/V10B/seed2026_L1Mbit_20261029_141833_418/results.mat,Joint PSO,True,True,True,True
+results/v10/V10B/seed2026_L1Mbit_20261029_141833_418/results.mat,Full PSO,True,True,True,True
+results/v10/V10B/seed2026_L1Mbit_20261029_141833_418/results.mat,Full IPSO,True,True,True,True
+results/v10/V10B/seed2026_L2Mbit_20261029_142133_835/results.mat,Baseline,True,True,True,True
+results/v10/V10B/seed2026_L2Mbit_20261029_142133_835/results.mat,Joint PSO,True,True,True,True
+results/v10/V10B/seed2026_L2Mbit_20261029_142133_835/results.mat,Full PSO,True,True,True,True
+results/v10/V10B/seed2026_L2Mbit_20261029_142133_835/results.mat,Full IPSO,True,True,True,True
+results/v10/V10B/seed2026_L3Mbit_20261029_142436_310/results.mat,Baseline,True,True,True,True
+results/v10/V10B/seed2026_L3Mbit_20261029_142436_310/results.mat,Joint PSO,True,True,True,True
+results/v10/V10B/seed2026_L3Mbit_20261029_142436_310/results.mat,Full PSO,True,True,True,True
+results/v10/V10B/seed2026_L3Mbit_20261029_142436_310/results.mat,Full IPSO,True,True,True,True
+results/v10/V10B/seed2026_L3Mbit_20261029_142737_076/results.mat,Baseline,True,True,True,True
+results/v10/V10B/seed2026_L3Mbit_20261029_142737_076/results.mat,Joint PSO,True,True,True,True
+results/v10/V10B/seed2026_L3Mbit_20261029_142737_076/results.mat,Full PSO,True,True,True,True
+results/v10/V10B/seed2026_L3Mbit_20261029_142737_076/results.mat,Full IPSO,True,True,True,True
+results/v10/V10B/seed2026_L3Mbit_20261029_143039_711/results.mat,Baseline,True,True,True,True
+results/v10/V10B/seed2026_L3Mbit_20261029_143039_711/results.mat,Joint PSO,True,True,True,True
+results/v10/V10B/seed2026_L3Mbit_20261029_143039_711/results.mat,Full PSO,True,True,True,True
+results/v10/V10B/seed2026_L3Mbit_20261029_143039_711/results.mat,Full IPSO,True,True,True,True
+results/v10/V10B/seed2026_L3Mbit_20261029_143340_295/results.mat,Baseline,True,True,True,True
+results/v10/V10B/seed2026_L3Mbit_20261029_143340_295/results.mat,Joint PSO,True,True,True,True
+results/v10/V10B/seed2026_L3Mbit_20261029_143340_295/results.mat,Full PSO,True,True,True,True
+results/v10/V10B/seed2026_L3Mbit_20261029_143340_295/results.mat,Full IPSO,True,True,True,True
+results/v10/V10B/seed2026_L3Mbit_20261029_143643_160/results.mat,Baseline,True,True,True,True
+results/v10/V10B/seed2026_L3Mbit_20261029_143643_160/results.mat,Joint PSO,True,True,True,True
+results/v10/V10B/seed2026_L3Mbit_20261029_143643_160/results.mat,Full PSO,True,True,True,True
+results/v10/V10B/seed2026_L3Mbit_20261029_143643_160/results.mat,Full IPSO,True,True,True,True
+results/v10/V10B/seed2026_L3Mbit_20261029_143942_889/results.mat,Baseline,True,True,True,True
+results/v10/V10B/seed2026_L3Mbit_20261029_143942_889/results.mat,Joint PSO,True,True,True,True
+results/v10/V10B/seed2026_L3Mbit_20261029_143942_889/results.mat,Full PSO,True,True,True,True
+results/v10/V10B/seed2026_L3Mbit_20261029_143942_889/results.mat,Full IPSO,True,True,True,True
+results/v10/V10B/seed2026_L3Mbit_20261029_144244_047/results.mat,Baseline,True,True,True,True
+results/v10/V10B/seed2026_L3Mbit_20261029_144244_047/results.mat,Joint PSO,True,True,True,True
+results/v10/V10B/seed2026_L3Mbit_20261029_144244_047/results.mat,Full PSO,True,True,True,True
+results/v10/V10B/seed2026_L3Mbit_20261029_144244_047/results.mat,Full IPSO,True,True,True,True
+results/v10/V10B/seed608060_L1Mbit_20261029_144544_441/results.mat,Baseline,True,True,True,True
+results/v10/V10B/seed608060_L1Mbit_20261029_144544_441/results.mat,Joint PSO,True,True,True,True
+results/v10/V10B/seed608060_L1Mbit_20261029_144544_441/results.mat,Full PSO,True,True,True,True
+results/v10/V10B/seed608060_L1Mbit_20261029_144544_441/results.mat,Full IPSO,True,True,True,True
+results/v10/V10B/seed608060_L2Mbit_20261029_144844_330/results.mat,Baseline,True,True,True,True
+results/v10/V10B/seed608060_L2Mbit_20261029_144844_330/results.mat,Joint PSO,True,True,True,True
+results/v10/V10B/seed608060_L2Mbit_20261029_144844_330/results.mat,Full PSO,True,True,True,True
+results/v10/V10B/seed608060_L2Mbit_20261029_144844_330/results.mat,Full IPSO,True,True,True,True
+results/v10/V10B/seed608060_L3Mbit_20261029_145144_580/results.mat,Baseline,True,True,True,True
+results/v10/V10B/seed608060_L3Mbit_20261029_145144_580/results.mat,Joint PSO,True,True,True,True
+results/v10/V10B/seed608060_L3Mbit_20261029_145144_580/results.mat,Full PSO,True,True,True,True
+results/v10/V10B/seed608060_L3Mbit_20261029_145144_580/results.mat,Full IPSO,True,True,True,True
+results/v10/V10B/seed608060_L3Mbit_20261029_145444_511/results.mat,Baseline,True,True,True,True
+results/v10/V10B/seed608060_L3Mbit_20261029_145444_511/results.mat,Joint PSO,True,True,True,True
+results/v10/V10B/seed608060_L3Mbit_20261029_145444_511/results.mat,Full PSO,True,True,True,True
+results/v10/V10B/seed608060_L3Mbit_20261029_145444_511/results.mat,Full IPSO,True,True,True,True
+results/v10/V10B/seed608060_L3Mbit_20261029_150215_676/results.mat,Baseline,True,True,True,True
+results/v10/V10B/seed608060_L3Mbit_20261029_150215_676/results.mat,Joint PSO,True,True,True,True
+results/v10/V10B/seed608060_L3Mbit_20261029_150215_676/results.mat,Full PSO,True,True,True,True
+results/v10/V10B/seed608060_L3Mbit_20261029_150215_676/results.mat,Full IPSO,True,True,True,True
+results/v10/V10B/seed608060_L3Mbit_20261029_151144_669/results.mat,Baseline,True,True,True,True
+results/v10/V10B/seed608060_L3Mbit_20261029_151144_669/results.mat,Joint PSO,True,True,True,True
+results/v10/V10B/seed608060_L3Mbit_20261029_151144_669/results.mat,Full PSO,True,True,True,True
+results/v10/V10B/seed608060_L3Mbit_20261029_151144_669/results.mat,Full IPSO,True,True,True,True
+results/v10/V10B/seed608060_L3Mbit_20261029_152112_629/results.mat,Baseline,True,True,True,True
+results/v10/V10B/seed608060_L3Mbit_20261029_152112_629/results.mat,Joint PSO,True,True,True,True
+results/v10/V10B/seed608060_L3Mbit_20261029_152112_629/results.mat,Full PSO,True,True,True,True
+results/v10/V10B/seed608060_L3Mbit_20261029_152112_629/results.mat,Full IPSO,True,True,True,True
+results/v10/V10B/seed608060_L3Mbit_20261029_152430_138/results.mat,Baseline,True,True,True,True
+results/v10/V10B/seed608060_L3Mbit_20261029_152430_138/results.mat,Joint PSO,True,True,True,True
+results/v10/V10B/seed608060_L3Mbit_20261029_152430_138/results.mat,Full PSO,True,True,True,True
+results/v10/V10B/seed608060_L3Mbit_20261029_152430_138/results.mat,Full IPSO,True,True,True,True
+results/v10/V10B/seed608060_L3Mbit_20261029_152730_172/results.mat,Baseline,True,True,True,True
+results/v10/V10B/seed608060_L3Mbit_20261029_152730_172/results.mat,Joint PSO,True,True,True,True
+results/v10/V10B/seed608060_L3Mbit_20261029_152730_172/results.mat,Full PSO,True,True,True,True
+results/v10/V10B/seed608060_L3Mbit_20261029_152730_172/results.mat,Full IPSO,True,True,True,True
+results/v10/V10B/seed3486784401_L1Mbit_20261029_153031_232/results.mat,Baseline,True,True,True,True
+results/v10/V10B/seed3486784401_L1Mbit_20261029_153031_232/results.mat,Joint PSO,True,True,True,True
+results/v10/V10B/seed3486784401_L1Mbit_20261029_153031_232/results.mat,Full PSO,True,True,True,True
+results/v10/V10B/seed3486784401_L1Mbit_20261029_153031_232/results.mat,Full IPSO,True,True,True,True
+results/v10/V10B/seed3486784401_L2Mbit_20261029_153332_548/results.mat,Baseline,True,True,True,True
+results/v10/V10B/seed3486784401_L2Mbit_20261029_153332_548/results.mat,Joint PSO,True,True,True,True
+results/v10/V10B/seed3486784401_L2Mbit_20261029_153332_548/results.mat,Full PSO,True,True,True,True
+results/v10/V10B/seed3486784401_L2Mbit_20261029_153332_548/results.mat,Full IPSO,True,True,True,True
+results/v10/V10B/seed3486784401_L3Mbit_20261029_153634_088/results.mat,Baseline,True,True,True,True
+results/v10/V10B/seed3486784401_L3Mbit_20261029_153634_088/results.mat,Joint PSO,True,True,True,True
+results/v10/V10B/seed3486784401_L3Mbit_20261029_153634_088/results.mat,Full PSO,True,True,True,True
+results/v10/V10B/seed3486784401_L3Mbit_20261029_153634_088/results.mat,Full IPSO,True,True,True,True
+results/v10/V10B/seed3486784401_L3Mbit_20261029_153935_512/results.mat,Baseline,True,True,True,True
+results/v10/V10B/seed3486784401_L3Mbit_20261029_153935_512/results.mat,Joint PSO,True,True,True,True
+results/v10/V10B/seed3486784401_L3Mbit_20261029_153935_512/results.mat,Full PSO,True,True,True,True
+results/v10/V10B/seed3486784401_L3Mbit_20261029_153935_512/results.mat,Full IPSO,True,True,True,True
+results/v10/V10B/seed3486784401_L3Mbit_20261029_154236_582/results.mat,Baseline,True,True,True,True
+results/v10/V10B/seed3486784401_L3Mbit_20261029_154236_582/results.mat,Joint PSO,True,True,True,True
+results/v10/V10B/seed3486784401_L3Mbit_20261029_154236_582/results.mat,Full PSO,True,True,True,True
+results/v10/V10B/seed3486784401_L3Mbit_20261029_154236_582/results.mat,Full IPSO,True,True,True,True
+results/v10/V10B/seed3486784401_L3Mbit_20261029_154537_195/results.mat,Baseline,True,True,True,True
+results/v10/V10B/seed3486784401_L3Mbit_20261029_154537_195/results.mat,Joint PSO,True,True,True,True
+results/v10/V10B/seed3486784401_L3Mbit_20261029_154537_195/results.mat,Full PSO,True,True,True,True
+results/v10/V10B/seed3486784401_L3Mbit_20261029_154537_195/results.mat,Full IPSO,True,True,True,True
+results/v10/V10B/seed3486784401_L3Mbit_20261029_154838_416/results.mat,Baseline,True,True,True,True
+results/v10/V10B/seed3486784401_L3Mbit_20261029_154838_416/results.mat,Joint PSO,True,True,True,True
+results/v10/V10B/seed3486784401_L3Mbit_20261029_154838_416/results.mat,Full PSO,True,True,True,True
+results/v10/V10B/seed3486784401_L3Mbit_20261029_154838_416/results.mat,Full IPSO,True,True,True,True
+results/v10/V10B/seed3486784401_L3Mbit_20261029_155139_302/results.mat,Baseline,True,True,True,True
+results/v10/V10B/seed3486784401_L3Mbit_20261029_155139_302/results.mat,Joint PSO,True,True,True,True
+results/v10/V10B/seed3486784401_L3Mbit_20261029_155139_302/results.mat,Full PSO,True,True,True,True
+results/v10/V10B/seed3486784401_L3Mbit_20261029_155139_302/results.mat,Full IPSO,True,True,True,True
+results/v10/V10B/seed3486784401_L3Mbit_20261029_155440_737/results.mat,Baseline,True,True,True,True
+results/v10/V10B/seed3486784401_L3Mbit_20261029_155440_737/results.mat,Joint PSO,True,True,True,True
+results/v10/V10B/seed3486784401_L3Mbit_20261029_155440_737/results.mat,Full PSO,True,True,True,True
+results/v10/V10B/seed3486784401_L3Mbit_20261029_155440_737/results.mat,Full IPSO,True,True,True,True

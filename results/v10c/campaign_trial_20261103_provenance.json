@@ -1,0 +1,50 @@
+{
+  "seeds": [
+    2026,
+    608060,
+    3486784401
+  ],
+  "L_bits_per_user": 3000000,
+  "q_bits_per_user_slot": 5000,
+  "presets": [
+    "C0",
+    "C1",
+    "C2",
+    "C3",
+    "C4",
+    "C5"
+  ],
+  "profile": "trial",
+  "particles": 20,
+  "iterations": 100,
+  "algorithms": [
+    "PSO",
+    "IPSO"
+  ],
+  "source_sha256": {
+    "src/config/v10cConfig.m": "0b3d3dc32f52b4a04937cb21ff484699a38363e945f322600aff782fae31c7e7",
+    "src/config/v10Config.m": "090117ef8838280e1b5e8a852f178500daa55099c9369763a54e15a2e28c0f88",
+    "src/config/buildV10CSimulation.m": "ccfe238533e8a2ea465b83ebbbabeb267fd7d33c343d140bf734c0213fdcf4c7",
+    "src/models/v10cMotionEnergy.m": "bc65c4a31aa81daf6898997a6501bfe82b153b03bf3e15bcdde66416f5e41e7c",
+    "src/models/v10Channel.m": "3ad5604f9d9bf1fa1dad8ee5be6bc7ed8156e7a19553ed5c0555ddbafdc5b8e3",
+    "src/models/v10cTimeBlockData.m": "460b03aaacd3348262e39b5e13f192c043de8fc724f87524fe118431489df409",
+    "src/optimizers/v10cFitness.m": "5281e2d9017f164742564812729bab0187af138b635c876ed3cf44e2eabe3a71",
+    "src/optimizers/optimizeV10CPSO.m": "a90f576ef2ab80f0d80092d85061cd6f15e8c3ea6e85c1d205da6d0974395e00",
+    "src/evaluators/evaluateV10CCandidate.m": "5cff608170b6440acfc1c8e69f546a22ffeffad00f7685cdbb9caa538346dc00",
+    "src/geometry/decodeV10CParticle.m": "36355225a20a63299235472866e0f51ccc4d1df33fab0cdf29aa9fde05451550",
+    "src/geometry/v10cGeometryLayout.m": "2857e18bdb331d2e9e1ffef0a167ed562a2f2e6666c2e3ca49c667d5920fbf7a",
+    "src/geometry/decodeV10CGeometry.m": "e4e6cd5bdde0db37750cc155702ac3fc0d14df12a09e82fc7cf12398d4bafd46",
+    "src/geometry/encodeV10CParticle.m": "e10fd4f97bcbd911d422a12bbebb4e1caaf0450a101c259fedbc3649e4bd2099",
+    "src/geometry/initialV10CCandidate.m": "7a5a9b2d0d72a7ec26991e2af06072a4730a4488d6da1c506a9dc4fdb5a31164",
+    "src/geometry/v10cSearchLayout.m": "f9ff647215dd9c892e190671b9880beb6e90d6509849381e29b58b97717165ad",
+    "src/geometry/repairV10CParticle.m": "2a767d320140586ddd8aa6128a616c0a8ce8143519846932088a9f1b634868a2",
+    "scripts/runV10CComparison.m": "022e059b9b3377b6c193e44f7de663235df471bc177a213a35f8b64b299ee660",
+    "scripts/runV10Campaign.m": "361f56182d9af5f747a12764c62f494c6bd90e44a99ee0337b4129e2b385b536",
+    "scripts/maincodeV10C_EE.m": "3be64709aac9594aec09077586025e199c765b0d84fac2ce0df1a41a5b5578aa",
+    "scripts/maincodeV10Campaign.m": "fc81129da829066cae6632ad30534279d65a12e5f62041e93f50144d0f771ed9",
+    "scripts/runV10C.m": "409bddd89abc1a4595193796be5089701e08de6a36c68ff867bf92338601c41a",
+    "scripts/plotV10CResults.m": "5b75add350ac7b6c1e1131bf6a0777c768e5ddffb3aaf8065c52cd1ca8fc8403",
+    "tests/testV10CSearch.m": "8520f8f3967b7ab3289226a4ec354c6f49fff87ba7c3ba1c782f35be74780df1",
+    "tests/testV10CModels.m": "811093b5d2554a85a7540650d107e5362f5d2d9e2270e77f856d1c9cf06d4666"
+  }
+}

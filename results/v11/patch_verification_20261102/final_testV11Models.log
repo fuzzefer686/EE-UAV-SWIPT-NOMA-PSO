@@ -1,0 +1,425 @@
+V8 baseline path configured: /Users/fuzzefer/Documents/MATLAB/EE-UAV-SWIPT-NOMA-PSO
+Full Joint+BS PSO iter   1/ 50 | EE = 1.0498e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Full Joint+BS PSO iter  10/ 50 | EE = 1.1455e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Full Joint+BS PSO iter  20/ 50 | EE = 1.1721e+03 bit/J | L:1 bitSlot:1 bitUserSlot:0 | feasible:0
+Full Joint+BS PSO iter  30/ 50 | EE = 1.1375e+03 bit/J | L:1 bitSlot:1 bitUserSlot:0 | feasible:0
+Full Joint+BS PSO iter  40/ 50 | EE = 1.1433e+03 bit/J | L:1 bitSlot:1 bitUserSlot:0 | feasible:0
+Full Joint+BS PSO iter  50/ 50 | EE = 1.1504e+03 bit/J | L:1 bitSlot:1 bitUserSlot:0 | feasible:0
+Full Joint+BS PSO iter   1/ 50 | EE = 1.0498e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Full Joint+BS PSO iter  10/ 50 | EE = 1.1455e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Full Joint+BS PSO iter  20/ 50 | EE = 1.1721e+03 bit/J | L:1 bitSlot:1 bitUserSlot:0 | feasible:0
+Full Joint+BS PSO iter  30/ 50 | EE = 1.1375e+03 bit/J | L:1 bitSlot:1 bitUserSlot:0 | feasible:0
+Full Joint+BS PSO iter  40/ 50 | EE = 1.1433e+03 bit/J | L:1 bitSlot:1 bitUserSlot:0 | feasible:0
+Full Joint+BS PSO iter  50/ 50 | EE = 1.1504e+03 bit/J | L:1 bitSlot:1 bitUserSlot:0 | feasible:0
+V10 alpha polishing: EE 1.150360e+03 -> 1.361459e+03 bit/J | L:1 bitSlot:1 bitUserSlot:0 | feasible 0
+V11 alpha polishing: EE 1.150360e+03 -> 1.361459e+03 bit/J | L:1 bitSlot:1 bitUserSlot:0 | feasible 0
+B5 PASS: baseline note and measured numeric reference preserved.
+6.1 PASS: evaluator + 50-iteration optimizer + random polish exact equivalence.
+6.2 PASS: all eight literal particle dimensions.
+6.3 PASS: uniform policy, no RNG consumption, repair on/off, fallback fields.
+Solver default constrained finalization: 5.712474 s, outerIter=200, rateEvals=727052
+Solver C3-OFF: 0.029290 s, outerIter=1, rateEvals=1378
+6.4 PASS: uniform optimum, determinism, impossible mission/C5, C3, final recomputation.
+Solver no-QoS cold call: 0.012924 s; impossible-mission outerIter: 0
+Joint PSO iter   1/  1 | EE = 1.7486e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Full Joint+BS PSO iter   1/  1 | EE = 8.4783e+02 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Full Joint+BS IPSO iter   1/  1 | EE = 9.5143e+02 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter   1/  1 | EE = 1.7486e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Full Joint+BS PSO iter   1/  1 | EE = 1.8926e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Full Joint+BS IPSO iter   1/  1 | EE = 1.3245e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Full Joint+BS PSO iter   1/  1 | EE = 1.1584e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+V11 alpha study dryRun: 1 combinations; no optimizers or output files.
+Additional PASS: presets, all optimizers/modes, uniform random polish, one-case study dryRun.
+Full Joint+BS PSO iter   1/  2 | EE = 1.0498e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Full Joint+BS PSO iter   2/  2 | EE = 1.0085e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+V11 alpha polishing: EE 1.008517e+03 -> 1.118745e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible 0
+BENCH particle_noma_random: 0.104282 s | swarmEvals=12 | numFitnessEvals=73
+Full Joint+BS PSO iter   1/  2 | EE = 1.5843e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Full Joint+BS PSO iter   2/  2 | EE = 1.4842e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+BENCH uniform_noma_none: 0.010325 s | swarmEvals=12 | numFitnessEvals=12
+Joint PSO iter   1/  1 | EE = 1.7486e+03 bit/J | L:0 bitSlot:1 bitUserSlot:1 | feasible:0
+Full Joint+BS PSO iter   1/  1 | EE = 1.7486e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:0
+V11 alpha polishing: EE 1.748591e+03 -> 1.748591e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible 0
+Full Joint+BS IPSO iter   1/  1 | EE = 1.7486e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+V11 model/integration checks passed.
+LATENCY <100ms across tested cases: 0
+Joint PSO iter   1/  1 | EE = 1.7486e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+V11 alpha polishing: EE 1.748591e+03 -> 1.635861e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible 0
+
+=== V11B | mainSeed=2026 | L (bit/user): 3000000 ===
+UAV Z=30.000 m | cruise=15.521 m/s | hover=1.000 s (EH 0.500/RF 0.500)
+Drones Eq.(11): cruise=108.940787181 W | hover=172.387633280 W | gross budget=17000 J
+Scope: horizontal cruise + requested hover + RF; EH supplies RF only.
+User X:    108   222   147   104   159
+
+User Y:    137    88   224   212   193
+
+Joint PSO iter   1/  1 | EE = 1.1090e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Full Joint+BS PSO iter   1/  1 | EE = 1.4408e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Full Joint+BS IPSO iter   1/  1 | EE = 1.4408e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+
+=== V11B total UAV EE (propulsion + hover + RF) ===
+Version                   = V11-Drones-1
+Alpha preset              = uniform_noma_qos_fair
+Finalize Joint = 1
+Alpha mode/repair/solver  = uniform / noma / qos
+Full particle dimension   = 44
+Total fitness evaluations = 22
+Scenario seed             = 2026
+Algorithm seed            = 151459287
+Polishing seed            = 152459287
+L (bit/user):
+  User 1                  = 3.000000000000e+06 bit
+  User 2                  = 3.000000000000e+06 bit
+  User 3                  = 3.000000000000e+06 bit
+  User 4                  = 3.000000000000e+06 bit
+  User 5                  = 3.000000000000e+06 bit
+Min bits per slot (total)  = 0 bit
+Min bits per user-slot     = 5000 bit
+
+Timing and flight settings
+Hover per serving point   = 1 s
+EH / uplink time          = 0.5 s
+RF / downlink time        = 0.5 s
+Cruise speed              = 15.521 m/s
+UAV altitude              = 30 m
+Energy budget (gross)     = 17000 J
+Cruise power              = 108.940787181 W
+Hover power               = 172.38763328 W
+
+Radio settings
+BS transmit power         = 46 dBm
+Power splitting phi       = 0.9
+EH efficiency eta         = 0.9
+Bandwidth                 = 1000000 Hz
+Reference gain beta0      = -30 dB
+
+Baseline straight trajectory
+Feasible                  = 0
+EE (computed)             = 1.593126538826e+03 bit/J
+L / bit-slot / bit-user-slot QoS = 0 / 1 / 0
+Energy / geometry         = 1 / 1
+Total bits                = 8.847318591132e+06 bit
+Min bits per slot         = 9.336949829592e+04 bit
+Max bits per slot         = 9.592370245477e+05 bit
+Slots below slot QoS      = 0
+User-slots below QoS      = 7
+Total UAV energy          = 5.553431177946e+03 J
+Cruise energy             = 2.105678510032e+03 J
+Hover energy              = 3.447752665593e+03 J
+RF transmit energy        = 2.321021036477e-06 J
+Harvested energy          = 2.321021036477e-06 J
+Total flight distance     = 300.000000000 m
+Flight time               = 19.328651504 s
+Total hover time          = 20.000000000 s
+Mission time              = 39.328651504 s
+Excess energy             = 0.000000000000e+00 J
+Bits per user:
+  User 1                  = 1.303682713728e+06 bit
+  User 2                  = 7.761374321959e+05 bit
+  User 3                  = 2.388602171332e+06 bit
+  User 4                  = 3.415748780398e+06 bit
+  User 5                  = 9.631474934788e+05 bit
+Bit shortfall per user:
+  User 1                  = 1.696317286272e+06 bit
+  User 2                  = 2.223862567804e+06 bit
+  User 3                  = 6.113978286684e+05 bit
+  User 4                  = 0.000000000000e+00 bit
+  User 5                  = 2.036852506521e+06 bit
+
+Joint PSO without BS optimization
+Feasible                  = 0
+EE (computed)             = 1.089082808665e+03 bit/J
+L / bit-slot / bit-user-slot QoS = 0 / 1 / 1
+Energy / geometry         = 1 / 1
+Total bits                = 1.082570862324e+07 bit
+Min bits per slot         = 3.699146413106e+04 bit
+Max bits per slot         = 1.284655738717e+06 bit
+Slots below slot QoS      = 0
+User-slots below QoS      = 0
+Total UAV energy          = 9.940207059651e+03 J
+Cruise energy             = 6.492454391455e+03 J
+Hover energy              = 3.447752665593e+03 J
+RF transmit energy        = 2.603018079445e-06 J
+Harvested energy          = 2.603018079445e-06 J
+Total flight distance     = 924.992256964 m
+Flight time               = 59.596176597 s
+Total hover time          = 20.000000000 s
+Mission time              = 79.596176597 s
+Excess energy             = 0.000000000000e+00 J
+Bits per user:
+  User 1                  = 1.627631550828e+06 bit
+  User 2                  = 2.147791282087e+06 bit
+  User 3                  = 1.860426465205e+06 bit
+  User 4                  = 4.569720626338e+06 bit
+  User 5                  = 6.201386987825e+05 bit
+Bit shortfall per user:
+  User 1                  = 1.372368449172e+06 bit
+  User 2                  = 8.522087179133e+05 bit
+  User 3                  = 1.139573534795e+06 bit
+  User 4                  = 0.000000000000e+00 bit
+  User 5                  = 2.379861301217e+06 bit
+
+Full PSO with BS optimization
+Feasible                  = 0
+EE (computed)             = 1.429138779646e+03 bit/J
+L / bit-slot / bit-user-slot QoS = 0 / 1 / 1
+Energy / geometry         = 1 / 1
+Total bits                = 1.426966238801e+07 bit
+Min bits per slot         = 1.443041808337e+05 bit
+Max bits per slot         = 1.891842318061e+06 bit
+Slots below slot QoS      = 0
+User-slots below QoS      = 0
+Total UAV energy          = 9.984798251391e+03 J
+Cruise energy             = 6.537045579584e+03 J
+Hover energy              = 3.447752665593e+03 J
+RF transmit energy        = 6.214225557888e-06 J
+Harvested energy          = 6.214225557888e-06 J
+Total flight distance     = 931.345247877 m
+Flight time               = 60.005492422 s
+Total hover time          = 20.000000000 s
+Mission time              = 80.005492422 s
+Excess energy             = 0.000000000000e+00 J
+Bits per user:
+  User 1                  = 3.141546149528e+06 bit
+  User 2                  = 2.830090338247e+06 bit
+  User 3                  = 3.084984404336e+06 bit
+  User 4                  = 4.486268740766e+06 bit
+  User 5                  = 7.267727551300e+05 bit
+Bit shortfall per user:
+  User 1                  = 0.000000000000e+00 bit
+  User 2                  = 1.699096617525e+05 bit
+  User 3                  = 0.000000000000e+00 bit
+  User 4                  = 0.000000000000e+00 bit
+  User 5                  = 2.273227244870e+06 bit
+
+Full IPSO with BS optimization
+Feasible                  = 0
+EE (computed)             = 1.429138779646e+03 bit/J
+L / bit-slot / bit-user-slot QoS = 0 / 1 / 1
+Energy / geometry         = 1 / 1
+Total bits                = 1.426966238801e+07 bit
+Min bits per slot         = 1.443041808337e+05 bit
+Max bits per slot         = 1.891842318061e+06 bit
+Slots below slot QoS      = 0
+User-slots below QoS      = 0
+Total UAV energy          = 9.984798251391e+03 J
+Cruise energy             = 6.537045579584e+03 J
+Hover energy              = 3.447752665593e+03 J
+RF transmit energy        = 6.214225557888e-06 J
+Harvested energy          = 6.214225557888e-06 J
+Total flight distance     = 931.345247877 m
+Flight time               = 60.005492422 s
+Total hover time          = 20.000000000 s
+Mission time              = 80.005492422 s
+Excess energy             = 0.000000000000e+00 J
+Bits per user:
+  User 1                  = 3.141546149528e+06 bit
+  User 2                  = 2.830090338247e+06 bit
+  User 3                  = 3.084984404336e+06 bit
+  User 4                  = 4.486268740766e+06 bit
+  User 5                  = 7.267727551300e+05 bit
+Bit shortfall per user:
+  User 1                  = 0.000000000000e+00 bit
+  User 2                  = 1.699096617525e+05 bit
+  User 3                  = 0.000000000000e+00 bit
+  User 4                  = 0.000000000000e+00 bit
+  User 5                  = 2.273227244870e+06 bit
+V11 configuration and raw/final results saved: /private/var/folders/5s/chj55fyd7tx85bhpmnk82_lr0000gn/T/tp7d77e6a8_6b25_4951_a6d4_c4ad74f3fa3f/V11B/uniform_noma_qos_fair/seed2026_L3Mbit_20261102_204406_520
+
+=== V11B | mainSeed=2026 | L (bit/user): 3000000 ===
+UAV Z=30.000 m | cruise=15.521 m/s | hover=1.000 s (EH 0.500/RF 0.500)
+Drones Eq.(11): cruise=108.940787181 W | hover=172.387633280 W | gross budget=17000 J
+Scope: horizontal cruise + requested hover + RF; EH supplies RF only.
+User X:    108   222   147   104   159
+
+User Y:    137    88   224   212   193
+
+Joint PSO iter   1/  1 | EE = 1.1090e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Full Joint+BS PSO iter   1/  1 | EE = 1.4408e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Full Joint+BS IPSO iter   1/  1 | EE = 1.4408e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+
+=== V11B total UAV EE (propulsion + hover + RF) ===
+Version                   = V11-Drones-1
+Alpha preset              = uniform_noma_qos_fair
+Finalize Joint = 0
+Alpha mode/repair/solver  = uniform / noma / qos
+Full particle dimension   = 44
+Total fitness evaluations = 21
+Scenario seed             = 2026
+Algorithm seed            = 151459287
+Polishing seed            = 152459287
+L (bit/user):
+  User 1                  = 3.000000000000e+06 bit
+  User 2                  = 3.000000000000e+06 bit
+  User 3                  = 3.000000000000e+06 bit
+  User 4                  = 3.000000000000e+06 bit
+  User 5                  = 3.000000000000e+06 bit
+Min bits per slot (total)  = 0 bit
+Min bits per user-slot     = 5000 bit
+
+Timing and flight settings
+Hover per serving point   = 1 s
+EH / uplink time          = 0.5 s
+RF / downlink time        = 0.5 s
+Cruise speed              = 15.521 m/s
+UAV altitude              = 30 m
+Energy budget (gross)     = 17000 J
+Cruise power              = 108.940787181 W
+Hover power               = 172.38763328 W
+
+Radio settings
+BS transmit power         = 46 dBm
+Power splitting phi       = 0.9
+EH efficiency eta         = 0.9
+Bandwidth                 = 1000000 Hz
+Reference gain beta0      = -30 dB
+
+Baseline straight trajectory
+Feasible                  = 0
+EE (computed)             = 1.593126538826e+03 bit/J
+L / bit-slot / bit-user-slot QoS = 0 / 1 / 0
+Energy / geometry         = 1 / 1
+Total bits                = 8.847318591132e+06 bit
+Min bits per slot         = 9.336949829592e+04 bit
+Max bits per slot         = 9.592370245477e+05 bit
+Slots below slot QoS      = 0
+User-slots below QoS      = 7
+Total UAV energy          = 5.553431177946e+03 J
+Cruise energy             = 2.105678510032e+03 J
+Hover energy              = 3.447752665593e+03 J
+RF transmit energy        = 2.321021036477e-06 J
+Harvested energy          = 2.321021036477e-06 J
+Total flight distance     = 300.000000000 m
+Flight time               = 19.328651504 s
+Total hover time          = 20.000000000 s
+Mission time              = 39.328651504 s
+Excess energy             = 0.000000000000e+00 J
+Bits per user:
+  User 1                  = 1.303682713728e+06 bit
+  User 2                  = 7.761374321959e+05 bit
+  User 3                  = 2.388602171332e+06 bit
+  User 4                  = 3.415748780398e+06 bit
+  User 5                  = 9.631474934788e+05 bit
+Bit shortfall per user:
+  User 1                  = 1.696317286272e+06 bit
+  User 2                  = 2.223862567804e+06 bit
+  User 3                  = 6.113978286684e+05 bit
+  User 4                  = 0.000000000000e+00 bit
+  User 5                  = 2.036852506521e+06 bit
+
+Joint PSO without BS optimization
+Feasible                  = 0
+EE (computed)             = 1.108961315704e+03 bit/J
+L / bit-slot / bit-user-slot QoS = 0 / 1 / 0
+Energy / geometry         = 1 / 1
+Total bits                = 1.102330509924e+07 bit
+Min bits per slot         = 1.016071846219e+05 bit
+Max bits per slot         = 1.284655738717e+06 bit
+Slots below slot QoS      = 0
+User-slots below QoS      = 7
+Total UAV energy          = 9.940207059651e+03 J
+Cruise energy             = 6.492454391455e+03 J
+Hover energy              = 3.447752665593e+03 J
+RF transmit energy        = 2.603018079445e-06 J
+Harvested energy          = 2.603018079445e-06 J
+Total flight distance     = 924.992256964 m
+Flight time               = 59.596176597 s
+Total hover time          = 20.000000000 s
+Mission time              = 79.596176597 s
+Excess energy             = 0.000000000000e+00 J
+Bits per user:
+  User 1                  = 1.666261234855e+06 bit
+  User 2                  = 2.216494288775e+06 bit
+  User 3                  = 1.875504326510e+06 bit
+  User 4                  = 4.655278277112e+06 bit
+  User 5                  = 6.097669719894e+05 bit
+Bit shortfall per user:
+  User 1                  = 1.333738765145e+06 bit
+  User 2                  = 7.835057112246e+05 bit
+  User 3                  = 1.124495673490e+06 bit
+  User 4                  = 0.000000000000e+00 bit
+  User 5                  = 2.390233028011e+06 bit
+
+Full PSO with BS optimization
+Feasible                  = 0
+EE (computed)             = 1.429138779646e+03 bit/J
+L / bit-slot / bit-user-slot QoS = 0 / 1 / 1
+Energy / geometry         = 1 / 1
+Total bits                = 1.426966238801e+07 bit
+Min bits per slot         = 1.443041808337e+05 bit
+Max bits per slot         = 1.891842318061e+06 bit
+Slots below slot QoS      = 0
+User-slots below QoS      = 0
+Total UAV energy          = 9.984798251391e+03 J
+Cruise energy             = 6.537045579584e+03 J
+Hover energy              = 3.447752665593e+03 J
+RF transmit energy        = 6.214225557888e-06 J
+Harvested energy          = 6.214225557888e-06 J
+Total flight distance     = 931.345247877 m
+Flight time               = 60.005492422 s
+Total hover time          = 20.000000000 s
+Mission time              = 80.005492422 s
+Excess energy             = 0.000000000000e+00 J
+Bits per user:
+  User 1                  = 3.141546149528e+06 bit
+  User 2                  = 2.830090338247e+06 bit
+  User 3                  = 3.084984404336e+06 bit
+  User 4                  = 4.486268740766e+06 bit
+  User 5                  = 7.267727551300e+05 bit
+Bit shortfall per user:
+  User 1                  = 0.000000000000e+00 bit
+  User 2                  = 1.699096617525e+05 bit
+  User 3                  = 0.000000000000e+00 bit
+  User 4                  = 0.000000000000e+00 bit
+  User 5                  = 2.273227244870e+06 bit
+
+Full IPSO with BS optimization
+Feasible                  = 0
+EE (computed)             = 1.429138779646e+03 bit/J
+L / bit-slot / bit-user-slot QoS = 0 / 1 / 1
+Energy / geometry         = 1 / 1
+Total bits                = 1.426966238801e+07 bit
+Min bits per slot         = 1.443041808337e+05 bit
+Max bits per slot         = 1.891842318061e+06 bit
+Slots below slot QoS      = 0
+User-slots below QoS      = 0
+Total UAV energy          = 9.984798251391e+03 J
+Cruise energy             = 6.537045579584e+03 J
+Hover energy              = 3.447752665593e+03 J
+RF transmit energy        = 6.214225557888e-06 J
+Harvested energy          = 6.214225557888e-06 J
+Total flight distance     = 931.345247877 m
+Flight time               = 60.005492422 s
+Total hover time          = 20.000000000 s
+Mission time              = 80.005492422 s
+Excess energy             = 0.000000000000e+00 J
+Bits per user:
+  User 1                  = 3.141546149528e+06 bit
+  User 2                  = 2.830090338247e+06 bit
+  User 3                  = 3.084984404336e+06 bit
+  User 4                  = 4.486268740766e+06 bit
+  User 5                  = 7.267727551300e+05 bit
+Bit shortfall per user:
+  User 1                  = 0.000000000000e+00 bit
+  User 2                  = 1.699096617525e+05 bit
+  User 3                  = 0.000000000000e+00 bit
+  User 4                  = 0.000000000000e+00 bit
+  User 5                  = 2.273227244870e+06 bit
+V11 configuration and raw/final results saved: /private/var/folders/5s/chj55fyd7tx85bhpmnk82_lr0000gn/T/tp7d77e6a8_6b25_4951_a6d4_c4ad74f3fa3f/V11B/uniform_noma_qos_fair/seed2026_L3Mbit_20261102_204406_723
+V11 alpha study dryRun: 1 combinations; no optimizers or output files.
+B1 PASS: legacy defaults, fair preset, 143/38-dimensional Joint finalization, raw/history/counts.
+[Warning: Different mode/repair/solver: results need not match; comparing only
+geometry fields.] 
+[> In compareV11V10Equivalence (line 34)
+In testV11EquivalenceScript (line 10)
+In testV11Models (line 126)] 
+B2 PASS: comparator dryRun validates full/default and overridden budgets without executing them.
+[Warning: SMOKE — không dùng cho kết quả paper] 
+[> In runV11AlphaStudy (line 22)
+In testV11AlphaStudyEdges (line 7)
+In testV11Models (line 127)] 
+V11 alpha study dryRun: 1 combinations; no optimizers or output files.
+V11 alpha study dryRun: 3 combinations; no optimizers or output files.
+B4 PASS: smoke budget, numeric sweep, vector targets, singleton std, empty/all-infeasible groups.
+V11 runtime correctness acceptance tests PASSED.

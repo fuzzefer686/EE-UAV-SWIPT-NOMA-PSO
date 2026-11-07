@@ -1,0 +1,56 @@
+V8 baseline path configured: /Users/fuzzefer/Documents/MATLAB/EE-UAV-SWIPT-NOMA-PSO
+Full Joint+BS PSO iter   1/ 50 | EE = 1.0498e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Full Joint+BS PSO iter  10/ 50 | EE = 1.1455e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Full Joint+BS PSO iter  20/ 50 | EE = 1.1721e+03 bit/J | L:1 bitSlot:1 bitUserSlot:0 | feasible:0
+Full Joint+BS PSO iter  30/ 50 | EE = 1.1375e+03 bit/J | L:1 bitSlot:1 bitUserSlot:0 | feasible:0
+Full Joint+BS PSO iter  40/ 50 | EE = 1.1433e+03 bit/J | L:1 bitSlot:1 bitUserSlot:0 | feasible:0
+Full Joint+BS PSO iter  50/ 50 | EE = 1.1504e+03 bit/J | L:1 bitSlot:1 bitUserSlot:0 | feasible:0
+Full Joint+BS PSO iter   1/ 50 | EE = 1.0498e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Full Joint+BS PSO iter  10/ 50 | EE = 1.1455e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Full Joint+BS PSO iter  20/ 50 | EE = 1.1721e+03 bit/J | L:1 bitSlot:1 bitUserSlot:0 | feasible:0
+Full Joint+BS PSO iter  30/ 50 | EE = 1.1375e+03 bit/J | L:1 bitSlot:1 bitUserSlot:0 | feasible:0
+Full Joint+BS PSO iter  40/ 50 | EE = 1.1433e+03 bit/J | L:1 bitSlot:1 bitUserSlot:0 | feasible:0
+Full Joint+BS PSO iter  50/ 50 | EE = 1.1504e+03 bit/J | L:1 bitSlot:1 bitUserSlot:0 | feasible:0
+V10 alpha polishing: EE 1.150360e+03 -> 1.361459e+03 bit/J | L:1 bitSlot:1 bitUserSlot:0 | feasible 0
+V11 alpha polishing: EE 1.150360e+03 -> 1.361459e+03 bit/J | L:1 bitSlot:1 bitUserSlot:0 | feasible 0
+6.1 PASS: evaluator + 50-iteration optimizer + random polish exact equivalence.
+6.2 PASS: all eight literal particle dimensions.
+6.3 PASS: uniform policy, no RNG consumption, repair on/off, fallback fields.
+Solver default constrained finalization: 4.992427 s, outerIter=200, rateEvals=727052
+Solver C3-OFF: 0.023019 s, outerIter=1, rateEvals=1378
+6.4 PASS: uniform optimum, determinism, impossible mission/C5, C3, final recomputation.
+Solver no-QoS cold call: 0.011363 s; impossible-mission outerIter: 0
+Joint PSO iter   1/  1 | EE = 1.7486e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Full Joint+BS PSO iter   1/  1 | EE = 8.4783e+02 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Full Joint+BS IPSO iter   1/  1 | EE = 9.5143e+02 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter   1/  1 | EE = 1.7486e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Full Joint+BS PSO iter   1/  1 | EE = 1.8926e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Full Joint+BS IPSO iter   1/  1 | EE = 1.3245e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Full Joint+BS PSO iter   1/  1 | EE = 1.1584e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+V11 alpha study dryRun: 1 combinations; no optimizers or output files.
+Additional PASS: presets, all optimizers/modes, uniform random polish, one-case study dryRun.
+Full Joint+BS PSO iter   1/  2 | EE = 1.0498e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Full Joint+BS PSO iter   2/  2 | EE = 1.0085e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+V11 alpha polishing: EE 1.008517e+03 -> 1.118745e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible 0
+BENCH particle_noma_random: 0.062404 s | swarmEvals=12 | numFitnessEvals=73
+Full Joint+BS PSO iter   1/  2 | EE = 1.5843e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Full Joint+BS PSO iter   2/  2 | EE = 1.4842e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+BENCH uniform_noma_none: 0.008839 s | swarmEvals=12 | numFitnessEvals=12
+Joint PSO iter   1/  1 | EE = 1.7486e+03 bit/J | L:0 bitSlot:1 bitUserSlot:1 | feasible:0
+Full Joint+BS PSO iter   1/  1 | EE = 1.7486e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:0
+V11 alpha polishing: EE 1.748591e+03 -> 1.748591e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible 0
+Full Joint+BS IPSO iter   1/  1 | EE = 1.7486e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+V11 model/integration checks passed.
+LATENCY <100ms across tested cases: 0
+V11 runtime correctness acceptance tests PASSED.
+Joint PSO iter   1/  1 | EE = 1.7486e+03 bit/J | L:0 bitSlot:1 bitUserSlot:1 | feasible:0
+Full Joint+BS PSO iter   1/  1 | EE = 1.7486e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:0
+V10 alpha polishing: EE 1.748591e+03 -> 1.748591e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible 0
+Full Joint+BS IPSO iter   1/  1 | EE = 1.7486e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+V10 model/integration checks passed.
+RF slot accounting checks passed.
+
+Saved 2/2 FIG snapshots and 2/2 PNG images to:
+/private/var/folders/5s/chj55fyd7tx85bhpmnk82_lr0000gn/T/tp0b4ea9fb_4939_4af3_b5d7_c6722c09dee5/run_20261102_170925_462
+Figure snapshot/export checks passed after closing original windows.
+ALL MATLAB UNIT SUITES PASS.

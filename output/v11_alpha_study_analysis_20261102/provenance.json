@@ -1,0 +1,44 @@
+[
+  {
+    "source": "20261102_213033_522",
+    "matVariables": [
+      "opts",
+      "T"
+    ],
+    "opts": {
+      "dryRun": false,
+      "variants": [
+        "B"
+      ],
+      "minBitsPerUser": 1.0E+6
+    }
+  },
+  {
+    "source": "20261102_220516_811",
+    "matVariables": [
+      "opts",
+      "T"
+    ],
+    "opts": {
+      "dryRun": false,
+      "variants": [
+        "B"
+      ],
+      "minBitsPerUser": 2.0E+6
+    }
+  },
+  {
+    "source": "20261102_224049_740",
+    "matVariables": [
+      "opts",
+      "T"
+    ],
+    "opts": {
+      "dryRun": false,
+      "variants": [
+        "B"
+      ],
+      "minBitsPerUser": 3.0E+6
+    }
+  }
+]

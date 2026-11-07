@@ -1,0 +1,38 @@
+{
+  "report_date_local": "2026-11-05",
+  "timezone": "Asia/Ho_Chi_Minh",
+  "campaign": "campaign_20261029_125559",
+  "campaign_csv_sha256": "876bd8d177a2f7063a59564a0619fd25881ef7d227c425ebf6299d647c21f0ab",
+  "source_mat_files": 54,
+  "source_method_results": 216,
+  "unique_parameter_runs": 42,
+  "unique_method_results": 168,
+  "deduplication_key": [
+    "variant",
+    "seed",
+    "L",
+    "slot",
+    "hover",
+    "algorithm"
+  ],
+  "scenario_seeds": [
+    2026,
+    608060,
+    3486784401
+  ],
+  "algorithm_seed": 151459287,
+  "particles": 120,
+  "iterations": 1000,
+  "matlab_rerun": false,
+  "source_mat_audit_rows": 216,
+  "all_L3_BS_rows": 360,
+  "all_L3_waypoint_rows": 2520,
+  "BS_boundary_tolerance_m": 0.001,
+  "EE_definition": "total downlink bits / (cruise + hover propulsion + RF energy)",
+  "aggregation": "Only feasible solutions in mean EE; full PSO/IPSO after alpha polishing",
+  "trajectory_plots": "IPSO A/B at seeds 2026 and 3486784401, L=3e6 q=5000 hover=1",
+  "template": "Existing project HUST Beamer blue 16:9, attribution retained in .sty",
+  "scope": "Historical campaign only; older non-campaign runs excluded",
+  "report_edition": "10-page condensed report",
+  "pdf_pages": 10
+}

@@ -1,0 +1,725 @@
+\documentclass[t,aspectratio=169]{beamer}
+\usepackage{fontspec}
+\usepackage{unicode-math}
+\setmainfont{lmroman10-regular.otf}[BoldFont=lmroman10-bold.otf,ItalicFont=lmroman10-italic.otf,BoldItalicFont=lmroman10-bolditalic.otf]
+\setsansfont{lmsans10-regular.otf}[BoldFont=lmsans10-bold.otf,ItalicFont=lmsans10-oblique.otf,BoldItalicFont=lmsans10-boldoblique.otf]
+\setmonofont{lmmono10-regular.otf}[BoldFont=lmmono10-regular.otf]
+\setmathfont{latinmodern-math.otf}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{tikz}
+\usetikzlibrary{positioning,arrows.meta,calc,fit,backgrounds}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.16}
+
+\def\slideContentLeftMargin{0.7cm}
+\def\slideContentRightMargin{0.7cm}
+\def\hustHeaderHeight{1.15cm}
+\def\slideContentBotMargin{1.5cm}
+\usepackage[blue,169]{beamerthemeHUST}
+\graphicspath{{images/}}
+\HustShowPageNumtrue
+
+\renewcommand{\titlePageTitleX}{-0.2cm}
+\renewcommand{\titlePageTitleY}{-0.6cm}
+\renewcommand{\hustTitleAlign}{\alignLeft}
+\renewcommand{\hustSubtitleAlign}{\alignLeft}
+\renewcommand{\hustAuthorAlign}{\alignLeft}
+\renewcommand{\hustInstAlign}{\alignLeft}
+
+\definecolor{hred}{HTML}{ce1628}
+\definecolor{hgrey}{HTML}{9AA5B1}
+\definecolor{hgreen}{HTML}{1f7a5c}
+\newcommand{\hb}[1]{{\color{hustprimary}\textbf{#1}}}
+\newcommand{\hr}[1]{{\color{hred}\textbf{#1}}}
+\newcommand{\hg}[1]{{\color{hgreen}\textbf{#1}}}
+\newcommand{\code}[1]{{\small\ttfamily #1}}
+\newcommand{\term}[1]{\textit{#1}}
+\newcommand{\cit}[1]{\vspace{3pt}{\tiny\color{black!45}\raggedright\emph{Tham khảo:}~#1\par}}
+\newcommand{\snote}[1]{\vspace{2pt}{\scriptsize\color{black!55}\raggedright #1\par}}
+\setbeamertemplate{caption}{\insertcaption}
+\setbeamertemplate{itemize item}{\small\color{hred}\textbullet}
+\setbeamertemplate{itemize subitem}{\scriptsize\color{hustprimary}--}
+\setbeamercolor{block title}{fg=white,bg=hustprimary}
+\setbeamercolor{block body}{bg=hustprimary!8}
+\setbeamercolor{block title alerted}{fg=white,bg=hred}
+\setbeamercolor{block body alerted}{bg=hred!7}
+\setbeamercolor{block title example}{fg=white,bg=black!55}
+\setbeamercolor{block body example}{bg=black!5}
+\setbeamerfont{frametitle}{series=\bfseries,size=\large}
+\renewcommand{\hustsectionpage}[1]{{%
+  \setbeamertemplate{background}{\includegraphics[width=\paperwidth,height=\paperheight]{\hustbg{section}}}%
+  \begin{frame}[plain]
+    \begin{tikzpicture}[remember picture,overlay]
+      \node[fill=black,fill opacity=0.42,text opacity=1,rounded corners=6pt,
+            inner sep=14pt,text width=0.80\paperwidth,align=center]
+        at (current page.center) {\Huge\bfseries\color{white}#1};
+    \end{tikzpicture}
+  \end{frame}%
+}}
+
+\tikzset{
+  boxA/.style={draw=hustprimary,fill=hustprimary!10,rounded corners,thick,align=center,inner sep=4pt,font=\scriptsize},
+  boxB/.style={draw=hred,fill=hred!8,rounded corners,thick,align=center,inner sep=4pt,font=\scriptsize},
+  boxG/.style={draw=hgreen,fill=hgreen!8,rounded corners,thick,align=center,inner sep=4pt,font=\scriptsize},
+  ar/.style={-{Stealth[length=2mm]},thick,hustprimary},
+  arr/.style={-{Stealth[length=2mm]},thick,hred},
+}
+
+\title{Mô hình năng lượng UAV và hai biến thể tối ưu V10A--V10B}
+\subtitle{Báo cáo sơ bộ: từ mô hình Drones đến mã V9/V10}
+\author{}
+\institute{Trường Đại học Bách khoa Hà Nội (HUST)}
+\date{29/10/2026}
+
+\makeatletter
+\renewcommand{\husttitlepage}{{%
+  \setbeamertemplate{background}{\includegraphics[width=\paperwidth,height=\paperheight]{\hustbg{title}}}%
+  \begin{frame}[plain]
+  \begin{tikzpicture}[remember picture, overlay]
+  \node[anchor=north west, text width=0.70\paperwidth] at ([xshift=0.75cm,yshift=-1.95cm]current page.north west) {%
+    \raggedright
+    {\Large\bfseries\color{hustprimary}\MakeUppercase{\inserttitle}\par}
+    \vspace{6pt}{\normalsize\bfseries\color{black!75}\insertsubtitle\par}
+    \vspace{10pt}{\small\color{hustprimary}\insertdate\par}
+    \vspace{4pt}{\small\bfseries\color{hustprimary}\insertinstitute\par}};
+  \end{tikzpicture}
+  \end{frame}}}
+\makeatother
+
+\begin{document}
+\husttitlepage
+
+\begin{frame}{Nội dung}
+  \begin{columns}[T]
+    \column{0.46\textwidth}
+    \begin{enumerate}\small
+      \item Mô hình năng lượng Drones
+      \item Migration vào mã V9: vấn đề
+      \item Hai mô hình V10A và V10B
+      \item Kết quả sơ bộ và kiểm chứng
+    \end{enumerate}
+    \column{0.54\textwidth}
+    \centering
+    \begin{tikzpicture}[node distance=0.3cm]
+      \node[boxA,text width=6.4cm,align=left] (p1) {\textbf{1. Vật lý}\\ Eq.(10)--(11), Table 2, ledger năng lượng};
+      \node[boxA,text width=6.4cm,align=left,below=of p1] (p2) {\textbf{2. Tích hợp}\\ 17 điểm không tương thích với V9};
+      \node[boxB,text width=6.4cm,align=left,below=of p2] (p3) {\textbf{3. Hai biến thể}\\ A: lưới Y cố định $\cdot$ B: Y tự do có ràng buộc};
+      \node[boxG,text width=6.4cm,align=left,below=of p3] (p4) {\textbf{4. Bằng chứng}\\ V10A sơ bộ $\cdot$ static tests $\cdot$ giới hạn};
+      \draw[ar] (p1)--(p2); \draw[arr] (p2)--(p3); \draw[ar] (p3)--(p4);
+    \end{tikzpicture}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Hệ UAV--SWIPT--NOMA và phạm vi báo cáo}
+\begin{columns}[T]
+\column{0.55\textwidth}\small
+\begin{description}
+\item[Hệ truyền thông] 3 BS cấp RF và dữ liệu cho một UAV relay; UAV phục vụ 5 người dùng mặt đất bằng NOMA.
+\item[SWIPT] Tín hiệu thu được chia cho thu năng lượng và giải mã; EH lý tưởng cấp RF cho downlink.
+\item[Mục tiêu mới] Tối đa tổng bit phục vụ chia năng lượng bay, hover và RF, có ràng buộc QoS.
+\end{description}
+\column{0.45\textwidth}
+\begin{block}{Hai nguồn mô hình}\small
+\textbf{Flight to Efficiency / V9:} cấu trúc BS--UAV--GU, SWIPT, NOMA.\\[5pt]
+\textbf{Drones 10(4), 238:} công suất propulsion của quad-rotor bay ngang.
+\end{block}
+\begin{alertblock}{Phạm vi kế thừa}\scriptsize
+Ghép mô hình năng lượng vào hệ hiện có. Không chuyển hệ thống thành BackCom và không nhận mục tiêu sum-throughput của bài Drones làm mục tiêu EE.
+\end{alertblock}
+\end{columns}
+\cit{docs/root\_paper.pdf; docs/drones-10-00238.pdf; mô hình V9/V10 trong src.}
+\end{frame}
+
+\hustsectionpage{1. Mô hình năng lượng Drones}
+
+\begin{frame}{Giả định của bài Drones 2026}
+  \begin{columns}[T]
+  \column{0.55\textwidth}\small
+  \begin{itemize}
+    \item Quad-rotor 4 rotor, khối lượng $m=2$ kg, bay \hb{ngang} ở độ cao cố định.
+    \item Bay thẳng giữa các điểm thu dữ liệu với \hb{cùng tốc độ} $v=15.521$ m/s.
+    \item Thu dữ liệu khi \hb{hover} tại điểm; thời gian $t_{\mathrm{hov}}$ mỗi điểm.
+    \item Bỏ chi phí quá độ: đổi hướng, tăng/giảm tốc, leo/hạ độ cao.
+  \end{itemize}
+  \column{0.45\textwidth}
+  \begin{block}{Phạm vi năng lượng của bài}\scriptsize
+  Chỉ \textbf{propulsion} và \textbf{RF truyền} được đưa vào budget:
+  \[ E_f + E_t \le E_{\max} \]
+  Không có mạch, PA, điều khiển, hiệu suất động cơ.
+  \end{block}
+  \begin{alertblock}{Điểm cần phân biệt}\scriptsize
+  Bài tối đa \textbf{sum-throughput} dưới budget, \textbf{không} tối đa bit/J. Kế thừa propulsion không có nghĩa kế thừa toàn bộ bài toán.
+  \end{alertblock}
+  \end{columns}
+  \snote{Nguồn: Tianyi Zhang et al., \emph{Trajectory and Power Control for Sustainable UAV-Assisted NOMA-Enabled Backscattering IoT}, Drones 2026, 10, 238.}
+\end{frame}
+
+\begin{frame}{Lực đẩy và công suất propulsion}
+\vspace{-6pt}\footnotesize\setlength{\abovedisplayskip}{3pt}\setlength{\belowdisplayskip}{3pt}
+\[
+ F_D(v)=\tfrac12\rho S_{FP}v^2,\qquad
+ T_r(v)=\frac{\sqrt{(mg)^2+F_D(v)^2}}{n_r}
+\]
+\vspace{-5pt}
+\begin{align*}
+P_{\mathrm{pro}}(v)&=n_r\frac{\delta}{8}
+ \left(\frac{T_r}{c_T\rho A}+3v^2\right)
+ \sqrt{\frac{T_r\rho c_s^2A}{c_T}},\\[3pt]
+P_{\mathrm{ind}}(v)&=n_r(1+c_f)T_r
+ \left(\sqrt{\frac{T_r^2}{4\rho^2A^2}+\frac{v^4}{4}}
+             -\frac{v^2}{2}\right)^{1/2},\\[3pt]
+P_{\mathrm{par}}(v)&=\frac{n_r}{2}d_0\rho c_s A v^3,\qquad
+P_f(v)=P_{\mathrm{pro}}+P_{\mathrm{ind}}+P_{\mathrm{par}}.
+\end{align*}
+\vspace{-5pt}
+{\footnotesize Profile: cản cánh rotor. Induced: tạo lực nâng. Parasite: cản thân.}
+\begin{alertblock}{Cách diễn giải Eq.~(10)}\scriptsize
+Dùng độ lớn lực đẩy. $T_r$ và $A$ thuộc \textbf{một rotor}; $n_r$ cộng toàn bộ rotor. Không lấy $mg$ cho mỗi rotor rồi nhân $n_r$ lần nữa.
+\end{alertblock}
+\cit{Drones 2026, 10, 238, trang 7--8, Eq.~(10)--(11).}
+\end{frame}
+
+\begin{frame}{Số hoá Table 2: hai mốc quan trọng}
+  \begin{columns}[T]
+  \column{0.52\textwidth}\centering\scriptsize
+  \setlength{\tabcolsep}{4pt}
+  \begin{tabular}{@{}l r@{}}
+    \toprule
+    \textbf{Tham số} & \textbf{Giá trị}\\
+    \midrule
+    $n_r$ & 4\\
+    $\rho$ & 1.293 kg/m$^3$\\
+    $S_{FP}$ & 0.01 m$^2$\\
+    $m$, $g$ & 2 kg, 9.8 m/s$^2$\\
+    $v$ & 15.521 m/s\\
+    $c_s$ & 0.0955\\
+    $\delta$ & 0.012\\
+    $c_T$ & 0.302\\
+    $c_f$ & 0.131\\
+    $d_0$ & 0.8333\\
+    $A$ & 0.0314 m$^2$\\
+    \bottomrule
+  \end{tabular}
+  \column{0.48\textwidth}\centering\scriptsize
+  \begin{tabular}{@{}l r r r@{}}
+    \toprule
+    $v$ (m/s) & Profile & Induced & Tổng\\
+    \midrule
+    0 & 0.186 & 172.202 & \textbf{172.388}\\
+    15.521 & 0.523 & 84.256 & \textbf{108.941}\\
+    \bottomrule
+  \end{tabular}
+  \vspace{6pt}
+  \begin{alertblock}{Đối chiếu với bài}\scriptsize
+  Tác giả báo $P_f=108.9118$ W; tự tính $108.940787$ W, lệch $0.0266\%$. \textbf{Không ép tham số} để khớp số đã in; giữ riêng hai giá trị.
+  \end{alertblock}
+  \begin{block}{Hover}\scriptsize
+  Tại $v=0$: $P_f(0)=172.388$ W. Đây là mốc tính năng lượng treo.
+  \end{block}
+  \end{columns}
+  \snote{Table 2 là bộ tham số lý thuyết tham chiếu, không phải bộ hệ số đo đầy đủ cho một mẫu DJI cụ thể.}
+\end{frame}
+
+\begin{frame}{Từ công suất sang năng lượng và EE}
+  \vspace{-8pt}
+  \setlength{\abovedisplayskip}{1pt}\setlength{\belowdisplayskip}{1pt}
+  \begin{columns}[T]
+  \column{0.54\textwidth}\small
+  \begin{block}{Bay và hover}\scriptsize
+  \[
+  D_f=\sum_n\|q[n+1]-q[n]\|,\qquad T_{\mathrm{fly}}=D_f/v
+  \]
+  \[
+  E_{\mathrm{fly}}=P_f(v)\frac{D_f}{v},\qquad
+  E_{\mathrm{hover}}=P_f(0)\,N_{\mathrm{hov}}t_{\mathrm{hov}}
+  \]
+  \end{block}
+  \begin{block}{RF và tổng}\scriptsize
+  \[
+  E_H=\eta\phi P_{\mathrm{rx}}T_{\mathrm{EH}},\quad
+  P_{\mathrm{RF}}=\frac{E_H}{T_{\mathrm{RF}}}
+  \]
+  \vspace{-4pt}
+  \[
+  E_{\mathrm{RF}}=\sum_n P_{\mathrm{RF}}[n]T_{\mathrm{RF}},\qquad
+  E_{\mathrm{total}}=E_{\mathrm{fly}}+E_{\mathrm{hover}}+E_{\mathrm{RF}}
+  \]
+  \[
+  \boxed{\ \mathrm{EE}=\frac{\sum_u D_u}{E_{\mathrm{total}}}\ \ [\mathrm{bit/J}]\ }
+  \]
+  \end{block}
+  \column{0.46\textwidth}
+  \begin{exampleblock}{Ví dụ số: đường ngang 300 m, 20 hover $\times$ 1 s}\scriptsize
+  $E_{\mathrm{fly}}=2105.68$ J\\
+  $E_{\mathrm{hover}}=3447.75$ J\\
+  $E_{\mathrm{RF}}\approx 2.3\times10^{-6}$ J\\
+  $E_{\mathrm{total}}\approx 5553.43$ J\\{\tiny Dùng $P_f=108.940787$ W tự tính; RF từ baseline seed 2026.}
+  \end{exampleblock}
+  \begin{alertblock}{Ba lưu ý hạch toán}\scriptsize
+  1. Hover \textbf{chưa có hạng riêng} trong ledger đã in của bài; thêm vào là \hb{mở rộng phải công bố}.\\
+  2. EH chỉ cấp RF lý tưởng; \textbf{không trừ EH} khỏi tổng tải.\\
+  3. Đoạn bay đến điểm cuối vẫn tính đủ dù điểm cuối không phục vụ.
+  \end{alertblock}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Mô hình này thay đổi bài toán thế nào?}
+  \begin{columns}[T]
+  \column{0.5\textwidth}
+  \begin{block}{Thang năng lượng đổi hoàn toàn}\scriptsize
+  Trong các run đã lưu, propulsion ở \hb{kJ}, RF ở \hb{$\mu$J}. Mẫu số mới do năng lượng hành trình và hover chi phối.
+  \end{block}
+  \begin{block}{Quỹ đạo trở thành chi phí}\scriptsize
+  Đường vòng làm tăng $D_f$ và $E_{\mathrm{fly}}$; kênh tốt hơn có thể không bù được quãng đường.
+  \end{block}
+  \column{0.5\textwidth}
+  \begin{block}{Hover chiếm tỉ trọng lớn}\scriptsize
+  Trong ví dụ 300 m: hover 3448 J / tổng 5553 J $\approx$ \hb{62\%}. Với 1 s mỗi điểm, số điểm phục vụ quan trọng không kém quỹ đạo.
+  \end{block}
+  \begin{alertblock}{Không thể suy thứ hạng từ EE-RF cũ}\scriptsize
+  Phải chạy lại tối ưu với mẫu số mới; kết quả V9 không còn dùng để xếp hạng thuật toán.
+  \end{alertblock}
+  \end{columns}
+  \vspace{4pt}
+  \centering
+  \begin{tikzpicture}[node distance=0.5cm]
+    \node[boxA,text width=2.9cm] (a) {Quỹ đạo $q[n]$};
+    \node[boxA,text width=2.9cm,right=of a] (b) {$D_f$, $T_{\mathrm{fly}}$, $P_f(v)$};
+    \node[boxB,text width=2.9cm,right=of b] (c) {$E_{\mathrm{fly}}+E_{\mathrm{hover}}$};
+    \node[boxG,text width=2.9cm,right=of c] (d) {$\mathrm{EE}=\sum D_u/E_{\mathrm{total}}$};
+    \draw[ar] (a)--(b); \draw[ar] (b)--(c); \draw[arr] (c)--(d);
+  \end{tikzpicture}
+\end{frame}
+
+\hustsectionpage{2. Migration vào mã V9: vấn đề}
+
+\begin{frame}{Nền V9 trước khi migrate}
+  \begin{columns}[T]
+  \column{0.5\textwidth}\small
+  \begin{itemize}
+    \item 21 waypoint $\Rightarrow$ 20 slot; mỗi slot \hb{1 s} = 0.5 s UL + 0.5 s DL.
+    \item Kênh lấy tại waypoint đầu slot; UL giả định đủ dữ liệu.
+    \item Ba evaluator dùng chung \code{addRFSlotMetrics}.
+    \item Joint PSO: X/Z + $\alpha$, BS cố định. Full PSO/IPSO: thêm toạ độ X/Y của BS.
+    \item EE-RF: tổng bit chia \hb{năng lượng phát RF}; chưa có năng lượng bay.
+  \end{itemize}
+  \column{0.5\textwidth}
+  \begin{block}{Giả định V9 xung đột với Drones}\scriptsize
+  \begin{tabular}{@{}p{3.55cm}p{2.45cm}@{}}
+    \toprule
+    V9 & Drones\\
+    \midrule
+    $z=15$--$45$ m & $z$ cố định\\
+    1 s mỗi slot & $d_n/v$ mỗi đoạn\\
+    1 đồng hồ chung & hover rồi bay\\
+    EE-RF & throughput/budget\\
+    Không giới hạn $v,E$ & $v$, $E_{\max}$\\
+    \bottomrule
+  \end{tabular}
+  \end{block}
+  \begin{alertblock}{Hệ quả}\scriptsize
+  Không thể chỉ thay mẫu số. Phải đồng bộ hình học, thời gian, evaluator, optimizer, polishing và lịch sử.
+  \end{alertblock}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Các hiện tượng đã gặp khi tối ưu EE ở V9}
+\vspace{-8pt}
+\begin{columns}[T]
+\column{0.5\textwidth}
+\begin{block}{EE-RF gần nhau giữa ba phương pháp}\small
+Log seed 2026: Joint $8.526$, Full PSO $8.492$, Full IPSO $8.472$ ($\times10^{12}$ bit/J). Chênh khoảng 0.4--0.6\%.\\[4pt]
+Tổng bit và năng lượng RF thay đổi gần cùng tỷ lệ. Chưa có bằng chứng ba nghiệm đạt cùng tối ưu toàn cục.
+\end{block}
+\begin{alertblock}{Phạm vi chỉ số}\small
+Các giá trị trên chỉ tính RF. Chưa có propulsion nên không đại diện EE tổng tải UAV.
+\end{alertblock}
+\column{0.5\textwidth}
+\begin{block}{Alpha có xu hướng về $1/N=0.2$}\small
+Với quỹ đạo/BS cố định, công suất RF không phụ thuộc alpha. Dưới ràng buộc alpha giảm dần theo kênh yếu $\to$ mạnh, alpha đều tối đa sum-rate nếu thoả QoS.\\[4pt]
+Đây là tính chất của mục tiêu và ràng buộc đang dùng; thêm năng lượng bay tự nó chưa xoá hiện tượng này.
+\end{block}
+\begin{block}{Đọc đúng kết quả heuristic}\scriptsize
+Full có miền nghiệm rộng hơn Joint nhưng có thể tìm được nghiệm kém hơn. Cần báo seed, ngân sách đánh giá và polishing trước khi xếp hạng.
+\end{block}
+\end{columns}
+\note{Nguồn: docs/EE\_RF\_DIAGNOSIS\_SEED2026.md. Log V9 lịch sử, không phải kết quả V10.}
+\end{frame}
+
+\begin{frame}{Nhóm 1: hình học và thời gian}
+  \begin{columns}[T]
+  \column{0.5\textwidth}
+  \begin{block}{1. Độ cao thay đổi}\scriptsize
+  V9 cho $z=15$--$45$ m; Drones giả định bay ngang ở $z$ cố định. Dùng norm 3D cho $E_f=P_fD/v$ \textbf{không tự thêm} vật lý leo/hạ.
+  \end{block}
+  \begin{block}{2. Slot 1 s vs $d/v$}\scriptsize
+  V9 cố định $\Delta y=15$ m, $T_{\mathrm{slot}}=1$ s, $dx_{\max}=dz_{\max}=\infty$. Tốc độ đoạn thực là $\sqrt{dx^2+15^2+dz^2}$, không tự bằng 15.521 m/s. Một đoạn có thể dài tới $\approx153.7$ m.
+  \end{block}
+  \column{0.5\textwidth}
+  \begin{block}{3. Một đồng hồ cho hai lịch}\scriptsize
+  V9 xem 1 s vừa là di chuyển vừa là 0.5 UL + 0.5 DL. Drones truyền khi hover, bay giữa các điểm là thời gian riêng. Phải tách $t_{\mathrm{fly}}$, $T_{\mathrm{EH}}$, $T_{\mathrm{RF}}$.
+  \end{block}
+  \begin{alertblock}{4. Giới hạn tốc độ/budget}\scriptsize
+  Evaluator V9 chỉ kiểm tra biên và chênh $x/z$, không kiểm tra norm vận tốc, gia tốc hay $E_{\max}$. Chênh từng trục không tương đương giới hạn tốc độ tổng. $17\,000$ J của bài không phải dung lượng pin đo được.
+  \end{alertblock}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Nhóm 2: mục tiêu và hạ tầng evaluator}
+  \begin{columns}[T]
+  \column{0.52\textwidth}
+  \begin{block}{5. Mẫu số chỉ là RF}\scriptsize
+  \code{addRFSlotMetrics} tính $\sum p_t\cdot0.5$, gán \code{eeRF} và fitness. Chưa có propulsion hay budget. Năng lượng phải được tính \textbf{trong từng lần đánh giá particle}, không chỉ sau tối ưu.
+  \end{block}
+  \begin{block}{6. Chế độ objective có thể âm thầm quay về V8}\scriptsize
+  Cả ba evaluator chỉ gọi helper EE khi \code{objectiveMode='ee-rf'}; optimizer và polisher cũng nhận riêng chuỗi này. Đổi tên thành \code{'ee-uav'} mà không nối toàn pipeline sẽ mất EE/lịch sử, polisher rơi vào nhánh min-rate.
+  \end{block}
+  \column{0.48\textwidth}
+  \begin{block}{7. Nguồn EH không thay thế propulsion}\scriptsize
+  EH lý tưởng cấp RF DL. Nếu tính tổng tải UAV thì cộng propulsion và truyền thông; \textbf{không trừ EH} rồi vẫn gọi là tổng tải. Nếu tính điện lấy từ pin phải định nghĩa đường cấp, hiệu suất và cân bằng riêng.
+  \end{block}
+  \begin{alertblock}{8. Tổng năng lượng và RF phải tách field}\scriptsize
+  \code{plotV9EEUserHistories} buộc \code{totalEnergyHistory} bằng $\sum p_t\cdot t_{\mathrm{DL}}$. Chỉ cộng $E_f$ vào total mà không sửa plot sẽ báo \code{HistoryMismatch}. Nhãn $\mu$J/nW, \code{eeRF}, \code{energyScope} phải giữ đúng nghĩa.
+  \end{alertblock}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Nhóm 3: lỗi sẵn có bị lộ khi thêm năng lượng}
+  \fontsize{8}{9.4}\selectfont
+  \begin{columns}[T]
+  \column{0.5\textwidth}
+  \begin{list}{}{\leftmargin=1.1em\itemsep=3pt\parsep=0pt\topsep=0pt}
+    \item \hb{Hardcode RF:} hai hàm rate tự đặt $P_r=46$ dBm, $\phi=\eta=0.9$, $B=1$ MHz. Đổi \code{sim} nhưng hàm vẫn dùng hằng số $\Rightarrow$ rate và năng lượng lệch nguồn.
+    \item \hb{Log trừ hai loại fitness:} in gain bằng EE Full trừ điểm thiếu bit của Joint nếu Joint chưa khả thi; không phải gain bit/J.
+    \item \hb{Plot nghiệm không khả thi:} điểm cuối và reference mean không lọc \code{isFeasible}; EE của nghiệm thiếu bit bị vẽ như kết quả đạt.
+    \item \hb{Swarm toàn $-Inf$:} \code{gbestRes} khởi tạo rỗng; \code{-Inf > -Inf} sai nên không gán, đọc \code{totalBits} gây lỗi. Dễ lộ khi thêm ràng buộc cứng.
+  \end{list}
+  \column{0.5\textwidth}
+  \begin{list}{}{\leftmargin=1.1em\itemsep=3pt\parsep=0pt\topsep=0pt}
+    \item \hb{Index bằng giá trị:} \code{findPowCoeff} và hàm rate dùng \code{find(h==h\_sort(i))}; kênh trùng làm mọi user bị gán lặp, hệ số không còn simplex.
+    \item \hb{Baseline thiếu \code{dzMax}:} evaluator baseline chỉ kiểm tra $\Delta x$; cùng tên \code{isFeasible} nhưng nghĩa khác Joint.
+    \item \hb{Ngân sách so sánh khác:} Joint 120 particle, Full 400, cùng 1000 vòng; Full còn polishing. Cùng số vòng không phải cùng ngân sách.
+    \item \hb{Alpha cuối dư:} $D_{\mathrm{pow}}=T\cdot N$ nhưng chỉ có $T-1$ slot; 5 trọng số cuối không tác động fitness.
+    \item \hb{Tái lập:} chưa lưu đủ \code{sim}, seed, raw/final và phiên bản mô hình trong một manifest.
+  \end{list}
+  \end{columns}
+  \vspace{-5pt}
+  \begin{block}{Thứ tự xử lý khi tích hợp}\scriptsize
+  Ledger năng lượng $\rightarrow$ chế độ objective $\rightarrow$ ràng buộc/khả thi $\rightarrow$ lịch sử và plot $\rightarrow$ lưu đủ cấu hình để tái lập.
+  \end{block}
+\end{frame}
+
+\begin{frame}{Bài học: ba nguyên tắc tích hợp}
+  \begin{columns}[T]
+  \column{0.33\textwidth}
+  \begin{block}{1. Một lịch hoạt động}\scriptsize
+  Tách rõ $t_{\mathrm{fly}}$, $T_{\mathrm{EH}}$, $T_{\mathrm{RF}}$. Không dùng chung 1 s cho di chuyển và truyền.
+  \end{block}
+  \column{0.33\textwidth}
+  \begin{block}{2. Một ledger}\scriptsize
+  Tính $E_{\mathrm{fly}}$, $E_{\mathrm{hover}}$, $E_{\mathrm{RF}}$, $E_{\mathrm{total}}$ trong \textbf{cùng evaluator}, cho mọi thuật toán và cả baseline.
+  \end{block}
+  \column{0.33\textwidth}
+  \begin{alertblock}{3. Không sửa V9}\scriptsize
+  Giữ V9 nguyên từng byte; thêm đường V10 riêng. Không để chế độ mới âm thầm fallback về fitness V8.
+  \end{alertblock}
+  \end{columns}
+  \vspace{6pt}
+  \centering
+  \begin{tikzpicture}[node distance=0.35cm]
+    \node[boxA,text width=2.3cm,minimum height=1.35cm] (a) {Cấu hình chung\\\code{v10Config}};
+    \node[boxA,text width=2.3cm,minimum height=1.35cm,right=of a] (b) {Hình học \&\\particle};
+    \node[boxA,text width=2.3cm,minimum height=1.35cm,right=of b] (c) {Kênh, rate,\\ledger năng lượng};
+    \node[boxB,text width=2.3cm,minimum height=1.35cm,right=of c] (d) {PSO/IPSO\\+ polishing};
+    \node[boxG,text width=2.3cm,minimum height=1.35cm,right=of d] (e) {EE, QoS,\\feasibility};
+    \draw[ar] (a)--(b); \draw[ar] (b)--(c); \draw[arr] (c)--(d); \draw[ar] (d)--(e);
+  \end{tikzpicture}
+\end{frame}
+
+\hustsectionpage{3. Hai mô hình V10A và V10B}
+
+\begin{frame}{Kiến trúc V10: thêm mới, không sửa V9}
+  \begin{columns}[T]
+  \column{0.48\textwidth}\footnotesize
+  \begin{itemize}\setlength{\itemsep}{2pt}
+    \item Đường chạy V10 riêng; giữ V8/V9 để đối chiếu và tái lập kết quả cũ.
+    \item Cấu hình chung \code{src/config/v10Config.m} cho cả A và B.
+    \item Entry point riêng: \code{maincodeV10A\_EE}, \code{maincodeV10B\_EE}.
+    \item Dùng chung \code{runV10}, \code{plotV10Diagnostics}; kết quả tách \code{results/v10/V10A|B}.
+    \item Test: \code{testV10Models.m}, \code{check\_v10\_static.py}.
+  \end{itemize}
+  \column{0.52\textwidth}
+  \begin{block}{Cấu trúc theo chức năng}\scriptsize
+  \begin{tabular}{@{}ll@{}}
+    \toprule
+    \code{src/config} & cấu hình, dựng \code{sim}\\
+    \code{src/geometry} & layout, khởi tạo, decode, repair\\
+    \code{src/models} & propulsion, kênh, rate\\
+    \code{src/evaluators} & quỹ đạo, ledger năng lượng\\
+    \code{src/optimizers} & Joint/Full PSO, IPSO, polish\\
+    \code{scripts} & main A/B, run, plot, campaign\\
+    \bottomrule
+  \end{tabular}
+  \end{block}
+  \begin{block}{Mặc định hiện tại}\scriptsize
+  $z=30$ m; 21 waypoint; 5 user; 3 BS; hover 1 s; $L=3$ Mbit/user; QoS 5 kbit/user/slot; budget 17 kJ; 120 particle; 1000 vòng (quick) / 3000 (full).
+  \end{block}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Dòng thời gian và ledger năng lượng V10}
+\vspace{-8pt}\setlength{\abovedisplayskip}{3pt}\setlength{\belowdisplayskip}{3pt}
+  \centering
+  {\small\hb{Tại waypoint $n$: hover 1 s = EH/UL 0.5 s + RF/DL 0.5 s}}\\[4pt]
+  {\small $\underbrace{\boxed{\mathrm{EH/UL}\;0.5\,s}\ \longrightarrow\
+  \boxed{\mathrm{RF/DL}\;0.5\,s}}_{\text{động cơ hover hoạt động trong cả hai pha}}$
+  $\ \longrightarrow\ \boxed{\text{bay }d_n/v}\ \longrightarrow\ q[n+1]$}\par
+  \vspace{3pt}
+  {\scriptsize $T_{\mathrm{mission}}=20\,t_{\mathrm{hov}}+\sum_{n=1}^{20}d_n/v$.
+  Có 20 lần phục vụ và 20 đoạn bay; điểm đến cuối không hover.}
+  \vspace{4pt}
+  \begin{columns}[T]
+  \column{0.52\textwidth}
+  \begin{block}{Công thức}\scriptsize
+  \[ E_{\mathrm{fly}}=P_f(v)\sum_n\frac{d_n}{v},\quad
+     E_{\mathrm{hover}}=P_f(0)N_{\mathrm{hov}}t_{\mathrm{hov}} \]
+  \[ E_{\mathrm{RF}}=\sum_n P_{\mathrm{RF}}[n]T_{\mathrm{RF}},\quad
+     E_{\mathrm{total}}=E_{\mathrm{fly}}+E_{\mathrm{hover}}+E_{\mathrm{RF}} \]
+  \[ \mathrm{EE}_{\mathrm{UAV}}=\frac{\sum_u D_u}{E_{\mathrm{total}}} \]
+  \end{block}
+  \column{0.48\textwidth}
+  \begin{exampleblock}{Phân biệt ba khái niệm}\scriptsize
+  \begin{tabular}{@{}ll@{}}
+    \code{batteryEnergyIdeal} & chỉ fly + hover\\
+    \code{totalEnergy} & fly + hover + RF\\
+    \code{harvestedEnergy} & EH lý tưởng, cấp RF\\
+  \end{tabular}
+  \vspace{3pt}
+  KHÔNG cộng EH vào mẫu số thêm lần nữa.
+  \end{exampleblock}
+  \begin{alertblock}{Phạm vi}\scriptsize
+  Bỏ gia tốc, quay, leo/hạ, mạch và tổn hao PA/động cơ. EE dùng \textbf{tổng tải trong mô hình}; chưa hạch toán pin thực.
+  \end{alertblock}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{V10A và V10B: cùng ledger, khác hình học}
+\vspace{-8pt}
+  \begin{columns}[T]
+  \column{0.5\textwidth}
+  \begin{block}{V10A --- lưới Y cố định}\scriptsize
+  \begin{itemize}
+    \item $Z$ cố định; tối ưu $X$ và $\alpha$.
+    \item $Y$ chia đều, mặc định 15 m/đoạn.
+    \item Full PSO/IPSO thêm tọa độ BS như V9.
+    \item Biến: Joint \hb{124}, Full \hb{130} (21 waypoint, 5 user).
+  \end{itemize}
+  \end{block}
+  \begin{block}{V10B --- Y tự do có ràng buộc}\scriptsize
+  \begin{itemize}
+    \item $Z$ cố định; tối ưu $X/Y$ và $\alpha$.
+    \item $Y$ tiến về điểm cuối, tối thiểu 1 m/đoạn.
+    \item Biến: Joint \hb{143}, Full \hb{149}.
+    \item Repair \code{sort} có thể ánh xạ nhiều particle về cùng quỹ đạo.
+  \end{itemize}
+  \end{block}
+  \column{0.5\textwidth}
+  \centering
+  \begin{tikzpicture}[x=0.95cm,y=0.72cm]
+    \draw[->,black!50] (0,0)--(6.0,0) node[right,font=\scriptsize] {$X$};
+    \draw[->,black!50] (0,0)--(0,5.9) node[above,font=\scriptsize] {$Y$};
+    \draw[hustprimary,thick] (3,5.4)--(2.3,4.4)--(3.6,3.4)--(3.3,2.4)--(2.4,1.4)--(3,0.4);
+    \foreach \p in {(3,5.4),(2.3,4.4),(3.6,3.4),(3.3,2.4),(2.4,1.4),(3,0.4)} \fill[hustprimary] \p circle (2pt);
+    \draw[hred,thick,dashed] (3,5.4)--(4.4,4.9)--(4.8,3.5)--(4.1,3.1)--(3.5,1.1)--(3,0.4);
+    \foreach \p in {(3,5.4),(4.4,4.9),(4.8,3.5),(4.1,3.1),(3.5,1.1),(3,0.4)} \fill[hred] \p circle (2pt);
+    \node[font=\scriptsize,anchor=east] at (2.9,5.5) {Đầu $(150,300)$};
+    \node[font=\scriptsize,anchor=east] at (2.9,0.35) {Cuối $(150,0)$};
+    \node[font=\scriptsize,text=hustprimary] at (1.2,3.0) {A};
+    \node[font=\scriptsize,text=hred] at (5.3,3.0) {B};
+  \end{tikzpicture}\par
+  \vspace{2pt}
+  {\scriptsize Sơ đồ nguyên lý, không phải nghiệm PSO; cùng điểm đầu/cuối.}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{QoS, khả thi và cách chấm điểm}
+\vspace{-8pt}
+  \begin{columns}[T]
+  \column{0.5\textwidth}
+  \begin{block}{Bốn lớp ràng buộc}\scriptsize
+  \begin{enumerate}
+    \item \textbf{Mission:} tổng bit từng User ID vật lý $\ge L$.
+    \item \textbf{Slot:} tổng bit mọi user trong 1 slot (mặc định tắt).
+    \item \textbf{User-slot:} từng user trong từng slot $\ge$ 5 kbit (mặc định).
+    \item \textbf{Energy:} $E_{\mathrm{total}}\le17$ kJ (đặt \code{Inf} để tắt).
+  \end{enumerate}
+  \code{isFeasible} = geometry \& mission \& slot \& user-slot \& energy.
+  \end{block}
+  \column{0.5\textwidth}
+  \begin{block}{Fitness vs EE}\scriptsize
+  Nếu khả thi: \code{fitness = EE\_UAV}.\\
+  Nếu không: \code{fitness} = $-$ tổng vi phạm chuẩn hoá (mission, slot, user-slot, energy) để PSO so sánh các nghiệm thiếu.
+  \end{block}
+  \begin{alertblock}{Không đọc nhầm log}\scriptsize
+  \code{eeComputed} luôn là tỉ số bit/J thật, kể cả khi vi phạm; chỉ dùng chẩn đoán. Console/summary in EE kèm cờ QoS; \code{fitness} âm \textbf{không phải EE âm}.
+  \end{alertblock}
+  \begin{exampleblock}{Vì sao chọn 5 kbit/user/slot?}\scriptsize
+  Log L3: một user chỉ nhận 42 bit dù tổng slot là 36.9 kbit. QoS tổng slot chưa đủ. Mặc định: 5 kbit/user/slot; sẽ quét 5/10/20 kbit.
+  \end{exampleblock}
+  \end{columns}
+\end{frame}
+
+\hustsectionpage{4. Kết quả sơ bộ và kiểm chứng}
+
+\begin{frame}{V10A sơ bộ: chi phí bay chi phối EE, Joint hụt QoS}
+  \begin{columns}[T]
+  \column{0.55\textwidth}\centering\scriptsize
+  \resizebox{\linewidth}{!}{%
+  \begin{tabular}{@{}c c c c@{}}
+    \toprule
+    $L$ (Mbit/user) & Joint PSO & Full PSO & Full IPSO\\
+    \midrule
+    1.0 & 2\,129\textsuperscript{*} & 6\,690 & \textbf{6\,906}\\
+    2.0 & -- (không đạt) & 4\,338 & \textbf{5\,907}\\
+    3.0 & -- (không đạt) & 5\,299 & \textbf{5\,591}\\
+    \bottomrule
+  \end{tabular}}
+  \vspace{2pt}
+  {\tiny EE bit/J; seed 2026; 120 hạt/1000 vòng. Các run 28/10: QoS user-slot chưa bật. * Joint L1 trước sửa seed.}
+  \column{0.45\textwidth}
+  \begin{block}{Đọc kết quả}\scriptsize
+  \begin{itemize}
+    \item Baseline thẳng \hb{không khả thi QoS} ở cả ba mức $L$: 8.85 Mbit tổng nhưng chia không đều.
+    \item Full PSO/IPSO khả thi; Joint chỉ khả thi ở $L=1$.
+    \item IPSO: EE lần lượt 6906, 5907, 5591 bit/J. Full PSO: 6690, 4338, 5299. Chưa đủ bằng chứng để quy thay đổi này cho riêng $L$.
+    \item \textbf{Không} kết luận ưu thế thuật toán từ 1 seed.
+  \end{itemize}
+  \end{block}
+  \end{columns}
+  \vspace{2pt}
+  \begin{columns}[T]
+  \column{0.5\textwidth}
+  \begin{exampleblock}{Ledger tại $L=3$, Full PSO}\scriptsize
+  $E_{\mathrm{total}}=8114$ J = 4666 cruise + 3448 hover + $5.4\times10^{-5}$ RF.\\
+  Quãng đường 665 m; mission 62.8 s; hover chiếm \hb{42.5\%}.
+  \end{exampleblock}
+  \column{0.5\textwidth}
+  \begin{alertblock}{Điều chưa được chứng minh}\scriptsize
+  Chưa có V10B; chưa chạy multi-seed; chưa có kết luận về polishing hay so sánh A/B. Các số trên là \textbf{báo cáo sơ bộ}.
+  \end{alertblock}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{V10A: một run có QoS 10 kbit/user/slot}
+\vspace{-8pt}
+\small Seed 2026; $L=3$ Mbit/user; hover 1 s; budget 17 kJ.\par
+\vspace{5pt}
+\begin{table}
+\centering\small
+\begin{tabular}{@{}lrrrc@{}}
+\toprule
+Phương pháp & Bit (Mbit) & Năng lượng (kJ) & User-slot vi phạm & Khả thi\\
+\midrule
+Baseline & 8.847 & 5.553 & 17 & Không\\
+Joint PSO & 13.374 & 11.255 & 11 & Không\\
+Full PSO & 15.180 & 9.485 & 1 & Không\\
+Full IPSO & 42.012 & 7.874 & 0 & Có\\
+\bottomrule
+\end{tabular}
+\caption{Run đã lưu ngày 29/10, ngưỡng user-slot 10 kbit; khác mặc định hiện tại 5 kbit.}
+\end{table}
+\vspace{-8pt}
+\begin{columns}[T]
+\column{0.5\textwidth}
+\begin{block}{IPSO khả thi}\small
+EE $=5335.84$ bit/J; hành trình 630.55 m; nhiệm vụ 60.63 s. Tổng năng lượng: 4.426 kJ bay + 3.448 kJ hover + 53.24 $\mu$J RF.
+\end{block}
+\column{0.5\textwidth}
+\begin{alertblock}{QoS toàn chuyến chưa đủ}\small
+Full PSO đủ $L$ cho mọi user nhưng còn 1 user-slot thiếu bit. Chưa được đưa EE vào bảng so sánh nghiệm khả thi.
+\end{alertblock}
+\end{columns}
+\note{Nguồn: results/v10/V10A/seed2026\_L3Mbit\_20261029\_014602\_883/summary.txt.}
+\end{frame}
+
+\begin{frame}{Kiểm chứng và giới hạn}
+  \begin{columns}[T]
+  \column{0.5\textwidth}
+  \begin{block}{Đã kiểm tra}\scriptsize
+  \begin{itemize}
+    \item \code{check\_v10\_static.py}: 12 test nguồn/cấu trúc OK.
+    \item Lượt tích hợp ghi nhận bảo toàn file MATLAB V8/V9; V10 có đường chạy riêng.
+    \item Kiểm tra số học Python cho công thức propulsion và các trường hợp biên Y.
+    \item Kết quả V10A: 1 seed, profile quick.
+  \end{itemize}
+  \end{block}
+  \begin{alertblock}{Chưa kiểm tra}\scriptsize
+  Ghi chú triển khai chưa xác nhận chạy \code{testV10Models.m} và Code Analyzer. Các summary V10A đã tồn tại; chưa có campaign nhiều seed hay kết quả V10B trong dữ liệu đã kiểm tra.
+  \end{alertblock}
+  \column{0.5\textwidth}
+  \begin{block}{Giới hạn mô hình}\scriptsize
+  Bay ngang $z$ cố định; bỏ gia tốc, quay, leo/hạ; chỉ propulsion + RF; EH lý tưởng cấp RF; hover là phần bổ sung; 17 kJ là budget tham chiếu, không phải pin đo được.
+  \end{block}
+  \begin{block}{Câu hỏi còn mở}\scriptsize
+  Căn cứ chọn $L$; ngưỡng QoS 5/10/20 kbit; đóng góp của polishing; độ nhạy hover 1/2/3 s; EE theo tổng tải hay điện pin; V10B có hội tụ tốt hơn A không.
+  \end{block}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Kết luận và bước tiếp theo}
+  \begin{columns}[T]
+  \column{0.33\textwidth}
+  \begin{block}{Mô hình}\scriptsize
+  {\Large\bfseries\color{hustprimary} 108.94 W}\\[2pt]
+  cruise tự tính, lệch 0.0266\% so với 108.9118 W của bài; hover 172.39 W.
+  \end{block}
+  \column{0.33\textwidth}
+  \begin{block}{Tích hợp}\scriptsize
+  {\Large\bfseries\color{hustprimary} 17 vấn đề}\\[2pt]
+  nhóm hình học/thời gian, mục tiêu/evaluator, lỗi sẵn có và tái lập.
+  \end{block}
+  \column{0.33\textwidth}
+  \begin{alertblock}{Hai biến thể}\scriptsize
+  {\Large\bfseries\color{hred} A $\cdot$ B}\\[2pt]
+  A: lưới Y cố định, 124/130 biến. B: Y tự do, 143/149 biến; rủi ro repair \code{sort}.
+  \end{alertblock}
+  \end{columns}
+  \vspace{4pt}
+  \begin{columns}[T]
+  \column{0.5\textwidth}\small
+  \hb{Bước tiếp theo}
+  \begin{itemize}\scriptsize
+    \item Chạy \code{testV10Models} và campaign 3 seed cho A/B.
+    \item So sánh A/B ở cùng ngân sách đánh giá; báo EE, QoS, energy, feasibility.
+    \item Đánh giá repair Y; chỉ đổi cách tham số hoá khi có bằng chứng hội tụ kém.
+  \end{itemize}
+  \column{0.5\textwidth}\small
+  \hb{Nguyên tắc báo cáo}
+  \begin{itemize}\scriptsize
+    \item Luôn nêu phạm vi năng lượng và đơn vị.
+    \item Tách EE khả thi và EE chẩn đoán.
+    \item Không suy thứ hạng từ EE-RF cũ; không giấu phần chưa chạy.
+  \end{itemize}
+  \end{columns}
+  \vspace{2pt}
+  {\small\hb{Khuyến nghị:}} {\scriptsize chốt phạm vi EE; chạy đủ seed cho A/B; so sánh ở cùng ngân sách đánh giá; chỉ báo cáo nghiệm khả thi.}
+\end{frame}
+
+\begin{frame}{Tài liệu tham khảo}
+  \scriptsize
+  \begin{enumerate}
+    \item T. Zhang et al., \emph{Trajectory and Power Control for Sustainable UAV-Assisted NOMA-Enabled Backscattering IoT}, Drones 2026, 10, 238. DOI: 10.3390/drones10040238.
+    \item \code{docs/DRONES\_ENERGY\_CODE\_REVIEW\_2026-10-28.md} --- đối chiếu mô hình Drones với code V8/V9.
+    \item \code{docs/V10\_AB\_GUIDE.md} --- cấu trúc, cấu hình và cách chạy V10A/V10B.
+    \item \code{docs/V10\_SLOT\_QOS\_AND\_FIXES\_2026-10-28.md} --- QoS bit/slot và các sửa lỗi.
+    \item \code{docs/V10\_FIGURE\_AUDIT\_2026-10-29.md} --- kiểm tra dimension và figure V10.
+    \item \code{docs/EE\_RF\_DIAGNOSIS\_SEED2026.md} --- EE gần nhau và alpha đều ở V9.
+    \item Summary V10A ngày 28--29/10/2026 --- nguồn số liệu sơ bộ; đường dẫn trong README.
+  \end{enumerate}
+\end{frame}
+
+\hustthankyou
+\end{document}

@@ -1,0 +1,30 @@
+$ python3 tests/check_v10_static.py
+test_actual_propulsion_expressions_against_numeric_reference (__main__.V10SourceContracts.test_actual_propulsion_expressions_against_numeric_reference) ... ok
+test_directed_progress_arithmetic_forward_reverse_and_tight (__main__.V10SourceContracts.test_directed_progress_arithmetic_forward_reverse_and_tight) ... ok
+test_energy_and_output_scope_contract (__main__.V10SourceContracts.test_energy_and_output_scope_contract) ... ok
+test_figure_group_switches_default_on_and_gate_each_range (__main__.V10SourceContracts.test_figure_group_switches_default_on_and_gate_each_range) ... ok
+test_lexical_delimiters_and_control_blocks (__main__.V10SourceContracts.test_lexical_delimiters_and_control_blocks) ... ok
+test_plot_bs_count_does_not_depend_on_main_workspace (__main__.V10SourceContracts.test_plot_bs_count_does_not_depend_on_main_workspace) ... ok
+test_radio_constants_are_only_configured_in_config (__main__.V10SourceContracts.test_radio_constants_are_only_configured_in_config) ... ok
+test_required_sources_exist (__main__.V10SourceContracts.test_required_sources_exist) ... ok
+test_unique_function_names_and_file_names (__main__.V10SourceContracts.test_unique_function_names_and_file_names) ... ok
+test_v10_has_no_legacy_fitness_or_rate_dispatch (__main__.V10SourceContracts.test_v10_has_no_legacy_fitness_or_rate_dispatch) ... ok
+test_v9_unchanged_against_snapshot (__main__.V10SourceContracts.test_v9_unchanged_against_snapshot) ... ok
+test_v9_velocity_and_ipso_rules_preserved (__main__.V10SourceContracts.test_v9_velocity_and_ipso_rules_preserved) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.115s
+
+OK
+
+$ python3 tests/check_v11_static.py
+test_names_and_lexical_structure (__main__.V11Contracts.test_names_and_lexical_structure) ... ok
+test_physics_verbatim (__main__.V11Contracts.test_physics_verbatim) ... ok
+test_protected_checksums (__main__.V11Contracts.test_protected_checksums) ... ok
+test_required_files (__main__.V11Contracts.test_required_files) ... ok
+test_snapshot_coverage (__main__.V11Contracts.test_snapshot_coverage) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.021s
+
+OK

@@ -1,0 +1,11 @@
+#!/usr/bin/env python3
+import os,sys
+from pathlib import Path
+args=sys.argv[1:]
+if '-shell-escape' in args:
+    raise SystemExit('Shell escape is disabled for this preview.')
+tex=next((x for x in args if x.endswith('.tex')),None)
+if tex is None:
+    raise SystemExit('Missing TeX input')
+engine='/opt/homebrew/Cellar/tectonic/0.17.0/bin/tectonic'
+os.execv(engine,[engine,'--untrusted','--only-cached','--keep-logs','--keep-intermediates',tex])

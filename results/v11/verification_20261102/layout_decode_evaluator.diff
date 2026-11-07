@@ -1,0 +1,87 @@
+--- src/geometry/v10ParticleLayout.m (identifier-normalized)
++++ src/geometry/v11ParticleLayout.m
+@@ -5,8 +5,17 @@
+         layout.y=n+(1:n);
+     end
+     layout.positionCount=n+numel(layout.y);
+-    layout.alpha=layout.positionCount+(1:sim.numSteps*sim.noUsers);
+-    next=layout.positionCount+sim.numSteps*sim.noUsers;
++    mode=getSimField(sim,'alphaMode','particle');
++    switch mode
++        case 'particle'
++            % Preserve all T*U weights, including the inert arrival row (V10 parity).
++            layout.alpha=layout.positionCount+(1:sim.numSteps*sim.noUsers);
++        case 'uniform'
++            layout.alpha=[];
++        otherwise
++            error('v11ParticleLayout:AlphaMode','Unknown alpha mode.');
++    end
++    next=layout.positionCount+numel(layout.alpha);
+     layout.xBS=[]; layout.yBS=[];
+     if optimizeBS
+         layout.xBS=next+(1:sim.noBS);
+@@ -15,3 +24,11 @@
+     end
+     layout.dimension=next;
+ end
++
++function value = getSimField(s, name, fallback)
++    if isfield(s,name) && ~isempty(s.(name))
++        value=s.(name);
++    else
++        value=fallback;
++    end
++end
+--- src/geometry/decodeV10Particle.m (identifier-normalized)
++++ src/geometry/decodeV11Particle.m
+@@ -9,7 +9,11 @@
+         q.yTraj=[sim.yStart,particle(layout.y),sim.yEnd];
+     end
+     q.zTraj=sim.altitude*ones(1,sim.numSteps);
+-    q.rawAlpha=reshape(particle(layout.alpha),sim.noUsers,sim.numSteps).';
++    if isempty(layout.alpha)
++        q.rawAlpha=alphaPolicyV11(sim);
++    else
++        q.rawAlpha=reshape(particle(layout.alpha),sim.noUsers,sim.numSteps).';
++    end
+     % The final waypoint is an arrival point with no hover/RF slot. Its alpha
+     % row is kept for trace compatibility but made inert; the last block of
+     % particle weights therefore cannot affect bits, energy or fitness.
+--- src/evaluators/evaluateTrajectoryV10.m (identifier-normalized)
++++ src/evaluators/evaluateTrajectoryV11.m
+@@ -42,7 +42,14 @@
+             else
+                 raw=max(result.rawAlpha(t,:),sim.pMin);
+                 raw=raw/sum(raw);
+-                alpha=zeros(1,U); alpha(order)=sort(raw,'descend');
++                switch getSimField(sim,'alphaRepair','noma')
++                    case 'noma'
++                        alpha=zeros(1,U); alpha(order)=sort(raw,'descend');
++                    case 'none'
++                        alpha=raw;
++                    otherwise
++                        error('evaluateTrajectoryV11:AlphaRepair','Unknown alphaRepair.');
++                end
+             end
+             [rate,alphaOrd,order,power]=findAchievableRateV11(hUsers,hBS,alpha,sim);
+             result.achRate(t,:)=rate;
+@@ -59,8 +66,19 @@
+     result.minInternal=min(result.stepMin(2:T-1));
+     result.meanInternal=mean(result.stepMin(2:T-1));
+     result=addV11EnergyMetrics(result,sim);
++    result.particleLayout=v11ParticleLayout(sim,optimizeBS);
++    result.alphaPresetName=getSimField(sim,'alphaPresetName','');
++    result.alphaSource='particle-policy';
+     result.variant=sim.variant;
+     result.objectiveMode=sim.objectiveMode;
+     result.penalty=double(~result.geometryFeasible);
+     fitness=result.fitness;
+ end
++
++function value = getSimField(s, name, fallback)
++    if isfield(s,name) && ~isempty(s.(name))
++        value=s.(name);
++    else
++        value=fallback;
++    end
++end
