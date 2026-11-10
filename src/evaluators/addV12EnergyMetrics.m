@@ -51,9 +51,11 @@ function result = addV12EnergyMetrics(result, sim)
     if isfield(result, 'ulAchRate') && isfield(result, 'dlAchRate')
         result.ulBitsPerUserPerSlot = result.ulAchRate(idx, :) * sim.ehTime;
         result.dlBitsPerUserPerSlot = result.dlAchRate(idx, :) * sim.rfTime;
-        result.ulDlShortfall = max(0, result.dlBitsPerUserPerSlot - result.ulBitsPerUserPerSlot);
-        tolBits = 1e-9 * max(1, max(result.dlBitsPerUserPerSlot(:)));
-        result.ulDlFeasible = all(result.ulDlShortfall(:) <= tolBits);
+        result.ulDlShortfall = max(0, result.bitsPerUserPerSlot - result.ulBitsPerUserPerSlot);
+        tolBits = 1e-9 * max(1, max(result.bitsPerUserPerSlot(:)));
+        result.ulDlFeasible = all(isfinite(result.bitsPerUserPerSlot(:))) ...
+            && all(isfinite(result.ulBitsPerUserPerSlot(:))) ...
+            && all(result.ulDlShortfall(:) <= tolBits);
     end
     if isfield(result, 'phiTrace')
         result.meanPhi = mean(result.phiTrace(idx));
@@ -68,8 +70,8 @@ function result = addV12EnergyMetrics(result, sim)
     result.userSlotShortfall = max(0, sim.minBitsPerUserPerSlot - result.bitsPerUserPerSlot);
     result.slotBitsMin = min(result.bitsPerSlot);
     result.slotBitsMax = max(result.bitsPerSlot);
-    result.numSlotsBelowMin = sum(result.slotShortfall > 0);
-    result.numUserSlotsBelowMin = sum(result.userSlotShortfall(:) > 0);
+    result.numSlotsBelowMin = nnz(result.slotShortfall > 0);
+    result.numUserSlotsBelowMin = nnz(result.userSlotShortfall > 0);
     result.energyBudgetJ = sim.energyBudgetJ;
     result.energyShortfall = max(0, result.totalEnergy - sim.energyBudgetJ);
     valid = all(isfinite(points(:))) && all(isfinite(result.bitsPerUserPerSlot(:))) ...

@@ -25,7 +25,7 @@ function sim = buildV12Simulation(cfg, variant)
         r.phiMin = 0;
     end
     if ~isfield(r, 'phiMax') || isempty(r.phiMax)
-        r.phiMax = 1 - 1e-12;
+        r.phiMax = 0.999;
     end
     validateattributes(r.phiMin, {'numeric'}, {'real', 'finite', 'scalar', '>=', 0, '<=', 1});
     validateattributes(r.phiMax, {'numeric'}, {'real', 'finite', 'scalar', '>=', r.phiMin, '<=', 1});
@@ -58,6 +58,39 @@ function sim = buildV12Simulation(cfg, variant)
     sim.flight.acceleration = f.acceleration;
     sim.flight.quadratureNodes = f.quadratureNodes;
     [sim.flight.glNodes01, sim.flight.glWeights01] = gaussLegendre01(f.quadratureNodes);
+
+    initMode = 'v10';
+    if isfield(cfg, 'optimizers') && isfield(cfg.optimizers, 'initMode') ...
+            && ~isempty(cfg.optimizers.initMode)
+        initMode = lower(char(cfg.optimizers.initMode));
+    end
+    if ~any(strcmp(initMode, {'clustered', 'v10'}))
+        error('buildV12Simulation:InitMode', ...
+            'optimizers.initMode must be ''v10'' or ''clustered''.');
+    end
+    sim.initMode = initMode;
+
+    updateMode = 'independent';
+    if isfield(cfg, 'optimizers') && isfield(cfg.optimizers, 'updateMode') ...
+            && ~isempty(cfg.optimizers.updateMode)
+        updateMode = lower(char(cfg.optimizers.updateMode));
+    end
+    if ~any(strcmp(updateMode, {'independent', 'correlated'}))
+        error('buildV12Simulation:UpdateMode', ...
+            'optimizers.updateMode must be ''independent'' or ''correlated''.');
+    end
+    sim.updateMode = updateMode;
+
+    mutationMode = 'elementwise';
+    if isfield(cfg, 'optimizers') && isfield(cfg.optimizers, 'mutationMode') ...
+            && ~isempty(cfg.optimizers.mutationMode)
+        mutationMode = lower(char(cfg.optimizers.mutationMode));
+    end
+    if ~any(strcmp(mutationMode, {'elementwise', 'block'}))
+        error('buildV12Simulation:MutationMode', ...
+            'optimizers.mutationMode must be ''elementwise'' or ''block''.');
+    end
+    sim.mutationMode = mutationMode;
 end
 
 function [nodes01, weights01] = gaussLegendre01(n)
