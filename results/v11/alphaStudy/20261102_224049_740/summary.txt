@@ -1,0 +1,13 @@
+Full PSO rows; wallClockSeconds covers runV11 (all three algorithms).
+Swarm settings equal; total fitness/rate evaluations can differ.
+Mean +/- std across seeds, grouped by preset/variant/L.
+particle_noma_random V11B L=3000000 n=3 feasible=3 | EE 8634.90803 +/- 1183.03945 bit/J
+  Feasible-only EE: 8634.90803 +/- 1183.03945 (n=3)
+particle_noma_none V11B L=3000000 n=3 feasible=3 | EE 8247.97638 +/- 1266.15122 bit/J
+  Feasible-only EE: 8247.97638 +/- 1266.15122 (n=3)
+uniform_noma_none V11B L=3000000 n=3 feasible=3 | EE 7945.53903 +/- 656.394942 bit/J
+  Feasible-only EE: 7945.53903 +/- 656.394942 (n=3)
+uniform_noma_qos V11B L=3000000 n=3 feasible=3 | EE 7945.53903 +/- 656.394942 bit/J
+  Feasible-only EE: 7945.53903 +/- 656.394942 (n=3)
+uniform_noc3_qos V11B L=3000000 n=3 feasible=3 | EE 7945.53903 +/- 656.394942 bit/J
+  Feasible-only EE: 7945.53903 +/- 656.394942 (n=3)

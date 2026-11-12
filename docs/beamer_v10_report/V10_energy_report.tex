@@ -1,0 +1,530 @@
+\documentclass[t,aspectratio=169]{beamer}
+\usepackage{fontspec}
+\usepackage{unicode-math}
+\setmainfont{lmroman10-regular.otf}[BoldFont=lmroman10-bold.otf,ItalicFont=lmroman10-italic.otf,BoldItalicFont=lmroman10-bolditalic.otf]
+\setsansfont{lmsans10-regular.otf}[BoldFont=lmsans10-bold.otf,ItalicFont=lmsans10-oblique.otf,BoldItalicFont=lmsans10-boldoblique.otf]
+\setmonofont{lmmono10-regular.otf}
+\setmathfont{latinmodern-math.otf}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{tikz}
+\usetikzlibrary{positioning,arrows.meta,calc,fit,backgrounds}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.16}
+
+\def\slideContentLeftMargin{0.7cm}
+\def\slideContentRightMargin{0.7cm}
+\def\hustHeaderHeight{1.15cm}
+\def\slideContentBotMargin{1.5cm}
+\usepackage[blue,169]{beamerthemeHUST}
+\graphicspath{{images/}}
+\HustShowPageNumtrue
+
+\renewcommand{\titlePageTitleX}{-0.2cm}
+\renewcommand{\titlePageTitleY}{-0.6cm}
+\renewcommand{\hustTitleAlign}{\alignLeft}
+\renewcommand{\hustSubtitleAlign}{\alignLeft}
+\renewcommand{\hustAuthorAlign}{\alignLeft}
+\renewcommand{\hustInstAlign}{\alignLeft}
+
+\definecolor{hred}{HTML}{ce1628}
+\definecolor{hgrey}{HTML}{9AA5B1}
+\definecolor{hgreen}{HTML}{1f7a5c}
+\newcommand{\hb}[1]{{\color{hustprimary}\textbf{#1}}}
+\newcommand{\hr}[1]{{\color{hred}\textbf{#1}}}
+\newcommand{\hg}[1]{{\color{hgreen}\textbf{#1}}}
+\newcommand{\snote}[1]{\vspace{2pt}{\scriptsize\color{black!55}\raggedright #1\par}}
+\setbeamertemplate{itemize item}{\small\color{hred}\textbullet}
+\setbeamertemplate{itemize subitem}{\scriptsize\color{hustprimary}--}
+\setbeamercolor{block title}{fg=white,bg=hustprimary}
+\setbeamercolor{block body}{bg=hustprimary!8}
+\setbeamercolor{block title alerted}{fg=white,bg=hred}
+\setbeamercolor{block body alerted}{bg=hred!7}
+\setbeamercolor{block title example}{fg=white,bg=black!55}
+\setbeamercolor{block body example}{bg=black!5}
+\setbeamerfont{frametitle}{series=\bfseries,size=\large}
+
+\tikzset{
+  boxA/.style={draw=hustprimary,fill=hustprimary!10,rounded corners,thick,align=center,inner sep=4pt,font=\scriptsize},
+  boxB/.style={draw=hred,fill=hred!8,rounded corners,thick,align=center,inner sep=4pt,font=\scriptsize},
+  boxG/.style={draw=hgreen,fill=hgreen!8,rounded corners,thick,align=center,inner sep=4pt,font=\scriptsize},
+  ar/.style={-{Stealth[length=2mm]},thick,hustprimary},
+  arr/.style={-{Stealth[length=2mm]},thick,hred},
+}
+
+\title{Mô hình năng lượng UAV và hai phương án tối ưu V10A--V10B}
+\subtitle{Báo cáo sơ bộ: từ mô hình bay Drones đến mã V9/V10}
+\author{Nhóm nghiên cứu EE--UAV}
+\institute{Trường Đại học Bách khoa Hà Nội (HUST)}
+\date{2026}
+
+\makeatletter
+\renewcommand{\husttitlepage}{{%
+  \setbeamertemplate{background}{\includegraphics[width=\paperwidth,height=\paperheight]{\hustbg{title}}}%
+  \begin{frame}[plain]
+  \begin{tikzpicture}[remember picture, overlay]
+  \node[anchor=north west, text width=0.72\paperwidth] at ([xshift=0.75cm,yshift=-1.95cm]current page.north west) {%
+    \raggedright
+    {\Large\bfseries\color{hustprimary}\MakeUppercase{\inserttitle}\par}
+    \vspace{6pt}{\normalsize\bfseries\color{black!75}\insertsubtitle\par}
+    \vspace{10pt}{\color{hustprimary}\small\textbf{Người thực hiện:}}\\[2pt]
+    {\small\color{black}\insertauthor\par}
+    \vspace{4pt}{\small\bfseries\color{hustprimary}\insertinstitute\par}};
+  \end{tikzpicture}
+  \end{frame}}}
+\makeatother
+
+\begin{document}
+\husttitlepage
+
+\begin{frame}{Mục tiêu và phạm vi}
+  \begin{columns}[T]
+  \column{0.33\textwidth}
+  \begin{block}{1. Mô hình năng lượng}\scriptsize
+  Bài Drones 2026: tách công suất bay thành ba phần, tính các mốc công suất và năng lượng.
+  \end{block}
+  \column{0.33\textwidth}
+  \begin{block}{2. Tích hợp vào V9}\scriptsize
+  Đối chiếu mô hình tọa độ X/Y/Z và slot 1 giây của V9 với giả định bay của Drones.
+  \end{block}
+  \column{0.33\textwidth}
+  \begin{alertblock}{3. Hai phương án V10}\scriptsize
+  V10A giữ Y theo lưới; V10B mở Y. Cả hai dùng chung sổ năng lượng và chất lượng dịch vụ gồm $L$ và $q$.
+  \end{alertblock}
+  \end{columns}
+  \vspace{5pt}
+  \begin{block}{Câu hỏi của báo cáo}\small
+  Đưa năng lượng bay vào tối ưu hiệu suất năng lượng (EE, bit/J) của UAV mà vẫn giữ được cấu trúc, khả năng so sánh và tính tái lập của V9?
+  \end{block}
+  \vspace{3pt}
+  {\small\color{black!60} Báo cáo tập trung vào mô hình và thiết kế; không trình bày kết quả sơ bộ.}
+\end{frame}
+
+\begin{frame}{Mô hình bay của bài báo Drones}
+  \begin{columns}[T]
+  \column{0.55\textwidth}\small
+  \begin{itemize}
+    \item Máy bay bốn cánh (UAV), khối lượng $m=2$ kg, bay ngang ở độ cao cố định.
+    \item Tốc độ hành trình chung $v=15.521$ m/s.
+    \item Treo tại điểm thu dữ liệu; mỗi điểm có thời gian treo $t_{\mathrm{hov}}$.
+    \item Bỏ chi phí quá độ: đổi hướng, tăng/giảm tốc, leo/hạ độ cao.
+  \end{itemize}
+  \column{0.45\textwidth}
+  \begin{block}{Phạm vi năng lượng}\scriptsize
+  Chỉ tính năng lượng đẩy và năng lượng vô tuyến (RF):
+  \[
+  E_{\mathrm{bay}}+E_{\mathrm{RF}}\le E_{\max}
+  \]
+  Không có mạch, bộ khuếch đại, điều khiển hay hiệu suất động cơ.
+  \end{block}
+  \begin{alertblock}{Điểm cần phân biệt}\scriptsize
+  Bài tối đa thông lượng dưới ngân sách năng lượng, \textbf{không} tối đa bit/J. Kế thừa mô hình bay không có nghĩa kế thừa toàn bộ bài toán.
+  \end{alertblock}
+  \end{columns}
+  \snote{Nguồn: T. Zhang et al., \emph{Trajectory and Power Control for Sustainable UAV-Assisted NOMA-Enabled Backscattering IoT}, Drones 2026, 10, 238.}
+\end{frame}
+
+\begin{frame}{Công suất bay: ba thành phần}
+  \small Công suất bay tách thành ba phần: $P(v)=P_1(v)+P_2(v)+P_3(v)$, trong đó:
+  \vspace{2pt}
+  \begin{block}{Ba thành phần công suất}\scriptsize
+  \setlength{\tabcolsep}{3pt}
+  \renewcommand{\arraystretch}{1.0}
+  \begin{tabular}{@{}>{\raggedright\arraybackslash}p{2.35cm} >{\raggedright\arraybackslash}p{7.35cm} >{\raggedright\arraybackslash}p{3.25cm}@{}}
+    \toprule
+    \textbf{Thành phần} & \textbf{Công thức} & \textbf{Ý nghĩa}\\
+    \midrule
+    $P_1$: cản cánh & $P_1=a_1\left(\frac{T}{c_T\rho A}+3v^2\right)\sqrt{\frac{T\rho c_s^2A}{c_T}}$ & khắc phục lực cản của cánh quạt\\
+    $P_2$: tạo lực nâng & $P_2=a_2T\left(\sqrt{\sqrt{\frac{T^2}{4\rho^2A^2}+\frac{v^4}{4}}-\frac{v^2}{2}}\right)$ & tạo lực nâng; khác 0 khi treo\\
+    $P_3$: cản thân & $P_3=a_3v^3$ & thắng lực cản của thân máy bay\\
+    \bottomrule
+  \end{tabular}
+  \end{block}
+  \vspace{2pt}
+  {\scriptsize
+  Lực đẩy một cánh quạt: $T(v)=\sqrt{(mg)^2+\left(\frac12\rho S_{FP}v^2\right)^2}\big/n_r$.\quad
+  Nhóm hệ số: $a_1=\frac{n_r\delta}{8}$; $a_2=n_r(1+c_f)$; $a_3=\frac12 n_r d_0\rho c_sA$.\par
+  Khi $v=0$: $P_1\approx0$, $P_3=0$, $P_2>0$ nên $P(0)$ là công suất treo.}
+\end{frame}
+
+\begin{frame}{Hệ số và các mốc công suất -- năng lượng}
+  \begin{columns}[T]
+  \column{0.43\textwidth}\centering\scriptsize
+  \setlength{\tabcolsep}{4pt}
+  \begin{tabular}{@{}l r@{}}
+    \toprule
+    \textbf{Hệ số} & \textbf{Giá trị}\\
+    \midrule
+    $n_r$ & 4\\
+    $\rho$ & 1.293 kg/m$^3$\\
+    $S_{FP}$ & 0.01 m$^2$\\
+    $m$, $g$ & 2 kg, 9.8 m/s$^2$\\
+    $v$ & 15.521 m/s\\
+    $c_s$ & 0.0955\\
+    $\delta$ & 0.012\\
+    $c_T$ & 0.302\\
+    $c_f$ & 0.131\\
+    $d_0$ & 0.8333\\
+    $A$ & 0.0314 m$^2$\\
+    \bottomrule
+  \end{tabular}
+  \column{0.57\textwidth}
+  \begin{block}{Tại tốc độ hành trình $v=15.521$ m/s}\scriptsize
+  $P_1=0.523$ W; $P_2=84.256$ W; $P_3=24.161$ W\\
+  $\Rightarrow P_{\mathrm{bay}}=$ \hr{108.941 W}\\
+  Bài báo ghi 108.9118 W; lệch 0.027\%.
+  \end{block}
+  \begin{block}{Tại treo $v=0$}\scriptsize
+  $P_1=0.186$ W; $P_2=172.202$ W; $P_3=0$\\
+  $\Rightarrow P_{\mathrm{treo}}=$ \hr{172.388 W}
+  \end{block}
+  \begin{exampleblock}{Năng lượng cho 300 m và 20 điểm treo}\scriptsize
+  $E_{\mathrm{bay}}=108.941\times\dfrac{300}{15.521}=$ \hr{2105.7 J}\\
+  $E_{\mathrm{treo}}=172.388\times20\times1=$ \hr{3447.8 J}\\
+  Tổng bay + treo = \hr{5553.4 J}
+  \end{exampleblock}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Mô hình V9: tọa độ X/Y/Z và slot 1 giây}
+  \begin{columns}[T]
+  \column{0.52\textwidth}\small
+  \begin{itemize}
+    \item 21 waypoint, 20 slot; điểm đầu $(150,300)$, điểm cuối $(150,0)$; vùng bay $300\times300$ m.
+    \item $X$ tự do trong $[75,225]$; $Y$ là lưới đều 15 m mỗi đoạn; $Z$ tự do trong $15$--$45$ m.
+    \item Mỗi slot 1 s: 0.5 s đường lên + 0.5 s đường xuống.
+    \item Kênh lấy tại waypoint đầu slot; đường lên giả định đủ dữ liệu.
+    \item EE = tổng bit / năng lượng phát vô tuyến; \textbf{chưa có năng lượng bay}.
+  \end{itemize}
+  \column{0.48\textwidth}\centering
+  \begin{tikzpicture}[scale=0.88,every node/.style={font=\scriptsize}]
+    \draw[->,thick] (0,0)--(6.2,0) node[right]{$Y$};
+    \draw[->,thick] (0,0)--(0,4.2) node[above]{$Z$};
+    \draw[->,thick] (0,0)--(1.9,1.5) node[above right]{$X$};
+    \foreach \y in {0,1,...,6} \draw[black!10] (\y,0)--(\y,4);
+    \foreach \z in {0,1,...,4} \draw[black!10] (0,\z)--(6,\z);
+    \draw[very thick,hustprimary] (3.1,3.7)--(3.3,3.1)--(2.7,2.5)--(3.4,1.9)--(2.9,1.3)--(3.5,0.7)--(3.2,0.2);
+    \foreach \p in {(3.1,3.7),(3.3,3.1),(2.7,2.5),(3.4,1.9),(2.9,1.3),(3.5,0.7),(3.2,0.2)} \fill[hred] \p circle (2pt);
+    \node[anchor=south,hustprimary] at (3.2,3.8) {điểm đầu};
+    \node[anchor=north,hred] at (3.2,0.1) {điểm cuối};
+    \node[anchor=west] at (4.1,1.9) {$Z$: 15--45 m};
+    \node[anchor=west] at (4.1,1.4) {$Y$: 15 m/slot};
+    \node[anchor=west] at (1.0,1.0) {$X$: 75--225 m};
+    \draw[<->,hustprimary] (5.7,0.2)--(5.7,3.6);
+  \end{tikzpicture}
+  \vspace{2pt}
+  {\tiny Vẽ 7/21 waypoint để minh họa; $Y$ giảm 15 m mỗi slot, $X$ và $Z$ thay đổi tự do.}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Xung đột với mô hình bay của bài báo}
+  \centering\small
+  \setlength{\tabcolsep}{5pt}
+  \renewcommand{\arraystretch}{1.25}
+  \begin{tabular}{@{}>{\raggedright\arraybackslash}p{2.3cm} >{\raggedright\arraybackslash}p{5.0cm} >{\raggedright\arraybackslash}p{5.7cm}@{}}
+    \toprule
+    & \textbf{Mô hình V9} & \textbf{Mô hình bay Drones}\\
+    \midrule
+    Độ cao & $Z$ thay đổi 15--45 m & $Z$ cố định, bay ngang\\
+    Thời gian & 1 s mỗi slot, cố định & $t_{\mathrm{bay}}=d/v$; treo có thời gian riêng\\
+    Lịch & 1 s vừa bay vừa 0.5 s lên + 0.5 s xuống & Treo rồi bay; truyền khi treo\\
+    Mục tiêu & EE chỉ tính năng lượng vô tuyến & $E_{\mathrm{bay}}+E_{\mathrm{treo}}+E_{\mathrm{RF}}$\\
+    Ràng buộc & Không giới hạn tốc độ, ngân sách & $v=15.521$ m/s; $E_{\max}$\\
+    \bottomrule
+  \end{tabular}
+  \vspace{6pt}
+  \begin{alertblock}{Kết luận}\small
+  Không thể chỉ thay mẫu số. Phải đổi cả hình học, thời gian, mục tiêu và ràng buộc; nếu không, mô hình mới chỉ là một hằng số công suất cộng thêm.
+  \end{alertblock}
+\end{frame}
+
+\begin{frame}{Ràng buộc mô hình khi tích hợp}
+  \begin{columns}[T]
+  \column{0.56\textwidth}\small
+  \begin{itemize}\setlength{\itemsep}{4pt}
+    \item Năng lượng: \(E_{\text{tổng}}=E_{\text{bay}}+E_{\text{treo}}+E_{\text{RF}}\le E_{\max}\).
+    \item Thời gian bay: \(t_{\text{bay}}=d/v\), với \(v=15.521\) m/s.
+    \item Thời gian treo: \(t_{\text{treo}}=0.5\) s thu năng lượng \(+0.5\) s phát.
+    \item Tốc độ: mỗi đoạn không vượt \(v\); bỏ qua gia tốc, leo/hạ.
+    \item Giữ V9: không sửa mã cũ; V10 là lớp mới.
+  \end{itemize}
+  \column{0.44\textwidth}
+  \begin{block}{Dạng rút gọn}\scriptsize
+  \[
+  \begin{aligned}
+  E_{\text{tổng}}&\le E_{\max}\\
+  t_{\text{bay}}&=d/v\\
+  t_{\text{treo}}&=t_{\text{EH}}+t_{\text{RF}}=1\ \text{s}\\
+  X&\in[75,225],\quad Z=30\ \text{m}
+  \end{aligned}
+  \]
+  \end{block}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Vấn đề của V9 khi áp mô hình bay}
+  \begin{columns}[T]
+  \column{0.55\textwidth}\small
+  \begin{itemize}\setlength{\itemsep}{4pt}
+    \item Độ cao: \(z_k\in[15,45]\) m thay đổi theo waypoint; mô hình Drones cần \(z\) cố định.
+    \item Thời gian: \(T_{\text{slot}}=1\) s cố định; tốc độ đoạn \(v_k=\sqrt{\Delta x_k^2+15^2+\Delta z_k^2}/1\), không bằng 15.521 m/s.
+    \item Một đồng hồ: 1 s vừa bay vừa 0.5 s lên + 0.5 s xuống.
+    \item Mục tiêu: \(EE_{\text{V9}}=\dfrac{\sum R_uT_{DL}}{\sum P_{RF}T_{DL}}\), thiếu \(E_{\text{bay}},E_{\text{treo}}\).
+  \end{itemize}
+  \column{0.45\textwidth}\centering
+  \begin{tikzpicture}[scale=0.85,every node/.style={font=\scriptsize}]
+    \draw[fill=hustprimary!15] (0,0) rectangle (3,0.6);
+    \draw[fill=hred!10] (3,0) rectangle (6,0.6);
+    \node at (1.5,0.3) {0.5 s lên};
+    \node at (4.5,0.3) {0.5 s xuống};
+    \draw[<->] (0,0.9)--(6,0.9) node[midway,above] {1 slot = 1 s};
+    \draw[->,thick,hred] (0,-0.35)--(6,-0.35) node[midway,below] {vừa bay vừa truyền};
+  \end{tikzpicture}
+  \begin{block}{Công thức}\scriptsize
+  \[
+  v_k=\frac{\sqrt{\Delta x_k^2+15^2+\Delta z_k^2}}{1\ \text{s}}
+  \]
+  \[
+  EE_{\text{V9}}=\frac{\sum R_uT_{DL}}{\sum P_{RF}T_{DL}}
+  \]
+  \end{block}
+  \end{columns}
+  \snote{Hằng số đề bài: \(P_r=46\) dBm, \(\phi=\eta=0.9\), \(B=1\) MHz; hiện gán cứng nên khi đổi cấu hình dễ lệch.}
+\end{frame}
+
+\begin{frame}{Kiến trúc V10 so với V9}
+  \begin{columns}[T]
+  \column{0.58\textwidth}\scriptsize
+  \setlength{\tabcolsep}{3pt}
+  \begin{tabular}{@{}>{\raggedright\arraybackslash}p{1.55cm} >{\raggedright\arraybackslash}p{2.75cm} >{\raggedright\arraybackslash}p{3.35cm}@{}}
+    \toprule
+    & \textbf{V9} & \textbf{V10}\\
+    \midrule
+    Hình học & tối ưu \(X,Z\); \(Y\) lưới & A: \(X\); B: \(X,Y\); \(Z=30\) m\\
+    Thời gian & 1 s cố định & $t_{\text{bay}}=d/v$; treo 1 s\\
+    Năng lượng & chỉ RF & bay + treo + RF\\
+    Mục tiêu & EE-RF & EE của UAV\\
+    Ràng buộc & $L$ & $L,q,Q,E,V$\\
+    Kết quả & 3 thuật toán & 3 thuật toán + A/B\\
+    \bottomrule
+  \end{tabular}
+  \column{0.42\textwidth}
+  \begin{block}{Mô hình mô phỏng V10}\scriptsize
+  \begin{itemize}\setlength{\itemsep}{2pt}
+    \item $300\times300$ m; $Z=30$ m; 21 waypoint; 5 user; 3 trạm gốc.
+    \item Kênh: suy hao khoảng cách, Rician; NOMA; thu hoạch năng lượng.
+    \item Năng lượng: $P=P_1+P_2+P_3$; $E_{\text{bay}}+E_{\text{treo}}+E_{\text{RF}}$.
+    \item Tối ưu: Joint PSO, Full PSO, Full IPSO, tinh chỉnh $\alpha$.
+  \end{itemize}
+  \end{block}
+  \end{columns}
+  \vspace{2pt}
+  \begin{block}{Điểm mới của V10}\scriptsize
+  Không sửa V9: thêm năng lượng bay, tách thời gian bay/treo, thêm QoS $L,q,Q$; A tối ưu $X$, B tối ưu $X,Y$.
+  \end{block}
+\end{frame}
+
+\begin{frame}{V10A và V10B: cấu trúc bay}
+  \centering\scriptsize
+  \setlength{\tabcolsep}{5pt}
+  \begin{tabular}{@{}l c c c@{}}
+    \toprule
+    & \textbf{X} & \textbf{Y} & \textbf{Z}\\
+    \midrule
+    A & tự do $[75,225]$ & lưới đều 15 m/slot & 30 m\\
+    B & tự do $[75,225]$ & tự do, tiến $\ge1$ m/đoạn & 30 m\\
+    \bottomrule
+  \end{tabular}
+  \vspace{4pt}
+  \begin{columns}[T]
+  \column{0.5\textwidth}
+  \begin{block}{V10A: $Y$ lưới}\scriptsize
+  \begin{tabular}{@{}l c c c c c@{}}
+    \toprule
+    Slot & 1 & 2 & 3 & ... & 20\\
+    \midrule
+    \(Y\) & 0 & 15 & 30 & ... & 285\\
+    \bottomrule
+  \end{tabular}\par
+  \vspace{2pt}
+  {\tiny Quãng tiến từ điểm đầu; tọa độ tuyệt đối \(300-Y\).}
+  \end{block}
+  \column{0.5\textwidth}
+  \begin{block}{V10B: $Y$ tự do}\scriptsize
+  \begin{tabular}{@{}l c c c c c@{}}
+    \toprule
+    Slot & 1 & 2 & 3 & ... & 20\\
+    \midrule
+    \(Y\) & 0 & \(y_2\) & \(y_3\) & ... & \(y_{20}\)\\
+    \bottomrule
+  \end{tabular}\par
+  \vspace{2pt}
+  {\tiny \(y_{s+1}\ge y_s+1\); quãng tiến đến cuối 300 m.}
+  \end{block}
+  \end{columns}
+  \vspace{2pt}
+  {\scriptsize Cùng 21 waypoint, 20 slot, 5 user, 3 trạm gốc; cả hai tối ưu \(\alpha\), Full thêm tọa độ 3 trạm gốc.}
+\end{frame}
+
+\begin{frame}{Chất lượng dịch vụ: $L$, $q$ và constraint}
+  \begin{columns}[T]
+  \column{0.40\textwidth}\scriptsize
+  \setlength{\tabcolsep}{3pt}
+  \begin{tabular}{@{}l l l@{}}
+    \toprule
+    \textbf{Tham số} & \textbf{Mức} & \textbf{Mặc định}\\
+    \midrule
+    \(L\) & 1,2,3 Mbit/user & 3\\
+    \(q\) & 0,5,10,20 kbit/user/slot & 5\\
+    \(Q\) & 0,300 kbit/slot & 0\\
+    \(E_{\max}\) & 17 kJ / Inf & 17 kJ\\
+    \bottomrule
+  \end{tabular}
+  \column{0.60\textwidth}
+  \begin{block}{Constraint}\scriptsize
+  \[
+  \sum_s b_{u,s}\ge L,\qquad b_{u,s}\ge q,\qquad \sum_u b_{u,s}\ge Q
+  \]
+  \[
+  E_{\text{tổng}}\le E_{\max},\qquad v=v_{\text{cruise}},\qquad X/Y/Z\text{ hợp lệ}
+  \]
+  \end{block}
+  \end{columns}
+  \vspace{-2pt}
+  \begin{columns}[T]
+  \column{0.55\textwidth}
+  \begin{block}{Ba cờ QoS}\scriptsize
+  \renewcommand{\arraystretch}{0.95}
+  \begin{tabular}{@{}l l@{}}
+    \toprule
+    \textbf{Cờ} & \textbf{= 1 khi}\\
+    \midrule
+    \texttt{L} & mọi user đủ \(L\)\\
+    \texttt{bitSlot} & mọi slot đủ \(Q\)\\
+    \texttt{bitUserSlot} & mọi user/slot đủ \(q\)\\
+    \bottomrule
+  \end{tabular}
+  \end{block}
+  \column{0.45\textwidth}
+  \begin{block}{Ví dụ từ kết quả V10B}\tiny
+  Seed 2026, \(L=1\) Mbit, Joint PSO:\\
+  \texttt{EE = 2.882830517753e+03 bit/J}\\
+  \texttt{L / bit-slot / bit-user-slot QoS = 1 / 1 / 1}\\
+  \texttt{Feasible = 1}
+  \end{block}
+  \vspace{2pt}
+  {\tiny Một slot có tổng 36.9 kbit nhưng một user yếu chỉ nhận 42 bit \(\Rightarrow\) \texttt{bitUserSlot=0}, dù tổng slot vẫn lớn.}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Tác động của năng lượng bay}
+  \begin{columns}[T]
+  \column{0.50\textwidth}\small
+  \begin{itemize}\setlength{\itemsep}{4pt}
+    \item Thêm năng lượng bay và treo vào mẫu số.
+    \item Mẫu số EE đổi từ $\mu$J sang kJ.
+    \item RF gần như không còn ảnh hưởng.
+    \item Treo tốn vì \(P_f(0)>P_f(v)\): khi không có vận tốc tới, \(P_2\) tạo lực nâng vẫn rất lớn.
+    \item 20 điểm treo $\times$ 1 s = 20 s; \(E_{\text{treo}}=3447.8\) J $>$ \(E_{\text{bay}}=2105.7\) J.
+  \end{itemize}
+  \column{0.50\textwidth}
+  \begin{block}{Công thức / bằng chứng}\scriptsize
+  \begin{align*}
+  P_f(0)&=172.388\ \text{W}\\
+  P_f(15.521)&=108.941\ \text{W}\\
+  E_{\text{treo}}&=P_f(0)Nt_{\text{hov}}=3447.8\ \text{J}\\
+  E_{\text{bay}}&=P_f(v)\frac{D}{v}=2105.7\ \text{J}\\
+  \frac{E_{\text{treo}}}{E_{\text{bay}}}&=1.64\\
+  \frac{E_{\text{treo}}}{E_{\text{tổng}}}&\approx62\%
+  \end{align*}
+  \end{block}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Tổng hợp V10A và V10B}
+  \begin{block}{Mô hình năng lượng và EE của V10}
+  \[
+  E_{\text{tổng}}=\sum_s P_f(v)\frac{d_s}{v}+P_f(0)Nt_{\text{hov}}+\sum_s P_{RF,s}T_{RF}
+  \]
+  \[
+  EE=\frac{\sum_u D_u}{E_{\text{bay}}+E_{\text{treo}}+E_{\text{RF}}}
+  \]
+  \end{block}
+  \vspace{-2pt}
+  \begin{columns}[T]
+  \column{0.5\textwidth}
+  \begin{block}{Cấu trúc bay V10A}\scriptsize
+  \(Z=30\) m; \(X\in[75,225]\); \(Y\) lưới đều 15 m/slot; tối ưu \(X\) và \(\alpha\).
+  \end{block}
+  \column{0.5\textwidth}
+  \begin{block}{Cấu trúc bay V10B}\scriptsize
+  \(Z=30\) m; \(X\in[75,225]\); \(Y\) tự do, tiến $\ge1$ m/đoạn; tối ưu \(X,Y\) và \(\alpha\).
+  \end{block}
+  \end{columns}
+  \vspace{-4pt}
+  \begin{columns}[T]
+  \column{0.5\textwidth}
+  \begin{block}{QoS dữ liệu}\scriptsize
+  \(L\): 1,2,3 Mbit/user; \(q\): 5,10,20 kbit/user/slot; \(Q\): 0,300 kbit/slot.
+  \end{block}
+  \column{0.5\textwidth}
+  \begin{block}{QoS vật lý}\scriptsize
+  \(V\): \(v=15.521\) m/s; \(E\): \(E_{\text{tổng}}\le17\) kJ; biên \(X/Y/Z\).
+  \end{block}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Cấu hình chạy V10 hiện tại}
+  \begin{columns}[T]
+  \column{0.52\textwidth}
+  \begin{block}{Mô phỏng}\scriptsize
+  \begin{itemize}\setlength{\itemsep}{2pt}
+    \item $300\times300$ m; \(Z=30\) m; 21 waypoint; 5 user; 3 trạm gốc.
+    \item 46 dBm/trạm; \(B=1\) MHz; \(\phi=\eta=0.9\); \(\beta_0=-30\) dB; Rician 4--12 dB.
+    \item \(v=15.521\) m/s; treo 1 s (EH .5 + RF .5); \(E_{\max}=17\) kJ.
+  \end{itemize}
+  \end{block}
+  \column{0.48\textwidth}
+  \begin{block}{Quick và Full}\scriptsize
+  \begin{tabular}{@{}l c c@{}}
+    \toprule
+    & \textbf{Quick} & \textbf{Full}\\
+    \midrule
+    Số hạt & 120 & 120\\
+    Số vòng & 1000 & 3000\\
+    Tinh chỉnh \(\alpha\) & 250/user, min 500 & như quick\\
+    \bottomrule
+  \end{tabular}
+  \end{block}
+  \end{columns}
+  \vspace{-4pt}
+  \begin{columns}[T]
+  \column{0.56\textwidth}
+  \begin{block}{Tham số cần tinh chỉnh}\scriptsize
+  \renewcommand{\arraystretch}{0.95}
+  \begin{tabular}{@{}l l l@{}}
+    \toprule
+    \textbf{Tham số} & \textbf{Mức} & \textbf{Mặc định}\\
+    \midrule
+    \(L\) & 1,2,3 Mbit/user & 3\\
+    \(q\) & 0,5,10,20 kbit/user/slot & 5\\
+    \(Q\) & 0,300 kbit/slot & 0\\
+    Treo & 1,2,3 s & 1\\
+    \(E_{\max}\) & 17 kJ / Inf & 17 kJ\\
+    \bottomrule
+  \end{tabular}
+  \end{block}
+  \column{0.44\textwidth}
+  \begin{alertblock}{Vì sao cần xác định QoS}\scriptsize
+  \begin{itemize}\setlength{\itemsep}{2pt}
+    \item EE/rate thuần túy có xu hướng đẩy \(\alpha\) về đều \(1/N\).
+    \item \(L\) và \(q\) buộc chia khác đều để user yếu vẫn đủ bit, nên \(\alpha\) lệch khỏi \(1/N\).
+    \item \(q\) giữ user yếu không bị bỏ đói trong từng slot.
+  \end{itemize}
+  \end{alertblock}
+  \end{columns}
+\end{frame}
+
+\end{document}

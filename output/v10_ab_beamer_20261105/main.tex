@@ -1,0 +1,399 @@
+% Compile using XeLaTeX (twice) or: tectonic -X compile main.tex
+% This file and tables/*.tex are directly editable.
+\documentclass[t,aspectratio=169,10pt]{beamer}
+\usepackage{fontspec}
+\usepackage{unicode-math}
+\setmainfont{lmroman10-regular.otf}[BoldFont=lmroman10-bold.otf,ItalicFont=lmroman10-italic.otf,BoldItalicFont=lmroman10-bolditalic.otf]
+\setsansfont{lmsans10-regular.otf}[BoldFont=lmsans10-bold.otf,ItalicFont=lmsans10-oblique.otf,BoldItalicFont=lmsans10-boldoblique.otf]
+\setmonofont{lmmono10-regular.otf}
+\setmathfont{latinmodern-math.otf}
+\usepackage{amsmath,amssymb,graphicx,booktabs,array,csquotes}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning}
+\def\slideContentLeftMargin{0.65cm}
+\def\slideContentRightMargin{0.65cm}
+\def\hustHeaderHeight{1.03cm}
+\usepackage[blue,169]{beamerthemeHUST}
+\graphicspath{{images/}{figures/}}
+\HustShowPageNumtrue
+\definecolor{accent}{HTML}{D55E00}
+\definecolor{good}{HTML}{187A65}
+\setbeamerfont{frametitle}{series=\bfseries,size=\large}
+\setbeamerfont{caption}{size=\tiny}
+\setbeamertemplate{caption}{\raggedright\insertcaption\par}
+\setbeamercolor{block title}{fg=white,bg=hustprimary}
+\setbeamercolor{block body}{bg=hustprimary!6}
+\setbeamercolor{block title alerted}{fg=white,bg=accent}
+\setbeamercolor{block body alerted}{bg=accent!7}
+\setbeamercolor{block title example}{fg=white,bg=good}
+\setbeamercolor{block body example}{bg=good!7}
+\newcommand{\src}[1]{\par\vspace{3pt}{\tiny\color{black!55}Nguồn: #1\par}}
+\newcommand{\notevi}[1]{\par\vspace{4pt}{\footnotesize #1\par}}
+\newcommand{\hi}[1]{{\color{hustprimary}\bfseries #1}}
+\newcommand{\warn}[1]{{\color{accent}\bfseries #1}}
+\newcommand{\figslide}[3]{%
+  \begin{frame}{#1}
+    \begin{figure}\centering
+      \includegraphics[width=\textwidth,height=4.75cm,keepaspectratio]{#2}
+      \caption{#3}
+    \end{figure}
+  \end{frame}}
+
+\title{Tổng hợp kết quả V10A và V10B}
+\subtitle{Hiệu suất năng lượng, quỹ đạo UAV và vị trí BS}
+\author{Báo cáo từ dữ liệu mô phỏng đã lưu}
+\date{05/11/2026}
+
+\begin{document}
+{
+\setbeamertemplate{background}{\includegraphics[width=\paperwidth,height=\paperheight]{hust-blue-169-title.png}}
+\begin{frame}[plain]
+\begin{tikzpicture}[remember picture,overlay]
+\node[anchor=north west,text width=10.5cm,align=left] at ([xshift=.8cm,yshift=-2cm]current page.north west) {
+ {\Large\bfseries\color{hustprimary}TỔNG HỢP KẾT QUẢ\\[3pt]V10A VÀ V10B\par}
+ \vspace{8pt}{\normalsize Hiệu suất năng lượng, quỹ đạo UAV\\và vị trí trạm gốc BS\par}
+ \vspace{12pt}{\small Campaign 29/10/2026, ba scenario seed\par}
+ \vspace{5pt}{\small Báo cáo ngày 05/11/2026\par}
+ \vspace{10pt}{\footnotesize Nguồn LaTeX Beamer và dữ liệu đính kèm có thể chỉnh sửa.\par}
+};
+\end{tikzpicture}
+\end{frame}
+}
+
+\begin{frame}{Kết quả chính trong campaign đã chạy}
+\begin{columns}[T,onlytextwidth]
+\column{.49\textwidth}
+\begin{block}{V10B khai thác thêm tự do theo Y}
+\small Với IPSO, B cho EE cao hơn A ở \hi{21/21 cặp cấu hình khác nhau}. Gain ghép cặp trung bình \hi{55,79\%}.
+\end{block}
+\begin{exampleblock}{IPSO có tỷ lệ khả thi cao nhất}
+\small Đạt \hi{42/42 tổ hợp khác nhau} của cả A/B. Full PSO đạt 41/42, JointPSO đạt 24/42.
+\end{exampleblock}
+\column{.49\textwidth}
+\begin{block}{BS3 tập trung tại một góc miền tìm kiếm}
+\small Ở $L=3$ Mbit, $q=5$ kbit, hover 1 s: \hi{12/12 nghiệm Full} đặt BS3 tại $(250,50,25)$ m.
+\end{block}
+\begin{alertblock}{Giới hạn khi diễn giải}
+\small Ba seed thay đổi user/kênh, cùng một seed thuật toán. Kết quả phản ánh nghiệm heuristic trong ngân sách hữu hạn. Chưa đo mất EE khi cố định BS.
+\end{alertblock}
+\end{columns}
+\src{Dữ liệu MAT của campaign, loại các cấu hình lặp. Full = Full PSO và Full IPSO.}
+\end{frame}
+
+\begin{frame}{Phạm vi dữ liệu và cách tổng hợp}
+\small
+\begin{table}\centering
+\begin{tabular}{p{3cm}p{10cm}}\toprule
+Hạng mục & Dữ liệu dùng trong báo cáo\\\midrule
+Campaign & \texttt{campaign\_20261029\_125559}, 54 run, 216 kết quả phương pháp\\
+Scenario seed & 2026, 608060, 3486784401\\
+Ngân sách tìm kiếm & 120 particles, 1.000 iterations; algorithm seed 151459287\\
+Ba sweep & $L=1,2,3$ Mbit; $q=0,5,10$ kbit/user/slot; hover $h=1,2,3$ s\\
+Điểm giao sweep & $L=3$, $q=5$, $h=1$ xuất hiện ba nhãn với cùng kết quả\\
+Sau loại trùng & 42 run cấu hình khác nhau, 168 kết quả phương pháp\\\bottomrule
+\end{tabular}
+\caption{Ba sweep thay đổi từng tham số; dữ liệu không phải toàn bộ tích Descartes của $L,q,h$.}
+\end{table}
+\notevi{EE chính là kết quả cuối sau polishing đối với Full PSO/IPSO. Trung bình EE chỉ lấy nghiệm khả thi và luôn ghi số seed đóng góp. Báo cáo đọc lại MAT, không chạy lại MATLAB/PSO.}
+\src{Manifest campaign; đối chiếu lại 216 kết quả với 54 MAT, cấu hình lưu trong từng MAT.}
+\end{frame}
+
+\begin{frame}{V10A và V10B khác nhau ở không gian quỹ đạo}
+\small
+\begin{table}\centering
+\begin{tabular}{p{3cm}p{5cm}p{5cm}}\toprule
+Thành phần & V10A & V10B\\\midrule
+Tọa độ UAV & Tối ưu X, cố định $Z=30$ m & Tối ưu X và Y, cố định $Z=30$ m\\
+Tiến theo Y & $300,285,270,\ldots,0$ m & Y giảm đơn điệu, ít nhất 1 m/đoạn\\
+Đầu và cuối & $(150,300,30)$ và $(150,0,30)$ & Cùng A\\
+Biên X & $75\leq X\leq225$ m & Cùng A\\
+Phân bổ NOMA & Tối ưu alpha theo slot & Cùng A\\
+BS & Joint cố định; Full tối ưu X/Y BS & Cùng A\\
+Số biến Joint/Full & 124/130 & 143/149\\\bottomrule
+\end{tabular}
+\caption{21 waypoint, 5 user, 3 BS. Hàng alpha tại waypoint cuối chỉ là chẩn đoán, không đóng góp dữ liệu/năng lượng RF.}
+\end{table}
+\notevi{B có thể gom nhiều điểm phục vụ vào vùng kênh thuận lợi. Vì thế EE còn tăng nhờ tổng bit lớn hơn, cùng với thay đổi chiều dài bay.}
+\src{\texttt{v10ParticleLayout}, \texttt{decodeV10Particle}, \texttt{repairV10Particle}; cấu hình MAT.}
+\end{frame}
+
+\begin{frame}{Những phần V10 kế thừa và điều chỉnh từ bài Drones}
+\footnotesize
+\begin{table}\centering
+\begin{tabular}{p{3.1cm}p{5.1cm}p{4.8cm}}\toprule
+Nội dung & Bài Drones [1] & V10A/V10B\\\midrule
+Propulsion & Eq. (10)--(11), Table 2, bốn rotor & Dùng cùng mô hình và hệ số; lấy độ lớn lực đẩy từ cân bằng vector\\
+Bay và phục vụ & Bay ngang ở độ cao cố định, cùng tốc độ & $Z=30$ m; $v=15{,}521$ m/s; phục vụ khi hover\\
+Năng lượng bay & $E_f=P_f(v)D_f/v$ & Cộng đủ 20 đoạn bay, gồm đoạn cuối\\
+Budget & $E_f+E_t\leq E_{\max}$; mô phỏng 17 kJ & Budget 17 kJ cho cruise + hover + RF\\
+Năng lượng hover & Biểu thức in trong bài không tách tải động cơ hover & Bổ sung $P_f(0)\sum h_n$ tường minh\\
+Mục tiêu và thuật toán & Sum-throughput, BackCom, KKT/GSS, TSP/GA & EE bit/J, SWIPT--NOMA, PSO/IPSO của dự án\\\bottomrule
+\end{tabular}
+\caption{Hai bản kế thừa cùng một nền vật lý. V10 không tái hiện toàn bộ hệ thống và thuật toán của bài báo.}
+\end{table}
+\notevi{Hover 1/2/3 s và QoS $L,q$ thuộc thiết kế V10. Bài dùng hover 0,1 s và độ cao 50 m trong cấu hình mô phỏng.}
+\src{[1], tr. 8--9 và 17; \texttt{dronePropulsionPower}, \texttt{addV10EnergyMetrics}.}
+\end{frame}
+
+\begin{frame}{Công suất động cơ: ba thành phần và các mốc tính lại}
+\footnotesize
+\setlength{\abovedisplayskip}{4pt}
+\setlength{\belowdisplayskip}{4pt}
+\[
+T_r(v)=\frac{\sqrt{(mg)^2+(\rho S_{FP}v^2/2)^2}}{n_r},\qquad
+P_f(v)=P_{\rm profile}+P_{\rm induced}+P_{\rm parasite}.
+\]
+\begin{align*}
+P_{\rm profile}&=n_r\frac{\delta}{8}\left(\frac{T_r}{c_T\rho A}+3v^2\right)\sqrt{\frac{T_r\rho c_s^2A}{c_T}},\\[-2pt]
+P_{\rm induced}&=n_r(1+c_f)T_r\sqrt{\sqrt{\frac{T_r^2}{4\rho^2A^2}+\frac{v^4}{4}}-\frac{v^2}{2}},\qquad
+P_{\rm parasite}=\frac{n_r}{2}d_0\rho c_sAv^3.
+\end{align*}
+\begin{table}\centering
+\begin{tabular}{lrrrr}\toprule
+Trạng thái & Profile (W) & Induced (W) & Parasite (W) & Tổng (W)\\\midrule
+Hover, $v=0$ & 0,185855 & 172,201778 & 0 & 172,387633\\
+Cruise, $v=15{,}521$ & 0,523368 & 84,256024 & 24,161396 & 108,940787\\\bottomrule
+\end{tabular}\caption{Table 2: $n_r=4$, $m=2$, $\rho=1{,}293$, $S_{FP}=0{,}01$, $g=9{,}8$, $c_s=0{,}0955$, $\delta=0{,}012$, $c_T=0{,}302$, $c_f=0{,}131$, $d_0=0{,}8333$, $A=0{,}0314$ (SI). Nguồn: [1], Eq. (10)--(11), tr. 8.}
+\end{table}
+\vspace{-8pt}
+\notevi{V10 tính 108,940787 W; bài báo công bố 108,9118 W (lệch 0,0266\%).}
+\end{frame}
+
+\begin{frame}{EE và hai mức QoS dùng chung cho mọi thuật toán}
+\small
+\[
+\mathrm{EE}_{\rm UAV}=\frac{\sum_{u=1}^{5}\sum_{n=1}^{20}D_{u,n}}
+{P_f(v)\sum_{n=1}^{20}d_n/v+P_f(0)\sum_{n=1}^{20}h_n+\sum_{n=1}^{20}P_{{\rm RF},n}T_{{\rm RF},n}}.
+\]
+\begin{columns}[T,onlytextwidth]
+\column{.49\textwidth}
+\begin{block}{Yêu cầu về dữ liệu}
+Mỗi user phải thỏa cả hai mức:
+\[\sum_n D_{u,n}\geq L,\qquad D_{u,n}\geq q\quad\forall u,n.\]
+\footnotesize $L$: bit/user/nhiệm vụ. $q$: bit/user/slot phục vụ, không phải bit/s. Ngưỡng tổng bit/slot đặt bằng 0.
+\end{block}
+\column{.49\textwidth}
+\begin{block}{Một chu kỳ phục vụ và di chuyển}
+\footnotesize Tại waypoint $n$: EH/UL trong $h/2$, rồi RF/DL trong $h/2$; tiếp theo bay đoạn $d_n$ trong $d_n/v$.
+\[E_{\rm total}\leq17\,000\;\mathrm{J}.\]
+20 lần phục vụ và 20 đoạn bay; điểm đến cuối chỉ kết thúc hành trình.
+\end{block}
+\end{columns}
+\notevi{EH cấp RF lý tưởng. EE dùng tổng năng lượng tiêu thụ cruise + hover + RF; năng lượng pin lý tưởng chỉ gồm cruise + hover.}
+\src{\texttt{evaluateTrajectoryV10}, \texttt{addV10EnergyMetrics}; cấu hình MAT.}
+\end{frame}
+
+\begin{frame}{JointPSO, Full PSO, IPSO và baseline}
+\small
+\begin{table}\centering
+\begin{tabular}{p{2.2cm}p{4.1cm}p{3.1cm}p{3.6cm}}\toprule
+Phương pháp & Biến tối ưu & Cơ chế tìm kiếm & Kết quả báo cáo\\\midrule
+Baseline & Quỹ đạo thẳng, BS cố định & Alpha theo kênh & Chỉ nhắc để tham chiếu feasibility\\
+JointPSO & Quỹ đạo và alpha; BS cố định & PSO, $w=0{,}7$ & Nghiệm cuối PSO\\
+Full PSO & Quỹ đạo, alpha, X/Y của 3 BS & PSO, $w=0{,}7$ & Sau polishing alpha\\
+IPSO & Cùng không gian với Full PSO & $w$ giảm $0{,}9\to0{,}4$, mutation khi trì trệ, elite & Sau polishing alpha\\\bottomrule
+\end{tabular}
+\caption{IPSO trong báo cáo là Full IPSO trong dữ liệu lưu. Cùng $c_1=c_2=1{,}5$, 120 particles và 1.000 iterations.}
+\end{table}
+\notevi{Full được thử 1.250 mẫu alpha/slot khi polishing; IPSO có thêm đánh giá mutation. So sánh Joint--Full còn bao gồm thay đổi vị trí BS và polishing. Cùng số vòng chưa bảo đảm cùng chi phí tính toán.}
+\src{Ba optimizer V10, \texttt{polishAlphaV10}, \texttt{runV10}; MAT lưu cấu hình chạy.}
+\end{frame}
+
+\begin{frame}{Tỷ lệ tìm được nghiệm thỏa tất cả ràng buộc}
+\begin{table}\centering\small
+\begin{tabular}{lrrr}\toprule
+Phương pháp & V10A & V10B & Tổng\\\midrule
+Baseline & 1/21 & 1/21 & 2/42\\
+JointPSO & 10/21 & 14/21 & 24/42\\
+Full PSO & 20/21 & 21/21 & 41/42\\
+IPSO & 21/21 & 21/21 & 42/42\\\bottomrule
+\end{tabular}\caption{Thống kê trên các cấu hình khác nhau sau loại trùng; mỗi run chứa bốn phương pháp.}
+\end{table}
+\begin{alertblock}{Một trường hợp Full PSO chưa đạt}
+\small V10A, seed 2026, $L=3$ Mbit, $q=10$ kbit, hover 1 s: EE tính được 1.564,35 bit/J nhưng 2/100 user-slot thiếu dữ liệu. IPSO đạt 4.133,53 bit/J và thỏa mọi ràng buộc.
+\end{alertblock}
+\notevi{Baseline thường không đủ QoS nên không dùng EE của baseline để tính gain hợp lệ. \,\enquote{Chưa đạt} mô tả kết quả tìm kiếm trong lần chạy này.}
+\end{frame}
+
+\figslide{EE theo L: ba mức yêu cầu tổng dữ liệu}{ee_L.pdf}
+{Giữ $q=5$ kbit/user/slot, hover 1 s. Đường nối trung bình trên seed khả thi; chấm nhỏ là từng seed khả thi. Nhãn n/3 ghi số seed đóng góp. JointPSO V10A tại $L=3$ không có nghiệm khả thi.}
+
+\begin{frame}{Bảng EE theo L và số nghiệm khả thi}
+\small\input{tables/ee_L.tex}
+\notevi{JointPSO V10A mất tính khả thi khi tăng $L$: 3/3, 1/3 rồi 0/3. Full PSO/IPSO đều đạt 3/3 ở cả ba mức $L$.}
+\notevi{IPSO V10B có EE tìm được tăng khi tăng $L$. Đây là ảnh hưởng của đường tìm kiếm hữu hạn: siết riêng ràng buộc $L$ không thể làm tối ưu toàn cục tăng.}
+\src{Sweep $L$; tổng hợp lại từ các kết quả MAT cuối.}
+\end{frame}
+
+\figslide{EE theo q: yêu cầu dữ liệu từng user-slot}{ee_q.pdf}
+{Giữ $L=3$ Mbit/user, hover 1 s. Chỉ vẽ nghiệm khả thi. Full PSO V10A tại $q=10$ chỉ có hai seed khả thi; vì vậy trung bình này dùng mẫu khác IPSO.}
+
+\begin{frame}{Bảng EE theo q và số nghiệm khả thi}
+\small\input{tables/ee_q.tex}
+\notevi{Khi $q$ tăng từ 5 lên 10 kbit, EE trung bình IPSO giảm 9,78\% ở A và 14,02\% ở B; IPSO vẫn thỏa QoS ở 3/3 seed.}
+\notevi{Tại $q=0$, chỉ tắt ràng buộc từng user-slot; yêu cầu tổng dữ liệu $L=3$ Mbit/user vẫn còn. Không lấy các trung bình trên tập seed khác nhau để xếp hạng thuật toán.}
+\src{Sweep $q$; ngưỡng tổng bit/slot của campaign bằng 0.}
+\end{frame}
+
+\begin{frame}{Hover là một sweep bổ sung trong kết quả L=3 Mbit}
+\small\input{tables/ee_hover.tex}
+\notevi{Giữ $L=3$ Mbit, $q=5$ kbit. IPSO B tăng từ 9.390,4 lên 13.632,3 bit/J khi hover tăng từ 1 lên 3 s. Tổng thời gian hover tăng từ 20 lên 60 s.}
+\notevi{Kỷ lục campaign: V10B Full PSO, seed 2026, hover 3 s, đạt 16.901,9 bit/J. EE này tính toàn bộ bit truyền thêm ngoài mức $L$, đồng thời nhiệm vụ dài hơn.}
+\end{frame}
+
+\begin{frame}{Lợi ích EE của V10B đi kèm dữ liệu tập trung hơn}
+\begin{table}\centering\small
+\begin{tabular}{lrr}\toprule
+Trung bình 21 cấu hình, IPSO & V10A & V10B\\\midrule
+EE (bit/J) & 6.452,96 & 9.956,75\\
+Tổng dữ liệu (Mbit) & 59,58 & 84,51\\
+Năng lượng tổng (J) & 8.749,74 & 8.052,59\\
+Chiều dài quỹ đạo (m) & 544,87 & 445,54\\
+Jain fairness & 0,749 & 0,569\\\bottomrule
+\end{tabular}\caption{Cùng các cặp seed, $L,q,h$; IPSO khả thi ở mọi cấu hình nên không lệch tập mẫu A/B.}
+\end{table}
+\notevi{Gain EE trung bình của 21 tỷ lệ B/A là 55,79\%. Tỷ lệ của hai trung bình EE là 54,30\%. B tăng tổng dữ liệu và giảm quãng đường, đồng thời Jain giảm.}
+\notevi{IPSO có lợi thế chung nhưng có thể thua PSO ở từng cấu hình. Không thể suy ra hội tụ toàn cục từ kết quả này.}
+\src{Tổng hợp ghép cặp sau loại trùng, \texttt{data/paired\_A\_B.csv}.}
+\end{frame}
+
+\begin{frame}{Cách đọc các hình quỹ đạo tại L=3 Mbit}
+\small
+\begin{columns}[T,onlytextwidth]
+\column{.48\textwidth}
+\begin{block}{Cấu hình so sánh chính}
+$L=3$ Mbit/user, $q=5$ kbit/user/slot, hover 1 s. Mỗi hình dùng cùng seed cho JointPSO, Full PSO và IPSO.
+\end{block}
+\begin{block}{Không gian và tọa độ}
+Hình chiếu XY, UAV ở $Z=30$ m. User là U1--U5. BS1/2/3 có độ cao lần lượt 20/30/25 m.
+\end{block}
+\column{.48\textwidth}
+\begin{exampleblock}{Chú giải chung}
+Đường có chấm: quỹ đạo và waypoint. Tam giác: BS tương ứng từng thuật toán. Sao đỏ: user. S/E: điểm xuất phát/đến.
+\end{exampleblock}
+\begin{alertblock}{Miền tìm kiếm và feasibility}
+Nền xanh lá: biên X của UAV. Ba ô xanh nhạt: miền BS. Nét đứt và nhãn INFEASIBLE chỉ nghiệm chưa thỏa QoS.
+\end{alertblock}
+\end{columns}
+\notevi{Các điểm chồng nhau phản ánh vị trí thực; hình không dịch điểm hoặc nội suy quỹ đạo để làm đẹp. Đường xám chấm tại X=150 là quỹ đạo baseline thẳng.}
+\end{frame}
+
+\figslide{Quỹ đạo V10A, seed 2026}{trajectory_A_2026.pdf}
+{$L=3$ Mbit, $q=5$ kbit, hover 1 s. JointPSO chưa đạt QoS; Full PSO/IPSO khả thi. Y giảm đều 15 m/đoạn. BS trong từng ô thuộc đúng nghiệm được vẽ.}
+\figslide{Quỹ đạo V10B, seed 2026}{trajectory_B_2026.pdf}
+{Cùng scenario với A. V10B tự chọn Y nên nhiều điểm phục vụ có thể tập trung gần nhau. Full PSO/IPSO khả thi; JointPSO chưa đạt QoS.}
+\figslide{Quỹ đạo V10A, seed 608060}{trajectory_A_608060.pdf}
+{$L=3$ Mbit, $q=5$ kbit, hover 1 s. JointPSO chưa đạt QoS; Full PSO/IPSO khả thi. Tọa độ đọc trực tiếp từ MAT, không tái tối ưu.}
+\figslide{Quỹ đạo V10B, seed 608060}{trajectory_B_608060.pdf}
+{Cùng scenario với A. X/Y và BS được tối ưu theo từng phương pháp. Nhãn OK/INFEASIBLE phản ánh cờ ràng buộc lưu trong kết quả.}
+\figslide{Quỹ đạo V10A, seed 3486784401}{trajectory_A_3486784401.pdf}
+{$L=3$ Mbit, $q=5$ kbit, hover 1 s. Full PSO và IPSO đặt BS khác nhau ở một số tọa độ Y; JointPSO giữ BS ban đầu.}
+\figslide{Quỹ đạo V10B, seed 3486784401}{trajectory_B_3486784401.pdf}
+{IPSO đặt BS2 tại X=0, khác xu hướng X gần 50 m của nhiều nghiệm khác. Trường hợp này cho thấy cần giữ thông tin từng seed khi đánh giá khả năng cố định BS.}
+
+\begin{frame}{Miền tối ưu BS bị giới hạn quanh vị trí ban đầu}
+\small
+\begin{table}\centering
+\begin{tabular}{lcccc}\toprule
+BS & Tọa độ ban đầu $(x,y,z)$ m & Miền X (m) & Miền Y (m) & Z (m)\\\midrule
+BS1 & $(300,300,20)$ & $[250,300]$ & $[250,300]$ & 20 cố định\\
+BS2 & $(0,150,30)$ & $[0,50]$ & $[100,200]$ & 30 cố định\\
+BS3 & $(300,0,25)$ & $[250,300]$ & $[0,50]$ & 25 cố định\\\bottomrule
+\end{tabular}\caption{Biên X/Y bằng vị trí ban đầu cộng trừ 50 m, cắt tại vùng 300 m $\times$ 300 m.}
+\end{table}
+\begin{block}{Xu hướng đang được quan sát}
+\small BS1/BS3 thường chạm X=250 m, BS2 thường về X gần 50 m. Đó là các biên theo hướng hành lang UAV $75\leq X\leq225$. Nghiệm ở biên gợi ý khảo sát miền BS rộng hơn.
+\end{block}
+\notevi{Vị trí tìm được là nghiệm tốt trong miền BS hiện tại. Chưa có bằng chứng đây là vị trí BS tốt nhất trên toàn vùng hoặc phù hợp cố định cho mọi scenario.}
+\src{\texttt{buildV10Simulation}: \texttt{xBS\_min/max}, \texttt{yBS\_min/max}; kiểm tra lại trong MAT.}
+\end{frame}
+
+\begin{frame}{Tọa độ BS của ba seed: V10A}
+\footnotesize\input{tables/bs_default_A.tex}
+\notevi{Cấu hình $L=3$ Mbit, $q=5$ kbit, hover 1 s. JointPSO và baseline dùng BS ban đầu: $(300,300,20)$, $(0,150,30)$, $(300,0,25)$ m.}
+\notevi{Cả sáu nghiệm Full đều cho $x_1=250$, $x_2=50$, BS3=$(250,50,25)$. $y_1,y_2$ còn thay đổi theo seed/thuật toán.}
+\src{Tệp \texttt{data/bs\_default\_L3\_q5\_h1.csv}; tọa độ đầy đủ trong CSV, bảng làm tròn 0,01 m.}
+\end{frame}
+
+\begin{frame}{Tọa độ BS của ba seed: V10B}
+\footnotesize\input{tables/bs_default_B.tex}
+\notevi{Cấu hình $L=3$ Mbit, $q=5$ kbit, hover 1 s. JointPSO và baseline giữ BS ban đầu như A.}
+\notevi{BS3 tiếp tục trùng ở cả sáu nghiệm Full. BS2 biến động đáng kể: IPSO seed 3486784401 chọn $(0,101{,}26,30)$ m. BS1 có $y_1$ từ 250 tới 300 m.}
+\src{Tệp \texttt{data/bs\_default\_L3\_q5\_h1.csv}; thứ tự BS1/2/3 giữ nguyên định danh.}
+\end{frame}
+
+\figslide{Phân bố BS ở tất cả cấu hình L=3 Mbit}{bs_distribution_L3.pdf}
+{60 nghiệm Full PSO/IPSO sau loại trùng: 2 bản, 3 seed, 5 bộ $(q,h)$, 2 thuật toán. Có 59 nghiệm khả thi và một nghiệm Full PSO A chưa đạt. Điểm trùng nhau chồng lên nhau, không thêm nhiễu tọa độ.}
+
+\begin{frame}{Có thể cố định tọa độ BS nào từ kết quả hiện có?}
+\begin{table}\centering\footnotesize
+\begin{tabular}{lrrr}\toprule
+Tọa độ ứng viên & Bộ chính $q=5,h=1$ & Mọi bộ $L=3$ & Chỉ nghiệm khả thi\\\midrule
+$x_1=250$ m & 12/12 & 59/60 & 58/59\\
+$x_2=50$ m & 10/12 & 51/60 & 50/59\\
+$x_3=250$ m & 12/12 & 60/60 & 59/59\\
+BS3=$(250,50,25)$ m & 12/12 & 50/60 & 49/59\\\bottomrule
+\end{tabular}\caption{Điểm được xem là chạm tọa độ nếu sai lệch không quá $10^{-3}$ m. Các sweep dùng chung scenario, không phải mẫu độc lập.}
+\end{table}
+\begin{exampleblock}{Ứng viên nên kiểm tra trước}
+\small Có thể thử cố định $x_3=250$ và $x_1=250$. Nếu chỉ xét bộ chính, BS3=$(250,50,25)$ là ứng viên mạnh để thử cố định toàn bộ.
+\end{exampleblock}
+\notevi{Giữ $y_1$, tọa độ BS2 và $y_3$ linh hoạt khi xét nhiều $q,h$. Cần chạy lại bài toán giảm biến với cùng seed/ngân sách rồi đo mất EE và feasibility trước khi quyết định cố định. Báo cáo này chưa thay đổi cấu hình BS.}
+\src{\texttt{data/bs\_boundary\_summary.json}; toàn bộ tọa độ trong \texttt{data/bs\_all\_L3.csv}.}
+\end{frame}
+
+\begin{frame}{Các giới hạn cần giữ khi sử dụng kết quả}
+\small
+\begin{description}
+\item[Tìm kiếm] Ba scenario seed, một algorithm seed; B/IPSO còn tăng EE trong nhiều lượt ở cuối 1.000 vòng. Chưa đo độ ổn định qua nhiều khởi tạo thuật toán.
+\item[Ngân sách] Mutation và polishing làm số lần đánh giá khác nhau. Kết quả chưa phải so sánh trên cùng thời gian hoặc cùng số evaluation.
+\item[Năng lượng] RF chiếm tối đa khoảng $2{,}43\times10^{-8}$ tổng tải trong campaign. Propulsion chi phối mẫu số; BS/EH vẫn ảnh hưởng dữ liệu đạt được.
+\item[Bay] B giữ Y đơn điệu và có đoạn tiến gần 1 m. Chưa mô hình hóa gia tốc, năng lượng rẽ, mạch/PA hay giới hạn chiều dài $D_{\max}$ như bài Drones.
+\item[Dịch vụ] Tối đa toàn bộ bit/J có thể phục vụ một user nhiều hơn ngưỡng $L$. Khi quyết định hover hay BS, nên xem thêm bit/user và fairness.
+\end{description}
+\src{Mã evaluator/optimizer; dữ liệu cuối và báo cáo audit campaign 29/10/2026.}
+\end{frame}
+
+\begin{frame}{Nguồn và cách tái sử dụng bộ báo cáo}
+\footnotesize
+\begin{description}
+\item[{[1]}] T. Zhang, M. Gu, D. Mishra, J. Yuan, A. Seneviratne. \emph{Trajectory and Power Control for Sustainable UAV-Assisted NOMA-Enabled Backscattering IoT}. Drones 2026, 10, 238.\par
+\href{https://doi.org/10.3390/drones10040238}{doi:10.3390/drones10040238}. Nguồn cục bộ: \texttt{docs/drones-10-00238.pdf}.
+\item[Dữ liệu gốc] \texttt{results/v10/campaign\_20261029\_125559/campaign\_summary.csv} và 54 \texttt{results.mat} được manifest tham chiếu. Từng đường dẫn và SHA-256 nằm trong \texttt{data/source\_checksums.json}.
+\item[Mã đối chiếu] \texttt{src/config/v10Config.m}, \texttt{buildV10Simulation.m}; \texttt{dronePropulsionPower.m}; \texttt{evaluateTrajectoryV10.m}; \texttt{addV10EnergyMetrics.m}; ba optimizer và \texttt{scripts/runV10.m}.
+\item[Tài liệu dự án] \texttt{docs/V10\_AB\_GUIDE.md}, \texttt{docs/DRONES\_ENERGY\_CODE\_REVIEW\_2026-10-28.md}; phân tích campaign tại \texttt{output/v10\_campaign\_analysis\_20261029/}.
+\item[Bộ có thể sửa] \texttt{main.tex}, \texttt{tables/*.tex}; hình vector PDF/PNG; CSV tọa độ BS/waypoint, JSON trích xuất. \texttt{prepare\_report.py} dựng lại hình và bảng từ JSON, không cần chạy MATLAB.
+\end{description}
+\notevi{Phụ lục sau đây chứa EE từng seed và toàn bộ tọa độ BS ở $L=3$ Mbit trên các bộ $(q,h)$ đã chạy.}
+\end{frame}
+
+\appendix
+\begin{frame}{Phụ lục: EE từng seed theo L, V10A}
+\footnotesize\input{tables/detail_L_A.tex}
+\notevi{Giữ $q=5$ kbit/user/slot, hover 1 s. $\dagger$ không được đưa vào trung bình EE khả thi.}
+\end{frame}
+\begin{frame}{Phụ lục: EE từng seed theo L, V10B}
+\footnotesize\input{tables/detail_L_B.tex}
+\notevi{Giữ $q=5$ kbit/user/slot, hover 1 s. $\dagger$ không được đưa vào trung bình EE khả thi.}
+\end{frame}
+\begin{frame}{Phụ lục: EE từng seed theo q, V10A}
+\footnotesize\input{tables/detail_q_A.tex}
+\notevi{Giữ $L=3$ Mbit/user, hover 1 s. Full PSO seed 2026 tại $q=10$ kbit chưa thỏa user-slot QoS.}
+\end{frame}
+\begin{frame}{Phụ lục: EE từng seed theo q, V10B}
+\footnotesize\input{tables/detail_q_B.tex}
+\notevi{Giữ $L=3$ Mbit/user, hover 1 s. JointPSO khả thi ở một seed cho mỗi mức $q$.}
+\end{frame}
+\begin{frame}{Phụ lục BS: V10A, Full PSO, mọi bộ L=3}
+\scriptsize\input{tables/bs_all_A_Full_PSO.tex}
+\end{frame}
+\begin{frame}{Phụ lục BS: V10A, IPSO, mọi bộ L=3}
+\scriptsize\input{tables/bs_all_A_Full_IPSO.tex}
+\end{frame}
+\begin{frame}{Phụ lục BS: V10B, Full PSO, mọi bộ L=3}
+\scriptsize\input{tables/bs_all_B_Full_PSO.tex}
+\end{frame}
+\begin{frame}{Phụ lục BS: V10B, IPSO, mọi bộ L=3}
+\scriptsize\input{tables/bs_all_B_Full_IPSO.tex}
+\end{frame}
+\end{document}

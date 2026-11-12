@@ -1,0 +1,17 @@
+[
+  {
+    "L": 1000000.0,
+    "particle_vs_uniform_pct": 21.162051081711653,
+    "polish_vs_particle_none_pct": 0.861412228623637
+  },
+  {
+    "L": 2000000.0,
+    "particle_vs_uniform_pct": 11.776665570022393,
+    "polish_vs_particle_none_pct": 10.876050417808457
+  },
+  {
+    "L": 3000000.0,
+    "particle_vs_uniform_pct": 8.676176562215797,
+    "polish_vs_particle_none_pct": 4.69123125461075
+  }
+]

@@ -1,0 +1,50 @@
+{
+  "date": "2026-11-04",
+  "full_campaign_executed": false,
+  "campaign_smoke": {
+    "particles": 4,
+    "iterations": 3,
+    "seeds": [
+      2026
+    ],
+    "presets": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "methods": 3
+  },
+  "sha256": {
+    "scripts/maincodeV10CCampaign.m": "0710e769aae7828cb17d7bc7aebd81d11808833bf70bf80e1441d6a99c373269",
+    "scripts/maincodeV10C_EE.m": "3be64709aac9594aec09077586025e199c765b0d84fac2ce0df1a41a5b5578aa",
+    "scripts/maincodeV10Campaign.m": "fc81129da829066cae6632ad30534279d65a12e5f62041e93f50144d0f771ed9",
+    "scripts/plotV10CResults.m": "5b75add350ac7b6c1e1131bf6a0777c768e5ddffb3aaf8065c52cd1ca8fc8403",
+    "scripts/runV10C.m": "0ff2e3bb2e9a68280fabc575f811510f67ca5fe15439aced9c160ab7c6f131f9",
+    "scripts/runV10CComparison.m": "022e059b9b3377b6c193e44f7de663235df471bc177a213a35f8b64b299ee660",
+    "scripts/runV10Campaign.m": "361f56182d9af5f747a12764c62f494c6bd90e44a99ee0337b4129e2b385b536",
+    "src/config/buildV10CSimulation.m": "ccfe238533e8a2ea465b83ebbbabeb267fd7d33c343d140bf734c0213fdcf4c7",
+    "src/config/v10Config.m": "090117ef8838280e1b5e8a852f178500daa55099c9369763a54e15a2e28c0f88",
+    "src/config/v10cConfig.m": "19e2d106d016d133a3aa50d294950abda7ef28078a57cea368603c9cf8ca8a84",
+    "src/evaluators/evaluateV10CCandidate.m": "5cff608170b6440acfc1c8e69f546a22ffeffad00f7685cdbb9caa538346dc00",
+    "src/geometry/decodeV10CGeometry.m": "e4e6cd5bdde0db37750cc155702ac3fc0d14df12a09e82fc7cf12398d4bafd46",
+    "src/geometry/decodeV10CParticle.m": "1233867962a2d20648b3d4e2b6e61da2129a16208d956faecd0e5c6038ae9bf5",
+    "src/geometry/encodeV10CParticle.m": "7567ca5e23d2cedb072d56fe537624d81762a75326f244ce02bc872326b80c70",
+    "src/geometry/initialV10CCandidate.m": "7a5a9b2d0d72a7ec26991e2af06072a4730a4488d6da1c506a9dc4fdb5a31164",
+    "src/geometry/repairV10CParticle.m": "2a767d320140586ddd8aa6128a616c0a8ce8143519846932088a9f1b634868a2",
+    "src/geometry/v10cGeometryLayout.m": "2857e18bdb331d2e9e1ffef0a167ed562a2f2e6666c2e3ca49c667d5920fbf7a",
+    "src/geometry/v10cSearchLayout.m": "17b997ddc2cf1c31a4c3093ec05a00e519ebf61ec77b0493617d212e1c1f18bb",
+    "src/models/v10Channel.m": "3ad5604f9d9bf1fa1dad8ee5be6bc7ed8156e7a19553ed5c0555ddbafdc5b8e3",
+    "src/models/v10cMotionEnergy.m": "bc65c4a31aa81daf6898997a6501bfe82b153b03bf3e15bcdde66416f5e41e7c",
+    "src/models/v10cTimeBlockData.m": "460b03aaacd3348262e39b5e13f192c043de8fc724f87524fe118431489df409",
+    "src/optimizers/optimizeV10CPSO.m": "3e8278bab4d6317c4c3ec978eb7e45656e67f10e9da3556cdc421055fdee7060",
+    "src/optimizers/v10cFitness.m": "5281e2d9017f164742564812729bab0187af138b635c876ed3cf44e2eabe3a71",
+    "tests/check_v10c_search.py": "74ccc78c07e919a9b660af88b1b2b7dda41ceae3a3370b943b47badf831bb311",
+    "tests/check_v10c_static.py": "6ec685866e91994a29f892c7e9523b19a450b5bfb62c5baa3aa03a9823422623",
+    "tests/fixtures/v10c_initialization_preservation.json": "eafe4c5c7132529b4235ab5df9d7983c2f8ba44a57de18812d4a1ec7e56daedb",
+    "tests/testV10CModels.m": "811093b5d2554a85a7540650d107e5362f5d2d9e2270e77f856d1c9cf06d4666",
+    "tests/testV10CSearch.m": "9132d11e15ef0bc0c300833d8bea28d1d76484ee57074661dc986ac97eda5eb9"
+  }
+}

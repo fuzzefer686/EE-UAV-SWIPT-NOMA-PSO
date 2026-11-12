@@ -1,0 +1,1004 @@
+V10/V11 comparison | variant=B seed=2026 preset=particle_noma_random | particles=120 iterations=1000
+Lbit=3000000 | threshold absolute <=1e-12 | geometryOnly=0
+Polish samples/slot: 1250 (V10) / 1250 (V11)
+
+=== V10B | mainSeed=2026 | L (bit/user): 3000000 ===
+UAV Z=30.000 m | cruise=15.521 m/s | hover=1.000 s (EH 0.500/RF 0.500)
+Drones Eq.(11): cruise=108.940787181 W | hover=172.387633280 W | gross budget=17000 J
+Scope: horizontal cruise + requested hover + RF; EH supplies RF only.
+User X:    108   222   147   104   159
+
+User Y:    137    88   224   212   193
+
+Joint PSO iter   1/1000 | EE = 1.1170e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter  10/1000 | EE = 1.4766e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter  20/1000 | EE = 1.4707e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter  30/1000 | EE = 1.5759e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter  40/1000 | EE = 1.6294e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter  50/1000 | EE = 1.6616e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter  60/1000 | EE = 1.6422e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter  70/1000 | EE = 1.6388e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter  80/1000 | EE = 1.6763e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter  90/1000 | EE = 1.6769e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 100/1000 | EE = 1.6978e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 110/1000 | EE = 1.7042e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 120/1000 | EE = 1.6952e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 130/1000 | EE = 1.7060e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 140/1000 | EE = 1.7038e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 150/1000 | EE = 1.6854e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 160/1000 | EE = 1.6842e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 170/1000 | EE = 1.6902e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 180/1000 | EE = 1.7077e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 190/1000 | EE = 1.7174e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 200/1000 | EE = 1.7270e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 210/1000 | EE = 1.7122e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 220/1000 | EE = 1.7065e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 230/1000 | EE = 1.7188e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 240/1000 | EE = 1.7192e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 250/1000 | EE = 1.6880e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 260/1000 | EE = 1.7389e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 270/1000 | EE = 1.7353e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 280/1000 | EE = 1.7183e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 290/1000 | EE = 1.7131e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 300/1000 | EE = 1.7117e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 310/1000 | EE = 1.6851e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 320/1000 | EE = 1.6869e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 330/1000 | EE = 1.6878e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 340/1000 | EE = 1.6863e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 350/1000 | EE = 1.6884e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 360/1000 | EE = 1.6892e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 370/1000 | EE = 1.6834e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 380/1000 | EE = 1.6837e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 390/1000 | EE = 1.6915e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 400/1000 | EE = 1.7171e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 410/1000 | EE = 1.7136e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 420/1000 | EE = 1.7126e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 430/1000 | EE = 1.7135e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 440/1000 | EE = 1.7064e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 450/1000 | EE = 1.7016e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 460/1000 | EE = 1.7020e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 470/1000 | EE = 1.7008e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 480/1000 | EE = 1.7010e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 490/1000 | EE = 1.7003e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 500/1000 | EE = 1.7004e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 510/1000 | EE = 1.7000e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 520/1000 | EE = 1.6976e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 530/1000 | EE = 1.7059e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 540/1000 | EE = 1.7122e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 550/1000 | EE = 1.7407e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 560/1000 | EE = 1.7430e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 570/1000 | EE = 1.7338e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 580/1000 | EE = 1.7368e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 590/1000 | EE = 1.7361e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 600/1000 | EE = 1.7359e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 610/1000 | EE = 1.7372e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 620/1000 | EE = 1.7365e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 630/1000 | EE = 1.7367e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 640/1000 | EE = 1.7363e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 650/1000 | EE = 1.7363e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 660/1000 | EE = 1.7361e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 670/1000 | EE = 1.7364e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 680/1000 | EE = 1.7364e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 690/1000 | EE = 1.7364e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 700/1000 | EE = 1.7359e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 710/1000 | EE = 1.7354e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 720/1000 | EE = 1.7351e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 730/1000 | EE = 1.7351e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 740/1000 | EE = 1.7348e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 750/1000 | EE = 1.7347e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 760/1000 | EE = 1.7347e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 770/1000 | EE = 1.7347e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 780/1000 | EE = 1.7345e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 790/1000 | EE = 1.7343e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 800/1000 | EE = 1.7338e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 810/1000 | EE = 1.7312e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 820/1000 | EE = 1.7315e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 830/1000 | EE = 1.7318e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 840/1000 | EE = 1.7318e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 850/1000 | EE = 1.7318e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 860/1000 | EE = 1.7318e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 870/1000 | EE = 1.7318e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 880/1000 | EE = 1.7318e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 890/1000 | EE = 1.7318e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 900/1000 | EE = 1.7318e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 910/1000 | EE = 1.7318e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 920/1000 | EE = 1.7318e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 930/1000 | EE = 1.7318e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 940/1000 | EE = 1.7318e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 950/1000 | EE = 1.7318e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 960/1000 | EE = 1.7318e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 970/1000 | EE = 1.7318e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 980/1000 | EE = 1.7318e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 990/1000 | EE = 1.7318e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 1000/1000 | EE = 1.7318e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Full Joint+BS PSO iter   1/1000 | EE = 1.5841e+03 bit/J | L:0 bitSlot:1 bitUserSlot:1 | feasible:0
+Full Joint+BS PSO iter  10/1000 | EE = 2.4416e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter  20/1000 | EE = 5.1475e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter  30/1000 | EE = 6.0828e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter  40/1000 | EE = 6.4328e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter  50/1000 | EE = 6.6948e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter  60/1000 | EE = 6.9870e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter  70/1000 | EE = 7.2649e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter  80/1000 | EE = 7.4543e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter  90/1000 | EE = 7.6939e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 100/1000 | EE = 7.9125e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 110/1000 | EE = 8.0703e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 120/1000 | EE = 8.1765e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 130/1000 | EE = 8.3094e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 140/1000 | EE = 8.5163e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 150/1000 | EE = 8.6833e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 160/1000 | EE = 8.8328e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 170/1000 | EE = 8.9565e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 180/1000 | EE = 9.1163e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 190/1000 | EE = 9.4593e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 200/1000 | EE = 9.5914e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 210/1000 | EE = 9.6979e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 220/1000 | EE = 9.7359e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 230/1000 | EE = 9.7655e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 240/1000 | EE = 9.7783e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 250/1000 | EE = 9.7918e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 260/1000 | EE = 9.8125e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 270/1000 | EE = 9.8373e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 280/1000 | EE = 9.8482e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 290/1000 | EE = 9.8710e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 300/1000 | EE = 9.9389e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 310/1000 | EE = 9.9961e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 320/1000 | EE = 1.0023e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 330/1000 | EE = 1.0078e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 340/1000 | EE = 1.0196e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 350/1000 | EE = 1.0244e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 360/1000 | EE = 1.0265e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 370/1000 | EE = 1.0281e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 380/1000 | EE = 1.0290e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 390/1000 | EE = 1.0298e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 400/1000 | EE = 1.0302e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 410/1000 | EE = 1.0308e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 420/1000 | EE = 1.0312e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 430/1000 | EE = 1.0316e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 440/1000 | EE = 1.0318e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 450/1000 | EE = 1.0321e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 460/1000 | EE = 1.0325e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 470/1000 | EE = 1.0326e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 480/1000 | EE = 1.0327e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 490/1000 | EE = 1.0328e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 500/1000 | EE = 1.0329e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 510/1000 | EE = 1.0330e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 520/1000 | EE = 1.0331e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 530/1000 | EE = 1.0331e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 540/1000 | EE = 1.0332e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 550/1000 | EE = 1.0333e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 560/1000 | EE = 1.0334e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 570/1000 | EE = 1.0335e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 580/1000 | EE = 1.0335e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 590/1000 | EE = 1.0336e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 600/1000 | EE = 1.0336e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 610/1000 | EE = 1.0337e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 620/1000 | EE = 1.0338e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 630/1000 | EE = 1.0338e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 640/1000 | EE = 1.0340e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 650/1000 | EE = 1.0340e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 660/1000 | EE = 1.0340e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 670/1000 | EE = 1.0341e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 680/1000 | EE = 1.0341e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 690/1000 | EE = 1.0341e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 700/1000 | EE = 1.0341e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 710/1000 | EE = 1.0341e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 720/1000 | EE = 1.0341e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 730/1000 | EE = 1.0341e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 740/1000 | EE = 1.0341e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 750/1000 | EE = 1.0341e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 760/1000 | EE = 1.0341e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 770/1000 | EE = 1.0341e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 780/1000 | EE = 1.0341e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 790/1000 | EE = 1.0341e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 800/1000 | EE = 1.0341e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 810/1000 | EE = 1.0342e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 820/1000 | EE = 1.0342e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 830/1000 | EE = 1.0342e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 840/1000 | EE = 1.0342e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 850/1000 | EE = 1.0342e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 860/1000 | EE = 1.0342e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 870/1000 | EE = 1.0342e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 880/1000 | EE = 1.0342e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 890/1000 | EE = 1.0342e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 900/1000 | EE = 1.0342e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 910/1000 | EE = 1.0342e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 920/1000 | EE = 1.0342e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 930/1000 | EE = 1.0342e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 940/1000 | EE = 1.0342e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 950/1000 | EE = 1.0342e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 960/1000 | EE = 1.0342e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 970/1000 | EE = 1.0342e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 980/1000 | EE = 1.0342e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 990/1000 | EE = 1.0342e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 1000/1000 | EE = 1.0342e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+V10 alpha polishing: EE 1.034205e+04 -> 1.065848e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible 1
+Full Joint+BS IPSO iter   1/1000 | EE = 1.5841e+03 bit/J | L:0 bitSlot:1 bitUserSlot:1 | feasible:0
+Full Joint+BS IPSO iter  10/1000 | EE = 1.9840e+03 bit/J | L:1 bitSlot:1 bitUserSlot:0 | feasible:0
+Full Joint+BS IPSO iter  20/1000 | EE = 2.3797e+03 bit/J | L:1 bitSlot:1 bitUserSlot:0 | feasible:0
+Full Joint+BS IPSO iter  30/1000 | EE = 2.9820e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter  40/1000 | EE = 3.8799e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter  50/1000 | EE = 4.1757e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter  60/1000 | EE = 4.2755e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter  70/1000 | EE = 4.5164e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter  80/1000 | EE = 4.6718e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter  90/1000 | EE = 4.8240e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 100/1000 | EE = 5.0445e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 110/1000 | EE = 5.1143e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 120/1000 | EE = 5.1697e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 130/1000 | EE = 5.2518e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 140/1000 | EE = 5.3058e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 150/1000 | EE = 5.3274e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 160/1000 | EE = 5.3367e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 170/1000 | EE = 5.3410e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 180/1000 | EE = 5.3526e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 190/1000 | EE = 5.3656e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 200/1000 | EE = 5.4163e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 210/1000 | EE = 5.4482e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 220/1000 | EE = 5.4564e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 230/1000 | EE = 5.4608e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 240/1000 | EE = 5.4642e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 250/1000 | EE = 5.4679e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 260/1000 | EE = 5.4734e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 270/1000 | EE = 5.4774e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 280/1000 | EE = 5.5819e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 290/1000 | EE = 5.5955e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 300/1000 | EE = 5.5958e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 310/1000 | EE = 5.5958e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 320/1000 | EE = 5.5958e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 330/1000 | EE = 5.5958e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 340/1000 | EE = 5.5958e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 350/1000 | EE = 5.5958e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 360/1000 | EE = 5.5958e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 370/1000 | EE = 5.5958e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 380/1000 | EE = 5.5958e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 390/1000 | EE = 5.5958e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 400/1000 | EE = 5.5958e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 410/1000 | EE = 5.5958e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 420/1000 | EE = 5.5958e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 430/1000 | EE = 5.5958e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 440/1000 | EE = 5.5958e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 450/1000 | EE = 5.5958e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 460/1000 | EE = 5.5958e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 470/1000 | EE = 5.5958e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 480/1000 | EE = 5.5958e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 490/1000 | EE = 5.5958e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 500/1000 | EE = 5.5958e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 510/1000 | EE = 5.5958e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 520/1000 | EE = 5.5958e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 530/1000 | EE = 5.5958e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 540/1000 | EE = 5.6138e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 550/1000 | EE = 5.6146e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 560/1000 | EE = 5.6146e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 570/1000 | EE = 5.6146e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 580/1000 | EE = 5.6146e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 590/1000 | EE = 5.6337e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 600/1000 | EE = 5.6402e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 610/1000 | EE = 5.6430e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 620/1000 | EE = 5.6443e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 630/1000 | EE = 5.6461e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 640/1000 | EE = 5.6509e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 650/1000 | EE = 5.6880e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 660/1000 | EE = 5.8159e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 670/1000 | EE = 5.9538e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 680/1000 | EE = 6.0689e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 690/1000 | EE = 6.2207e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 700/1000 | EE = 6.2838e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 710/1000 | EE = 6.3198e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 720/1000 | EE = 6.3370e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 730/1000 | EE = 6.3548e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 740/1000 | EE = 6.5340e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 750/1000 | EE = 6.7155e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 760/1000 | EE = 6.8638e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 770/1000 | EE = 7.1276e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 780/1000 | EE = 7.2629e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 790/1000 | EE = 7.4805e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 800/1000 | EE = 7.5884e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 810/1000 | EE = 7.8451e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 820/1000 | EE = 8.1906e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 830/1000 | EE = 8.3695e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 840/1000 | EE = 8.5320e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 850/1000 | EE = 8.9773e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 860/1000 | EE = 9.2856e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 870/1000 | EE = 9.4676e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 880/1000 | EE = 9.5872e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 890/1000 | EE = 9.8846e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 900/1000 | EE = 1.0157e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 910/1000 | EE = 1.0198e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 920/1000 | EE = 1.0459e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 930/1000 | EE = 1.0640e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 940/1000 | EE = 1.1025e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 950/1000 | EE = 1.1082e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 960/1000 | EE = 1.1147e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 970/1000 | EE = 1.1219e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 980/1000 | EE = 1.1392e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 990/1000 | EE = 1.1618e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 1000/1000 | EE = 1.1635e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+V10 alpha polishing: EE 1.163520e+04 -> 1.164911e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible 1
+
+=== V10B total UAV EE (propulsion + hover + RF) ===
+Version                   = V10-Drones-1
+Scenario seed             = 2026
+Algorithm seed            = 2026
+Polishing seed            = 2026
+L (bit/user):
+  User 1                  = 3.000000000000e+06 bit
+  User 2                  = 3.000000000000e+06 bit
+  User 3                  = 3.000000000000e+06 bit
+  User 4                  = 3.000000000000e+06 bit
+  User 5                  = 3.000000000000e+06 bit
+Min bits per slot (total)  = 0 bit
+Min bits per user-slot     = 5000 bit
+
+Timing and flight settings
+Hover per serving point   = 1 s
+EH / uplink time          = 0.5 s
+RF / downlink time        = 0.5 s
+Cruise speed              = 15.521 m/s
+UAV altitude              = 30 m
+Energy budget (gross)     = 17000 J
+Cruise power              = 108.940787181 W
+Hover power               = 172.38763328 W
+
+Radio settings
+BS transmit power         = 46 dBm
+Power splitting phi       = 0.9
+EH efficiency eta         = 0.9
+Bandwidth                 = 1000000 Hz
+Reference gain beta0      = -30 dB
+
+Baseline straight trajectory
+Feasible                  = 0
+EE (computed)             = 1.593126538826e+03 bit/J
+L / bit-slot / bit-user-slot QoS = 0 / 1 / 0
+Energy / geometry         = 1 / 1
+Total bits                = 8.847318591132e+06 bit
+Min bits per slot         = 9.336949829592e+04 bit
+Max bits per slot         = 9.592370245477e+05 bit
+Slots below slot QoS      = 0
+User-slots below QoS      = 7
+Total UAV energy          = 5.553431177946e+03 J
+Cruise energy             = 2.105678510032e+03 J
+Hover energy              = 3.447752665593e+03 J
+RF transmit energy        = 2.321021036477e-06 J
+Harvested energy          = 2.321021036477e-06 J
+Total flight distance     = 300.000000000 m
+Flight time               = 19.328651504 s
+Total hover time          = 20.000000000 s
+Mission time              = 39.328651504 s
+Excess energy             = 0.000000000000e+00 J
+Bits per user:
+  User 1                  = 1.303682713728e+06 bit
+  User 2                  = 7.761374321959e+05 bit
+  User 3                  = 2.388602171332e+06 bit
+  User 4                  = 3.415748780398e+06 bit
+  User 5                  = 9.631474934788e+05 bit
+Bit shortfall per user:
+  User 1                  = 1.696317286272e+06 bit
+  User 2                  = 2.223862567804e+06 bit
+  User 3                  = 6.113978286684e+05 bit
+  User 4                  = 0.000000000000e+00 bit
+  User 5                  = 2.036852506521e+06 bit
+
+Joint PSO without BS optimization
+Feasible                  = 0
+EE (computed)             = 1.731760397245e+03 bit/J
+L / bit-slot / bit-user-slot QoS = 0 / 1 / 0
+Energy / geometry         = 1 / 1
+Total bits                = 1.442288096951e+07 bit
+Min bits per slot         = 5.834972633739e+04 bit
+Max bits per slot         = 1.266455881869e+06 bit
+Slots below slot QoS      = 0
+User-slots below QoS      = 3
+Total UAV energy          = 8.328450628883e+03 J
+Cruise energy             = 4.880697959008e+03 J
+Hover energy              = 3.447752665593e+03 J
+RF transmit energy        = 4.282199869244e-06 J
+Harvested energy          = 4.282199869244e-06 J
+Total flight distance     = 695.362269561 m
+Flight time               = 44.801383259 s
+Total hover time          = 20.000000000 s
+Mission time              = 64.801383259 s
+Excess energy             = 0.000000000000e+00 J
+Bits per user:
+  User 1                  = 3.001023668728e+06 bit
+  User 2                  = 3.118573070840e+06 bit
+  User 3                  = 3.000000668715e+06 bit
+  User 4                  = 3.017514508007e+06 bit
+  User 5                  = 2.285769053219e+06 bit
+Bit shortfall per user:
+  User 1                  = 0.000000000000e+00 bit
+  User 2                  = 0.000000000000e+00 bit
+  User 3                  = 0.000000000000e+00 bit
+  User 4                  = 0.000000000000e+00 bit
+  User 5                  = 7.142309467809e+05 bit
+
+Full PSO with BS optimization
+Feasible                  = 1
+EE (computed)             = 1.065848183818e+04 bit/J
+L / bit-slot / bit-user-slot QoS = 1 / 1 / 1
+Energy / geometry         = 1 / 1
+Total bits                = 6.951354393938e+07 bit
+Min bits per slot         = 3.613096228125e+05 bit
+Max bits per slot         = 3.839991294388e+06 bit
+Slots below slot QoS      = 0
+User-slots below QoS      = 0
+Total UAV energy          = 6.521899178023e+03 J
+Cruise energy             = 3.074146391409e+03 J
+Hover energy              = 3.447752665593e+03 J
+RF transmit energy        = 1.210207180370e-04 J
+Harvested energy          = 1.210207180370e-04 J
+Total flight distance     = 437.979450818 m
+Flight time               = 28.218507237 s
+Total hover time          = 20.000000000 s
+Mission time              = 48.218507237 s
+Excess energy             = 0.000000000000e+00 J
+Bits per user:
+  User 1                  = 7.666895842826e+06 bit
+  User 2                  = 1.770491273053e+07 bit
+  User 3                  = 4.297809182324e+06 bit
+  User 4                  = 3.684180295830e+07 bit
+  User 5                  = 3.002123225403e+06 bit
+Bit shortfall per user:
+  User 1                  = 0.000000000000e+00 bit
+  User 2                  = 0.000000000000e+00 bit
+  User 3                  = 0.000000000000e+00 bit
+  User 4                  = 0.000000000000e+00 bit
+  User 5                  = 0.000000000000e+00 bit
+
+Full IPSO with BS optimization
+Feasible                  = 1
+EE (computed)             = 1.164910754441e+04 bit/J
+L / bit-slot / bit-user-slot QoS = 1 / 1 / 1
+Energy / geometry         = 1 / 1
+Total bits                = 7.549593878853e+07 bit
+Min bits per slot         = 3.945606773961e+05 bit
+Max bits per slot         = 4.279128418111e+06 bit
+Slots below slot QoS      = 0
+User-slots below QoS      = 0
+Total UAV energy          = 6.480834561850e+03 J
+Cruise energy             = 3.033081780371e+03 J
+Hover energy              = 3.447752665593e+03 J
+RF transmit energy        = 1.158853125616e-04 J
+Harvested energy          = 1.158853125616e-04 J
+Total flight distance     = 432.128898014 m
+Flight time               = 27.841562916 s
+Total hover time          = 20.000000000 s
+Mission time              = 47.841562916 s
+Excess energy             = 0.000000000000e+00 J
+Bits per user:
+  User 1                  = 7.298505731028e+06 bit
+  User 2                  = 1.775530813551e+07 bit
+  User 3                  = 4.649132594236e+06 bit
+  User 4                  = 4.279182323031e+07 bit
+  User 5                  = 3.001169097443e+06 bit
+Bit shortfall per user:
+  User 1                  = 0.000000000000e+00 bit
+  User 2                  = 0.000000000000e+00 bit
+  User 3                  = 0.000000000000e+00 bit
+  User 4                  = 0.000000000000e+00 bit
+  User 5                  = 0.000000000000e+00 bit
+
+=== V11B | mainSeed=2026 | L (bit/user): 3000000 ===
+UAV Z=30.000 m | cruise=15.521 m/s | hover=1.000 s (EH 0.500/RF 0.500)
+Drones Eq.(11): cruise=108.940787181 W | hover=172.387633280 W | gross budget=17000 J
+Scope: horizontal cruise + requested hover + RF; EH supplies RF only.
+User X:    108   222   147   104   159
+
+User Y:    137    88   224   212   193
+
+Joint PSO iter   1/1000 | EE = 1.1170e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter  10/1000 | EE = 1.4766e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter  20/1000 | EE = 1.4707e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter  30/1000 | EE = 1.5759e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter  40/1000 | EE = 1.6294e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter  50/1000 | EE = 1.6616e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter  60/1000 | EE = 1.6422e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter  70/1000 | EE = 1.6388e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter  80/1000 | EE = 1.6763e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter  90/1000 | EE = 1.6769e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 100/1000 | EE = 1.6978e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 110/1000 | EE = 1.7042e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 120/1000 | EE = 1.6952e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 130/1000 | EE = 1.7060e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 140/1000 | EE = 1.7038e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 150/1000 | EE = 1.6854e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 160/1000 | EE = 1.6842e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 170/1000 | EE = 1.6902e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 180/1000 | EE = 1.7077e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 190/1000 | EE = 1.7174e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 200/1000 | EE = 1.7270e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 210/1000 | EE = 1.7122e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 220/1000 | EE = 1.7065e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 230/1000 | EE = 1.7188e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 240/1000 | EE = 1.7192e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 250/1000 | EE = 1.6880e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 260/1000 | EE = 1.7389e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 270/1000 | EE = 1.7353e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 280/1000 | EE = 1.7183e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 290/1000 | EE = 1.7131e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 300/1000 | EE = 1.7117e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 310/1000 | EE = 1.6851e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 320/1000 | EE = 1.6869e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 330/1000 | EE = 1.6878e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 340/1000 | EE = 1.6863e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 350/1000 | EE = 1.6884e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 360/1000 | EE = 1.6892e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 370/1000 | EE = 1.6834e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 380/1000 | EE = 1.6837e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 390/1000 | EE = 1.6915e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 400/1000 | EE = 1.7171e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 410/1000 | EE = 1.7136e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 420/1000 | EE = 1.7126e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 430/1000 | EE = 1.7135e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 440/1000 | EE = 1.7064e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 450/1000 | EE = 1.7016e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 460/1000 | EE = 1.7020e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 470/1000 | EE = 1.7008e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 480/1000 | EE = 1.7010e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 490/1000 | EE = 1.7003e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 500/1000 | EE = 1.7004e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 510/1000 | EE = 1.7000e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 520/1000 | EE = 1.6976e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 530/1000 | EE = 1.7059e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 540/1000 | EE = 1.7122e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 550/1000 | EE = 1.7407e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 560/1000 | EE = 1.7430e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 570/1000 | EE = 1.7338e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 580/1000 | EE = 1.7368e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 590/1000 | EE = 1.7361e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 600/1000 | EE = 1.7359e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 610/1000 | EE = 1.7372e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 620/1000 | EE = 1.7365e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 630/1000 | EE = 1.7367e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 640/1000 | EE = 1.7363e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 650/1000 | EE = 1.7363e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 660/1000 | EE = 1.7361e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 670/1000 | EE = 1.7364e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 680/1000 | EE = 1.7364e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 690/1000 | EE = 1.7364e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 700/1000 | EE = 1.7359e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 710/1000 | EE = 1.7354e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 720/1000 | EE = 1.7351e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 730/1000 | EE = 1.7351e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 740/1000 | EE = 1.7348e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 750/1000 | EE = 1.7347e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 760/1000 | EE = 1.7347e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 770/1000 | EE = 1.7347e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 780/1000 | EE = 1.7345e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 790/1000 | EE = 1.7343e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 800/1000 | EE = 1.7338e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 810/1000 | EE = 1.7312e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 820/1000 | EE = 1.7315e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 830/1000 | EE = 1.7318e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 840/1000 | EE = 1.7318e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 850/1000 | EE = 1.7318e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 860/1000 | EE = 1.7318e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 870/1000 | EE = 1.7318e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 880/1000 | EE = 1.7318e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 890/1000 | EE = 1.7318e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 900/1000 | EE = 1.7318e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 910/1000 | EE = 1.7318e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 920/1000 | EE = 1.7318e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 930/1000 | EE = 1.7318e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 940/1000 | EE = 1.7318e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 950/1000 | EE = 1.7318e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 960/1000 | EE = 1.7318e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 970/1000 | EE = 1.7318e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 980/1000 | EE = 1.7318e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 990/1000 | EE = 1.7318e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Joint PSO iter 1000/1000 | EE = 1.7318e+03 bit/J | L:0 bitSlot:1 bitUserSlot:0 | feasible:0
+Full Joint+BS PSO iter   1/1000 | EE = 1.5841e+03 bit/J | L:0 bitSlot:1 bitUserSlot:1 | feasible:0
+Full Joint+BS PSO iter  10/1000 | EE = 2.4416e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter  20/1000 | EE = 5.1475e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter  30/1000 | EE = 6.0828e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter  40/1000 | EE = 6.4328e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter  50/1000 | EE = 6.6948e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter  60/1000 | EE = 6.9870e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter  70/1000 | EE = 7.2649e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter  80/1000 | EE = 7.4543e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter  90/1000 | EE = 7.6939e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 100/1000 | EE = 7.9125e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 110/1000 | EE = 8.0703e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 120/1000 | EE = 8.1765e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 130/1000 | EE = 8.3094e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 140/1000 | EE = 8.5163e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 150/1000 | EE = 8.6833e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 160/1000 | EE = 8.8328e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 170/1000 | EE = 8.9565e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 180/1000 | EE = 9.1163e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 190/1000 | EE = 9.4593e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 200/1000 | EE = 9.5914e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 210/1000 | EE = 9.6979e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 220/1000 | EE = 9.7359e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 230/1000 | EE = 9.7655e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 240/1000 | EE = 9.7783e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 250/1000 | EE = 9.7918e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 260/1000 | EE = 9.8125e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 270/1000 | EE = 9.8373e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 280/1000 | EE = 9.8482e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 290/1000 | EE = 9.8710e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 300/1000 | EE = 9.9389e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 310/1000 | EE = 9.9961e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 320/1000 | EE = 1.0023e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 330/1000 | EE = 1.0078e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 340/1000 | EE = 1.0196e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 350/1000 | EE = 1.0244e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 360/1000 | EE = 1.0265e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 370/1000 | EE = 1.0281e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 380/1000 | EE = 1.0290e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 390/1000 | EE = 1.0298e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 400/1000 | EE = 1.0302e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 410/1000 | EE = 1.0308e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 420/1000 | EE = 1.0312e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 430/1000 | EE = 1.0316e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 440/1000 | EE = 1.0318e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 450/1000 | EE = 1.0321e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 460/1000 | EE = 1.0325e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 470/1000 | EE = 1.0326e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 480/1000 | EE = 1.0327e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 490/1000 | EE = 1.0328e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 500/1000 | EE = 1.0329e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 510/1000 | EE = 1.0330e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 520/1000 | EE = 1.0331e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 530/1000 | EE = 1.0331e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 540/1000 | EE = 1.0332e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 550/1000 | EE = 1.0333e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 560/1000 | EE = 1.0334e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 570/1000 | EE = 1.0335e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 580/1000 | EE = 1.0335e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 590/1000 | EE = 1.0336e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 600/1000 | EE = 1.0336e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 610/1000 | EE = 1.0337e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 620/1000 | EE = 1.0338e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 630/1000 | EE = 1.0338e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 640/1000 | EE = 1.0340e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 650/1000 | EE = 1.0340e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 660/1000 | EE = 1.0340e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 670/1000 | EE = 1.0341e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 680/1000 | EE = 1.0341e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 690/1000 | EE = 1.0341e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 700/1000 | EE = 1.0341e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 710/1000 | EE = 1.0341e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 720/1000 | EE = 1.0341e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 730/1000 | EE = 1.0341e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 740/1000 | EE = 1.0341e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 750/1000 | EE = 1.0341e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 760/1000 | EE = 1.0341e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 770/1000 | EE = 1.0341e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 780/1000 | EE = 1.0341e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 790/1000 | EE = 1.0341e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 800/1000 | EE = 1.0341e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 810/1000 | EE = 1.0342e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 820/1000 | EE = 1.0342e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 830/1000 | EE = 1.0342e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 840/1000 | EE = 1.0342e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 850/1000 | EE = 1.0342e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 860/1000 | EE = 1.0342e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 870/1000 | EE = 1.0342e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 880/1000 | EE = 1.0342e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 890/1000 | EE = 1.0342e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 900/1000 | EE = 1.0342e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 910/1000 | EE = 1.0342e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 920/1000 | EE = 1.0342e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 930/1000 | EE = 1.0342e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 940/1000 | EE = 1.0342e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 950/1000 | EE = 1.0342e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 960/1000 | EE = 1.0342e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 970/1000 | EE = 1.0342e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 980/1000 | EE = 1.0342e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 990/1000 | EE = 1.0342e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS PSO iter 1000/1000 | EE = 1.0342e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+V11 alpha polishing: EE 1.034205e+04 -> 1.065848e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible 1
+Full Joint+BS IPSO iter   1/1000 | EE = 1.5841e+03 bit/J | L:0 bitSlot:1 bitUserSlot:1 | feasible:0
+Full Joint+BS IPSO iter  10/1000 | EE = 1.9840e+03 bit/J | L:1 bitSlot:1 bitUserSlot:0 | feasible:0
+Full Joint+BS IPSO iter  20/1000 | EE = 2.3797e+03 bit/J | L:1 bitSlot:1 bitUserSlot:0 | feasible:0
+Full Joint+BS IPSO iter  30/1000 | EE = 2.9820e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter  40/1000 | EE = 3.8799e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter  50/1000 | EE = 4.1757e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter  60/1000 | EE = 4.2755e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter  70/1000 | EE = 4.5164e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter  80/1000 | EE = 4.6718e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter  90/1000 | EE = 4.8240e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 100/1000 | EE = 5.0445e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 110/1000 | EE = 5.1143e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 120/1000 | EE = 5.1697e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 130/1000 | EE = 5.2518e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 140/1000 | EE = 5.3058e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 150/1000 | EE = 5.3274e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 160/1000 | EE = 5.3367e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 170/1000 | EE = 5.3410e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 180/1000 | EE = 5.3526e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 190/1000 | EE = 5.3656e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 200/1000 | EE = 5.4163e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 210/1000 | EE = 5.4482e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 220/1000 | EE = 5.4564e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 230/1000 | EE = 5.4608e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 240/1000 | EE = 5.4642e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 250/1000 | EE = 5.4679e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 260/1000 | EE = 5.4734e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 270/1000 | EE = 5.4774e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 280/1000 | EE = 5.5819e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 290/1000 | EE = 5.5955e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 300/1000 | EE = 5.5958e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 310/1000 | EE = 5.5958e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 320/1000 | EE = 5.5958e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 330/1000 | EE = 5.5958e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 340/1000 | EE = 5.5958e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 350/1000 | EE = 5.5958e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 360/1000 | EE = 5.5958e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 370/1000 | EE = 5.5958e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 380/1000 | EE = 5.5958e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 390/1000 | EE = 5.5958e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 400/1000 | EE = 5.5958e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 410/1000 | EE = 5.5958e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 420/1000 | EE = 5.5958e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 430/1000 | EE = 5.5958e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 440/1000 | EE = 5.5958e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 450/1000 | EE = 5.5958e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 460/1000 | EE = 5.5958e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 470/1000 | EE = 5.5958e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 480/1000 | EE = 5.5958e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 490/1000 | EE = 5.5958e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 500/1000 | EE = 5.5958e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 510/1000 | EE = 5.5958e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 520/1000 | EE = 5.5958e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 530/1000 | EE = 5.5958e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 540/1000 | EE = 5.6138e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 550/1000 | EE = 5.6146e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 560/1000 | EE = 5.6146e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 570/1000 | EE = 5.6146e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 580/1000 | EE = 5.6146e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 590/1000 | EE = 5.6337e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 600/1000 | EE = 5.6402e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 610/1000 | EE = 5.6430e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 620/1000 | EE = 5.6443e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 630/1000 | EE = 5.6461e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 640/1000 | EE = 5.6509e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 650/1000 | EE = 5.6880e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 660/1000 | EE = 5.8159e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 670/1000 | EE = 5.9538e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 680/1000 | EE = 6.0689e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 690/1000 | EE = 6.2207e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 700/1000 | EE = 6.2838e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 710/1000 | EE = 6.3198e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 720/1000 | EE = 6.3370e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 730/1000 | EE = 6.3548e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 740/1000 | EE = 6.5340e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 750/1000 | EE = 6.7155e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 760/1000 | EE = 6.8638e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 770/1000 | EE = 7.1276e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 780/1000 | EE = 7.2629e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 790/1000 | EE = 7.4805e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 800/1000 | EE = 7.5884e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 810/1000 | EE = 7.8451e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 820/1000 | EE = 8.1906e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 830/1000 | EE = 8.3695e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 840/1000 | EE = 8.5320e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 850/1000 | EE = 8.9773e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 860/1000 | EE = 9.2856e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 870/1000 | EE = 9.4676e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 880/1000 | EE = 9.5872e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 890/1000 | EE = 9.8846e+03 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 900/1000 | EE = 1.0157e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 910/1000 | EE = 1.0198e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 920/1000 | EE = 1.0459e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 930/1000 | EE = 1.0640e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 940/1000 | EE = 1.1025e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 950/1000 | EE = 1.1082e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 960/1000 | EE = 1.1147e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 970/1000 | EE = 1.1219e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 980/1000 | EE = 1.1392e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 990/1000 | EE = 1.1618e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+Full Joint+BS IPSO iter 1000/1000 | EE = 1.1635e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1
+V11 alpha polishing: EE 1.163520e+04 -> 1.164911e+04 bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible 1
+
+=== V11B total UAV EE (propulsion + hover + RF) ===
+Version                   = V11-Drones-1
+Alpha preset              = particle_noma_random
+Finalize Joint = 0
+Alpha mode/repair/solver  = particle / noma / random
+Full particle dimension   = 149
+Total fitness evaluations = 417309
+Scenario seed             = 2026
+Algorithm seed            = 2026
+Polishing seed            = 2026
+L (bit/user):
+  User 1                  = 3.000000000000e+06 bit
+  User 2                  = 3.000000000000e+06 bit
+  User 3                  = 3.000000000000e+06 bit
+  User 4                  = 3.000000000000e+06 bit
+  User 5                  = 3.000000000000e+06 bit
+Min bits per slot (total)  = 0 bit
+Min bits per user-slot     = 5000 bit
+
+Timing and flight settings
+Hover per serving point   = 1 s
+EH / uplink time          = 0.5 s
+RF / downlink time        = 0.5 s
+Cruise speed              = 15.521 m/s
+UAV altitude              = 30 m
+Energy budget (gross)     = 17000 J
+Cruise power              = 108.940787181 W
+Hover power               = 172.38763328 W
+
+Radio settings
+BS transmit power         = 46 dBm
+Power splitting phi       = 0.9
+EH efficiency eta         = 0.9
+Bandwidth                 = 1000000 Hz
+Reference gain beta0      = -30 dB
+
+Baseline straight trajectory
+Feasible                  = 0
+EE (computed)             = 1.593126538826e+03 bit/J
+L / bit-slot / bit-user-slot QoS = 0 / 1 / 0
+Energy / geometry         = 1 / 1
+Total bits                = 8.847318591132e+06 bit
+Min bits per slot         = 9.336949829592e+04 bit
+Max bits per slot         = 9.592370245477e+05 bit
+Slots below slot QoS      = 0
+User-slots below QoS      = 7
+Total UAV energy          = 5.553431177946e+03 J
+Cruise energy             = 2.105678510032e+03 J
+Hover energy              = 3.447752665593e+03 J
+RF transmit energy        = 2.321021036477e-06 J
+Harvested energy          = 2.321021036477e-06 J
+Total flight distance     = 300.000000000 m
+Flight time               = 19.328651504 s
+Total hover time          = 20.000000000 s
+Mission time              = 39.328651504 s
+Excess energy             = 0.000000000000e+00 J
+Bits per user:
+  User 1                  = 1.303682713728e+06 bit
+  User 2                  = 7.761374321959e+05 bit
+  User 3                  = 2.388602171332e+06 bit
+  User 4                  = 3.415748780398e+06 bit
+  User 5                  = 9.631474934788e+05 bit
+Bit shortfall per user:
+  User 1                  = 1.696317286272e+06 bit
+  User 2                  = 2.223862567804e+06 bit
+  User 3                  = 6.113978286684e+05 bit
+  User 4                  = 0.000000000000e+00 bit
+  User 5                  = 2.036852506521e+06 bit
+
+Joint PSO without BS optimization
+Feasible                  = 0
+EE (computed)             = 1.731760397245e+03 bit/J
+L / bit-slot / bit-user-slot QoS = 0 / 1 / 0
+Energy / geometry         = 1 / 1
+Total bits                = 1.442288096951e+07 bit
+Min bits per slot         = 5.834972633739e+04 bit
+Max bits per slot         = 1.266455881869e+06 bit
+Slots below slot QoS      = 0
+User-slots below QoS      = 3
+Total UAV energy          = 8.328450628883e+03 J
+Cruise energy             = 4.880697959008e+03 J
+Hover energy              = 3.447752665593e+03 J
+RF transmit energy        = 4.282199869244e-06 J
+Harvested energy          = 4.282199869244e-06 J
+Total flight distance     = 695.362269561 m
+Flight time               = 44.801383259 s
+Total hover time          = 20.000000000 s
+Mission time              = 64.801383259 s
+Excess energy             = 0.000000000000e+00 J
+Bits per user:
+  User 1                  = 3.001023668728e+06 bit
+  User 2                  = 3.118573070840e+06 bit
+  User 3                  = 3.000000668715e+06 bit
+  User 4                  = 3.017514508007e+06 bit
+  User 5                  = 2.285769053219e+06 bit
+Bit shortfall per user:
+  User 1                  = 0.000000000000e+00 bit
+  User 2                  = 0.000000000000e+00 bit
+  User 3                  = 0.000000000000e+00 bit
+  User 4                  = 0.000000000000e+00 bit
+  User 5                  = 7.142309467809e+05 bit
+
+Full PSO with BS optimization
+Feasible                  = 1
+EE (computed)             = 1.065848183818e+04 bit/J
+L / bit-slot / bit-user-slot QoS = 1 / 1 / 1
+Energy / geometry         = 1 / 1
+Total bits                = 6.951354393938e+07 bit
+Min bits per slot         = 3.613096228125e+05 bit
+Max bits per slot         = 3.839991294388e+06 bit
+Slots below slot QoS      = 0
+User-slots below QoS      = 0
+Total UAV energy          = 6.521899178023e+03 J
+Cruise energy             = 3.074146391409e+03 J
+Hover energy              = 3.447752665593e+03 J
+RF transmit energy        = 1.210207180370e-04 J
+Harvested energy          = 1.210207180370e-04 J
+Total flight distance     = 437.979450818 m
+Flight time               = 28.218507237 s
+Total hover time          = 20.000000000 s
+Mission time              = 48.218507237 s
+Excess energy             = 0.000000000000e+00 J
+Bits per user:
+  User 1                  = 7.666895842826e+06 bit
+  User 2                  = 1.770491273053e+07 bit
+  User 3                  = 4.297809182324e+06 bit
+  User 4                  = 3.684180295830e+07 bit
+  User 5                  = 3.002123225403e+06 bit
+Bit shortfall per user:
+  User 1                  = 0.000000000000e+00 bit
+  User 2                  = 0.000000000000e+00 bit
+  User 3                  = 0.000000000000e+00 bit
+  User 4                  = 0.000000000000e+00 bit
+  User 5                  = 0.000000000000e+00 bit
+
+Full IPSO with BS optimization
+Feasible                  = 1
+EE (computed)             = 1.164910754441e+04 bit/J
+L / bit-slot / bit-user-slot QoS = 1 / 1 / 1
+Energy / geometry         = 1 / 1
+Total bits                = 7.549593878853e+07 bit
+Min bits per slot         = 3.945606773961e+05 bit
+Max bits per slot         = 4.279128418111e+06 bit
+Slots below slot QoS      = 0
+User-slots below QoS      = 0
+Total UAV energy          = 6.480834561850e+03 J
+Cruise energy             = 3.033081780371e+03 J
+Hover energy              = 3.447752665593e+03 J
+RF transmit energy        = 1.158853125616e-04 J
+Harvested energy          = 1.158853125616e-04 J
+Total flight distance     = 432.128898014 m
+Flight time               = 27.841562916 s
+Total hover time          = 20.000000000 s
+Mission time              = 47.841562916 s
+Excess energy             = 0.000000000000e+00 J
+Bits per user:
+  User 1                  = 7.298505731028e+06 bit
+  User 2                  = 1.775530813551e+07 bit
+  User 3                  = 4.649132594236e+06 bit
+  User 4                  = 4.279182323031e+07 bit
+  User 5                  = 3.001169097443e+06 bit
+Bit shortfall per user:
+  User 1                  = 0.000000000000e+00 bit
+  User 2                  = 0.000000000000e+00 bit
+  User 3                  = 0.000000000000e+00 bit
+  User 4                  = 0.000000000000e+00 bit
+  User 5                  = 0.000000000000e+00 bit
+
+trajFull
+field | maxAbsDiff | relDiff | PASS/FAIL
+bestFitness | 0 | 0 | PASS 
+bestParticle | 0 | 0 | PASS 
+totalBits | 0 | 0 | PASS 
+eeUAV | 0 | 0 | PASS 
+totalEnergy | 0 | 0 | PASS 
+rfEnergy | 0 | 0 | PASS 
+achRate | 0 | 0 | PASS 
+alphaTrace | 0 | 0 | PASS 
+pt | 0 | 0 | PASS 
+isFeasible | 0 | 0 | PASS 
+
+trajIPSO
+field | maxAbsDiff | relDiff | PASS/FAIL
+bestFitness | 0 | 0 | PASS 
+bestParticle | 0 | 0 | PASS 
+totalBits | 0 | 0 | PASS 
+eeUAV | 0 | 0 | PASS 
+totalEnergy | 0 | 0 | PASS 
+rfEnergy | 0 | 0 | PASS 
+achRate | 0 | 0 | PASS 
+alphaTrace | 0 | 0 | PASS 
+pt | 0 | 0 | PASS 
+isFeasible | 0 | 0 | PASS 
+
+trajJoint
+field | maxAbsDiff | relDiff | PASS/FAIL
+bestFitness | 0 | 0 | PASS 
+bestParticle | 0 | 0 | PASS 
+totalBits | 0 | 0 | PASS 
+eeUAV | 0 | 0 | PASS 
+totalEnergy | 0 | 0 | PASS 
+rfEnergy | 0 | 0 | PASS 
+achRate | 0 | 0 | PASS 
+alphaTrace | 0 | 0 | PASS 
+pt | 0 | 0 | PASS 
+isFeasible | 0 | 0 | PASS 
+
+allPass=1 | 30/30 fields | V10 149.867371 s | V11 157.122397 s
+Log: /Users/fuzzefer/Documents/MATLAB/EE-UAV-SWIPT-NOMA-PSO/results/v11/verification_20261102_204745_620/equivalence_full.log

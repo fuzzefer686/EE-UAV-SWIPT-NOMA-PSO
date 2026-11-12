@@ -1,0 +1,11 @@
+{
+  "campaign": "campaign_20261029_125559",
+  "branch": "feature/ee-optimization",
+  "head": "309b7bf",
+  "csv_sha256": "876bd8d177a2f7063a59564a0619fd25881ef7d227c425ebf6299d647c21f0ab",
+  "runs": 54,
+  "rows": 216,
+  "unique_runs": 42,
+  "unique_rows": 168,
+  "reran_matlab": false
+}

@@ -1,0 +1,8 @@
+{
+  "analysis_date": "2026-11-04",
+  "optimization_rerun": false,
+  "source_mat": "/Users/fuzzefer/Documents/MATLAB/EE-UAV-SWIPT-NOMA-PSO/results/v10c/comparisons/tp56c4ac89_c18b_4ba7_a165_f827ae426187/comparison.mat",
+  "source_sha256": "36e4bbc86fdb1ba72c831ab0c619e32c741d394f6a2a84b1615ccc5958f2252d",
+  "analysis_script_sha256": "92cbe43133193bc5017df48157dc0fb82611ca729ec3f0338c4a5af246f95a1a",
+  "matlab_completion_marker": "OVERNIGHT_ANALYSIS_PASSED"
+}

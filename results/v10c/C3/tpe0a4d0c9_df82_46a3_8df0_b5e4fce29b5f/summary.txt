@@ -1,0 +1,64 @@
+
+V10C C3 | Stay allowed, fixed hover, variable phase split
+Stage: search-complete | selected algorithm: JOINT_PSO
+Reference PSO/IPSO; SCA/Dinkelbach hybrid not used.
+Energy model: inherited-steady-horizontal-model
+Geometry dimensions / joint search dimensions: 44 / 164
+Seed / particles / iterations: 2026 / 4 / 3
+L bit/user: 3000000 
+q bit/user/slot: 5000 
+Initial candidate: feasible 0 | EE 1748.59137728 bit/J
+Total bits / energy J / budget J: 9710681.87206 / 5553.43117795 / 17000
+Movement / hover / RF energy J: 2105.67851003 / 3447.75266559 / 2.32102103648e-06
+Distance m / hover s / mission s / service visits: 300 / 20 / 39.3286515 / 20
+Geometry / time / alpha / L / q / slot / energy: 1 1 1 0 0 1 1
+Bits per physical user: 1352343.95381 799130.16751 2716613.12134 3922740.79114 919853.838253 
+
+Joint PSO (fixed BS) | dimensions 158 | evaluations 16 | score -2.00048554449
+Searched candidate: feasible 0 | EE 1893.24769345 bit/J
+Total bits / energy J / budget J: 10514020.7683 / 5553.43117793 / 17000
+Movement / hover / RF energy J: 2105.67851003 / 3447.75266559 / 2.30157465646e-06
+Distance m / hover s / mission s / service visits: 300 / 20 / 39.3286515 / 17
+Geometry / time / alpha / L / q / slot / energy: 1 1 1 0 0 1 1
+Bits per physical user: 1076391.25321 748492.448691 2914795.72435 4427451.38941 1346889.95266 
+
+Full PSO | dimensions 164 | evaluations 16 | score -2.10002831049
+Searched candidate: feasible 0 | EE 1748.59137728 bit/J
+Total bits / energy J / budget J: 9710681.87206 / 5553.43117795 / 17000
+Movement / hover / RF energy J: 2105.67851003 / 3447.75266559 / 2.32102103648e-06
+Distance m / hover s / mission s / service visits: 300 / 20 / 39.3286515 / 20
+Geometry / time / alpha / L / q / slot / energy: 1 1 1 0 0 1 1
+Bits per physical user: 1352343.95381 799130.16751 2716613.12134 3922740.79114 919853.838253 
+
+Full IPSO | dimensions 164 | evaluations 16 | score -2.03997532951
+Searched candidate: feasible 0 | EE 1668.5332869 bit/J
+Total bits / energy J / budget J: 9338542.91273 / 5596.85742327 / 17000
+Movement / hover / RF energy J: 2149.10475527 / 3447.75266559 / 2.40677777857e-06
+Distance m / hover s / mission s / service visits: 306.187019 / 20 / 39.727274 / 19
+Geometry / time / alpha / L / q / slot / energy: 1 1 1 0 0 1 1
+Bits per physical user: 1382701.87763 800664.022682 2753183.65847 3376507.43948 1025485.91447 
+
+Best candidate coordinates and slot times
+slot X_m Y_m UL_s DL_s hover_s
+1 150 300 0.5 0.5 1
+2 150 285 0.5 0.5 1
+3 150 270 0.5 0.5 1
+4 150 255 0.5 0.5 1
+5 150 240 0.5 0.5 1
+6 150 225 0.5 0.5 1
+7 150 210 0.5 0.5 1
+8 150 195 0.5 0.5 1
+9 150 180 0.5 0.5 1
+10 150 180 0.5 0.5 1
+11 150 180 0.5 0.5 1
+12 150 180 0.5 0.5 1
+13 150 120 0.5 0.5 1
+14 150 105 0.5 0.5 1
+15 150 90 0.5 0.5 1
+16 150 75 0.5 0.5 1
+17 150 60 0.5 0.5 1
+18 150 45 0.5 0.5 1
+19 150 30 0.5 0.5 1
+20 150 15 0.5 0.5 1
+arrival 150 0
+No global optimality guarantee. If infeasible, EE is diagnostic only.

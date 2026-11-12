@@ -36,17 +36,82 @@ run('scripts/maincodeV10Campaign.m');
 campaign = runV10Campaign(struct('dryRun',true));
 ```
 
-Campaign có hai profile, cùng **120 particle**:
+Campaign dùng **ngân sách vòng lặp không đối xứng**, cùng **120 particle**:
 
-- `quick`: 1000 iteration (mặc định của `maincodeV10Campaign`);
-- `full`: 3000 iteration (production).
+- `full`: Joint PSO **1000**, Full PSO **2000**, Full IPSO **5000** iteration;
+- `quick`: cả ba cùng **1000** iteration (chỉ để smoke test).
 
-Với 3 seed x 3 cấu hình mỗi nhóm, campaign generic là 54 run rất nặng; nên
-xem `dryRun` trước và cân nhắc thu hẹp `variants`/`groups`.
+Có thể ghi đè từng optimizer bằng `jointIter`, `fullIter`, `ipsoIter`; hoặc
+`maxIter` để đặt cùng một số cho cả ba. Đây **không phải** so sánh cùng ngân
+sách: IPSO nhận gấp 5 lần số vòng, nên phải ghi rõ khi báo cáo EE.
 
-`maincodeV10Campaign` hiện được đặt cho một lần chạy cụ thể: seed
-**3486784401**, cả A và B, **L = 1, 2, 3 Mbit**, **5 kbit/user/slot**,
-**hover = 1 s**; tổng 6 run và `makePlots=true` để xem Figure 1.
+### Lịch trình quán tính IPSO (`wHorizon`)
+
+IPSO giảm quán tính theo
+$w(\mathrm{iter}) = w_{\max} - (w_{\max}-w_{\min})\sqrt{\min(\mathrm{iter},H)/H}$
+với $H$ = `cfg.optimizers.ipso.wHorizon`, mặc định **1000**.
+
+Trước đây $H = \texttt{maxIter}$, nên đổi 1000 → 5000 làm $w$ khác ngay từ vòng
+1: run 5000 **không** phải phần nối tiếp của run 1000 và có thể kết thúc xấu hơn.
+Với $H=1000$, 1000 vòng đầu của hai run giống hệt nhau, sau đó $w$ giữ ở
+$w_{\min}=0{,}4$; tăng ngân sách chỉ có thể giữ hoặc tăng EE.
+
+Để chỉ chạy lại IPSO 5000 trên đúng 21 cấu hình (không chạy lại Joint/Full PSO):
+
+```matlab
+run('scripts/maincodeV10BIPSO5000.m');
+```
+
+Script này dùng `opts.algorithms = {'Full IPSO'}`; CSV chỉ có 21 dòng IPSO.
+`runV10(variant,cfg,algorithms)` và `runV10Campaign(opts)` nhận tùy chọn
+`algorithms` là tập con của `Baseline / Joint PSO / Full PSO / Full IPSO`.
+
+### Chạy song song bằng `parfor`
+
+Song song hoá theo **run** (mỗi task = một seed x một cấu hình), không chia
+hạt trong optimizer vì `gbest` cần đồng bộ. Dùng khi có Parallel Computing
+Toolbox:
+
+```matlab
+run('scripts/maincodeV10BParforTest.m');
+```
+
+hoặc gọi trực tiếp:
+
+```matlab
+opts = struct('profile','full','variants',{{'B'}}, ...
+    'seeds',[2026 608060 3486784401],'groups',{{'L','slot','hover'}}, ...
+    'numWorkers',4,'batchSize',7);
+campaign = runV10CampaignParfor(opts);
+```
+
+Khác biệt so với bản serial:
+
+- `cfg.output.makePlots = false` bắt buộc trong worker;
+- mỗi run có `cfg.output.runTag` nên tên folder không đụng nhau;
+- CSV và `campaign.mat` chỉ ghi **sau mỗi batch** (`batchSize`, mặc định 7);
+- lưu thêm `runtimeSec` từng run và `campaign.wallSeconds`.
+
+Kết quả **trùng từng bit** với bản serial vì `runV10` reset cả ba seed trong
+mỗi task; đã đối chiếu một run cho cùng EE. Với i5-10400 (6 core/12 thread,
+16 GB) nên dùng `numWorkers = 4` hoặc 5; 6 worker có thể thiếu RAM. Serial
+21 run IPSO 5000 mất khoảng 80-90 phút trên Apple Silicon; i5 dự kiến
+100-120 phút, còn 4 worker khoảng 30-40 phút.
+
+
+Với 3 seed x 3 cấu hình mỗi nhóm, danh sách nhãn là 27 run nhưng 9 nhãn mỗi
+seed chỉ chứa 7 bộ tham số khác nhau: điểm gốc
+**(L = 3 Mbit, q = 5 kbit, hover = 1 s)** xuất hiện ở cả ba sweep. `runV10Campaign`
+tự loại trùng và báo `9 nhãn -> 7 cấu hình`, nên ma trận đầy đủ là
+**3 seed x 7 = 21 run** (84 dòng kết quả), không phải 27. Bản ghi CSV có thêm
+cột `configAliases` để biết nhãn nào bị gộp.
+
+`maincodeV10Campaign` hiện được đặt cho đúng 21 run đó: chỉ **V10B**, ba seed
+**2026 / 608060 / 3486784401**, đủ ba sweep, profile `full`
+(Joint 1000 / Full PSO 2000 / IPSO 5000).
+Script tự chạy `dryRun` trước và dừng nếu số run khác 21 hoặc ngân sách vòng
+lặp khác 1000/2000/5000.
+`makePlots=false` để tránh 21 bộ figure; bật riêng khi cần xem một run.
 
 Log của optimizer in `EE = ... bit/J | L:1 bitSlot:1 bitUserSlot:1 | feasible:1`
 thay cho fitness âm. `summary.txt` in EE tính được cùng các cờ QoS; score nội
@@ -220,7 +285,7 @@ addpath('tests');
 testV10Models;
 ```
 
-Để chạy thử rất ngắn thay vì mặc định quick 1000 vòng (full 3000):
+Để chạy thử rất ngắn thay vì ngân sách mặc định 1000/2000/5000:
 
 ```matlab
 cfg = v10Config();

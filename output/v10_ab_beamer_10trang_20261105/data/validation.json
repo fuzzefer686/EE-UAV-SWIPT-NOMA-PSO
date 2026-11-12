@@ -1,0 +1,16 @@
+{
+  "pdf_pages": 10,
+  "all_pages_visually_reviewed": true,
+  "modified_pages_reviewed": [
+    5,
+    6,
+    7,
+    8
+  ],
+  "text_outside_page": [],
+  "footer_collisions": [],
+  "overfull_boxes": false,
+  "missing_glyphs": false,
+  "pdf_sha256": "7032645835a94e21433d447c83373579a8734531aa7a2e5cda012bd1d9c52b83",
+  "source_data": "Same audited historical campaign as the full report; no optimizer rerun."
+}

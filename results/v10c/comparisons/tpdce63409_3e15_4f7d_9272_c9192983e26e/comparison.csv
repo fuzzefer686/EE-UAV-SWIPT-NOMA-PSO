@@ -1,0 +1,4 @@
+preset,seed,algorithm,feasible,computedEE,feasibleEE,bits,energyJ,distanceM,hoverSeconds,serviceVisits,evaluations,dimension,folder,energyModel
+C0,2026,Joint PSO (fixed BS),0,1548.88301807619,NaN,14440152.9102719,9322.94611132575,837.049921986694,20,20,120120,138,/Users/fuzzefer/Documents/MATLAB/EE-UAV-SWIPT-NOMA-PSO/results/v10c/C0/tp75d699da_f36c_4b58_b7ed_59c755b6d2eb,inherited-steady-horizontal-model
+C0,2026,Full PSO,1,6010.45133621723,6010.45133621723,50729048.2428064,8440.13958438162,711.274792687549,20,20,120120,144,/Users/fuzzefer/Documents/MATLAB/EE-UAV-SWIPT-NOMA-PSO/results/v10c/C0/tp75d699da_f36c_4b58_b7ed_59c755b6d2eb,inherited-steady-horizontal-model
+C0,2026,Full IPSO,1,10784.6479251372,10784.6479251372,69990201.1271162,6489.79935302114,433.406129904408,20,20,120120,144,/Users/fuzzefer/Documents/MATLAB/EE-UAV-SWIPT-NOMA-PSO/results/v10c/C0/tp75d699da_f36c_4b58_b7ed_59c755b6d2eb,inherited-steady-horizontal-model

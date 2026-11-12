@@ -1,9 +1,23 @@
-function data = runV10(variant, cfg)
+function data = runV10(variant, cfg, algorithms)
 %RUNV10 Same V9 optimization sequence for A/B, using one common configuration.
 % This function executes optimizers only when explicitly called in MATLAB.
-    if nargin<2
+% algorithms: optional subset of {'Joint PSO','Full PSO','Full IPSO'}.
+% Baseline is always evaluated because it is cheap. Default: all three.
+    if nargin<2 || isempty(cfg)
         cfg=v10Config();
     end
+    if nargin<3 || isempty(algorithms)
+        algorithms={'Joint PSO','Full PSO','Full IPSO'};
+    end
+    if ischar(algorithms)
+        algorithms={algorithms};
+    end
+    known={'Joint PSO','Full PSO','Full IPSO'};
+    assert(all(ismember(algorithms,known)), 'runV10:Algorithms', ...
+        'algorithms must be a subset of Joint PSO / Full PSO / Full IPSO.');
+    doJoint=any(strcmp(algorithms,'Joint PSO'));
+    doFull=any(strcmp(algorithms,'Full PSO'));
+    doIPSO=any(strcmp(algorithms,'Full IPSO'));
     rng(cfg.random.mainSeed,'twister');
     sim=buildV10Simulation(cfg,variant);
     validateattributes(cfg.optimizers.alphaPolishSamplesPerUser,{'numeric'}, ...
@@ -24,18 +38,25 @@ function data = runV10(variant, cfg)
     % Controlled comparison: all three optimizers start from algorithmSeed.
     % V9 let Joint continue the post-scenario RNG stream; that made Joint and
     % Full/IPSO use different random draws for the same seed.
-    rng(cfg.random.algorithmSeed,'twister');
-    trajJoint=optimizeTrajectoryV10JointPSO(sim,cfg.optimizers.joint);
     samples=max(cfg.optimizers.alphaPolishMinimumSamples, ...
         cfg.optimizers.alphaPolishSamplesPerUser*sim.noUsers);
-    rng(cfg.random.algorithmSeed,'twister');
-    trajFullRaw=optimizeTrajectoryV10FullPSO(sim,cfg.optimizers.full);
-    rng(cfg.random.polishSeed,'twister');
-    trajFull=polishAlphaV10(trajFullRaw,sim,samples);
-    rng(cfg.random.algorithmSeed,'twister');
-    trajIPSORaw=optimizeTrajectoryV10FullIPSO(sim,cfg.optimizers.ipso);
-    rng(cfg.random.polishSeed,'twister');
-    trajIPSO=polishAlphaV10(trajIPSORaw,sim,samples);
+    trajJoint=[]; trajFullRaw=[]; trajFull=[]; trajIPSORaw=[]; trajIPSO=[];
+    if doJoint
+        rng(cfg.random.algorithmSeed,'twister');
+        trajJoint=optimizeTrajectoryV10JointPSO(sim,cfg.optimizers.joint);
+    end
+    if doFull
+        rng(cfg.random.algorithmSeed,'twister');
+        trajFullRaw=optimizeTrajectoryV10FullPSO(sim,cfg.optimizers.full);
+        rng(cfg.random.polishSeed,'twister');
+        trajFull=polishAlphaV10(trajFullRaw,sim,samples);
+    end
+    if doIPSO
+        rng(cfg.random.algorithmSeed,'twister');
+        trajIPSORaw=optimizeTrajectoryV10FullIPSO(sim,cfg.optimizers.ipso);
+        rng(cfg.random.polishSeed,'twister');
+        trajIPSO=polishAlphaV10(trajIPSORaw,sim,samples);
+    end
 
     data=struct('cfg',cfg,'sim',sim,'resBase',resBase,'trajJoint',trajJoint, ...
         'trajFullRaw',trajFullRaw,'trajIPSORaw',trajIPSORaw, ...
@@ -49,7 +70,11 @@ function data = runV10(variant, cfg)
             lLabel='perUser';
         end
         root=fullfile(cfg.output.root,['V10',sim.variant]);
-        stem=sprintf('seed%.0f_L%sMbit_%s',cfg.random.mainSeed,lLabel,stamp);
+        tag='';
+        if isfield(cfg.output,'runTag') && ~isempty(cfg.output.runTag)
+            tag=['_', regexprep(char(cfg.output.runTag),'[^A-Za-z0-9]+','_')];
+        end
+        stem=sprintf('seed%.0f_L%sMbit_%s%s',cfg.random.mainSeed,lLabel,stamp,tag);
         folder=fullfile(root,stem); suffix=1;
         while exist(folder,'file') || exist(folder,'dir')
             folder=fullfile(root,sprintf('%s_%02d',stem,suffix)); suffix=suffix+1;
@@ -73,10 +98,15 @@ function data = runV10(variant, cfg)
         fprintf('V10 configuration and raw/final results saved: %s\n',data.outputFolder);
     end
     if cfg.output.makePlots
-        didPlot=plotV10Diagnostics(data);
-        if cfg.output.saveFigures && didPlot
-            figureFolder=saveV9Figures(data.outputFolder);
-            fprintf('V10 figures saved: %s\n',figureFolder);
+        if isempty(data.trajJoint) || isempty(data.trajFull) || isempty(data.trajIPSO)
+            warning('runV10:PartialPlots', ...
+                'makePlots skipped: diagnostics need all three optimizers.');
+        else
+            didPlot=plotV10Diagnostics(data);
+            if cfg.output.saveFigures && didPlot
+                figureFolder=saveV9Figures(data.outputFolder);
+                fprintf('V10 figures saved: %s\n',figureFolder);
+            end
         end
     end
 end
@@ -116,7 +146,13 @@ function printSummary(fid,data)
         'Full PSO with BS optimization','Full IPSO with BS optimization'};
     results={data.resBase,data.trajJoint,data.trajFull,data.trajIPSO};
     for k=1:numel(results)
-        r=results{k}; ee=r.eeComputed;
+        r=results{k};
+        if isempty(r)
+            fprintf(fid,'\n%s\n',names{k});
+            fprintf(fid,'Not run in this campaign (algorithm subset).\n');
+            continue;
+        end
+        ee=r.eeComputed;
         fprintf(fid,'\n%s\n',names{k});
         fprintf(fid,'Feasible                  = %d\n',r.isFeasible);
         fprintf(fid,'EE (computed)             = %.12e bit/J\n',ee);

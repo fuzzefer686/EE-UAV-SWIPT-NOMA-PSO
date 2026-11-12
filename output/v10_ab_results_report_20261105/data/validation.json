@@ -1,0 +1,13 @@
+{
+  "pages": 10,
+  "page_format": "A4 portrait",
+  "all_pages_rendered_and_visually_reviewed": true,
+  "no_clipped_text": true,
+  "no_unexpected_glyph_markers": true,
+  "method_result_rows": 216,
+  "unique_method_results": 168,
+  "IPSO_A_B_pairs": 21,
+  "IPSO_A_B_mean_gain_percent": 55.78858329002943,
+  "pdf_sha256": "49d7300611fa4b8f1bb44c8b7407bdb998522f0bcf32c390d8255f1d7a41b1ac",
+  "optimizer_rerun": false
+}

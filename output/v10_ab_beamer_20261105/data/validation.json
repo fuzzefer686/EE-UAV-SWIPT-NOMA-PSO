@@ -1,0 +1,19 @@
+{
+  "pdf_pages": 37,
+  "all_pages_rendered_and_reviewed": true,
+  "latest_modified_pages_reviewed": [
+    2,
+    6,
+    9,
+    10,
+    12,
+    14
+  ],
+  "text_outside_page": [],
+  "latex_overfull_boxes": false,
+  "latex_missing_glyphs": false,
+  "source_MAT_checks": 216,
+  "unique_trajectory_geometry_checks": 168,
+  "final_pdf_sha256": "4b346ef5361b26589197c78aab7660c8d91755e4a4a70c36145d668e6ca8a74c",
+  "reran_matlab": false
+}

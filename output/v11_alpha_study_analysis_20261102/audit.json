@@ -1,0 +1,73 @@
+{
+  "uniform_noma_qos": {
+    "exactlyEqual": true,
+    "maxAbsDifference": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "alphaRateEvals": [
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20
+    ]
+  },
+  "uniform_noc3_qos": {
+    "exactlyEqual": true,
+    "maxAbsDifference": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "alphaRateEvals": [
+      275343,
+      277085,
+      271261,
+      261708,
+      272795,
+      270312,
+      267444,
+      276494,
+      278031
+    ]
+  },
+  "metrics": [
+    "eeUAV",
+    "eeRF",
+    "totalBits",
+    "totalEnergy",
+    "feasible",
+    "missionQoS",
+    "slotQoS",
+    "userSlotQoS",
+    "energyOK",
+    "minDeliveredOverL",
+    "maxAlphaDeviationFromUniform"
+  ],
+  "numRows": 45,
+  "feasible": 45,
+  "uniqueCases": 9,
+  "uniformDeviationMax": 0
+}

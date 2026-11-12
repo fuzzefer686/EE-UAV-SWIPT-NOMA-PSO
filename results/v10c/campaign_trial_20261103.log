@@ -1,0 +1,1284 @@
+V8 baseline path configured: /Users/fuzzefer/Documents/MATLAB/EE-UAV-SWIPT-NOMA-PSO
+
+CAMPAIGN seed 2026 (1/3), C0 (1/6)
+C0 PSO 1/100 | EE 1377.38 bit/J | feasible 0 | score -1.52178
+C0 PSO 25/100 | EE 1679.57 bit/J | feasible 0 | score -0.0135376
+C0 PSO 50/100 | EE 1685.92 bit/J | feasible 0 | score -0.00333881
+C0 PSO 75/100 | EE 1582.22 bit/J | feasible 0 | score -0.000793115
+C0 PSO 100/100 | EE 1767.07 bit/J | feasible 1 | score 1767.07
+C0 IPSO 1/100 | EE 1329.43 bit/J | feasible 0 | score -1.64474
+C0 IPSO 25/100 | EE 1304.88 bit/J | feasible 0 | score -0.571035
+C0 IPSO 50/100 | EE 1352.79 bit/J | feasible 0 | score -0.373804
+C0 IPSO 75/100 | EE 1451.38 bit/J | feasible 0 | score -0.328688
+C0 IPSO 100/100 | EE 1493.42 bit/J | feasible 0 | score -0.0997375
+
+V10C C0 | V10B-compatible model, fixed hover and phase split
+Stage: search-complete | selected algorithm: PSO
+Reference joint PSO/IPSO; SCA/Dinkelbach hybrid not used.
+Energy model: inherited-steady-horizontal-model
+Geometry dimensions / joint search dimensions: 44 / 144
+Seed / particles / iterations: 2026 / 20 / 100
+L bit/user: 3000000 
+q bit/user/slot: 5000 
+Initial candidate: feasible 0 | EE 1748.59137728 bit/J
+Total bits / energy J / budget J: 9710681.87206 / 5553.43117795 / 17000
+Movement / hover / RF energy J: 2105.67851003 / 3447.75266559 / 2.32102103648e-06
+Distance m / hover s / mission s / service visits: 300 / 20 / 39.3286515 / 20
+Geometry / time / alpha / L / q / slot / energy: 1 1 1 0 0 1 1
+Bits per physical user: 1352343.95381 799130.16751 2716613.12134 3922740.79114 919853.838253 
+
+PSO | evaluations 2020 | score 1767.07346548
+Searched candidate: feasible 1 | EE 1767.07346548 bit/J
+Total bits / energy J / budget J: 23935227.8865 / 13545.1232527 / 17000
+Movement / hover / RF energy J: 10097.3705477 / 3447.75266559 / 3.94633300378e-05
+Distance m / hover s / mission s / service visits: 1438.59148 / 20 / 112.686778 / 20
+Geometry / time / alpha / L / q / slot / energy: 1 1 1 1 1 1 1
+Bits per physical user: 4077076.02642 6335738.25642 5268120.89808 5148304.80582 3105987.8998 
+
+IPSO | evaluations 2020 | score -0.0997374971453
+Searched candidate: feasible 0 | EE 1493.42053376 bit/J
+Total bits / energy J / budget J: 17425757.2325 / 11668.3525093 / 17000
+Movement / hover / RF energy J: 8220.59982082 / 3447.75266559 / 2.28347091309e-05
+Distance m / hover s / mission s / service visits: 1171.2044 / 20 / 95.4593393 / 20
+Geometry / time / alpha / L / q / slot / energy: 1 1 1 0 0 1 1
+Bits per physical user: 3562860.60252 4096445.08567 3127001.36113 3863561.81866 2775888.36449 
+
+Best candidate coordinates and slot times
+slot X_m Y_m UL_s DL_s hover_s
+1 150 300 0.5 0.5 1
+2 75 299 0.5 0.5 1
+3 95.9868822076 298 0.5 0.5 1
+4 225 292.71353882 0.5 0.5 1
+5 92.2405793888 214.943279203 0.5 0.5 1
+6 75 198.302795563 0.5 0.5 1
+7 156.559904701 196.853787476 0.5 0.5 1
+8 75 192.366637242 0.5 0.5 1
+9 138.037535229 189.08756343 0.5 0.5 1
+10 128.430619086 186.789265738 0.5 0.5 1
+11 120.668873249 179.803083448 0.5 0.5 1
+12 215.146496381 173.474469175 0.5 0.5 1
+13 118.866210561 171.044762832 0.5 0.5 1
+14 224.626944598 106.361684508 0.5 0.5 1
+15 225 80.4827342959 0.5 0.5 1
+16 83.7494964112 74.4198303708 0.5 0.5 1
+17 225 49.8312656375 0.5 0.5 1
+18 225 47.2696675897 0.5 0.5 1
+19 192.406673662 2 0.5 0.5 1
+20 223.680377038 1 0.5 0.5 1
+arrival 150 0
+No global optimality guarantee. If infeasible, EE is diagnostic only.
+V10C results saved: /Users/fuzzefer/Documents/MATLAB/EE-UAV-SWIPT-NOMA-PSO/results/v10c/C0/tpf5869f4b_493f_41e2_b407_34065ba0f3a3
+
+CAMPAIGN seed 2026 (1/3), C1 (2/6)
+C1 PSO 1/100 | EE 2045.06 bit/J | feasible 0 | score -1.21564
+C1 PSO 25/100 | EE 2875.85 bit/J | feasible 0 | score -0.0109204
+C1 PSO 50/100 | EE 2579.35 bit/J | feasible 0 | score -0.00844266
+C1 PSO 75/100 | EE 2917.94 bit/J | feasible 0 | score -0.00842591
+C1 PSO 100/100 | EE 2638.41 bit/J | feasible 0 | score -0.00795191
+C1 IPSO 1/100 | EE 1963.48 bit/J | feasible 0 | score -1.30589
+C1 IPSO 25/100 | EE 2228.79 bit/J | feasible 1 | score 2228.79
+C1 IPSO 50/100 | EE 4267.61 bit/J | feasible 1 | score 4267.61
+C1 IPSO 75/100 | EE 7796.16 bit/J | feasible 1 | score 7796.16
+C1 IPSO 100/100 | EE 8474.47 bit/J | feasible 1 | score 8474.47
+
+V10C C1 | Stay allowed, fixed hover and phase split
+Stage: search-complete | selected algorithm: IPSO
+Reference joint PSO/IPSO; SCA/Dinkelbach hybrid not used.
+Energy model: inherited-steady-horizontal-model
+Geometry dimensions / joint search dimensions: 44 / 144
+Seed / particles / iterations: 2026 / 20 / 100
+L bit/user: 3000000 
+q bit/user/slot: 5000 
+Initial candidate: feasible 0 | EE 1748.59137728 bit/J
+Total bits / energy J / budget J: 9710681.87206 / 5553.43117795 / 17000
+Movement / hover / RF energy J: 2105.67851003 / 3447.75266559 / 2.32102103648e-06
+Distance m / hover s / mission s / service visits: 300 / 20 / 39.3286515 / 20
+Geometry / time / alpha / L / q / slot / energy: 1 1 1 0 0 1 1
+Bits per physical user: 1352343.95381 799130.16751 2716613.12134 3922740.79114 919853.838253 
+
+PSO | evaluations 2020 | score -0.00795191325677
+Searched candidate: feasible 0 | EE 2638.41195727 bit/J
+Total bits / energy J / budget J: 22309988.0805 / 8455.83951323 / 17000
+Movement / hover / RF energy J: 5008.08682184 / 3447.75266559 / 2.57888345994e-05
+Distance m / hover s / mission s / service visits: 713.511602 / 20 / 65.9707237 / 20
+Geometry / time / alpha / L / q / slot / energy: 1 1 1 1 0 1 1
+Bits per physical user: 5328082.38403 3297878.21024 6371433.02931 4063963.14198 3248631.31493 
+
+IPSO | evaluations 2020 | score 8474.46760109
+Searched candidate: feasible 1 | EE 8474.46760109 bit/J
+Total bits / energy J / budget J: 57188022.4603 / 6748.27318391 / 17000
+Movement / hover / RF energy J: 3300.52041825 / 3447.75266559 / 0.00010006090337
+Distance m / hover s / mission s / service visits: 470.231387 / 20 / 50.296462 / 20
+Geometry / time / alpha / L / q / slot / energy: 1 1 1 1 1 1 1
+Bits per physical user: 10110484.5116 4209812.01118 10754690.1573 27410225.0824 4702810.69784 
+
+Best candidate coordinates and slot times
+slot X_m Y_m UL_s DL_s hover_s
+1 150 300 0.5 0.5 1
+2 178.345650701 300 0.5 0.5 1
+3 225 273.652384647 0.5 0.5 1
+4 75 206.511567824 0.5 0.5 1
+5 75 204.148113371 0.5 0.5 1
+6 75 203.611209882 0.5 0.5 1
+7 75 203.074173029 0.5 0.5 1
+8 75 202.726933146 0.5 0.5 1
+9 75 201.678820927 0.5 0.5 1
+10 75 201.537047395 0.5 0.5 1
+11 75 201.113744328 0.5 0.5 1
+12 75.5448238387 200.933517851 0.5 0.5 1
+13 75 200.376943168 0.5 0.5 1
+14 75 199.385571787 0.5 0.5 1
+15 75 199.151897612 0.5 0.5 1
+16 75.8996668236 199.128549515 0.5 0.5 1
+17 75 198.199680318 0.5 0.5 1
+18 75 197.363621971 0.5 0.5 1
+19 75 197.337396214 0.5 0.5 1
+20 105 152.383084934 0.5 0.5 1
+arrival 150 0
+No global optimality guarantee. If infeasible, EE is diagnostic only.
+V10C results saved: /Users/fuzzefer/Documents/MATLAB/EE-UAV-SWIPT-NOMA-PSO/results/v10c/C1/tp92a74715_e5c8_4591_87f4_b1d1769bc94a
+
+CAMPAIGN seed 2026 (1/3), C2 (3/6)
+C2 PSO 1/100 | EE 1837.95 bit/J | feasible 0 | score -0.756225
+C2 PSO 25/100 | EE 2879.75 bit/J | feasible 0 | score -0.0186733
+C2 PSO 50/100 | EE 2140.15 bit/J | feasible 0 | score -0.00699789
+C2 PSO 75/100 | EE 2410.64 bit/J | feasible 0 | score -0.00528536
+C2 PSO 100/100 | EE 2554.77 bit/J | feasible 0 | score -0.00524813
+C2 IPSO 1/100 | EE 1984.67 bit/J | feasible 0 | score -0.836839
+C2 IPSO 25/100 | EE 1912.82 bit/J | feasible 0 | score -0.097982
+C2 IPSO 50/100 | EE 2220.61 bit/J | feasible 0 | score -0.0274307
+C2 IPSO 75/100 | EE 3516.73 bit/J | feasible 1 | score 3516.73
+C2 IPSO 100/100 | EE 5908.61 bit/J | feasible 1 | score 5908.61
+
+V10C C2 | Stay allowed, variable hover, fixed phase split
+Stage: search-complete | selected algorithm: IPSO
+Reference joint PSO/IPSO; SCA/Dinkelbach hybrid not used.
+Energy model: inherited-steady-horizontal-model
+Geometry dimensions / joint search dimensions: 44 / 164
+Seed / particles / iterations: 2026 / 20 / 100
+L bit/user: 3000000 
+q bit/user/slot: 5000 
+Initial candidate: feasible 0 | EE 1748.59137728 bit/J
+Total bits / energy J / budget J: 9710681.87206 / 5553.43117795 / 17000
+Movement / hover / RF energy J: 2105.67851003 / 3447.75266559 / 2.32102103648e-06
+Distance m / hover s / mission s / service visits: 300 / 20 / 39.3286515 / 20
+Geometry / time / alpha / L / q / slot / energy: 1 1 1 0 0 1 1
+Bits per physical user: 1352343.95381 799130.16751 2716613.12134 3922740.79114 919853.838253 
+
+PSO | evaluations 2020 | score -0.00524812855398
+Searched candidate: feasible 0 | EE 2554.77476844 bit/J
+Total bits / energy J / budget J: 25295650.1249 / 9901.32298057 / 17000
+Movement / hover / RF energy J: 6723.11101794 / 3178.21193121 / 3.14133865037e-05
+Distance m / hover s / mission s / service visits: 957.854343 / 18.4364265 / 80.1498691 / 20
+Geometry / time / alpha / L / q / slot / energy: 1 1 1 1 0 1 1
+Bits per physical user: 4695150.15296 5678375.9217 5424380.87445 6208930.71189 3288812.4639 
+
+IPSO | evaluations 2020 | score 5908.60574644
+Searched candidate: feasible 1 | EE 5908.60574644 bit/J
+Total bits / energy J / budget J: 41143957.1435 / 6963.39524232 / 17000
+Movement / hover / RF energy J: 3529.28257985 / 3434.11258788 / 7.45923071654e-05
+Distance m / hover s / mission s / service visits: 502.823564 / 19.9208755 / 52.3172137 / 18
+Geometry / time / alpha / L / q / slot / energy: 1 1 1 1 1 1 1
+Bits per physical user: 6045390.55137 4280527.51868 6837558.34166 20503317.4101 3477163.32172 
+
+Best candidate coordinates and slot times
+slot X_m Y_m UL_s DL_s hover_s
+1 150 300 0.815362391075 0.815362391075 1.63072478215
+2 161.68392317 300 0.556232007547 0.556232007547 1.11246401509
+3 180.008216751 300 1.24074018291 1.24074018291 2.48148036583
+4 173.818653884 299.384676411 0.339298892968 0.339298892968 0.678597785936
+5 192.122989822 257.429884796 0.122357959938 0.122357959938 0.244715919875
+6 187.285798355 245.304725931 0.148026329562 0.148026329562 0.296052659123
+7 225 237.629063855 0.05 0.05 0.1
+8 225 237.463813766 0.119723595623 0.119723595623 0.239447191245
+9 225 235.639663974 0.0948218562436 0.0948218562436 0.189643712487
+10 203.333428988 227.459003568 0.44912375899 0.44912375899 0.898247517981
+11 182.13493646 226.484127426 0.0991052800124 0.0991052800124 0.198210560025
+12 75 197.686476763 1.3385332407 1.3385332407 2.67706648139
+13 75 196.906025962 1.04341060735 1.04341060735 2.08682121471
+14 75 196.906025962 0.467740147442 0.467740147442 0.935480294884
+15 75 196.906025962 0.05 0.05 0.1
+16 75 193.422298827 0.141113807558 0.141113807558 0.282227615115
+17 75 193.004375946 0.405489305622 0.405489305622 0.810978611244
+18 75 190.334887754 0.78585102443 0.78585102443 1.57170204886
+19 75 190.110586205 0.636746969472 0.636746969472 1.27349393894
+20 75 189.735994195 1.05676041452 1.05676041452 2.11352082903
+arrival 150 0
+No global optimality guarantee. If infeasible, EE is diagnostic only.
+V10C results saved: /Users/fuzzefer/Documents/MATLAB/EE-UAV-SWIPT-NOMA-PSO/results/v10c/C2/tpacf9ae54_34a2_44df_bddc_5bfb74564b8b
+
+CAMPAIGN seed 2026 (1/3), C3 (4/6)
+C3 PSO 1/100 | EE 1682.18 bit/J | feasible 0 | score -1.05943
+C3 PSO 25/100 | EE 2881.41 bit/J | feasible 0 | score -0.00849689
+C3 PSO 50/100 | EE 3926.45 bit/J | feasible 1 | score 3926.45
+C3 PSO 75/100 | EE 3929.69 bit/J | feasible 1 | score 3929.69
+C3 PSO 100/100 | EE 3986.67 bit/J | feasible 1 | score 3986.67
+C3 IPSO 1/100 | EE 1761.09 bit/J | feasible 0 | score -1.1608
+C3 IPSO 25/100 | EE 1630.59 bit/J | feasible 0 | score -0.307329
+C3 IPSO 50/100 | EE 1776.89 bit/J | feasible 0 | score -0.000936894
+C3 IPSO 75/100 | EE 3094.54 bit/J | feasible 1 | score 3094.54
+C3 IPSO 100/100 | EE 5384.95 bit/J | feasible 1 | score 5384.95
+
+V10C C3 | Stay allowed, fixed hover, variable phase split
+Stage: search-complete | selected algorithm: IPSO
+Reference joint PSO/IPSO; SCA/Dinkelbach hybrid not used.
+Energy model: inherited-steady-horizontal-model
+Geometry dimensions / joint search dimensions: 44 / 164
+Seed / particles / iterations: 2026 / 20 / 100
+L bit/user: 3000000 
+q bit/user/slot: 5000 
+Initial candidate: feasible 0 | EE 1748.59137728 bit/J
+Total bits / energy J / budget J: 9710681.87206 / 5553.43117795 / 17000
+Movement / hover / RF energy J: 2105.67851003 / 3447.75266559 / 2.32102103648e-06
+Distance m / hover s / mission s / service visits: 300 / 20 / 39.3286515 / 20
+Geometry / time / alpha / L / q / slot / energy: 1 1 1 0 0 1 1
+Bits per physical user: 1352343.95381 799130.16751 2716613.12134 3922740.79114 919853.838253 
+
+PSO | evaluations 2020 | score 3986.66568039
+Searched candidate: feasible 1 | EE 3986.66568039 bit/J
+Total bits / energy J / budget J: 30813477.856 / 7729.1351536 / 17000
+Movement / hover / RF energy J: 4281.38244726 / 3447.75266559 / 4.07482222562e-05
+Distance m / hover s / mission s / service visits: 609.976655 / 20 / 59.3000873 / 20
+Geometry / time / alpha / L / q / slot / energy: 1 1 1 1 1 1 1
+Bits per physical user: 6576203.15604 3471392.84089 5892505.44557 11436279.3038 3437097.10966 
+
+IPSO | evaluations 2020 | score 5384.9486232
+Searched candidate: feasible 1 | EE 5384.9486232 bit/J
+Total bits / energy J / budget J: 37813551.7998 / 7022.08218605 / 17000
+Movement / hover / RF energy J: 3574.32948631 / 3447.75266559 / 3.41405631256e-05
+Distance m / hover s / mission s / service visits: 509.241482 / 20 / 52.8098371 / 19
+Geometry / time / alpha / L / q / slot / energy: 1 1 1 1 1 1 1
+Bits per physical user: 4564328.51244 8362491.61932 5859912.12538 15649676.1068 3377143.43579 
+
+Best candidate coordinates and slot times
+slot X_m Y_m UL_s DL_s hover_s
+1 150 300 0.270805658732 0.729194341268 1
+2 151.520284262 300 0.86224492646 0.13775507354 1
+3 152.835288533 214.37510427 0.750290583247 0.249709416753 1
+4 149.391814962 199.695206202 0.607295080716 0.392704919284 1
+5 150.13922371 199.161325829 0.694484078223 0.305515921777 1
+6 136.936775672 198.81634325 0.648558086174 0.351441913826 1
+7 136.436137277 198.540134512 0.201736610978 0.798263389022 1
+8 135.144340201 198.357984994 0.323180497846 0.676819502154 1
+9 137.682572535 197.981309837 0.877346638848 0.122653361152 1
+10 150.708103103 197.900856196 0.834893556449 0.165106443551 1
+11 106.075609218 197.650685762 0.48363915053 0.51636084947 1
+12 95.2957365325 197.453278962 0.367442914729 0.632557085271 1
+13 88.1390499267 196.897447621 0.353171434082 0.646828565918 1
+14 90.1809472702 195.536927806 0.886463795968 0.113536204032 1
+15 77.1966800982 193.649548018 0.392630001032 0.607369998968 1
+16 77.1966800982 193.649548018 0.536433454777 0.463566545223 1
+17 225 68.3680873183 0.305877170047 0.694122829953 1
+18 224.856923917 66.2058971811 0.490704194421 0.509295805579 1
+19 223.880309518 64.1331902899 0.269990863588 0.730009136412 1
+20 216.477109207 62.9177019372 0.799189971529 0.200810028471 1
+arrival 150 0
+No global optimality guarantee. If infeasible, EE is diagnostic only.
+V10C results saved: /Users/fuzzefer/Documents/MATLAB/EE-UAV-SWIPT-NOMA-PSO/results/v10c/C3/tp617dbefa_ddcf_40fa_92b7_84d9bcd29d33
+
+CAMPAIGN seed 2026 (1/3), C4 (5/6)
+C4 PSO 1/100 | EE 1223.43 bit/J | feasible 0 | score -1.25837
+C4 PSO 25/100 | EE 2553.64 bit/J | feasible 0 | score -0.00644318
+C4 PSO 50/100 | EE 5757.35 bit/J | feasible 1 | score 5757.35
+C4 PSO 75/100 | EE 9379.5 bit/J | feasible 1 | score 9379.5
+C4 PSO 100/100 | EE 10798.8 bit/J | feasible 1 | score 10798.8
+C4 IPSO 1/100 | EE 1642.77 bit/J | feasible 0 | score -1.2255
+C4 IPSO 25/100 | EE 1337.38 bit/J | feasible 0 | score -0.423329
+C4 IPSO 50/100 | EE 1390.81 bit/J | feasible 0 | score -0.0104408
+C4 IPSO 75/100 | EE 2731.72 bit/J | feasible 1 | score 2731.72
+C4 IPSO 100/100 | EE 7304.89 bit/J | feasible 1 | score 7304.89
+
+V10C C4 | Stay allowed, variable hover and phase split
+Stage: search-complete | selected algorithm: PSO
+Reference joint PSO/IPSO; SCA/Dinkelbach hybrid not used.
+Energy model: inherited-steady-horizontal-model
+Geometry dimensions / joint search dimensions: 44 / 184
+Seed / particles / iterations: 2026 / 20 / 100
+L bit/user: 3000000 
+q bit/user/slot: 5000 
+Initial candidate: feasible 0 | EE 1748.59137728 bit/J
+Total bits / energy J / budget J: 9710681.87206 / 5553.43117795 / 17000
+Movement / hover / RF energy J: 2105.67851003 / 3447.75266559 / 2.32102103648e-06
+Distance m / hover s / mission s / service visits: 300 / 20 / 39.3286515 / 20
+Geometry / time / alpha / L / q / slot / energy: 1 1 1 0 0 1 1
+Bits per physical user: 1352343.95381 799130.16751 2716613.12134 3922740.79114 919853.838253 
+
+PSO | evaluations 2020 | score 10798.8342151
+Searched candidate: feasible 1 | EE 10798.8342151 bit/J
+Total bits / energy J / budget J: 63296215.7065 / 5861.39341021 / 17000
+Movement / hover / RF energy J: 2413.64066695 / 3447.75266559 / 7.76713331886e-05
+Distance m / hover s / mission s / service visits: 343.875951 / 20 / 42.1555281 / 20
+Geometry / time / alpha / L / q / slot / energy: 1 1 1 1 1 1 1
+Bits per physical user: 8058208.56036 3592879.84102 10031038.4436 37252006.4405 4362082.42098 
+
+IPSO | evaluations 2020 | score 7304.89284428
+Searched candidate: feasible 1 | EE 7304.89284428 bit/J
+Total bits / energy J / budget J: 49402244.9404 / 6762.89796353 / 17000
+Movement / hover / RF energy J: 3315.14521982 / 3447.75266559 / 7.81217327486e-05
+Distance m / hover s / mission s / service visits: 472.31501 / 20 / 50.4307074 / 18
+Geometry / time / alpha / L / q / slot / energy: 1 1 1 1 1 1 1
+Bits per physical user: 9352118.61627 3181190.68673 6675829.74569 26189961.0558 4003144.83594 
+
+Best candidate coordinates and slot times
+slot X_m Y_m UL_s DL_s hover_s
+1 150 300 0.580435935041 0.173064041416 0.753499976457
+2 75 221.590678539 0.0654582214004 0.0345417785996 0.1
+3 75 207.25805802 0.919821640227 2.00887927592 2.92870091614
+4 75 206.355763189 0.346625903354 0.659511035079 1.00613693843
+5 75 206.255145818 0.950331169555 2.02767618033 2.97800734988
+6 75 201.401783712 0.226911538852 0.244446375169 0.471357914021
+7 75 201.188320801 0.373909728193 0.196633657125 0.570543385318
+8 75 201.112849087 0.637560789172 0.210919286791 0.848480075964
+9 75 201.098806524 0.0427485477236 0.0728339963752 0.115582544099
+10 75 200.893237308 0.497182188724 0.331305196962 0.828487385686
+11 75 200.341369967 0.0664426888796 1.26241108871 1.32885377759
+12 75 199.791808805 0.536093288787 0.483997650361 1.02009093915
+13 75 199.481465239 0.0457345058944 0.0542654941056 0.1
+14 75 199.45796722 0.0392910453638 0.0607089546362 0.1
+15 75 199.402413624 0.0427410965297 0.0572589034703 0.1
+16 75 198.393687644 0.913462187233 1.93676207315 2.85022426038
+17 75 198.091868391 0.005 0.095 0.1
+18 75 197.614223927 0.152055857008 0.114237586094 0.266293443102
+19 75 197.478031612 0.506331283712 0.80383284655 1.31016413026
+20 75 197.183869315 0.111342015133 2.11223494838 2.22357696351
+arrival 150 0
+No global optimality guarantee. If infeasible, EE is diagnostic only.
+V10C results saved: /Users/fuzzefer/Documents/MATLAB/EE-UAV-SWIPT-NOMA-PSO/results/v10c/C4/tp0dbd84b7_c7a5_4efb_852f_228f7bec39dc
+
+CAMPAIGN seed 2026 (1/3), C5 (6/6)
+C5 PSO 1/100 | EE 450.072 bit/J | feasible 0 | score -2.39961
+C5 PSO 25/100 | EE 523.962 bit/J | feasible 0 | score -2.01533
+C5 PSO 50/100 | EE 640.802 bit/J | feasible 0 | score -1.48999
+C5 PSO 75/100 | EE 823.984 bit/J | feasible 0 | score -0.411158
+C5 PSO 100/100 | EE 994.201 bit/J | feasible 0 | score -0.235843
+C5 IPSO 1/100 | EE 437.593 bit/J | feasible 0 | score -2.40539
+C5 IPSO 25/100 | EE 621.767 bit/J | feasible 0 | score -0.854303
+C5 IPSO 50/100 | EE 916.324 bit/J | feasible 0 | score -0.330777
+C5 IPSO 75/100 | EE 1004.65 bit/J | feasible 0 | score -0.299071
+C5 IPSO 100/100 | EE 1128.28 bit/J | feasible 0 | score -0.214914
+
+V10C C5 | C4 with experimental rest-to-rest motion energy
+Stage: search-complete | selected algorithm: IPSO
+Reference joint PSO/IPSO; SCA/Dinkelbach hybrid not used.
+Energy model: experimental-quasi-steady-thrust-not-validated
+Geometry dimensions / joint search dimensions: 44 / 184
+Seed / particles / iterations: 2026 / 20 / 100
+L bit/user: 3000000 
+q bit/user/slot: 5000 
+Initial candidate: feasible 0 | EE 437.593041359 bit/J
+Total bits / energy J / budget J: 9710681.87206 / 22191.124982 / 17000
+Movement / hover / RF energy J: 18743.3723141 / 3447.75266559 / 2.32102103648e-06
+Distance m / hover s / mission s / service visits: 300 / 20 / 129.544512 / 20
+Geometry / time / alpha / L / q / slot / energy: 1 1 1 0 0 1 0
+Bits per physical user: 1352343.95381 799130.16751 2716613.12134 3922740.79114 919853.838253 
+
+PSO | evaluations 2020 | score -0.235842894697
+Searched candidate: feasible 0 | EE 994.20078284 bit/J
+Total bits / energy J / budget J: 19788100.2783 / 19903.5251429 / 17000
+Movement / hover / RF energy J: 16455.7724452 / 3447.75266559 / 3.20519087464e-05
+Distance m / hover s / mission s / service visits: 463.962925 / 20 / 122.211131 / 18
+Geometry / time / alpha / L / q / slot / energy: 1 1 1 1 0 1 0
+Bits per physical user: 3441132.76206 3322164.86084 5322165.09258 4416519.46697 3286118.09588 
+
+IPSO | evaluations 2020 | score -0.21491382316
+Searched candidate: feasible 0 | EE 1128.28170093 bit/J
+Total bits / energy J / budget J: 21958634.1666 / 19462.0139177 / 17000
+Movement / hover / RF energy J: 16014.261207 / 3447.75266559 / 4.51571104671e-05
+Distance m / hover s / mission s / service visits: 459.320869 / 20 / 119.713245 / 17
+Geometry / time / alpha / L / q / slot / energy: 1 1 1 1 0 1 0
+Bits per physical user: 5375100.08033 3060799.19518 5338393.30057 3974190.87027 4210150.72023 
+
+Best candidate coordinates and slot times
+slot X_m Y_m UL_s DL_s hover_s
+1 150 300 0.31316575765 0.629797363977 0.942963121627
+2 149.794837681 285.045597972 1.18747790379 0.0625073117353 1.24998521552
+3 168.67340353 237.873072604 0.573767968852 0.0458832307421 0.619651199594
+4 162.074771992 225.4745847 0.056542996733 0.043457003267 0.1
+5 166.557945302 221.429159093 0.0905136367916 0.00948636320838 0.1
+6 140.995067255 205.600679423 0.850816920009 0.697144933302 1.54796185331
+7 145.231368154 195.898078879 0.649266937712 0.185331776364 0.834598714075
+8 145.231368154 195.898078879 0.865212694028 0.548603706471 1.4138164005
+9 145.231368154 195.898078879 0.0617227398111 0.227417419008 0.289140158819
+10 145.231368154 195.898078879 0.387301179505 1.17022545911 1.55752663861
+11 145.555214136 188.252902407 0.0612864069963 0.0387135930037 0.1
+12 80.6987227987 167.564791734 0.792588883912 0.454379185316 1.24696806923
+13 75 165.636193731 0.425234228608 0.47942338508 0.904657613688
+14 79.0285516518 163.131823916 0.134517913108 1.3375596964 1.47207760951
+15 78.6866082079 162.702541589 1.32008603167 0.467059967379 1.78714599904
+16 77.0694716039 162.37406712 0.804664425958 0.396358663446 1.2010230894
+17 75 161.00160998 0.861343295038 0.60930208244 1.47064537748
+18 148.611155069 159.641922106 0.161907061205 0.516987123115 0.67889418432
+19 149.455239955 159.042765111 0.397206426643 0.728975988717 1.12618241536
+20 158.635525902 157.431537828 1.28892422291 0.0678381169951 1.3567623399
+arrival 150 0
+No global optimality guarantee. If infeasible, EE is diagnostic only.
+V10C results saved: /Users/fuzzefer/Documents/MATLAB/EE-UAV-SWIPT-NOMA-PSO/results/v10c/C5/tp296ecf67_aaa8_438d_aa69_28ca93d41658
+
+CAMPAIGN seed 608060 (2/3), C0 (1/6)
+C0 PSO 1/100 | EE 1464.28 bit/J | feasible 0 | score -0.521436
+C0 PSO 25/100 | EE 3327.44 bit/J | feasible 1 | score 3327.44
+C0 PSO 50/100 | EE 6592.87 bit/J | feasible 1 | score 6592.87
+C0 PSO 75/100 | EE 7984.41 bit/J | feasible 1 | score 7984.41
+C0 PSO 100/100 | EE 8439.39 bit/J | feasible 1 | score 8439.39
+C0 IPSO 1/100 | EE 1464.28 bit/J | feasible 0 | score -0.521436
+C0 IPSO 25/100 | EE 2277.78 bit/J | feasible 0 | score -0.00719221
+C0 IPSO 50/100 | EE 3876.84 bit/J | feasible 1 | score 3876.84
+C0 IPSO 75/100 | EE 4872.07 bit/J | feasible 1 | score 4872.07
+C0 IPSO 100/100 | EE 4943.3 bit/J | feasible 1 | score 4943.3
+
+V10C C0 | V10B-compatible model, fixed hover and phase split
+Stage: search-complete | selected algorithm: PSO
+Reference joint PSO/IPSO; SCA/Dinkelbach hybrid not used.
+Energy model: inherited-steady-horizontal-model
+Geometry dimensions / joint search dimensions: 44 / 144
+Seed / particles / iterations: 608060 / 20 / 100
+L bit/user: 3000000 
+q bit/user/slot: 5000 
+Initial candidate: feasible 0 | EE 2399.01486534 bit/J
+Total bits / energy J / budget J: 13322763.9477 / 5553.43117717 / 17000
+Movement / hover / RF energy J: 2105.67851003 / 3447.75266559 / 1.54760725898e-06
+Distance m / hover s / mission s / service visits: 300 / 20 / 39.3286515 / 20
+Geometry / time / alpha / L / q / slot / energy: 1 1 1 0 0 1 1
+Bits per physical user: 1465787.27819 948159.828895 5398132.83511 3334632.50219 2176051.50329 
+
+PSO | evaluations 2020 | score 8439.38603428
+Searched candidate: feasible 1 | EE 8439.38603428 bit/J
+Total bits / energy J / budget J: 56129483.8928 / 6650.89660134 / 17000
+Movement / hover / RF energy J: 3203.14388853 / 3447.75266559 / 4.72174919524e-05
+Distance m / hover s / mission s / service visits: 456.357968 / 20 / 49.4026138 / 20
+Geometry / time / alpha / L / q / slot / energy: 1 1 1 1 1 1 1
+Bits per physical user: 4183414.76711 16106032.7383 11955684.7518 6403147.52002 17481204.1155 
+
+IPSO | evaluations 2020 | score 4943.29784192
+Searched candidate: feasible 1 | EE 4943.29784192 bit/J
+Total bits / energy J / budget J: 39583764.2024 / 8007.56205032 / 17000
+Movement / hover / RF energy J: 4559.80935241 / 3447.75266559 / 3.23156340076e-05
+Distance m / hover s / mission s / service visits: 649.644663 / 20 / 61.855851 / 20
+Geometry / time / alpha / L / q / slot / energy: 1 1 1 1 1 1 1
+Bits per physical user: 3989938.10707 6450371.58718 9451572.19386 10716303.1956 8975579.11871 
+
+Best candidate coordinates and slot times
+slot X_m Y_m UL_s DL_s hover_s
+1 150 300 0.5 0.5 1
+2 225 299 0.5 0.5 1
+3 225 298 0.5 0.5 1
+4 225 297 0.5 0.5 1
+5 225 296 0.5 0.5 1
+6 75 146.147677245 0.5 0.5 1
+7 75 142.307392892 0.5 0.5 1
+8 75 141.14242188 0.5 0.5 1
+9 75 140.096078783 0.5 0.5 1
+10 75 138.896663486 0.5 0.5 1
+11 75 137.890752198 0.5 0.5 1
+12 75 136.813652496 0.5 0.5 1
+13 75 135.800574206 0.5 0.5 1
+14 75 134.699618687 0.5 0.5 1
+15 75 133.697351237 0.5 0.5 1
+16 75 132.679998465 0.5 0.5 1
+17 75 131.656462509 0.5 0.5 1
+18 75 130.591453585 0.5 0.5 1
+19 75 129.534752679 0.5 0.5 1
+20 76.0463345024 128.339967998 0.5 0.5 1
+arrival 150 0
+No global optimality guarantee. If infeasible, EE is diagnostic only.
+V10C results saved: /Users/fuzzefer/Documents/MATLAB/EE-UAV-SWIPT-NOMA-PSO/results/v10c/C0/tpf033530a_dce5_4873_b02d_95a8e83ce8ba
+
+CAMPAIGN seed 608060 (2/3), C1 (2/6)
+C1 PSO 1/100 | EE 2043.69 bit/J | feasible 0 | score -0.301971
+C1 PSO 25/100 | EE 5783.51 bit/J | feasible 1 | score 5783.51
+C1 PSO 50/100 | EE 8673.29 bit/J | feasible 1 | score 8673.29
+C1 PSO 75/100 | EE 8779.31 bit/J | feasible 1 | score 8779.31
+C1 PSO 100/100 | EE 8799.52 bit/J | feasible 1 | score 8799.52
+C1 IPSO 1/100 | EE 1982.14 bit/J | feasible 0 | score -0.30263
+C1 IPSO 25/100 | EE 4488.7 bit/J | feasible 1 | score 4488.7
+C1 IPSO 50/100 | EE 6285.69 bit/J | feasible 1 | score 6285.69
+C1 IPSO 75/100 | EE 7086.31 bit/J | feasible 1 | score 7086.31
+C1 IPSO 100/100 | EE 8195.7 bit/J | feasible 1 | score 8195.7
+
+V10C C1 | Stay allowed, fixed hover and phase split
+Stage: search-complete | selected algorithm: PSO
+Reference joint PSO/IPSO; SCA/Dinkelbach hybrid not used.
+Energy model: inherited-steady-horizontal-model
+Geometry dimensions / joint search dimensions: 44 / 144
+Seed / particles / iterations: 608060 / 20 / 100
+L bit/user: 3000000 
+q bit/user/slot: 5000 
+Initial candidate: feasible 0 | EE 2399.01486534 bit/J
+Total bits / energy J / budget J: 13322763.9477 / 5553.43117717 / 17000
+Movement / hover / RF energy J: 2105.67851003 / 3447.75266559 / 1.54760725898e-06
+Distance m / hover s / mission s / service visits: 300 / 20 / 39.3286515 / 20
+Geometry / time / alpha / L / q / slot / energy: 1 1 1 0 0 1 1
+Bits per physical user: 1465787.27819 948159.828895 5398132.83511 3334632.50219 2176051.50329 
+
+PSO | evaluations 2020 | score 8799.51829487
+Searched candidate: feasible 1 | EE 8799.51829487 bit/J
+Total bits / energy J / budget J: 58453768.4648 / 6642.83731292 / 17000
+Movement / hover / RF energy J: 3195.08459858 / 3447.75266559 / 4.87460088168e-05
+Distance m / hover s / mission s / service visits: 455.209746 / 20 / 49.3286351 / 17
+Geometry / time / alpha / L / q / slot / energy: 1 1 1 1 1 1 1
+Bits per physical user: 3584258.99242 17863467.7725 14367440.2507 7731074.02635 14907527.4228 
+
+IPSO | evaluations 2020 | score 8195.69706048
+Searched candidate: feasible 1 | EE 8195.69706048 bit/J
+Total bits / energy J / budget J: 53510923.0863 / 6529.14848993 / 17000
+Movement / hover / RF energy J: 3081.39578096 / 3447.75266559 / 4.33696833493e-05
+Distance m / hover s / mission s / service visits: 439.012285 / 20 / 48.2850515 / 20
+Geometry / time / alpha / L / q / slot / energy: 1 1 1 1 1 1 1
+Bits per physical user: 3874947.16843 23110145.5055 7843663.25167 5501541.77383 13180625.3869 
+
+Best candidate coordinates and slot times
+slot X_m Y_m UL_s DL_s hover_s
+1 150 300 0.5 0.5 1
+2 225 300 0.5 0.5 1
+3 225 300 0.5 0.5 1
+4 225 300 0.5 0.5 1
+5 225 300 0.5 0.5 1
+6 75 149.819388283 0.5 0.5 1
+7 75 149.805164058 0.5 0.5 1
+8 75 149.467422153 0.5 0.5 1
+9 75 148.541963428 0.5 0.5 1
+10 75 148.495076743 0.5 0.5 1
+11 75 148.342827739 0.5 0.5 1
+12 75 148.301281802 0.5 0.5 1
+13 75 148.166197705 0.5 0.5 1
+14 75 147.645585683 0.5 0.5 1
+15 75 147.505583134 0.5 0.5 1
+16 75 147.351612038 0.5 0.5 1
+17 75 147.22144487 0.5 0.5 1
+18 75 147.168671545 0.5 0.5 1
+19 75 146.491893559 0.5 0.5 1
+20 75 146.05942923 0.5 0.5 1
+arrival 150 0
+No global optimality guarantee. If infeasible, EE is diagnostic only.
+V10C results saved: /Users/fuzzefer/Documents/MATLAB/EE-UAV-SWIPT-NOMA-PSO/results/v10c/C1/tp322c48a7_9714_49ff_8185_75fa3c156598
+
+CAMPAIGN seed 608060 (2/3), C2 (3/6)
+C2 PSO 1/100 | EE 2034.45 bit/J | feasible 0 | score -0.350285
+C2 PSO 25/100 | EE 3917.94 bit/J | feasible 1 | score 3917.94
+C2 PSO 50/100 | EE 6366.44 bit/J | feasible 1 | score 6366.44
+C2 PSO 75/100 | EE 7934.46 bit/J | feasible 1 | score 7934.46
+C2 PSO 100/100 | EE 8361.64 bit/J | feasible 1 | score 8361.64
+C2 IPSO 1/100 | EE 2034.45 bit/J | feasible 0 | score -0.350285
+C2 IPSO 25/100 | EE 1756.99 bit/J | feasible 0 | score -0.0278503
+C2 IPSO 50/100 | EE 2412.5 bit/J | feasible 1 | score 2412.5
+C2 IPSO 75/100 | EE 5381.48 bit/J | feasible 1 | score 5381.48
+C2 IPSO 100/100 | EE 7105.79 bit/J | feasible 1 | score 7105.79
+
+V10C C2 | Stay allowed, variable hover, fixed phase split
+Stage: search-complete | selected algorithm: PSO
+Reference joint PSO/IPSO; SCA/Dinkelbach hybrid not used.
+Energy model: inherited-steady-horizontal-model
+Geometry dimensions / joint search dimensions: 44 / 164
+Seed / particles / iterations: 608060 / 20 / 100
+L bit/user: 3000000 
+q bit/user/slot: 5000 
+Initial candidate: feasible 0 | EE 2399.01486534 bit/J
+Total bits / energy J / budget J: 13322763.9477 / 5553.43117717 / 17000
+Movement / hover / RF energy J: 2105.67851003 / 3447.75266559 / 1.54760725898e-06
+Distance m / hover s / mission s / service visits: 300 / 20 / 39.3286515 / 20
+Geometry / time / alpha / L / q / slot / energy: 1 1 1 0 0 1 1
+Bits per physical user: 1465787.27819 948159.828895 5398132.83511 3334632.50219 2176051.50329 
+
+PSO | evaluations 2020 | score 8361.64454331
+Searched candidate: feasible 1 | EE 8361.64454331 bit/J
+Total bits / energy J / budget J: 56339286.6218 / 6737.82368169 / 17000
+Movement / hover / RF energy J: 3290.07097572 / 3447.75266559 / 4.03722252412e-05
+Distance m / hover s / mission s / service visits: 468.742635 / 20 / 50.2005434 / 15
+Geometry / time / alpha / L / q / slot / energy: 1 1 1 1 1 1 1
+Bits per physical user: 4015637.62904 8481297.54982 11126295.9801 15002960.6151 17713094.8478 
+
+IPSO | evaluations 2020 | score 7105.79207209
+Searched candidate: feasible 1 | EE 7105.79207209 bit/J
+Total bits / energy J / budget J: 47793346.0901 / 6725.97025148 / 17000
+Movement / hover / RF energy J: 3278.21754619 / 3447.75266559 / 3.97013244248e-05
+Distance m / hover s / mission s / service visits: 467.053854 / 20 / 50.0917373 / 17
+Geometry / time / alpha / L / q / slot / energy: 1 1 1 1 1 1 1
+Bits per physical user: 4385324.57884 8434453.25614 10860635.7621 14708501.7814 9404430.71167 
+
+Best candidate coordinates and slot times
+slot X_m Y_m UL_s DL_s hover_s
+1 150 300 0.174205978475 0.174205978475 0.348411956951
+2 225 300 0.05 0.05 0.1
+3 225 300 0.05 0.05 0.1
+4 225 300 0.05 0.05 0.1
+5 225 300 0.05 0.05 0.1
+6 225 300 0.05 0.05 0.1
+7 225 300 0.0500175054795 0.0500175054795 0.100035010959
+8 224.232382507 299.655738372 0.05 0.05 0.1
+9 225 299.372923765 0.05 0.05 0.1
+10 75 195.449889052 1.25564035332 1.25564035332 2.51128070665
+11 75 194.515044651 1.48687806839 1.48687806839 2.97375613679
+12 75 194.013689468 1.47336345793 1.47336345793 2.94672691587
+13 75 193.826902618 0.197301103993 0.197301103993 0.394602207987
+14 75 193.512887205 1.14830461439 1.14830461439 2.29660922879
+15 75 192.271348327 1.48687806839 1.48687806839 2.97375613679
+16 75 192.034285364 0.05 0.05 0.1
+17 75 191.9808244 0.05 0.05 0.1
+18 75 191.808505493 0.48821842941 0.48821842941 0.976436858821
+19 75 191.773718222 0.537197798428 0.537197798428 1.07439559686
+20 75 191.680423365 1.25199462177 1.25199462177 2.50398924355
+arrival 150 0
+No global optimality guarantee. If infeasible, EE is diagnostic only.
+V10C results saved: /Users/fuzzefer/Documents/MATLAB/EE-UAV-SWIPT-NOMA-PSO/results/v10c/C2/tpb0760a72_6301_4092_8c64_150a254f5f73
+
+CAMPAIGN seed 608060 (2/3), C3 (4/6)
+C3 PSO 1/100 | EE 1799.36 bit/J | feasible 0 | score -0.546225
+C3 PSO 25/100 | EE 1726.58 bit/J | feasible 0 | score -0.00944833
+C3 PSO 50/100 | EE 1693.91 bit/J | feasible 0 | score -0.00738714
+C3 PSO 75/100 | EE 1792.05 bit/J | feasible 0 | score -0.00616733
+C3 PSO 100/100 | EE 1807.91 bit/J | feasible 0 | score -0.00484087
+C3 IPSO 1/100 | EE 1397.91 bit/J | feasible 0 | score -0.744336
+C3 IPSO 25/100 | EE 2048.6 bit/J | feasible 0 | score -0.0217474
+C3 IPSO 50/100 | EE 2488.14 bit/J | feasible 1 | score 2488.14
+C3 IPSO 75/100 | EE 4118.07 bit/J | feasible 1 | score 4118.07
+C3 IPSO 100/100 | EE 5067.96 bit/J | feasible 1 | score 5067.96
+
+V10C C3 | Stay allowed, fixed hover, variable phase split
+Stage: search-complete | selected algorithm: IPSO
+Reference joint PSO/IPSO; SCA/Dinkelbach hybrid not used.
+Energy model: inherited-steady-horizontal-model
+Geometry dimensions / joint search dimensions: 44 / 164
+Seed / particles / iterations: 608060 / 20 / 100
+L bit/user: 3000000 
+q bit/user/slot: 5000 
+Initial candidate: feasible 0 | EE 2399.01486534 bit/J
+Total bits / energy J / budget J: 13322763.9477 / 5553.43117717 / 17000
+Movement / hover / RF energy J: 2105.67851003 / 3447.75266559 / 1.54760725898e-06
+Distance m / hover s / mission s / service visits: 300 / 20 / 39.3286515 / 20
+Geometry / time / alpha / L / q / slot / energy: 1 1 1 0 0 1 1
+Bits per physical user: 1465787.27819 948159.828895 5398132.83511 3334632.50219 2176051.50329 
+
+PSO | evaluations 2020 | score -0.00484087435568
+Searched candidate: feasible 0 | EE 1807.90915938 bit/J
+Total bits / energy J / budget J: 19227515.5453 / 10635.2221545 / 17000
+Movement / hover / RF energy J: 7187.46947191 / 3447.75266559 / 1.70372818722e-05
+Distance m / hover s / mission s / service visits: 1024.01237 / 20 / 85.9759275 / 20
+Geometry / time / alpha / L / q / slot / energy: 1 1 1 1 0 1 1
+Bits per physical user: 3191486.92158 3932981.98752 5228038.55715 3002370.81138 3872637.26763 
+
+IPSO | evaluations 2020 | score 5067.95695101
+Searched candidate: feasible 1 | EE 5067.95695101 bit/J
+Total bits / energy J / budget J: 35694267.8754 / 7043.12767856 / 17000
+Movement / hover / RF energy J: 3595.37498611 / 3447.75266559 / 2.68526500365e-05
+Distance m / hover s / mission s / service visits: 512.239875 / 20 / 53.0030201 / 20
+Geometry / time / alpha / L / q / slot / energy: 1 1 1 1 1 1 1
+Bits per physical user: 3480639.05207 6850881.485 7246889.81257 7253112.8377 10862744.688 
+
+Best candidate coordinates and slot times
+slot X_m Y_m UL_s DL_s hover_s
+1 150 300 0.95 0.05 1
+2 151.717044653 300 0.677633999252 0.322366000748 1
+3 152.741634692 300 0.595894484626 0.404105515374 1
+4 163.33356446 300 0.95 0.05 1
+5 197.274413971 300 0.697970138803 0.302029861197 1
+6 225 265.72258839 0.591633881153 0.408366118847 1
+7 225 258.83959183 0.141089785409 0.858910214591 1
+8 225 253.84978991 0.419477349796 0.580522650204 1
+9 225 247.351336668 0.285281796928 0.714718203072 1
+10 75 190.853871204 0.544048679321 0.455951320679 1
+11 75 189.128840257 0.384130862205 0.615869137795 1
+12 75 188.682422648 0.289727357583 0.710272642417 1
+13 75.0000226777 188.180820858 0.616650812425 0.383349187575 1
+14 75 187.581144704 0.60957804974 0.39042195026 1
+15 75 186.752543183 0.305336680123 0.694663319877 1
+16 78.7152169768 184.000005961 0.403396377248 0.596603622752 1
+17 81.5724463307 167.94951621 0.693882853837 0.306117146163 1
+18 115.455757715 161.870232024 0.56266814565 0.43733185435 1
+19 157.195722315 104.865350178 0.694166548324 0.305833451676 1
+20 165.030881865 102.960720392 0.529301849956 0.470698150044 1
+arrival 150 0
+No global optimality guarantee. If infeasible, EE is diagnostic only.
+V10C results saved: /Users/fuzzefer/Documents/MATLAB/EE-UAV-SWIPT-NOMA-PSO/results/v10c/C3/tp6a40c49f_f36c_4798_8021_047edd936a7b
+
+CAMPAIGN seed 608060 (2/3), C4 (5/6)
+C4 PSO 1/100 | EE 2307.52 bit/J | feasible 0 | score -0.434766
+C4 PSO 25/100 | EE 2569.9 bit/J | feasible 1 | score 2569.9
+C4 PSO 50/100 | EE 4312.37 bit/J | feasible 1 | score 4312.37
+C4 PSO 75/100 | EE 5600.93 bit/J | feasible 1 | score 5600.93
+C4 PSO 100/100 | EE 6767.72 bit/J | feasible 1 | score 6767.72
+C4 IPSO 1/100 | EE 2202.58 bit/J | feasible 0 | score -0.437873
+C4 IPSO 25/100 | EE 1787.01 bit/J | feasible 1 | score 1787.01
+C4 IPSO 50/100 | EE 4922.35 bit/J | feasible 1 | score 4922.35
+C4 IPSO 75/100 | EE 9440.82 bit/J | feasible 1 | score 9440.82
+C4 IPSO 100/100 | EE 11045.8 bit/J | feasible 1 | score 11045.8
+
+V10C C4 | Stay allowed, variable hover and phase split
+Stage: search-complete | selected algorithm: IPSO
+Reference joint PSO/IPSO; SCA/Dinkelbach hybrid not used.
+Energy model: inherited-steady-horizontal-model
+Geometry dimensions / joint search dimensions: 44 / 184
+Seed / particles / iterations: 608060 / 20 / 100
+L bit/user: 3000000 
+q bit/user/slot: 5000 
+Initial candidate: feasible 0 | EE 2399.01486534 bit/J
+Total bits / energy J / budget J: 13322763.9477 / 5553.43117717 / 17000
+Movement / hover / RF energy J: 2105.67851003 / 3447.75266559 / 1.54760725898e-06
+Distance m / hover s / mission s / service visits: 300 / 20 / 39.3286515 / 20
+Geometry / time / alpha / L / q / slot / energy: 1 1 1 0 0 1 1
+Bits per physical user: 1465787.27819 948159.828895 5398132.83511 3334632.50219 2176051.50329 
+
+PSO | evaluations 2020 | score 6767.71794321
+Searched candidate: feasible 1 | EE 6767.71794321 bit/J
+Total bits / energy J / budget J: 46565885.7188 / 6880.58901237 / 17000
+Movement / hover / RF energy J: 3432.83632659 / 3447.75266559 / 2.01832956896e-05
+Distance m / hover s / mission s / service visits: 489.082684 / 20 / 51.5110292 / 18
+Geometry / time / alpha / L / q / slot / energy: 1 1 1 1 1 1 1
+Bits per physical user: 3520675.447 10062322.6043 19434794.4357 4819200.26694 8728892.96488 
+
+IPSO | evaluations 2020 | score 11045.8391423
+Searched candidate: feasible 1 | EE 11045.8391423 bit/J
+Total bits / energy J / budget J: 64780707.775 / 5864.71583918 / 17000
+Movement / hover / RF energy J: 2416.96314194 / 3447.75266559 / 3.16533598868e-05
+Distance m / hover s / mission s / service visits: 344.34931 / 20 / 42.186026 / 20
+Geometry / time / alpha / L / q / slot / energy: 1 1 1 1 1 1 1
+Bits per physical user: 4782171.22614 19880461.8594 14723671.9941 10079332.6897 15315070.0056 
+
+Best candidate coordinates and slot times
+slot X_m Y_m UL_s DL_s hover_s
+1 150 300 0.415966756475 0.0277367877786 0.443703544253
+2 149.945274972 296.165015034 0.337129108514 0.0930416211879 0.430170729702
+3 138.406982912 293.702749154 0.302762779748 0.275937951303 0.578700731052
+4 75.7789305876 162.037446625 0.0593090472979 0.102814913525 0.162123960823
+5 75 156.185888002 0.4148555896 0.691592520653 1.10644811025
+6 75 156.012650686 0.46304244791 0.194714446197 0.657756894108
+7 75.011029338 156.00699305 0.213158389743 0.404580697884 0.617739087627
+8 75 155.46712661 0.263044685242 0.680727941553 0.943772626795
+9 75 155.236976917 0.934454743502 1.49083435831 2.42528910181
+10 75.0105608692 154.864332261 0.294574358034 0.379455120944 0.674029478978
+11 75 154.69007398 0.519858343464 1.07748044906 1.59733879252
+12 75 153.620281188 0.694735510297 0.846353582575 1.54108909287
+13 75 151.902473243 0.812483492219 1.4118182132 2.22430170542
+14 75.5627387206 151.217995215 1.06578699408 0.215934276548 1.28172127063
+15 76.4697020458 150.105115764 0.656384250227 1.33644350757 1.9928277578
+16 75.1651021418 149.932190445 0.291718719715 0.516078525252 0.807797244966
+17 75 149.664160089 0.684126195363 1.36425021968 2.04837641505
+18 75 149.473332173 0.0862774926114 0.0137225073886 0.1
+19 75.5084620013 139.005513906 0.0943428773923 0.0255995377783 0.119942415171
+20 82.0544368353 118.800996 0.127685801924 0.119185238255 0.246871040179
+arrival 150 0
+No global optimality guarantee. If infeasible, EE is diagnostic only.
+V10C results saved: /Users/fuzzefer/Documents/MATLAB/EE-UAV-SWIPT-NOMA-PSO/results/v10c/C4/tp59a5d332_14b7_4146_90ce_50e38774d29f
+
+CAMPAIGN seed 608060 (2/3), C5 (6/6)
+C5 PSO 1/100 | EE 495.307 bit/J | feasible 0 | score -1.418
+C5 PSO 25/100 | EE 1127.52 bit/J | feasible 0 | score -0.72928
+C5 PSO 50/100 | EE 1134.44 bit/J | feasible 0 | score -0.60474
+C5 PSO 75/100 | EE 1085.81 bit/J | feasible 0 | score -0.570775
+C5 PSO 100/100 | EE 1085.81 bit/J | feasible 0 | score -0.570775
+C5 IPSO 1/100 | EE 618.169 bit/J | feasible 0 | score -1.34662
+C5 IPSO 25/100 | EE 900.484 bit/J | feasible 0 | score -0.454367
+C5 IPSO 50/100 | EE 1008.8 bit/J | feasible 0 | score -0.270462
+C5 IPSO 75/100 | EE 1129.25 bit/J | feasible 0 | score -0.0709575
+C5 IPSO 100/100 | EE 1134.71 bit/J | feasible 0 | score -0.069149
+
+V10C C5 | C4 with experimental rest-to-rest motion energy
+Stage: search-complete | selected algorithm: IPSO
+Reference joint PSO/IPSO; SCA/Dinkelbach hybrid not used.
+Energy model: experimental-quasi-steady-thrust-not-validated
+Geometry dimensions / joint search dimensions: 44 / 184
+Seed / particles / iterations: 608060 / 20 / 100
+L bit/user: 3000000 
+q bit/user/slot: 5000 
+Initial candidate: feasible 0 | EE 600.364513243 bit/J
+Total bits / energy J / budget J: 13322763.9477 / 22191.1249812 / 17000
+Movement / hover / RF energy J: 18743.3723141 / 3447.75266559 / 1.54760725898e-06
+Distance m / hover s / mission s / service visits: 300 / 20 / 129.544512 / 20
+Geometry / time / alpha / L / q / slot / energy: 1 1 1 0 0 1 0
+Bits per physical user: 1465787.27819 948159.828895 5398132.83511 3334632.50219 2176051.50329 
+
+PSO | evaluations 2020 | score -0.570775333745
+Searched candidate: feasible 0 | EE 1085.81311884 bit/J
+Total bits / energy J / budget J: 20535349.9403 / 18912.4164959 / 17000
+Movement / hover / RF energy J: 15464.6638273 / 3447.75266559 / 3.02822204921e-06
+Distance m / hover s / mission s / service visits: 376.087686 / 20 / 114.444747 / 18
+Geometry / time / alpha / L / q / slot / energy: 1 1 1 0 0 1 0
+Bits per physical user: 1714391.50103 3295368.5213 7635042.37663 3742036.51771 4148511.02362 
+
+IPSO | evaluations 2020 | score -0.0691490341899
+Searched candidate: feasible 0 | EE 1134.7084266 bit/J
+Total bits / energy J / budget J: 19028111.0489 / 16769.1634281 / 17000
+Movement / hover / RF energy J: 13321.4107589 / 3447.75266559 / 3.56542725497e-06
+Distance m / hover s / mission s / service visits: 344.069426 / 20 / 102.182667 / 18
+Geometry / time / alpha / L / q / slot / energy: 1 1 1 0 0 1 1
+Bits per physical user: 3732687.42939 3002824.02911 5249475.46235 2961638.9544 4081485.17361 
+
+Best candidate coordinates and slot times
+slot X_m Y_m UL_s DL_s hover_s
+1 150 300 1.03095439241 0.927606755752 1.95856114816
+2 151.164722171 300 0.211072612628 0.345064619177 0.556137231806
+3 151.880472455 300 0.0234411439028 0.445381734153 0.468822878056
+4 153.100968924 300 0.0840913098877 0.0159086901123 0.1
+5 146.929675235 300 1.21599929512 0.37913552606 1.59513482118
+6 143.136731765 300 0.537092279331 0.264373816071 0.801466095402
+7 162.612984452 234.675381119 0.0386586625871 0.277091173912 0.315749836499
+8 161.90771959 233.029926879 0.0855587167255 0.0954591090773 0.181017825803
+9 162.183545307 229.476481292 0.217385642616 0.493269269971 0.710654912587
+10 134.186902711 136.217404101 0.892371261888 0.792697754174 1.68506901606
+11 136.296280918 126.720034951 0.92236085177 0.961752457707 1.88411330948
+12 134.544742904 121.983575334 0.478530095498 0.727752716162 1.20628281166
+13 137.6575693 118.805656419 0.577807621581 1.72801731184 2.30582493342
+14 135.534297542 118.286352276 0.230982847039 0.840615749771 1.07159859681
+15 134.726295212 117.820390866 0.627821443271 0.361402836486 0.989224279757
+16 138.608498515 117.683000682 1.19774576473 0.567818951735 1.76556471646
+17 135.350769627 113.686192036 0.924756257138 0.164780611228 1.08953686837
+18 157.582803108 104.330674186 0.208462231211 0.0916140479099 0.300076279121
+19 157.582803108 104.330674186 0.869394594621 0.0457698447557 0.915164439377
+20 157.582803108 104.330674186 0.0615265401994 0.0384734598006 0.1
+arrival 150 0
+No global optimality guarantee. If infeasible, EE is diagnostic only.
+V10C results saved: /Users/fuzzefer/Documents/MATLAB/EE-UAV-SWIPT-NOMA-PSO/results/v10c/C5/tpb7692708_b3a8_4ff1_a2b6_e31e48fe555d
+
+CAMPAIGN seed 3486784401 (3/3), C0 (1/6)
+C0 PSO 1/100 | EE 1108.54 bit/J | feasible 0 | score -1.74154
+C0 PSO 25/100 | EE 1770.77 bit/J | feasible 0 | score -0.026553
+C0 PSO 50/100 | EE 1948.62 bit/J | feasible 0 | score -0.0227851
+C0 PSO 75/100 | EE 1931.9 bit/J | feasible 0 | score -0.022756
+C0 PSO 100/100 | EE 2008.07 bit/J | feasible 0 | score -0.0226068
+C0 IPSO 1/100 | EE 1305.42 bit/J | feasible 0 | score -1.53699
+C0 IPSO 25/100 | EE 1351.82 bit/J | feasible 0 | score -0.00958062
+C0 IPSO 50/100 | EE 2486.15 bit/J | feasible 1 | score 2486.15
+C0 IPSO 75/100 | EE 4425.4 bit/J | feasible 1 | score 4425.4
+C0 IPSO 100/100 | EE 6009.92 bit/J | feasible 1 | score 6009.92
+
+V10C C0 | V10B-compatible model, fixed hover and phase split
+Stage: search-complete | selected algorithm: IPSO
+Reference joint PSO/IPSO; SCA/Dinkelbach hybrid not used.
+Energy model: inherited-steady-horizontal-model
+Geometry dimensions / joint search dimensions: 44 / 144
+Seed / particles / iterations: 3486784401 / 20 / 100
+L bit/user: 3000000 
+q bit/user/slot: 5000 
+Initial candidate: feasible 0 | EE 1567.91566653 bit/J
+Total bits / energy J / budget J: 8707311.74571 / 5553.43117718 / 17000
+Movement / hover / RF energy J: 2105.67851003 / 3447.75266559 / 1.55120404878e-06
+Distance m / hover s / mission s / service visits: 300 / 20 / 39.3286515 / 20
+Geometry / time / alpha / L / q / slot / energy: 1 1 1 0 0 1 1
+Bits per physical user: 3747312.38089 584129.234691 690952.207604 547768.063694 3137149.85884 
+
+PSO | evaluations 2020 | score -0.0226068061681
+Searched candidate: feasible 0 | EE 2008.07213561 bit/J
+Total bits / energy J / budget J: 19672449.5652 / 9796.68469888 / 17000
+Movement / hover / RF energy J: 6348.93200509 / 3447.75266559 / 2.81929042785e-05
+Distance m / hover s / mission s / service visits: 904.544351 / 20 / 78.2787418 / 20
+Geometry / time / alpha / L / q / slot / energy: 1 1 1 1 0 1 1
+Bits per physical user: 4275354.37462 3880271.45534 4915597.26311 3159819.0816 3441407.3905 
+
+IPSO | evaluations 2020 | score 6009.91855982
+Searched candidate: feasible 1 | EE 6009.91855982 bit/J
+Total bits / energy J / budget J: 38168273.2151 / 6350.88027154 / 17000
+Movement / hover / RF energy J: 2903.12756049 / 3447.75266559 / 4.54550949797e-05
+Distance m / hover s / mission s / service visits: 413.614075 / 20 / 46.6486743 / 20
+Geometry / time / alpha / L / q / slot / energy: 1 1 1 1 1 1 1
+Bits per physical user: 13151987.8382 5987299.89023 7259968.16253 7346090.18063 4422927.14353 
+
+Best candidate coordinates and slot times
+slot X_m Y_m UL_s DL_s hover_s
+1 150 300 0.5 0.5 1
+2 225 246.722128384 0.5 0.5 1
+3 225 245.593520159 0.5 0.5 1
+4 225 244.502325518 0.5 0.5 1
+5 224.997755866 243.48653059 0.5 0.5 1
+6 224.305069643 242.139430247 0.5 0.5 1
+7 216.285145752 217.397572162 0.5 0.5 1
+8 216.001360136 215.945173597 0.5 0.5 1
+9 225 212.698269789 0.5 0.5 1
+10 224.987848563 210.848566934 0.5 0.5 1
+11 210.969575219 209.771855917 0.5 0.5 1
+12 196.185577945 198.045572386 0.5 0.5 1
+13 191.179320744 196.122052378 0.5 0.5 1
+14 189.20827131 194.701735286 0.5 0.5 1
+15 188.137052575 193.63141003 0.5 0.5 1
+16 190.604480639 189.74097185 0.5 0.5 1
+17 191.895505509 181.899309613 0.5 0.5 1
+18 225 76.7203941788 0.5 0.5 1
+19 225 74.8607377549 0.5 0.5 1
+20 225 59.6344445915 0.5 0.5 1
+arrival 150 0
+No global optimality guarantee. If infeasible, EE is diagnostic only.
+V10C results saved: /Users/fuzzefer/Documents/MATLAB/EE-UAV-SWIPT-NOMA-PSO/results/v10c/C0/tp394c9762_ae2c_4349_b36f_30368e1887e4
+
+CAMPAIGN seed 3486784401 (3/3), C1 (2/6)
+C1 PSO 1/100 | EE 1693.6 bit/J | feasible 0 | score -1.21707
+C1 PSO 25/100 | EE 2165.44 bit/J | feasible 0 | score -0.0297127
+C1 PSO 50/100 | EE 2547.19 bit/J | feasible 0 | score -0.0198107
+C1 PSO 75/100 | EE 2681.96 bit/J | feasible 0 | score -0.00944994
+C1 PSO 100/100 | EE 2311.66 bit/J | feasible 0 | score -0.00908846
+C1 IPSO 1/100 | EE 1558.15 bit/J | feasible 0 | score -1.19953
+C1 IPSO 25/100 | EE 1976.59 bit/J | feasible 0 | score -0.0175378
+C1 IPSO 50/100 | EE 4521.6 bit/J | feasible 1 | score 4521.6
+C1 IPSO 75/100 | EE 5562.54 bit/J | feasible 1 | score 5562.54
+C1 IPSO 100/100 | EE 6675.49 bit/J | feasible 1 | score 6675.49
+
+V10C C1 | Stay allowed, fixed hover and phase split
+Stage: search-complete | selected algorithm: IPSO
+Reference joint PSO/IPSO; SCA/Dinkelbach hybrid not used.
+Energy model: inherited-steady-horizontal-model
+Geometry dimensions / joint search dimensions: 44 / 144
+Seed / particles / iterations: 3486784401 / 20 / 100
+L bit/user: 3000000 
+q bit/user/slot: 5000 
+Initial candidate: feasible 0 | EE 1567.91566653 bit/J
+Total bits / energy J / budget J: 8707311.74571 / 5553.43117718 / 17000
+Movement / hover / RF energy J: 2105.67851003 / 3447.75266559 / 1.55120404878e-06
+Distance m / hover s / mission s / service visits: 300 / 20 / 39.3286515 / 20
+Geometry / time / alpha / L / q / slot / energy: 1 1 1 0 0 1 1
+Bits per physical user: 3747312.38089 584129.234691 690952.207604 547768.063694 3137149.85884 
+
+PSO | evaluations 2020 | score -0.00908846170881
+Searched candidate: feasible 0 | EE 2311.66474105 bit/J
+Total bits / energy J / budget J: 21437295.88 / 9273.53153742 / 17000
+Movement / hover / RF energy J: 5825.7788505 / 3447.75266559 / 2.13238723969e-05
+Distance m / hover s / mission s / service visits: 830.009732 / 20 / 73.4765628 / 20
+Geometry / time / alpha / L / q / slot / energy: 1 1 1 1 0 1 1
+Bits per physical user: 3422751.43073 4725766.81036 5159683.57029 4326575.67587 3802518.39278 
+
+IPSO | evaluations 2020 | score 6675.4868176
+Searched candidate: feasible 1 | EE 6675.4868176 bit/J
+Total bits / energy J / budget J: 40573108.636 / 6077.92506294 / 17000
+Movement / hover / RF energy J: 2630.17230978 / 3447.75266559 / 8.75585044737e-05
+Distance m / hover s / mission s / service visits: 374.725624 / 20 / 44.1431366 / 20
+Geometry / time / alpha / L / q / slot / energy: 1 1 1 1 1 1 1
+Bits per physical user: 13937539.5774 7207129.80788 7305128.23034 7333326.40589 4789984.6145 
+
+Best candidate coordinates and slot times
+slot X_m Y_m UL_s DL_s hover_s
+1 150 300 0.5 0.5 1
+2 225 248.976413042 0.5 0.5 1
+3 225 248.347695173 0.5 0.5 1
+4 225 245.290974701 0.5 0.5 1
+5 225 244.949220469 0.5 0.5 1
+6 225 244.476480763 0.5 0.5 1
+7 225 242.31919919 0.5 0.5 1
+8 225 241.863570339 0.5 0.5 1
+9 225 241.558468552 0.5 0.5 1
+10 225 241.394202808 0.5 0.5 1
+11 225 241.026182592 0.5 0.5 1
+12 225 240.932116867 0.5 0.5 1
+13 225 240.609256388 0.5 0.5 1
+14 225 240.518656 0.5 0.5 1
+15 225 239.656896832 0.5 0.5 1
+16 225 239.512932381 0.5 0.5 1
+17 225 239.454866146 0.5 0.5 1
+18 225 102.010644841 0.5 0.5 1
+19 223.612494189 68.0771433104 0.5 0.5 1
+20 225 63.3932838223 0.5 0.5 1
+arrival 150 0
+No global optimality guarantee. If infeasible, EE is diagnostic only.
+V10C results saved: /Users/fuzzefer/Documents/MATLAB/EE-UAV-SWIPT-NOMA-PSO/results/v10c/C1/tp3f3b5a8a_b923_4bd7_90cb_12fc60d36864
+
+CAMPAIGN seed 3486784401 (3/3), C2 (3/6)
+C2 PSO 1/100 | EE 1309.7 bit/J | feasible 0 | score -1.3731
+C2 PSO 25/100 | EE 3104.85 bit/J | feasible 0 | score -0.0791505
+C2 PSO 50/100 | EE 3862.25 bit/J | feasible 0 | score -0.0682897
+C2 PSO 75/100 | EE 3851.66 bit/J | feasible 0 | score -0.0676468
+C2 PSO 100/100 | EE 3773.26 bit/J | feasible 0 | score -0.0673264
+C2 IPSO 1/100 | EE 1661.95 bit/J | feasible 0 | score -1.4065
+C2 IPSO 25/100 | EE 2445.81 bit/J | feasible 0 | score -0.0434275
+C2 IPSO 50/100 | EE 2696.06 bit/J | feasible 1 | score 2696.06
+C2 IPSO 75/100 | EE 3440.03 bit/J | feasible 1 | score 3440.03
+C2 IPSO 100/100 | EE 4082.04 bit/J | feasible 1 | score 4082.04
+
+V10C C2 | Stay allowed, variable hover, fixed phase split
+Stage: search-complete | selected algorithm: IPSO
+Reference joint PSO/IPSO; SCA/Dinkelbach hybrid not used.
+Energy model: inherited-steady-horizontal-model
+Geometry dimensions / joint search dimensions: 44 / 164
+Seed / particles / iterations: 3486784401 / 20 / 100
+L bit/user: 3000000 
+q bit/user/slot: 5000 
+Initial candidate: feasible 0 | EE 1567.91566653 bit/J
+Total bits / energy J / budget J: 8707311.74571 / 5553.43117718 / 17000
+Movement / hover / RF energy J: 2105.67851003 / 3447.75266559 / 1.55120404878e-06
+Distance m / hover s / mission s / service visits: 300 / 20 / 39.3286515 / 20
+Geometry / time / alpha / L / q / slot / energy: 1 1 1 0 0 1 1
+Bits per physical user: 3747312.38089 584129.234691 690952.207604 547768.063694 3137149.85884 
+
+PSO | evaluations 2020 | score -0.0673264445824
+Searched candidate: feasible 0 | EE 3773.25594501 bit/J
+Total bits / energy J / budget J: 22482238.9628 / 5958.31273851 / 17000
+Movement / hover / RF energy J: 2707.21541559 / 3251.09724769 / 7.52234111099e-05
+Distance m / hover s / mission s / service visits: 385.702101 / 18.8592255 / 43.7095638 / 17
+Geometry / time / alpha / L / q / slot / energy: 1 1 1 1 0 1 1
+Bits per physical user: 3797648.02419 3767097.99363 5609522.02059 4982931.85447 4325039.0699 
+
+IPSO | evaluations 2020 | score 4082.03888914
+Searched candidate: feasible 1 | EE 4082.03888914 bit/J
+Total bits / energy J / budget J: 26181569.7686 / 6413.84623703 / 17000
+Movement / hover / RF energy J: 2966.09352724 / 3447.75266559 / 4.4201606917e-05
+Distance m / hover s / mission s / service visits: 422.584955 / 20 / 47.2266577 / 18
+Geometry / time / alpha / L / q / slot / energy: 1 1 1 1 1 1 1
+Bits per physical user: 6866239.19391 3110468.90128 5815668.4533 6633904.6206 3755288.59948 
+
+Best candidate coordinates and slot times
+slot X_m Y_m UL_s DL_s hover_s
+1 150 300 0.254081983306 0.254081983306 0.508163966612
+2 225 300 0.553718447762 0.553718447762 1.10743689552
+3 225 300 0.564179920491 0.564179920491 1.12835984098
+4 224.984971663 300 0.339236911815 0.339236911815 0.678473823631
+5 225 300 0.757881908228 0.757881908228 1.51576381646
+6 225 300 0.0837755264126 0.0837755264126 0.167551052825
+7 225 299.99868606 0.633091999179 0.633091999179 1.26618399836
+8 225 297.385407792 0.927712893393 0.927712893393 1.85542578679
+9 189.748710602 192.402621848 0.05 0.05 0.1
+10 191.079856941 183.871658779 1.42704759736 1.42704759736 2.85409519472
+11 192.99375416 183.219906938 0.05 0.05 0.1
+12 196.459912951 182.858968456 0.0545456615762 0.0545456615762 0.109091323152
+13 196.022761823 180.295158326 0.830623042931 0.830623042931 1.66124608586
+14 197.292791293 179.842804415 0.12324924091 0.12324924091 0.246498481821
+15 193.070803129 179.140134496 1.16605964766 1.16605964766 2.33211929533
+16 190.323013751 175.995485042 0.910075053091 0.910075053091 1.82015010618
+17 188.717420249 168.207686111 0.05 0.05 0.1
+18 194.783829466 116.703392661 0.05 0.05 0.1
+19 211.185192285 116.276206854 0.646309814015 0.646309814015 1.29261962803
+20 206.738737395 109.511429766 0.528410351869 0.528410351869 1.05682070374
+arrival 150 0
+No global optimality guarantee. If infeasible, EE is diagnostic only.
+V10C results saved: /Users/fuzzefer/Documents/MATLAB/EE-UAV-SWIPT-NOMA-PSO/results/v10c/C2/tpff34eb4a_26bf_4521_b9a2_3bcb16bc76d7
+
+CAMPAIGN seed 3486784401 (3/3), C3 (4/6)
+C3 PSO 1/100 | EE 1276.47 bit/J | feasible 0 | score -1.63947
+C3 PSO 25/100 | EE 2162.68 bit/J | feasible 1 | score 2162.68
+C3 PSO 50/100 | EE 3578.81 bit/J | feasible 1 | score 3578.81
+C3 PSO 75/100 | EE 4309.21 bit/J | feasible 1 | score 4309.21
+C3 PSO 100/100 | EE 4582.43 bit/J | feasible 1 | score 4582.43
+C3 IPSO 1/100 | EE 1405.02 bit/J | feasible 0 | score -1.38591
+C3 IPSO 25/100 | EE 1944.36 bit/J | feasible 1 | score 1944.36
+C3 IPSO 50/100 | EE 4126.01 bit/J | feasible 1 | score 4126.01
+C3 IPSO 75/100 | EE 5852.52 bit/J | feasible 1 | score 5852.52
+C3 IPSO 100/100 | EE 6392.93 bit/J | feasible 1 | score 6392.93
+
+V10C C3 | Stay allowed, fixed hover, variable phase split
+Stage: search-complete | selected algorithm: IPSO
+Reference joint PSO/IPSO; SCA/Dinkelbach hybrid not used.
+Energy model: inherited-steady-horizontal-model
+Geometry dimensions / joint search dimensions: 44 / 164
+Seed / particles / iterations: 3486784401 / 20 / 100
+L bit/user: 3000000 
+q bit/user/slot: 5000 
+Initial candidate: feasible 0 | EE 1567.91566653 bit/J
+Total bits / energy J / budget J: 8707311.74571 / 5553.43117718 / 17000
+Movement / hover / RF energy J: 2105.67851003 / 3447.75266559 / 1.55120404878e-06
+Distance m / hover s / mission s / service visits: 300 / 20 / 39.3286515 / 20
+Geometry / time / alpha / L / q / slot / energy: 1 1 1 0 0 1 1
+Bits per physical user: 3747312.38089 584129.234691 690952.207604 547768.063694 3137149.85884 
+
+PSO | evaluations 2020 | score 4582.43217964
+Searched candidate: feasible 1 | EE 4582.43217964 bit/J
+Total bits / energy J / budget J: 28039774.1573 / 6118.97199087 / 17000
+Movement / hover / RF energy J: 2671.21931595 / 3447.75266559 / 9.32350827739e-06
+Distance m / hover s / mission s / service visits: 380.573668 / 20 / 44.5199194 / 17
+Geometry / time / alpha / L / q / slot / energy: 1 1 1 1 1 1 1
+Bits per physical user: 6753005.14578 5451645.40401 4828338.85494 7997534.2363 3009250.51623 
+
+IPSO | evaluations 2020 | score 6392.93377205
+Searched candidate: feasible 1 | EE 6392.93377205 bit/J
+Total bits / energy J / budget J: 37712650.1827 / 5899.11479259 / 17000
+Movement / hover / RF energy J: 2451.36204363 / 3447.75266559 / 8.33587444968e-05
+Distance m / hover s / mission s / service visits: 349.250187 / 20 / 42.5017838 / 18
+Geometry / time / alpha / L / q / slot / energy: 1 1 1 1 1 1 1
+Bits per physical user: 14937463.5355 4947161.03055 5767971.81461 5795318.34485 6264735.45717 
+
+Best candidate coordinates and slot times
+slot X_m Y_m UL_s DL_s hover_s
+1 150 300 0.552098394095 0.447901605905 1
+2 150.648466768 300 0.252693535641 0.747306464359 1
+3 225 244.038001253 0.285166109233 0.714833890767 1
+4 225 243.865515443 0.317879625364 0.682120374636 1
+5 225 243.682565922 0.429675941214 0.570324058786 1
+6 225 243.615200714 0.373042991276 0.626957008724 1
+7 225 243.496313681 0.494111309083 0.505888690917 1
+8 225 243.482216088 0.385384476869 0.614615523131 1
+9 225 243.475188981 0.529194296029 0.470805703971 1
+10 225 243.475188981 0.426974797628 0.573025202372 1
+11 225 243.475188981 0.397953616383 0.602046383617 1
+12 225 243.33390191 0.526156012979 0.473843987021 1
+13 225 243.252125286 0.478965450478 0.521034549522 1
+14 225 243.206386253 0.372607173889 0.627392826111 1
+15 225 243.196635802 0.504440423161 0.495559576839 1
+16 225 243.024668497 0.377327126914 0.622672873086 1
+17 224.986771121 242.431498887 0.494602678272 0.505397321728 1
+18 225 241.44399536 0.441179101616 0.558820898384 1
+19 224.999050537 239.008529807 0.773236477759 0.226763522241 1
+20 225 238.708172305 0.926720227198 0.0732797728024 1
+arrival 150 0
+No global optimality guarantee. If infeasible, EE is diagnostic only.
+V10C results saved: /Users/fuzzefer/Documents/MATLAB/EE-UAV-SWIPT-NOMA-PSO/results/v10c/C3/tpf8c1fe62_5402_49c5_bb2c_14b6a5d9b39a
+
+CAMPAIGN seed 3486784401 (3/3), C4 (5/6)
+C4 PSO 1/100 | EE 1513.18 bit/J | feasible 0 | score -1.60215
+C4 PSO 25/100 | EE 1723.39 bit/J | feasible 0 | score -0.0527161
+C4 PSO 50/100 | EE 1918.12 bit/J | feasible 0 | score -0.00893421
+C4 PSO 75/100 | EE 2054.54 bit/J | feasible 0 | score -0.00742718
+C4 PSO 100/100 | EE 2187.36 bit/J | feasible 0 | score -0.00615009
+C4 IPSO 1/100 | EE 1186.38 bit/J | feasible 0 | score -1.49132
+C4 IPSO 25/100 | EE 1997.68 bit/J | feasible 0 | score -0.0306318
+C4 IPSO 50/100 | EE 2160.05 bit/J | feasible 0 | score -0.00811283
+C4 IPSO 75/100 | EE 3091.28 bit/J | feasible 1 | score 3091.28
+C4 IPSO 100/100 | EE 4028.01 bit/J | feasible 1 | score 4028.01
+
+V10C C4 | Stay allowed, variable hover and phase split
+Stage: search-complete | selected algorithm: IPSO
+Reference joint PSO/IPSO; SCA/Dinkelbach hybrid not used.
+Energy model: inherited-steady-horizontal-model
+Geometry dimensions / joint search dimensions: 44 / 184
+Seed / particles / iterations: 3486784401 / 20 / 100
+L bit/user: 3000000 
+q bit/user/slot: 5000 
+Initial candidate: feasible 0 | EE 1567.91566653 bit/J
+Total bits / energy J / budget J: 8707311.74571 / 5553.43117718 / 17000
+Movement / hover / RF energy J: 2105.67851003 / 3447.75266559 / 1.55120404878e-06
+Distance m / hover s / mission s / service visits: 300 / 20 / 39.3286515 / 20
+Geometry / time / alpha / L / q / slot / energy: 1 1 1 0 0 1 1
+Bits per physical user: 3747312.38089 584129.234691 690952.207604 547768.063694 3137149.85884 
+
+PSO | evaluations 2020 | score -0.00615008854498
+Searched candidate: feasible 0 | EE 2187.35600888 bit/J
+Total bits / energy J / budget J: 19208269.6382 / 8781.50130121 / 17000
+Movement / hover / RF energy J: 5500.42476286 / 3281.07650636 / 3.19891447706e-05
+Distance m / hover s / mission s / service visits: 783.655919 / 19.0331316 / 69.5231721 / 20
+Geometry / time / alpha / L / q / slot / energy: 1 1 1 1 0 1 1
+Bits per physical user: 3715053.74828 3562014.35737 4395049.6705 4227197.37377 3308954.48832 
+
+IPSO | evaluations 2020 | score 4028.01457046
+Searched candidate: feasible 1 | EE 4028.01457046 bit/J
+Total bits / energy J / budget J: 26290323.006 / 6526.86889437 / 17000
+Movement / hover / RF energy J: 3079.11619236 / 3447.75266559 / 3.64182935491e-05
+Distance m / hover s / mission s / service visits: 438.687508 / 20 / 48.2641265 / 20
+Geometry / time / alpha / L / q / slot / energy: 1 1 1 1 1 1 1
+Bits per physical user: 5043162.70756 4944199.14646 5556409.56868 6330227.65001 4416323.93332 
+
+Best candidate coordinates and slot times
+slot X_m Y_m UL_s DL_s hover_s
+1 150 300 0.295659586561 0.73901298561 1.03467257217
+2 157.42164587 299.992321327 1.0535047755 0.339215259524 1.39272003502
+3 167.880106631 273.91993981 0.376840809243 0.0227276095146 0.399568418758
+4 173.431689401 254.93554439 0.0393837873561 0.083704784316 0.123088571672
+5 217.572831301 242.30222124 0.659174169102 0.158895477532 0.818069646634
+6 220.200835667 239.75534807 0.0808836624528 0.0191163375472 0.1
+7 216.570578368 239.021006088 0.0643157980197 0.313621062085 0.377936860105
+8 225 228.730013736 0.555889171093 0.334963988093 0.890853159185
+9 225 228.158534464 0.837375095115 0.633959593869 1.47133468898
+10 211.491589503 215.46188342 0.77404328368 0.322634079943 1.09667736362
+11 211.160144854 215.268554791 1.38496707829 0.9565999103 2.34156698859
+12 187.250452213 213.715342863 0.0629619119309 0.0398949527243 0.102856864655
+13 181.911951592 212.68374583 0.883148371551 0.984438135341 1.86758650689
+14 187.13777055 212.208891667 0.236194898247 0.341769617077 0.577964515325
+15 189.186435075 211.715101337 0.185844393222 0.200099278252 0.385943671474
+16 187.977712308 211.59799808 0.595322064226 0.611140648923 1.20646271315
+17 185.275928113 179.312680462 1.18196501168 0.686652877957 1.86861788964
+18 206.767953996 84.9497641514 0.330615386264 0.166413151372 0.497028537636
+19 225 53.4503164663 1.30746377431 1.25560605184 2.56306982615
+20 224.274811674 48.3391836989 0.350664365427 0.533316804907 0.883981170334
+arrival 150 0
+No global optimality guarantee. If infeasible, EE is diagnostic only.
+V10C results saved: /Users/fuzzefer/Documents/MATLAB/EE-UAV-SWIPT-NOMA-PSO/results/v10c/C4/tp8c391f0f_3874_4bd3_b163_f4f341ca3358
+
+CAMPAIGN seed 3486784401 (3/3), C5 (6/6)
+C5 PSO 1/100 | EE 420.721 bit/J | feasible 0 | score -2.64392
+C5 PSO 25/100 | EE 813.549 bit/J | feasible 0 | score -0.573696
+C5 PSO 50/100 | EE 1014.89 bit/J | feasible 0 | score -0.279538
+C5 PSO 75/100 | EE 1202.81 bit/J | feasible 0 | score -0.205294
+C5 PSO 100/100 | EE 1284.66 bit/J | feasible 0 | score -0.131816
+C5 IPSO 1/100 | EE 330.84 bit/J | feasible 0 | score -2.74047
+C5 IPSO 25/100 | EE 495.148 bit/J | feasible 0 | score -1.51331
+C5 IPSO 50/100 | EE 772.688 bit/J | feasible 0 | score -0.35583
+C5 IPSO 75/100 | EE 923.912 bit/J | feasible 0 | score -0.198541
+C5 IPSO 100/100 | EE 915.516 bit/J | feasible 0 | score -0.196882
+
+V10C C5 | C4 with experimental rest-to-rest motion energy
+Stage: search-complete | selected algorithm: PSO
+Reference joint PSO/IPSO; SCA/Dinkelbach hybrid not used.
+Energy model: experimental-quasi-steady-thrust-not-validated
+Geometry dimensions / joint search dimensions: 44 / 184
+Seed / particles / iterations: 3486784401 / 20 / 100
+L bit/user: 3000000 
+q bit/user/slot: 5000 
+Initial candidate: feasible 0 | EE 392.37811301 bit/J
+Total bits / energy J / budget J: 8707311.74571 / 22191.1249812 / 17000
+Movement / hover / RF energy J: 18743.3723141 / 3447.75266559 / 1.55120404878e-06
+Distance m / hover s / mission s / service visits: 300 / 20 / 129.544512 / 20
+Geometry / time / alpha / L / q / slot / energy: 1 1 1 0 0 1 0
+Bits per physical user: 3747312.38089 584129.234691 690952.207604 547768.063694 3137149.85884 
+
+PSO | evaluations 2020 | score -0.131815793389
+Searched candidate: feasible 0 | EE 1284.65950299 bit/J
+Total bits / energy J / budget J: 22271960.6122 / 17336.8589579 / 17000
+Movement / hover / RF energy J: 13889.1062165 / 3447.75266559 / 7.58086542517e-05
+Distance m / hover s / mission s / service visits: 417.125818 / 20 / 107.173343 / 18
+Geometry / time / alpha / L / q / slot / energy: 1 1 1 0 0 1 0
+Bits per physical user: 7341800.01908 3879747.30275 4269417.94446 3827504.80119 2953490.54472 
+
+IPSO | evaluations 2020 | score -0.196882192387
+Searched candidate: feasible 0 | EE 915.516230517 bit/J
+Total bits / energy J / budget J: 16593713.4208 / 18124.9800579 / 17000
+Movement / hover / RF energy J: 14686.8129297 / 3438.16712414 / 4.05813631619e-06
+Distance m / hover s / mission s / service visits: 380.178454 / 19.9443954 / 110.486476 / 18
+Geometry / time / alpha / L / q / slot / energy: 1 1 1 1 0 1 0
+Bits per physical user: 3237777.03604 3444799.58761 3654453.4816 3082687.81736 3173995.4982 
+
+Best candidate coordinates and slot times
+slot X_m Y_m UL_s DL_s hover_s
+1 150 300 0.0712314877039 0.0789570139311 0.150188501635
+2 149.162488001 300 0.005 0.095 0.1
+3 149.209599355 300 1.21709467765 0.0641713272635 1.28126600492
+4 149.225385902 299.990845519 0.579583895264 0.0305044155402 0.610088310804
+5 225 251.381337754 1.26893814626 0.611601712908 1.88053985917
+6 225 251.064367646 0.98307107224 0.826250317944 1.80932139018
+7 225 243.727291694 0.217152383925 0.940665000363 1.15781738429
+8 199.706350224 238.960219713 1.27067217876 0.0668774830926 1.33754966185
+9 197.882461073 237.85397881 0.0325176409767 0.617835178557 0.650352819534
+10 224.789491191 237.513674245 0.887015070371 0.0466850037037 0.933700074075
+11 225 236.448450162 1.26132611567 0.783625879269 2.04495199494
+12 225 236.149784188 0.151180467097 0.694416832386 0.845597299483
+13 225 235.363782482 0.16632406707 0.0751734432235 0.241497510294
+14 225 234.392642378 0.645904764467 0.523694459576 1.16959922404
+15 225 234.392642378 1.75984501849 0.0926234220258 1.85246844052
+16 225 234.392642378 0.480248646522 0.236293190988 0.71654183751
+17 212.572657319 132.626868157 1.2977316835 0.0683016675526 1.36603335105
+18 211.913735185 115.413152699 0.232577039115 0.641044691259 0.873621730374
+19 215.838221644 113.91848784 0.005 0.095 0.1
+20 212.775229176 75.7482467066 0.834921375068 0.0439432302668 0.878864605335
+arrival 150 0
+No global optimality guarantee. If infeasible, EE is diagnostic only.
+V10C results saved: /Users/fuzzefer/Documents/MATLAB/EE-UAV-SWIPT-NOMA-PSO/results/v10c/C5/tp440e81e6_f8f2_4741_8e06_57f3d57c912d
+    preset       seed       algorithm    feasible    computedEE    feasibleEE       bits       energyJ    distanceM    hoverSeconds    serviceVisits    evaluations    dimension                                                         folder                                                                             energyModel                    
+    ______    __________    _________    ________    __________    __________    __________    _______    _________    ____________    _____________    ___________    _________    _________________________________________________________________________________________________________________    __________________________________________________
+
+    {'C0'}          2026    {'PSO' }      true         1767.1        1767.1      2.3935e+07     13545      1438.6             20            20             2020           144       {'/Users/fuzzefer/Documents/MATLAB/EE-UAV-SWIPT-NOMA-PSO/results/v10c/C0/tpf5869f4b_493f_41e2_b407_34065ba0f3a3'}    {'inherited-steady-horizontal-model'             }
+    {'C0'}          2026    {'IPSO'}      false        1493.4           NaN      1.7426e+07     11668      1171.2             20            20             2020           144       {'/Users/fuzzefer/Documents/MATLAB/EE-UAV-SWIPT-NOMA-PSO/results/v10c/C0/tpf5869f4b_493f_41e2_b407_34065ba0f3a3'}    {'inherited-steady-horizontal-model'             }
+    {'C1'}          2026    {'PSO' }      false        2638.4           NaN       2.231e+07    8455.8      713.51             20            20             2020           144       {'/Users/fuzzefer/Documents/MATLAB/EE-UAV-SWIPT-NOMA-PSO/results/v10c/C1/tp92a74715_e5c8_4591_87f4_b1d1769bc94a'}    {'inherited-steady-horizontal-model'             }
+    {'C1'}          2026    {'IPSO'}      true         8474.5        8474.5      5.7188e+07    6748.3      470.23             20            20             2020           144       {'/Users/fuzzefer/Documents/MATLAB/EE-UAV-SWIPT-NOMA-PSO/results/v10c/C1/tp92a74715_e5c8_4591_87f4_b1d1769bc94a'}    {'inherited-steady-horizontal-model'             }
+    {'C2'}          2026    {'PSO' }      false        2554.8           NaN      2.5296e+07    9901.3      957.85         18.436            20             2020           164       {'/Users/fuzzefer/Documents/MATLAB/EE-UAV-SWIPT-NOMA-PSO/results/v10c/C2/tpacf9ae54_34a2_44df_bddc_5bfb74564b8b'}    {'inherited-steady-horizontal-model'             }
+    {'C2'}          2026    {'IPSO'}      true         5908.6        5908.6      4.1144e+07    6963.4      502.82         19.921            18             2020           164       {'/Users/fuzzefer/Documents/MATLAB/EE-UAV-SWIPT-NOMA-PSO/results/v10c/C2/tpacf9ae54_34a2_44df_bddc_5bfb74564b8b'}    {'inherited-steady-horizontal-model'             }
+    {'C3'}          2026    {'PSO' }      true         3986.7        3986.7      3.0813e+07    7729.1      609.98             20            20             2020           164       {'/Users/fuzzefer/Documents/MATLAB/EE-UAV-SWIPT-NOMA-PSO/results/v10c/C3/tp617dbefa_ddcf_40fa_92b7_84d9bcd29d33'}    {'inherited-steady-horizontal-model'             }
+    {'C3'}          2026    {'IPSO'}      true         5384.9        5384.9      3.7814e+07    7022.1      509.24             20            19             2020           164       {'/Users/fuzzefer/Documents/MATLAB/EE-UAV-SWIPT-NOMA-PSO/results/v10c/C3/tp617dbefa_ddcf_40fa_92b7_84d9bcd29d33'}    {'inherited-steady-horizontal-model'             }
+    {'C4'}          2026    {'PSO' }      true          10799         10799      6.3296e+07    5861.4      343.88             20            20             2020           184       {'/Users/fuzzefer/Documents/MATLAB/EE-UAV-SWIPT-NOMA-PSO/results/v10c/C4/tp0dbd84b7_c7a5_4efb_852f_228f7bec39dc'}    {'inherited-steady-horizontal-model'             }
+    {'C4'}          2026    {'IPSO'}      true         7304.9        7304.9      4.9402e+07    6762.9      472.32             20            18             2020           184       {'/Users/fuzzefer/Documents/MATLAB/EE-UAV-SWIPT-NOMA-PSO/results/v10c/C4/tp0dbd84b7_c7a5_4efb_852f_228f7bec39dc'}    {'inherited-steady-horizontal-model'             }
+    {'C5'}          2026    {'PSO' }      false         994.2           NaN      1.9788e+07     19904      463.96             20            18             2020           184       {'/Users/fuzzefer/Documents/MATLAB/EE-UAV-SWIPT-NOMA-PSO/results/v10c/C5/tp296ecf67_aaa8_438d_aa69_28ca93d41658'}    {'experimental-quasi-steady-thrust-not-validated'}
+    {'C5'}          2026    {'IPSO'}      false        1128.3           NaN      2.1959e+07     19462      459.32             20            17             2020           184       {'/Users/fuzzefer/Documents/MATLAB/EE-UAV-SWIPT-NOMA-PSO/results/v10c/C5/tp296ecf67_aaa8_438d_aa69_28ca93d41658'}    {'experimental-quasi-steady-thrust-not-validated'}
+    {'C0'}    6.0806e+05    {'PSO' }      true         8439.4        8439.4      5.6129e+07    6650.9      456.36             20            20             2020           144       {'/Users/fuzzefer/Documents/MATLAB/EE-UAV-SWIPT-NOMA-PSO/results/v10c/C0/tpf033530a_dce5_4873_b02d_95a8e83ce8ba'}    {'inherited-steady-horizontal-model'             }
+    {'C0'}    6.0806e+05    {'IPSO'}      true         4943.3        4943.3      3.9584e+07    8007.6      649.64             20            20             2020           144       {'/Users/fuzzefer/Documents/MATLAB/EE-UAV-SWIPT-NOMA-PSO/results/v10c/C0/tpf033530a_dce5_4873_b02d_95a8e83ce8ba'}    {'inherited-steady-horizontal-model'             }
+    {'C1'}    6.0806e+05    {'PSO' }      true         8799.5        8799.5      5.8454e+07    6642.8      455.21             20            17             2020           144       {'/Users/fuzzefer/Documents/MATLAB/EE-UAV-SWIPT-NOMA-PSO/results/v10c/C1/tp322c48a7_9714_49ff_8185_75fa3c156598'}    {'inherited-steady-horizontal-model'             }
+    {'C1'}    6.0806e+05    {'IPSO'}      true         8195.7        8195.7      5.3511e+07    6529.1      439.01             20            20             2020           144       {'/Users/fuzzefer/Documents/MATLAB/EE-UAV-SWIPT-NOMA-PSO/results/v10c/C1/tp322c48a7_9714_49ff_8185_75fa3c156598'}    {'inherited-steady-horizontal-model'             }
+    {'C2'}    6.0806e+05    {'PSO' }      true         8361.6        8361.6      5.6339e+07    6737.8      468.74             20            15             2020           164       {'/Users/fuzzefer/Documents/MATLAB/EE-UAV-SWIPT-NOMA-PSO/results/v10c/C2/tpb0760a72_6301_4092_8c64_150a254f5f73'}    {'inherited-steady-horizontal-model'             }
+    {'C2'}    6.0806e+05    {'IPSO'}      true         7105.8        7105.8      4.7793e+07      6726      467.05             20            17             2020           164       {'/Users/fuzzefer/Documents/MATLAB/EE-UAV-SWIPT-NOMA-PSO/results/v10c/C2/tpb0760a72_6301_4092_8c64_150a254f5f73'}    {'inherited-steady-horizontal-model'             }
+    {'C3'}    6.0806e+05    {'PSO' }      false        1807.9           NaN      1.9228e+07     10635        1024             20            20             2020           164       {'/Users/fuzzefer/Documents/MATLAB/EE-UAV-SWIPT-NOMA-PSO/results/v10c/C3/tp6a40c49f_f36c_4798_8021_047edd936a7b'}    {'inherited-steady-horizontal-model'             }
+    {'C3'}    6.0806e+05    {'IPSO'}      true           5068          5068      3.5694e+07    7043.1      512.24             20            20             2020           164       {'/Users/fuzzefer/Documents/MATLAB/EE-UAV-SWIPT-NOMA-PSO/results/v10c/C3/tp6a40c49f_f36c_4798_8021_047edd936a7b'}    {'inherited-steady-horizontal-model'             }
+    {'C4'}    6.0806e+05    {'PSO' }      true         6767.7        6767.7      4.6566e+07    6880.6      489.08             20            18             2020           184       {'/Users/fuzzefer/Documents/MATLAB/EE-UAV-SWIPT-NOMA-PSO/results/v10c/C4/tp59a5d332_14b7_4146_90ce_50e38774d29f'}    {'inherited-steady-horizontal-model'             }
+    {'C4'}    6.0806e+05    {'IPSO'}      true          11046         11046      6.4781e+07    5864.7      344.35             20            20             2020           184       {'/Users/fuzzefer/Documents/MATLAB/EE-UAV-SWIPT-NOMA-PSO/results/v10c/C4/tp59a5d332_14b7_4146_90ce_50e38774d29f'}    {'inherited-steady-horizontal-model'             }
+    {'C5'}    6.0806e+05    {'PSO' }      false        1085.8           NaN      2.0535e+07     18912      376.09             20            18             2020           184       {'/Users/fuzzefer/Documents/MATLAB/EE-UAV-SWIPT-NOMA-PSO/results/v10c/C5/tpb7692708_b3a8_4ff1_a2b6_e31e48fe555d'}    {'experimental-quasi-steady-thrust-not-validated'}
+    {'C5'}    6.0806e+05    {'IPSO'}      false        1134.7           NaN      1.9028e+07     16769      344.07             20            18             2020           184       {'/Users/fuzzefer/Documents/MATLAB/EE-UAV-SWIPT-NOMA-PSO/results/v10c/C5/tpb7692708_b3a8_4ff1_a2b6_e31e48fe555d'}    {'experimental-quasi-steady-thrust-not-validated'}
+    {'C0'}    3.4868e+09    {'PSO' }      false        2008.1           NaN      1.9672e+07    9796.7      904.54             20            20             2020           144       {'/Users/fuzzefer/Documents/MATLAB/EE-UAV-SWIPT-NOMA-PSO/results/v10c/C0/tp394c9762_ae2c_4349_b36f_30368e1887e4'}    {'inherited-steady-horizontal-model'             }
+    {'C0'}    3.4868e+09    {'IPSO'}      true         6009.9        6009.9      3.8168e+07    6350.9      413.61             20            20             2020           144       {'/Users/fuzzefer/Documents/MATLAB/EE-UAV-SWIPT-NOMA-PSO/results/v10c/C0/tp394c9762_ae2c_4349_b36f_30368e1887e4'}    {'inherited-steady-horizontal-model'             }
+    {'C1'}    3.4868e+09    {'PSO' }      false        2311.7           NaN      2.1437e+07    9273.5      830.01             20            20             2020           144       {'/Users/fuzzefer/Documents/MATLAB/EE-UAV-SWIPT-NOMA-PSO/results/v10c/C1/tp3f3b5a8a_b923_4bd7_90cb_12fc60d36864'}    {'inherited-steady-horizontal-model'             }
+    {'C1'}    3.4868e+09    {'IPSO'}      true         6675.5        6675.5      4.0573e+07    6077.9      374.73             20            20             2020           144       {'/Users/fuzzefer/Documents/MATLAB/EE-UAV-SWIPT-NOMA-PSO/results/v10c/C1/tp3f3b5a8a_b923_4bd7_90cb_12fc60d36864'}    {'inherited-steady-horizontal-model'             }
+    {'C2'}    3.4868e+09    {'PSO' }      false        3773.3           NaN      2.2482e+07    5958.3       385.7         18.859            17             2020           164       {'/Users/fuzzefer/Documents/MATLAB/EE-UAV-SWIPT-NOMA-PSO/results/v10c/C2/tpff34eb4a_26bf_4521_b9a2_3bcb16bc76d7'}    {'inherited-steady-horizontal-model'             }
+    {'C2'}    3.4868e+09    {'IPSO'}      true           4082          4082      2.6182e+07    6413.8      422.58             20            18             2020           164       {'/Users/fuzzefer/Documents/MATLAB/EE-UAV-SWIPT-NOMA-PSO/results/v10c/C2/tpff34eb4a_26bf_4521_b9a2_3bcb16bc76d7'}    {'inherited-steady-horizontal-model'             }
+    {'C3'}    3.4868e+09    {'PSO' }      true         4582.4        4582.4       2.804e+07      6119      380.57             20            17             2020           164       {'/Users/fuzzefer/Documents/MATLAB/EE-UAV-SWIPT-NOMA-PSO/results/v10c/C3/tpf8c1fe62_5402_49c5_bb2c_14b6a5d9b39a'}    {'inherited-steady-horizontal-model'             }
+    {'C3'}    3.4868e+09    {'IPSO'}      true         6392.9        6392.9      3.7713e+07    5899.1      349.25             20            18             2020           164       {'/Users/fuzzefer/Documents/MATLAB/EE-UAV-SWIPT-NOMA-PSO/results/v10c/C3/tpf8c1fe62_5402_49c5_bb2c_14b6a5d9b39a'}    {'inherited-steady-horizontal-model'             }
+    {'C4'}    3.4868e+09    {'PSO' }      false        2187.4           NaN      1.9208e+07    8781.5      783.66         19.033            20             2020           184       {'/Users/fuzzefer/Documents/MATLAB/EE-UAV-SWIPT-NOMA-PSO/results/v10c/C4/tp8c391f0f_3874_4bd3_b163_f4f341ca3358'}    {'inherited-steady-horizontal-model'             }
+    {'C4'}    3.4868e+09    {'IPSO'}      true           4028          4028       2.629e+07    6526.9      438.69             20            20             2020           184       {'/Users/fuzzefer/Documents/MATLAB/EE-UAV-SWIPT-NOMA-PSO/results/v10c/C4/tp8c391f0f_3874_4bd3_b163_f4f341ca3358'}    {'inherited-steady-horizontal-model'             }
+    {'C5'}    3.4868e+09    {'PSO' }      false        1284.7           NaN      2.2272e+07     17337      417.13             20            18             2020           184       {'/Users/fuzzefer/Documents/MATLAB/EE-UAV-SWIPT-NOMA-PSO/results/v10c/C5/tp440e81e6_f8f2_4741_8e06_57f3d57c912d'}    {'experimental-quasi-steady-thrust-not-validated'}
+    {'C5'}    3.4868e+09    {'IPSO'}      false        915.52           NaN      1.6594e+07     18125      380.18         19.944            18             2020           184       {'/Users/fuzzefer/Documents/MATLAB/EE-UAV-SWIPT-NOMA-PSO/results/v10c/C5/tp440e81e6_f8f2_4741_8e06_57f3d57c912d'}    {'experimental-quasi-steady-thrust-not-validated'}
+
+V10C comparison saved: /Users/fuzzefer/Documents/MATLAB/EE-UAV-SWIPT-NOMA-PSO/results/v10c/comparisons/tp090de790_d778_41e0_8cc5_b113244dae44
