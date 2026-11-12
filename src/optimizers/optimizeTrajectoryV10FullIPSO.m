@@ -13,6 +13,10 @@ function best = optimizeTrajectoryV10FullIPSO(sim, opts)
     % lay w_max, w_min va ty le dot bien
     w_max        = getOptField(opts, 'w_max', 0.9);
     w_min        = getOptField(opts, 'w_min', 0.4);
+    % Fixed cooling horizon: independent of maxIter so that a longer run keeps
+    % the same trajectory for its first wHorizon iterations. Defaults to
+    % maxIter for backward compatibility with older configurations.
+    wHorizon     = getOptField(opts, 'wHorizon', maxIter);
     % Adaptive mutation setting
     mutRateLow = getOptField(opts, 'mutRateLow', 0.02);
     mutParticleRateLow = getOptField(opts, 'mutParticleRateLow', 0.05);
@@ -31,6 +35,7 @@ function best = optimizeTrajectoryV10FullIPSO(sim, opts)
 
     validateattributes(numParticles, {'numeric'}, {'scalar','finite','integer','positive'});
     validateattributes(maxIter, {'numeric'}, {'scalar','finite','integer','nonnegative'});
+    validateattributes(wHorizon, {'numeric'}, {'scalar','finite','integer','positive'});
     validateattributes(c1, {'numeric'}, {'scalar','finite','real','nonnegative'});
     validateattributes(c2, {'numeric'}, {'scalar','finite','real','nonnegative'});
 
@@ -125,7 +130,7 @@ function best = optimizeTrajectoryV10FullIPSO(sim, opts)
     
     %% IPSO loop
     for iter = 1:maxIter
-        w_current = w_max - (w_max - w_min) * sqrt(iter / maxIter);
+        w_current = w_max - (w_max - w_min) * sqrt(min(iter, wHorizon) / wHorizon);
         for i = 1:numParticles
             r1 = rand(1, D);
             r2 = rand(1, D);
