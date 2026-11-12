@@ -25,8 +25,8 @@ opts.baseL = 3e6;
 opts.baseSlot = 5e3;
 opts.baseHover = 1;
 
-opts.numWorkers = 4;                   % i5-10400: 4 safe, 5-6 if RAM allows
-opts.batchSize = 7;                    % checkpoint after each seed
+opts.numWorkers = 6;                   % i5-10400: 4 safe, 5-6 if RAM allows
+opts.batchSize = 6;                    % checkpoint after each seed
 opts.keepPool = false;                 % shut the pool down when finished
 opts.makePlots = false;
 opts.saveResults = true;
